@@ -1,0 +1,214 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.5">
+	<CommandSet>
+		<ExcludedCommand>Change</ExcludedCommand>
+		<ExcludedCommand>Copy</ExcludedCommand>
+		<ExcludedCommand>Create</ExcludedCommand>
+		<ExcludedCommand>Delete</ExcludedCommand>
+	</CommandSet>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<Autofill>false</Autofill>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="СписокКомпоновщикНастроекПользовательскиеНастройки" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа пользовательских настроек</v8:content>
+				</v8:item>
+			</Title>
+			<VerticalStretch>false</VerticalStretch>
+			<Group>Vertical</Group>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="СписокКомпоновщикНастроекПользовательскиеНастройкиРасширеннаяПодсказка" id="2"/>
+		</UsualGroup>
+		<InputField name="ОрганизацияДляПолученияНСИ" id="31">
+			<DataPath>ОрганизацияДляПолученияНСИ</DataPath>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Организация, настройки подключения которой будут использоваться для загрузки НСИ.</v8:content>
+				</v8:item>
+			</ToolTip>
+			<ToolTipRepresentation>ShowRight</ToolTipRepresentation>
+			<AutoMarkIncomplete>true</AutoMarkIncomplete>
+			<ContextMenu name="ОрганизацияДляПолученияНСИКонтекстноеМеню" id="32"/>
+			<ExtendedTooltip name="ОрганизацияДляПолученияНСИРасширеннаяПодсказка" id="33"/>
+			<Events>
+				<Event name="OnChange">ОрганизацияДляПолученияНСИПриИзменении</Event>
+			</Events>
+		</InputField>
+		<LabelDecoration name="Декорация1" id="34">
+			<AutoMaxWidth>false</AutoMaxWidth>
+			<HorizontalStretch>true</HorizontalStretch>
+			<TextColor>style:ПоясняющийТекст</TextColor>
+			<Title formatted="true">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>&lt;b&gt;Вид операции&lt;/&gt; – операция обмена с ИС «Меркурий», для которой задана настройка.
+
+&lt;b&gt;Обновление по изменениям* &lt;/&gt;– признак того каким способом выполняется обновление данных по заданной операции:
+
+                    Для справочников "Хозяйствующие субъекты", "Предприятия" и "Продукция" можно задать вариант обновления данных.
+&lt;b&gt;                    По изменениям&lt;/&gt; - происходит запрос измененных данных всего справочника ИС "Меркурий".
+                    Рекомендуется, если в системе используется большой объем информации этого справочника. 
+&lt;b&gt;                    По каждому &lt;/&gt;- происходит запрос данных каждого элемента, который загружен.
+                    Рекомендуется, если в системе используется не большой объем информации этого справочника.
+
+                    Для остальных используется только вариант &lt;b&gt;«По изменениям»&lt;/&gt;.
+
+&lt;b&gt;Смещение в списках запросов &lt;/&gt;– количество запрашиваемых элементов за один запрос. Возможные значения от 1 до 1000.
+
+&lt;b&gt;Смещение даты начала загрузки*&lt;/&gt;  количество часов, на которое будет смещена дата начала периода, за который запрашиваются изменения. Т.е. дата начала запроса будет рассчитываться следующим образом:
+
+&lt;i&gt;                    Дата начала запроса = Дата последней загрузки - Смещение даты начала загрузки.
+&lt;/&gt;
+&lt;b&gt;Количество попыток получения результата при ошибках APLM &lt;/&gt;– количество повторных попыток, которое будет выполнено в случаях, если результат выполнения запроса возвращается в статусе «Заявка отклонена» с кодом ошибки APLM.
+
+* - используется только в регламентных заданиях.</v8:content>
+				</v8:item>
+			</Title>
+			<ContextMenu name="Декорация1КонтекстноеМеню" id="35"/>
+			<ExtendedTooltip name="Декорация1РасширеннаяПодсказка" id="36"/>
+		</LabelDecoration>
+		<Table name="Список" id="3">
+			<Representation>List</Representation>
+			<CommandBarLocation>None</CommandBarLocation>
+			<DefaultItem>true</DefaultItem>
+			<UseAlternationRowColor>true</UseAlternationRowColor>
+			<InitialTreeView>ExpandTopLevel</InitialTreeView>
+			<EnableStartDrag>true</EnableStartDrag>
+			<DataPath>Список</DataPath>
+			<RowPictureDataPath>Список.DefaultPicture</RowPictureDataPath>
+			<CommandSet>
+				<ExcludedCommand>Change</ExcludedCommand>
+				<ExcludedCommand>Copy</ExcludedCommand>
+				<ExcludedCommand>Create</ExcludedCommand>
+				<ExcludedCommand>Delete</ExcludedCommand>
+			</CommandSet>
+			<AutoRefresh>false</AutoRefresh>
+			<AutoRefreshPeriod>60</AutoRefreshPeriod>
+			<Period>
+				<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+				<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+				<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+			</Period>
+			<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+			<RestoreCurrentRow>false</RestoreCurrentRow>
+			<TopLevelParent xsi:nil="true"/>
+			<ShowRoot>true</ShowRoot>
+			<AllowRootChoice>false</AllowRootChoice>
+			<UpdateOnDataChange>Auto</UpdateOnDataChange>
+			<UserSettingsGroup>СписокКомпоновщикНастроекПользовательскиеНастройки</UserSettingsGroup>
+			<ContextMenu name="СписокКонтекстноеМеню" id="4"/>
+			<AutoCommandBar name="СписокКоманднаяПанель" id="5">
+				<Autofill>false</Autofill>
+			</AutoCommandBar>
+			<ExtendedTooltip name="СписокРасширеннаяПодсказка" id="6"/>
+			<SearchStringAddition name="СписокСтрокаПоиска" id="7">
+				<AdditionSource>
+					<Item>Список</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="СписокСтрокаПоискаКонтекстноеМеню" id="8"/>
+				<ExtendedTooltip name="СписокСтрокаПоискаРасширеннаяПодсказка" id="9"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="СписокСостояниеПросмотра" id="10">
+				<AdditionSource>
+					<Item>Список</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="СписокСостояниеПросмотраКонтекстноеМеню" id="11"/>
+				<ExtendedTooltip name="СписокСостояниеПросмотраРасширеннаяПодсказка" id="12"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="СписокУправлениеПоиском" id="13">
+				<AdditionSource>
+					<Item>Список</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="СписокУправлениеПоискомКонтекстноеМеню" id="14"/>
+				<ExtendedTooltip name="СписокУправлениеПоискомРасширеннаяПодсказка" id="15"/>
+			</SearchControlAddition>
+			<Events>
+				<Event name="BeforeAddRow">СписокПередНачаломДобавления</Event>
+				<Event name="BeforeDeleteRow">СписокПередУдалением</Event>
+			</Events>
+			<ChildItems>
+				<LabelField name="ВидОперации" id="16">
+					<DataPath>Список.ВидОперации</DataPath>
+					<DefaultItem>true</DefaultItem>
+					<ContextMenu name="ВидОперацииКонтекстноеМеню" id="17"/>
+					<ExtendedTooltip name="ВидОперацииРасширеннаяПодсказка" id="18"/>
+				</LabelField>
+				<CheckBoxField name="ОбновлениеПоИзменениям" id="22">
+					<DataPath>Список.ОбновлениеПоИзменениям</DataPath>
+					<DefaultItem>true</DefaultItem>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ОбновлениеПоИзменениямКонтекстноеМеню" id="23"/>
+					<ExtendedTooltip name="ОбновлениеПоИзменениямРасширеннаяПодсказка" id="24"/>
+				</CheckBoxField>
+				<LabelField name="СмещениеВСпискахЗапросов" id="25">
+					<DataPath>Список.СмещениеВСпискахЗапросов</DataPath>
+					<DefaultItem>true</DefaultItem>
+					<ContextMenu name="СмещениеВСпискахЗапросовКонтекстноеМеню" id="26"/>
+					<ExtendedTooltip name="СмещениеВСпискахЗапросовРасширеннаяПодсказка" id="27"/>
+				</LabelField>
+				<LabelField name="СмещениеДатыНачалаЗагрузки" id="28">
+					<DataPath>Список.СмещениеДатыНачалаЗагрузки</DataPath>
+					<DefaultItem>true</DefaultItem>
+					<ContextMenu name="СмещениеДатыНачалаЗагрузкиКонтекстноеМеню" id="29"/>
+					<ExtendedTooltip name="СмещениеДатыНачалаЗагрузкиРасширеннаяПодсказка" id="30"/>
+				</LabelField>
+				<LabelField name="КоличествоПопытокПолученияРезультатаПриОшибкахAPLM" id="19">
+					<DataPath>Список.КоличествоПопытокПолученияРезультатаПриОшибкахAPLM</DataPath>
+					<DefaultItem>true</DefaultItem>
+					<ContextMenu name="КоличествоПопытокПолученияРезультатаПриОшибкахAPLMКонтекстноеМеню" id="20"/>
+					<ExtendedTooltip name="КоличествоПопытокПолученияРезультатаПриОшибкахAPLMРасширеннаяПодсказка" id="21"/>
+				</LabelField>
+			</ChildItems>
+		</Table>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Список" id="1">
+			<Type>
+				<v8:Type>cfg:DynamicList</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<Settings xsi:type="DynamicList">
+				<ManualQuery>false</ManualQuery>
+				<DynamicDataRead>true</DynamicDataRead>
+				<MainTable>InformationRegister.НастройкиОбменаВетисAPI</MainTable>
+				<ListSettings>
+					<dcsset:filter>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>dfcece9d-5077-440b-b6b3-45a5cb4538eb</dcsset:userSettingID>
+					</dcsset:filter>
+					<dcsset:order>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>88619765-ccb3-46c6-ac52-38e9c992ebd4</dcsset:userSettingID>
+					</dcsset:order>
+					<dcsset:conditionalAppearance>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>b75fecce-942b-4aed-abc9-e6a02e460fb3</dcsset:userSettingID>
+					</dcsset:conditionalAppearance>
+					<dcsset:itemsViewMode>Normal</dcsset:itemsViewMode>
+					<dcsset:itemsUserSettingID>911b6018-f537-43e8-a417-da56b22f9aec</dcsset:itemsUserSettingID>
+				</ListSettings>
+			</Settings>
+		</Attribute>
+		<Attribute name="ОрганизацияДляПолученияНСИ" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Организация для получения НСИ</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.Организации</v8:Type>
+			</Type>
+		</Attribute>
+	</Attributes>
+</Form>

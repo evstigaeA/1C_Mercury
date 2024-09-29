@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<PredefinedData xmlns="http://v8.1c.ru/8.3/xcf/predef" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="CatalogPredefinedItems" version="2.5">
+	<Item id="ca03f1f4-9324-4a8d-b9cf-0ef416f1a9a1">
+		<Name>Производственный</Name>
+		<Code>PRODUCTIVE</Code>
+		<Description>Производственный сертификат</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="3698ddf9-9d06-4215-b185-30ce1563fbdf">
+		<Name>Форма1ВетСвид</Name>
+		<Code>LIC1</Code>
+		<Description>Форма 1 ветеринарного свидетельства</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="726249d6-10cb-4b16-97b7-961db9f49534">
+		<Name>Форма1ВетСерт</Name>
+		<Code>CERTCU1</Code>
+		<Description>Форма 1 ветеринарного сертификата ТС</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="62819978-af8c-4154-9d4e-d32b8955c92d">
+		<Name>Форма2ВетСвид</Name>
+		<Code>LIC2</Code>
+		<Description>Форма 2 ветеринарного свидетельства</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="0e8f777d-a8a1-441d-bc3e-01366cd46b06">
+		<Name>Форма2ВетСерт</Name>
+		<Code>CERTCU2</Code>
+		<Description>Форма 2 ветеринарного сертификата ТС</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="5e22b90f-6356-4021-b03c-b00968f05070">
+		<Name>Форма3ВетСвид</Name>
+		<Code>LIC3</Code>
+		<Description>Форма 3 ветеринарного свидетельства</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="b23e6b2c-0bbb-4754-a13c-055812940e9e">
+		<Name>Форма3ВетСерт</Name>
+		<Code>CERTCU3</Code>
+		<Description>Форма 3 ветеринарного сертификата ТС</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="38ac94eb-0427-4623-88d3-e07a5384a82e">
+		<Name>Форма4ВетСправка</Name>
+		<Code>NOTE4</Code>
+		<Description>Форма 4 ветеринарной справки</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="86dc5edb-2f50-43ff-bd0f-0aeb87f03e43">
+		<Name>Форма5ВетСерт</Name>
+		<Code>CERT5I</Code>
+		<Description>Форма 5i ветеринарного сертификата</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="ca763b94-a020-46a0-9833-ff4588efa801">
+		<Name>Форма6_1ВетСерт</Name>
+		<Code>CERT61</Code>
+		<Description>Форма 6.1 ветеринарного сертификата</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="7f4b5094-d235-4ee1-9f7a-845d8654b5a9">
+		<Name>Форма6_2ВетСерт</Name>
+		<Code>CERT62</Code>
+		<Description>Форма 6.2 ветеринарного сертификата</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="467986c4-d636-4394-ad9a-e2848c54803d">
+		<Name>Форма6_3ВетСерт</Name>
+		<Code>CERT63</Code>
+		<Description>Форма 6.3 ветеринарного сертификата</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+</PredefinedData>

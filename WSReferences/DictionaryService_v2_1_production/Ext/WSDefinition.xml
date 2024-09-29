@@ -1,0 +1,746 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<definitions xmlns="http://schemas.xmlsoap.org/wsdl/"
+		xmlns:soap12bind="http://schemas.xmlsoap.org/wsdl/soap12/"
+		xmlns:soapbind="http://schemas.xmlsoap.org/wsdl/soap/"
+		xmlns:tns="http://api.vetrf.ru/schema/cdm/registry/dictionary/service/v2"
+		xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy"
+		xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd"
+		xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+		xmlns:xsd1="0"
+		xmlns:xsd2="http://api.vetrf.ru/schema/cdm/base"
+		xmlns:xsd3="http://api.vetrf.ru/schema/cdm/base/ws-definitions"
+		xmlns:xsd4="http://api.vetrf.ru/schema/cdm/dictionary/v2"
+		xmlns:xsd5="http://api.vetrf.ru/schema/cdm/registry/ws-definitions/v2"
+		name="DictionaryService"
+		targetNamespace="http://api.vetrf.ru/schema/cdm/registry/dictionary/service/v2">
+	<documentation>
+        Service: DictionaryService
+        Version: 2.0.4
+    </documentation>
+	<types>
+		<schema xmlns="http://www.w3.org/2001/XMLSchema"
+				xmlns:bdef="http://api.vetrf.ru/schema/cdm/base/ws-definitions"
+				xmlns:rdef="http://api.vetrf.ru/schema/cdm/registry/ws-definitions/v2"
+				xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/"
+				xmlns:tns="0"
+				xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/"
+				targetNamespace="0">
+			<import namespace="http://api.vetrf.ru/schema/cdm/base/ws-definitions"
+					schemaLocation="file://1.xsd"/>
+			<default:import xmlns:default="http://www.w3.org/2001/XMLSchema"
+					namespace="http://api.vetrf.ru/schema/cdm/registry/ws-definitions/v2"
+					schemaLocation="file://3.xsd"/>
+		</schema>
+	</types>
+	<message name="GetPurposeByGuid">
+		<part name="request"
+				element="xsd5:getPurposeByGuidRequest"/>
+	</message>
+	<message name="GetPurposeByGuidResponse">
+		<part name="response"
+				element="xsd5:getPurposeByGuidResponse"/>
+	</message>
+	<message name="GetPurposeByUuid">
+		<part name="request"
+				element="xsd5:getPurposeByUuidRequest"/>
+	</message>
+	<message name="GetPurposeByUuidResponse">
+		<part name="response"
+				element="xsd5:getPurposeByUuidResponse"/>
+	</message>
+	<message name="GetPurposeList">
+		<part name="request"
+				element="xsd5:getPurposeListRequest"/>
+	</message>
+	<message name="GetPurposeListResponse">
+		<part name="response"
+				element="xsd5:getPurposeListResponse"/>
+	</message>
+	<message name="GetPurposeChangesList">
+		<part name="request"
+				element="xsd5:getPurposeChangesListRequest"/>
+	</message>
+	<message name="GetPurposeChangesListResponse">
+		<part name="response"
+				element="xsd5:getPurposeChangesListResponse"/>
+	</message>
+	<message name="GetUnitByGuid">
+		<part name="request"
+				element="xsd5:getUnitByGuidRequest"/>
+	</message>
+	<message name="GetUnitByGuidResponse">
+		<part name="response"
+				element="xsd5:getUnitByGuidResponse"/>
+	</message>
+	<message name="GetUnitByUuid">
+		<part name="request"
+				element="xsd5:getUnitByUuidRequest"/>
+	</message>
+	<message name="GetUnitByUuidResponse">
+		<part name="response"
+				element="xsd5:getUnitByUuidResponse"/>
+	</message>
+	<message name="GetUnitList">
+		<part name="request"
+				element="xsd5:getUnitListRequest"/>
+	</message>
+	<message name="GetUnitListResponse">
+		<part name="response"
+				element="xsd5:getUnitListResponse"/>
+	</message>
+	<message name="GetUnitChangesList">
+		<part name="request"
+				element="xsd5:getUnitChangesListRequest"/>
+	</message>
+	<message name="GetUnitChangesListResponse">
+		<part name="response"
+				element="xsd5:getUnitChangesListResponse"/>
+	</message>
+	<message name="GetDiseaseByGuid">
+		<part name="request"
+				element="xsd5:getDiseaseByGuidRequest"/>
+	</message>
+	<message name="GetDiseaseByGuidResponse">
+		<part name="response"
+				element="xsd5:getDiseaseByGuidResponse"/>
+	</message>
+	<message name="GetDiseaseByUuid">
+		<part name="request"
+				element="xsd5:getDiseaseByUuidRequest"/>
+	</message>
+	<message name="GetDiseaseByUuidResponse">
+		<part name="response"
+				element="xsd5:getDiseaseByUuidResponse"/>
+	</message>
+	<message name="GetDiseaseList">
+		<part name="request"
+				element="xsd5:getDiseaseListRequest"/>
+	</message>
+	<message name="GetDiseaseListResponse">
+		<part name="response"
+				element="xsd5:getDiseaseListResponse"/>
+	</message>
+	<message name="GetDiseaseChangesList">
+		<part name="request"
+				element="xsd5:getDiseaseChangesListRequest"/>
+	</message>
+	<message name="GetDiseaseChangesListResponse">
+		<part name="response"
+				element="xsd5:getDiseaseChangesListResponse"/>
+	</message>
+	<message name="GetResearchMethodByGuid">
+		<part name="request"
+				element="xsd5:getResearchMethodByGuidRequest"/>
+	</message>
+	<message name="GetResearchMethodByGuidResponse">
+		<part name="response"
+				element="xsd5:getResearchMethodByGuidResponse"/>
+	</message>
+	<message name="GetResearchMethodByUuid">
+		<part name="request"
+				element="xsd5:getResearchMethodByUuidRequest"/>
+	</message>
+	<message name="GetResearchMethodByUuidResponse">
+		<part name="response"
+				element="xsd5:getResearchMethodByUuidResponse"/>
+	</message>
+	<message name="GetResearchMethodList">
+		<part name="request"
+				element="xsd5:getResearchMethodListRequest"/>
+	</message>
+	<message name="GetResearchMethodListResponse">
+		<part name="response"
+				element="xsd5:getResearchMethodListResponse"/>
+	</message>
+	<message name="GetResearchMethodChangesList">
+		<part name="request"
+				element="xsd5:getResearchMethodChangesListRequest"/>
+	</message>
+	<message name="GetResearchMethodChangesListResponse">
+		<part name="response"
+				element="xsd5:getResearchMethodChangesListResponse"/>
+	</message>
+	<message name="EntityNotFoundFault">
+		<documentation>
+            Запись с указанным идентификатором не найдена.
+        </documentation>
+		<part name="fault"
+				element="xsd3:entityNotFoundFault"/>
+	</message>
+	<message name="IncorrectRequestFault">
+		<documentation>
+            Реакция системы на некорректный запрос.
+        </documentation>
+		<part name="fault"
+				element="xsd3:incorrectRequestFault"/>
+	</message>
+	<message name="InternalServiceFault">
+		<documentation>
+            Внутренняя ошибка выполнения операции на сервере.
+        </documentation>
+		<part name="fault"
+				element="xsd3:internalServiceFault"/>
+	</message>
+	<message name="OffsetOutOfRangeFault">
+		<documentation> </documentation>
+		<part name="fault"
+				element="xsd3:offsetOutOfRangeFault"/>
+	</message>
+	<portType name="DictionaryServicePortType">
+		<operation name="GetPurposeByGuid">
+			<input name="purposeByGuid"
+					message="tns:GetPurposeByGuid"/>
+			<output name="purposeByGuidResponse"
+					message="tns:GetPurposeByGuidResponse"/>
+			<fault name="internalServiceFault"
+					message="tns:InternalServiceFault"/>
+			<fault name="incorrectRequestFault"
+					message="tns:IncorrectRequestFault"/>
+			<fault name="entityNotFoundFault"
+					message="tns:EntityNotFoundFault"/>
+		</operation>
+		<operation name="GetPurposeByUuid">
+			<input name="purposeByUuid"
+					message="tns:GetPurposeByUuid"/>
+			<output name="purposeByUuidResponse"
+					message="tns:GetPurposeByUuidResponse"/>
+			<fault name="internalServiceFault"
+					message="tns:InternalServiceFault"/>
+			<fault name="incorrectRequestFault"
+					message="tns:IncorrectRequestFault"/>
+			<fault name="entityNotFoundFault"
+					message="tns:EntityNotFoundFault"/>
+		</operation>
+		<operation name="GetPurposeList">
+			<input name="purposeList"
+					message="tns:GetPurposeList"/>
+			<output name="purposeListResponse"
+					message="tns:GetPurposeListResponse"/>
+			<fault name="internalServiceFault"
+					message="tns:InternalServiceFault"/>
+			<fault name="incorrectRequestFault"
+					message="tns:IncorrectRequestFault"/>
+			<fault name="offsetOutOfRangeFault"
+					message="tns:OffsetOutOfRangeFault"/>
+		</operation>
+		<operation name="GetPurposeChangesList">
+			<input name="purposeChangesList"
+					message="tns:GetPurposeChangesList"/>
+			<output name="purposeChangesListResponse"
+					message="tns:GetPurposeChangesListResponse"/>
+			<fault name="internalServiceFault"
+					message="tns:InternalServiceFault"/>
+			<fault name="incorrectRequestFault"
+					message="tns:IncorrectRequestFault"/>
+			<fault name="offsetOutOfRangeFault"
+					message="tns:OffsetOutOfRangeFault"/>
+		</operation>
+		<operation name="GetUnitByGuid">
+			<input name="unitByGuid"
+					message="tns:GetUnitByGuid"/>
+			<output name="unitByGuidResponse"
+					message="tns:GetUnitByGuidResponse"/>
+			<fault name="internalServiceFault"
+					message="tns:InternalServiceFault"/>
+			<fault name="incorrectRequestFault"
+					message="tns:IncorrectRequestFault"/>
+			<fault name="entityNotFoundFault"
+					message="tns:EntityNotFoundFault"/>
+		</operation>
+		<operation name="GetUnitByUuid">
+			<input name="unitByUuid"
+					message="tns:GetUnitByUuid"/>
+			<output name="unitByUuidResponse"
+					message="tns:GetUnitByUuidResponse"/>
+			<fault name="internalServiceFault"
+					message="tns:InternalServiceFault"/>
+			<fault name="incorrectRequestFault"
+					message="tns:IncorrectRequestFault"/>
+			<fault name="entityNotFoundFault"
+					message="tns:EntityNotFoundFault"/>
+		</operation>
+		<operation name="GetUnitList">
+			<input name="unitList"
+					message="tns:GetUnitList"/>
+			<output name="unitListResponse"
+					message="tns:GetUnitListResponse"/>
+			<fault name="internalServiceFault"
+					message="tns:InternalServiceFault"/>
+			<fault name="incorrectRequestFault"
+					message="tns:IncorrectRequestFault"/>
+			<fault name="offsetOutOfRangeFault"
+					message="tns:OffsetOutOfRangeFault"/>
+		</operation>
+		<operation name="GetUnitChangesList">
+			<input name="unitChangesList"
+					message="tns:GetUnitChangesList"/>
+			<output name="unitChangesListResponse"
+					message="tns:GetUnitChangesListResponse"/>
+			<fault name="internalServiceFault"
+					message="tns:InternalServiceFault"/>
+			<fault name="incorrectRequestFault"
+					message="tns:IncorrectRequestFault"/>
+			<fault name="offsetOutOfRangeFault"
+					message="tns:OffsetOutOfRangeFault"/>
+		</operation>
+		<operation name="GetDiseaseByGuid">
+			<input name="diseaseByGuid"
+					message="tns:GetDiseaseByGuid"/>
+			<output name="diseaseByGuidResponse"
+					message="tns:GetDiseaseByGuidResponse"/>
+			<fault name="internalServiceFault"
+					message="tns:InternalServiceFault"/>
+			<fault name="incorrectRequestFault"
+					message="tns:IncorrectRequestFault"/>
+			<fault name="entityNotFoundFault"
+					message="tns:EntityNotFoundFault"/>
+		</operation>
+		<operation name="GetDiseaseByUuid">
+			<input name="diseaseByUuid"
+					message="tns:GetDiseaseByUuid"/>
+			<output name="diseaseByUuidResponse"
+					message="tns:GetDiseaseByUuidResponse"/>
+			<fault name="internalServiceFault"
+					message="tns:InternalServiceFault"/>
+			<fault name="incorrectRequestFault"
+					message="tns:IncorrectRequestFault"/>
+			<fault name="entityNotFoundFault"
+					message="tns:EntityNotFoundFault"/>
+		</operation>
+		<operation name="GetDiseaseList">
+			<input name="diseaseList"
+					message="tns:GetDiseaseList"/>
+			<output name="diseaseListResponse"
+					message="tns:GetDiseaseListResponse"/>
+			<fault name="internalServiceFault"
+					message="tns:InternalServiceFault"/>
+			<fault name="incorrectRequestFault"
+					message="tns:IncorrectRequestFault"/>
+			<fault name="offsetOutOfRangeFault"
+					message="tns:OffsetOutOfRangeFault"/>
+		</operation>
+		<operation name="GetDiseaseChangesList">
+			<input name="diseaseChangesList"
+					message="tns:GetDiseaseChangesList"/>
+			<output name="diseaseChangesListResponse"
+					message="tns:GetDiseaseChangesListResponse"/>
+			<fault name="internalServiceFault"
+					message="tns:InternalServiceFault"/>
+			<fault name="incorrectRequestFault"
+					message="tns:IncorrectRequestFault"/>
+			<fault name="offsetOutOfRangeFault"
+					message="tns:OffsetOutOfRangeFault"/>
+		</operation>
+		<operation name="GetResearchMethodByGuid">
+			<input name="researchMethodByGuid"
+					message="tns:GetResearchMethodByGuid"/>
+			<output name="researchMethodByGuidResponse"
+					message="tns:GetResearchMethodByGuidResponse"/>
+			<fault name="internalServiceFault"
+					message="tns:InternalServiceFault"/>
+			<fault name="incorrectRequestFault"
+					message="tns:IncorrectRequestFault"/>
+			<fault name="entityNotFoundFault"
+					message="tns:EntityNotFoundFault"/>
+		</operation>
+		<operation name="GetResearchMethodByUuid">
+			<input name="researchMethodByUuid"
+					message="tns:GetResearchMethodByUuid"/>
+			<output name="researchMethodByUuidResponse"
+					message="tns:GetResearchMethodByUuidResponse"/>
+			<fault name="internalServiceFault"
+					message="tns:InternalServiceFault"/>
+			<fault name="incorrectRequestFault"
+					message="tns:IncorrectRequestFault"/>
+			<fault name="entityNotFoundFault"
+					message="tns:EntityNotFoundFault"/>
+		</operation>
+		<operation name="GetResearchMethodList">
+			<input name="researchMethodList"
+					message="tns:GetResearchMethodList"/>
+			<output name="researchMethodListResponse"
+					message="tns:GetResearchMethodListResponse"/>
+			<fault name="internalServiceFault"
+					message="tns:InternalServiceFault"/>
+			<fault name="incorrectRequestFault"
+					message="tns:IncorrectRequestFault"/>
+			<fault name="offsetOutOfRangeFault"
+					message="tns:OffsetOutOfRangeFault"/>
+		</operation>
+		<operation name="GetResearchMethodChangesList">
+			<input name="researchMethodChangesList"
+					message="tns:GetResearchMethodChangesList"/>
+			<output name="researchMethodChangesListResponse"
+					message="tns:GetResearchMethodChangesListResponse"/>
+			<fault name="internalServiceFault"
+					message="tns:InternalServiceFault"/>
+			<fault name="incorrectRequestFault"
+					message="tns:IncorrectRequestFault"/>
+			<fault name="offsetOutOfRangeFault"
+					message="tns:OffsetOutOfRangeFault"/>
+		</operation>
+	</portType>
+	<binding name="DictionaryServiceBinding"
+			type="tns:DictionaryServicePortType">
+		<soapbind:binding style="document"
+				transport="http://schemas.xmlsoap.org/soap/http"/>
+		<operation name="GetPurposeByGuid">
+			<soapbind:operation style="document"
+					soapAction="GetPurposeByGuid"/>
+			<input>
+				<soapbind:body use="literal"/>
+			</input>
+			<output>
+				<soapbind:body use="literal"/>
+			</output>
+			<fault name="internalServiceFault">
+				<soapbind:fault name="internalServiceFault"
+						use="literal"/>
+			</fault>
+			<fault name="incorrectRequestFault">
+				<soapbind:fault name="incorrectRequestFault"
+						use="literal"/>
+			</fault>
+			<fault name="entityNotFoundFault">
+				<soapbind:fault name="entityNotFoundFault"
+						use="literal"/>
+			</fault>
+		</operation>
+		<operation name="GetPurposeByUuid">
+			<soapbind:operation style="document"
+					soapAction="GetPurposeByUuid"/>
+			<input>
+				<soapbind:body use="literal"/>
+			</input>
+			<output>
+				<soapbind:body use="literal"/>
+			</output>
+			<fault name="internalServiceFault">
+				<soapbind:fault name="internalServiceFault"
+						use="literal"/>
+			</fault>
+			<fault name="incorrectRequestFault">
+				<soapbind:fault name="incorrectRequestFault"
+						use="literal"/>
+			</fault>
+			<fault name="entityNotFoundFault">
+				<soapbind:fault name="entityNotFoundFault"
+						use="literal"/>
+			</fault>
+		</operation>
+		<operation name="GetPurposeList">
+			<soapbind:operation style="document"
+					soapAction="GetPurposeList"/>
+			<input>
+				<soapbind:body use="literal"/>
+			</input>
+			<output>
+				<soapbind:body use="literal"/>
+			</output>
+			<fault name="internalServiceFault">
+				<soapbind:fault name="internalServiceFault"
+						use="literal"/>
+			</fault>
+			<fault name="incorrectRequestFault">
+				<soapbind:fault name="incorrectRequestFault"
+						use="literal"/>
+			</fault>
+			<fault name="offsetOutOfRangeFault">
+				<soapbind:fault name="offsetOutOfRangeFault"
+						use="literal"/>
+			</fault>
+		</operation>
+		<operation name="GetPurposeChangesList">
+			<soapbind:operation style="document"
+					soapAction="GetPurposeChangesList"/>
+			<input>
+				<soapbind:body use="literal"/>
+			</input>
+			<output>
+				<soapbind:body use="literal"/>
+			</output>
+			<fault name="internalServiceFault">
+				<soapbind:fault name="internalServiceFault"
+						use="literal"/>
+			</fault>
+			<fault name="incorrectRequestFault">
+				<soapbind:fault name="incorrectRequestFault"
+						use="literal"/>
+			</fault>
+			<fault name="offsetOutOfRangeFault">
+				<soapbind:fault name="offsetOutOfRangeFault"
+						use="literal"/>
+			</fault>
+		</operation>
+		<operation name="GetUnitByGuid">
+			<soapbind:operation style="document"
+					soapAction="GetUnitByGuid"/>
+			<input>
+				<soapbind:body use="literal"/>
+			</input>
+			<output>
+				<soapbind:body use="literal"/>
+			</output>
+			<fault name="internalServiceFault">
+				<soapbind:fault name="internalServiceFault"
+						use="literal"/>
+			</fault>
+			<fault name="incorrectRequestFault">
+				<soapbind:fault name="incorrectRequestFault"
+						use="literal"/>
+			</fault>
+			<fault name="entityNotFoundFault">
+				<soapbind:fault name="entityNotFoundFault"
+						use="literal"/>
+			</fault>
+		</operation>
+		<operation name="GetUnitByUuid">
+			<soapbind:operation style="document"
+					soapAction="GetUnitByUuid"/>
+			<input>
+				<soapbind:body use="literal"/>
+			</input>
+			<output>
+				<soapbind:body use="literal"/>
+			</output>
+			<fault name="internalServiceFault">
+				<soapbind:fault name="internalServiceFault"
+						use="literal"/>
+			</fault>
+			<fault name="incorrectRequestFault">
+				<soapbind:fault name="incorrectRequestFault"
+						use="literal"/>
+			</fault>
+			<fault name="entityNotFoundFault">
+				<soapbind:fault name="entityNotFoundFault"
+						use="literal"/>
+			</fault>
+		</operation>
+		<operation name="GetUnitList">
+			<soapbind:operation style="document"
+					soapAction="GetUnitList"/>
+			<input>
+				<soapbind:body use="literal"/>
+			</input>
+			<output>
+				<soapbind:body use="literal"/>
+			</output>
+			<fault name="internalServiceFault">
+				<soapbind:fault name="internalServiceFault"
+						use="literal"/>
+			</fault>
+			<fault name="incorrectRequestFault">
+				<soapbind:fault name="incorrectRequestFault"
+						use="literal"/>
+			</fault>
+			<fault name="offsetOutOfRangeFault">
+				<soapbind:fault name="offsetOutOfRangeFault"
+						use="literal"/>
+			</fault>
+		</operation>
+		<operation name="GetUnitChangesList">
+			<soapbind:operation style="document"
+					soapAction="GetUnitChangesList"/>
+			<input>
+				<soapbind:body use="literal"/>
+			</input>
+			<output>
+				<soapbind:body use="literal"/>
+			</output>
+			<fault name="internalServiceFault">
+				<soapbind:fault name="internalServiceFault"
+						use="literal"/>
+			</fault>
+			<fault name="incorrectRequestFault">
+				<soapbind:fault name="incorrectRequestFault"
+						use="literal"/>
+			</fault>
+			<fault name="offsetOutOfRangeFault">
+				<soapbind:fault name="offsetOutOfRangeFault"
+						use="literal"/>
+			</fault>
+		</operation>
+		<operation name="GetDiseaseByGuid">
+			<soapbind:operation style="document"
+					soapAction="GetDiseaseByGuid"/>
+			<input>
+				<soapbind:body use="literal"/>
+			</input>
+			<output>
+				<soapbind:body use="literal"/>
+			</output>
+			<fault name="internalServiceFault">
+				<soapbind:fault name="internalServiceFault"
+						use="literal"/>
+			</fault>
+			<fault name="incorrectRequestFault">
+				<soapbind:fault name="incorrectRequestFault"
+						use="literal"/>
+			</fault>
+			<fault name="entityNotFoundFault">
+				<soapbind:fault name="entityNotFoundFault"
+						use="literal"/>
+			</fault>
+		</operation>
+		<operation name="GetDiseaseByUuid">
+			<soapbind:operation style="document"
+					soapAction="GetDiseaseByUuid"/>
+			<input>
+				<soapbind:body use="literal"/>
+			</input>
+			<output>
+				<soapbind:body use="literal"/>
+			</output>
+			<fault name="internalServiceFault">
+				<soapbind:fault name="internalServiceFault"
+						use="literal"/>
+			</fault>
+			<fault name="incorrectRequestFault">
+				<soapbind:fault name="incorrectRequestFault"
+						use="literal"/>
+			</fault>
+			<fault name="entityNotFoundFault">
+				<soapbind:fault name="entityNotFoundFault"
+						use="literal"/>
+			</fault>
+		</operation>
+		<operation name="GetDiseaseList">
+			<soapbind:operation style="document"
+					soapAction="GetDiseaseList"/>
+			<input>
+				<soapbind:body use="literal"/>
+			</input>
+			<output>
+				<soapbind:body use="literal"/>
+			</output>
+			<fault name="internalServiceFault">
+				<soapbind:fault name="internalServiceFault"
+						use="literal"/>
+			</fault>
+			<fault name="incorrectRequestFault">
+				<soapbind:fault name="incorrectRequestFault"
+						use="literal"/>
+			</fault>
+			<fault name="offsetOutOfRangeFault">
+				<soapbind:fault name="offsetOutOfRangeFault"
+						use="literal"/>
+			</fault>
+		</operation>
+		<operation name="GetDiseaseChangesList">
+			<soapbind:operation style="document"
+					soapAction="GetDiseaseChangesList"/>
+			<input>
+				<soapbind:body use="literal"/>
+			</input>
+			<output>
+				<soapbind:body use="literal"/>
+			</output>
+			<fault name="internalServiceFault">
+				<soapbind:fault name="internalServiceFault"
+						use="literal"/>
+			</fault>
+			<fault name="incorrectRequestFault">
+				<soapbind:fault name="incorrectRequestFault"
+						use="literal"/>
+			</fault>
+			<fault name="offsetOutOfRangeFault">
+				<soapbind:fault name="offsetOutOfRangeFault"
+						use="literal"/>
+			</fault>
+		</operation>
+		<operation name="GetResearchMethodByGuid">
+			<soapbind:operation style="document"
+					soapAction="GetResearchMethodByGuid"/>
+			<input>
+				<soapbind:body use="literal"/>
+			</input>
+			<output>
+				<soapbind:body use="literal"/>
+			</output>
+			<fault name="internalServiceFault">
+				<soapbind:fault name="internalServiceFault"
+						use="literal"/>
+			</fault>
+			<fault name="incorrectRequestFault">
+				<soapbind:fault name="incorrectRequestFault"
+						use="literal"/>
+			</fault>
+			<fault name="entityNotFoundFault">
+				<soapbind:fault name="entityNotFoundFault"
+						use="literal"/>
+			</fault>
+		</operation>
+		<operation name="GetResearchMethodByUuid">
+			<soapbind:operation style="document"
+					soapAction="GetResearchMethodByUuid"/>
+			<input>
+				<soapbind:body use="literal"/>
+			</input>
+			<output>
+				<soapbind:body use="literal"/>
+			</output>
+			<fault name="internalServiceFault">
+				<soapbind:fault name="internalServiceFault"
+						use="literal"/>
+			</fault>
+			<fault name="incorrectRequestFault">
+				<soapbind:fault name="incorrectRequestFault"
+						use="literal"/>
+			</fault>
+			<fault name="entityNotFoundFault">
+				<soapbind:fault name="entityNotFoundFault"
+						use="literal"/>
+			</fault>
+		</operation>
+		<operation name="GetResearchMethodList">
+			<soapbind:operation style="document"
+					soapAction="GetResearchMethodList"/>
+			<input>
+				<soapbind:body use="literal"/>
+			</input>
+			<output>
+				<soapbind:body use="literal"/>
+			</output>
+			<fault name="internalServiceFault">
+				<soapbind:fault name="internalServiceFault"
+						use="literal"/>
+			</fault>
+			<fault name="incorrectRequestFault">
+				<soapbind:fault name="incorrectRequestFault"
+						use="literal"/>
+			</fault>
+			<fault name="offsetOutOfRangeFault">
+				<soapbind:fault name="offsetOutOfRangeFault"
+						use="literal"/>
+			</fault>
+		</operation>
+		<operation name="GetResearchMethodChangesList">
+			<soapbind:operation style="document"
+					soapAction="GetResearchMethodChangesList"/>
+			<input>
+				<soapbind:body use="literal"/>
+			</input>
+			<output>
+				<soapbind:body use="literal"/>
+			</output>
+			<fault name="internalServiceFault">
+				<soapbind:fault name="internalServiceFault"
+						use="literal"/>
+			</fault>
+			<fault name="incorrectRequestFault">
+				<soapbind:fault name="incorrectRequestFault"
+						use="literal"/>
+			</fault>
+			<fault name="offsetOutOfRangeFault">
+				<soapbind:fault name="offsetOutOfRangeFault"
+						use="literal"/>
+			</fault>
+		</operation>
+	</binding>
+	<service name="DictionaryServiceBindingQSService">
+		<port name="DictionaryServiceBindingQSPort"
+				binding="tns:DictionaryServiceBinding">
+			<soapbind:address location="https://api.vetrf.ru/platform/services/2.1/DictionaryService"/>
+		</port>
+	</service>
+</definitions>

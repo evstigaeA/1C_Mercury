@@ -1,0 +1,109 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<PredefinedData xmlns="http://v8.1c.ru/8.3/xcf/predef" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="CatalogPredefinedItems" version="2.5">
+	<Item id="a9fdec9d-7eb8-40dc-b2e4-0997b48f0ae7">
+		<Name>СправочникПользователиСистемыМеркурий</Name>
+		<Code/>
+		<Description>Контактная информация справочника "Пользователи системы меркурий"</Description>
+		<IsFolder>true</IsFolder>
+		<ChildItems>
+			<Item id="c780fc64-779e-4eb5-8193-9100cafd3aad">
+				<Name>РабочийEmailПользователяСистемыМеркурий</Name>
+				<Code/>
+				<Description>Рабочая электронная почта</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="6c0e73c9-079a-489a-9d72-b3224a9e1283">
+				<Name>РабочийТелефонПользователяСистемыМеркурий</Name>
+				<Code/>
+				<Description>Рабочий телефон пользователя</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="ff48b80f-2f6d-482e-a02c-d53dcfa7fa06">
+				<Name>ТелефонПользователяСистемыМеркурий</Name>
+				<Code/>
+				<Description>Телефон пользователя</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="7173b8a6-26a0-46db-9bd6-1a686c5eaba3">
+				<Name>EmailПользователяСистемыМеркурий</Name>
+				<Code/>
+				<Description>Электронная почта</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+		</ChildItems>
+	</Item>
+	<Item id="8cbaa30d-faab-45ad-880e-84f8b421f448">
+		<Name>СправочникПользователи</Name>
+		<Code/>
+		<Description>Контактная информация справочника "Пользователи"</Description>
+		<IsFolder>true</IsFolder>
+		<ChildItems>
+			<Item id="35dccbf2-dcce-4160-91a0-9697dd21aa79">
+				<Name>ТелефонПользователя</Name>
+				<Code/>
+				<Description>Телефон</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="b930f2d1-4c2b-4f78-a697-4b87e83c8dd0">
+				<Name>EmailПользователя</Name>
+				<Code/>
+				<Description>Электронная почта</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+		</ChildItems>
+	</Item>
+	<Item id="f6880133-65d0-43ae-b763-7aff3cd965c1">
+		<Name>СправочникПредприятия</Name>
+		<Code/>
+		<Description>Контактная информация справочника "Предприятия"</Description>
+		<IsFolder>true</IsFolder>
+		<ChildItems>
+			<Item id="288987bd-416e-42ae-92c8-7ce8b56eb506">
+				<Name>АдресПредприятия</Name>
+				<Code/>
+				<Description>Адрес предприятия</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="1b4c7784-461a-4d44-9bb2-b24598fdb6e0">
+				<Name>ТелефонПредприятия</Name>
+				<Code/>
+				<Description>Телефон</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="69e152ce-83a1-41d7-9e0b-5f2f656e5cbd">
+				<Name>EmailПредприятия</Name>
+				<Code/>
+				<Description>Электронная почта</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+		</ChildItems>
+	</Item>
+	<Item id="5bdd5322-f9f2-41e9-b052-d0813f3c565c">
+		<Name>СправочникПунктыПерегрузки</Name>
+		<Code/>
+		<Description>Контактная информация справочника "Пункты перегрузки"</Description>
+		<IsFolder>true</IsFolder>
+		<ChildItems>
+			<Item id="15c1fbd6-45a7-44ac-8a5f-0d7d85995dc8">
+				<Name>АдресПунктаПерегрузки</Name>
+				<Code/>
+				<Description>Адрес пункта перегрузки</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+		</ChildItems>
+	</Item>
+	<Item id="8d0d52c7-3bf3-42f8-87c9-d1430f9505d8">
+		<Name>СправочникКонтрагенты</Name>
+		<Code/>
+		<Description>Контактная информация справочника "Хозяйствующие субъекты"</Description>
+		<IsFolder>true</IsFolder>
+		<ChildItems>
+			<Item id="46f3af20-44eb-4d6b-b340-68e977dbfe44">
+				<Name>ЮрАдресКонтрагента</Name>
+				<Code/>
+				<Description>Юридический адрес</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+		</ChildItems>
+	</Item>
+</PredefinedData>

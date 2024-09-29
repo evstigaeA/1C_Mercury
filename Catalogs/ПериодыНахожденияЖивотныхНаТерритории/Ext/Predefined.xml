@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<PredefinedData xmlns="http://v8.1c.ru/8.3/xcf/predef" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="CatalogPredefinedItems" version="2.5">
+	<Item id="4288a004-427f-405d-b576-e18afda42f93">
+		<Name>НаходилисьНаТерриторииТСНеМенее6Месяцев</Name>
+		<Code>NOT_LESS_SIX_MONTHS</Code>
+		<Description>Животные находились на территории ТС не менее 6 месяцев</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="18b02415-c94a-4c78-b847-9b87f2b84eaf">
+		<Name>НаходилисьНаТерриторииТССРождения</Name>
+		<Code>FROM_BIRTH</Code>
+		<Description>Животные находились на территории ТС с рождения</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="454add0a-a85c-498c-9de3-ca1e10cff6e3">
+		<Name>НаходилисьНаТерриторииТСУказаннойКоличествоМесяцев</Name>
+		<Code>IN_MONTHS</Code>
+		<Description>Животные находились на территории ТС указанное кол-во месяцев</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="1b8893bc-9c45-4494-90bc-375198d6e139">
+		<Name>НеНаходилисьНаТерриторииТС</Name>
+		<Code>ZERO</Code>
+		<Description>Животные не находились на территории ТС</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+</PredefinedData>

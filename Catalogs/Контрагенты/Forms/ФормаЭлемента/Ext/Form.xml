@@ -1,0 +1,903 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.5">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<CommandSet>
+		<ExcludedCommand>Copy</ExcludedCommand>
+		<ExcludedCommand>Delete</ExcludedCommand>
+		<ExcludedCommand>SetDeletionMark</ExcludedCommand>
+	</CommandSet>
+	<UseForFoldersAndItems>Items</UseForFoldersAndItems>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="AfterWriteAtServer">ПослеЗаписиНаСервере</Event>
+		<Event name="NotificationProcessing">ОбработкаОповещения</Event>
+		<Event name="OnReadAtServer">ПриЧтенииНаСервере</Event>
+		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+		<Event name="BeforeWriteAtServer">ПередЗаписьюНаСервере</Event>
+		<Event name="FillCheckProcessingAtServer">ОбработкаПроверкиЗаполненияНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<Pages name="СтраницыФормы" id="73">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Страницы формы</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Страницы формы</v8:content>
+				</v8:item>
+			</ToolTip>
+			<ExtendedTooltip name="СтраницыФормыРасширеннаяПодсказка" id="74"/>
+			<ChildItems>
+				<Page name="СтраницаОсновное" id="75">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Основное</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Страница основное</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="СтраницаОсновноеРасширеннаяПодсказка" id="76"/>
+					<ChildItems>
+						<UsualGroup name="ГруппаКод" id="41">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа код</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа код</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Horizontal</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ThroughAlign>Use</ThroughAlign>
+							<ExtendedTooltip name="ГруппаКодРасширеннаяПодсказка" id="42"/>
+							<ChildItems>
+								<InputField name="Код" id="1">
+									<DataPath>Объект.Code</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="КодКонтекстноеМеню" id="2"/>
+									<ExtendedTooltip name="КодРасширеннаяПодсказка" id="3"/>
+								</InputField>
+								<InputField name="GUID_Меркурий" id="7">
+									<DataPath>Объект.GUID_Меркурий</DataPath>
+									<ReadOnly>true</ReadOnly>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="GUID_МеркурийКонтекстноеМеню" id="8"/>
+									<ExtendedTooltip name="GUID_МеркурийРасширеннаяПодсказка" id="9"/>
+								</InputField>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ГруппаТипОсновное" id="89">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа тип основное</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа тип основное</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Horizontal</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаТипОсновноеРасширеннаяПодсказка" id="90"/>
+							<ChildItems>
+								<InputField name="ТипПредприятия" id="28">
+									<DataPath>Объект.ТипПредприятия</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<HorizontalStretch>true</HorizontalStretch>
+									<CreateButton>false</CreateButton>
+									<QuickChoice>true</QuickChoice>
+									<AutoMarkIncomplete>true</AutoMarkIncomplete>
+									<ContextMenu name="ТипПредприятияКонтекстноеМеню" id="29"/>
+									<ExtendedTooltip name="ТипПредприятияРасширеннаяПодсказка" id="30"/>
+									<Events>
+										<Event name="OnChange">ТипПредприятияПриИзменении</Event>
+									</Events>
+								</InputField>
+								<CheckBoxField name="НеИспользуется" id="68">
+									<DataPath>Объект.НеИспользуется</DataPath>
+									<ReadOnly>true</ReadOnly>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="НеИспользуетсяКонтекстноеМеню" id="69"/>
+									<ExtendedTooltip name="НеИспользуетсяРасширеннаяПодсказка" id="70"/>
+								</CheckBoxField>
+								<CheckBoxField name="Основной" id="53">
+									<DataPath>Объект.Основной</DataPath>
+									<ReadOnly>true</ReadOnly>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="ОсновнойКонтекстноеМеню" id="54"/>
+									<ExtendedTooltip name="ОсновнойРасширеннаяПодсказка" id="55"/>
+								</CheckBoxField>
+								<CheckBoxField name="ХСДанон" id="142">
+									<DataPath>Объект.ХСДанон</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>ХС Данон</v8:content>
+										</v8:item>
+									</Title>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="ХСДанонКонтекстноеМеню" id="143"/>
+									<ExtendedTooltip name="ХСДанонРасширеннаяПодсказка" id="144"/>
+								</CheckBoxField>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ГруппаАвтогашение" id="148">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа автогашение</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа автогашение</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Horizontal</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаАвтогашениеРасширеннаяПодсказка" id="149"/>
+							<ChildItems>
+								<InputField name="СтранаРегистрации" id="110">
+									<DataPath>Объект.СтранаРегистрации</DataPath>
+									<DropListButton>false</DropListButton>
+									<ChoiceButton>true</ChoiceButton>
+									<ChoiceButtonRepresentation>ShowInInputField</ChoiceButtonRepresentation>
+									<CreateButton>false</CreateButton>
+									<ChoiceParameters>
+										<app:item name="Отбор.НеИспользуется">
+											<app:value xsi:type="FormChoiceListDesTimeValue">
+												<Presentation/>
+												<Value xsi:type="xs:boolean">false</Value>
+											</app:value>
+										</app:item>
+									</ChoiceParameters>
+									<ChoiceHistoryOnInput>DontUse</ChoiceHistoryOnInput>
+									<ContextMenu name="СтранаРегистрацииКонтекстноеМеню" id="111"/>
+									<ExtendedTooltip name="СтранаРегистрацииРасширеннаяПодсказка" id="112"/>
+									<Events>
+										<Event name="OnChange">СтранаРегистрацииПриИзменении</Event>
+									</Events>
+								</InputField>
+								<CheckBoxField name="Автогашение" id="145">
+									<DataPath>1/0:0be5a62b-4f07-4dae-8332-07b1902e7551</DataPath>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="АвтогашениеКонтекстноеМеню" id="146"/>
+									<ExtendedTooltip name="АвтогашениеРасширеннаяПодсказка" id="147"/>
+								</CheckBoxField>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="РеквизитыЮридическогоЛица" id="46">
+							<EnableContentChange>true</EnableContentChange>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Реквизиты юридического лица</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Реквизиты юридического лица</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Vertical</Group>
+							<Representation>None</Representation>
+							<United>false</United>
+							<ShowTitle>false</ShowTitle>
+							<ThroughAlign>Use</ThroughAlign>
+							<ExtendedTooltip name="РеквизитыЮридическогоЛицаРасширеннаяПодсказка" id="47"/>
+							<ChildItems>
+								<UsualGroup name="ГруппаИННКППОГРН" id="85">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа ИННКППОГРН</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа ИННКППОГРН</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Group>Horizontal</Group>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ГруппаИННКППОГРНРасширеннаяПодсказка" id="86"/>
+									<ChildItems>
+										<UsualGroup name="ГруппаИНН" id="96">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Группа ИНН</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Группа ИНН</v8:content>
+												</v8:item>
+											</ToolTip>
+											<Group>Horizontal</Group>
+											<Representation>None</Representation>
+											<ShowTitle>false</ShowTitle>
+											<ExtendedTooltip name="ГруппаИННРасширеннаяПодсказка" id="97"/>
+											<ChildItems>
+												<InputField name="ЮридическоеЛицоИНН" id="48">
+													<DataPath>Объект.ИНН</DataPath>
+													<Width>24</Width>
+													<AutoMarkIncomplete>true</AutoMarkIncomplete>
+													<InputHint>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Введите ИНН 10 цифр</v8:content>
+														</v8:item>
+													</InputHint>
+													<ContextMenu name="ЮридическоеЛицоИННКонтекстноеМеню" id="49"/>
+													<ExtendedTooltip name="ЮридическоеЛицоИННРасширеннаяПодсказка" id="50"/>
+													<Events>
+														<Event name="OnChange">ИННПриИзменении</Event>
+														<Event name="EditTextChange">ЮридическоеЛицоИННИзменениеТекстаРедактирования</Event>
+													</Events>
+												</InputField>
+												<Button name="ЗаполнитьПоИНН" id="98">
+													<Type>UsualButton</Type>
+													<Representation>Picture</Representation>
+													<OnlyInAllActions>false</OnlyInAllActions>
+													<CommandName>Form.Command.ЗаполнитьРеквизитыПоИНН</CommandName>
+													<Picture>
+														<xr:Ref>CommonPicture.ЗаполнитьФорму</xr:Ref>
+														<xr:LoadTransparent>true</xr:LoadTransparent>
+													</Picture>
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Заполнить реквизиты контрагента по ИНН</v8:content>
+														</v8:item>
+													</Title>
+													<ExtendedTooltip name="ЗаполнитьПоИННРасширеннаяПодсказка" id="99"/>
+												</Button>
+											</ChildItems>
+										</UsualGroup>
+										<UsualGroup name="ГруппаКППОГРН" id="113">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Группа КППОГРН</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Группа КППОГРН</v8:content>
+												</v8:item>
+											</ToolTip>
+											<Group>Horizontal</Group>
+											<Representation>None</Representation>
+											<ShowTitle>false</ShowTitle>
+											<ExtendedTooltip name="ГруппаКППОГРНРасширеннаяПодсказка" id="114"/>
+											<ChildItems>
+												<InputField name="ЮридическоеЛицоКПП" id="13">
+													<DataPath>Объект.КПП</DataPath>
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>КПП</v8:content>
+														</v8:item>
+													</Title>
+													<EditMode>EnterOnInput</EditMode>
+													<InputHint>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Введите КПП 9 цифр</v8:content>
+														</v8:item>
+													</InputHint>
+													<ContextMenu name="ЮридическоеЛицоКППКонтекстноеМеню" id="14"/>
+													<ExtendedTooltip name="ЮридическоеЛицоКППРасширеннаяПодсказка" id="15"/>
+													<Events>
+														<Event name="TextEditEnd">ЮридическоеЛицоКППОкончаниеВводаТекста</Event>
+													</Events>
+												</InputField>
+												<InputField name="ОГРН" id="19">
+													<DataPath>Объект.ОГРН</DataPath>
+													<EditMode>EnterOnInput</EditMode>
+													<AutoMarkIncomplete>true</AutoMarkIncomplete>
+													<InputHint>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Введите ОГРН</v8:content>
+														</v8:item>
+													</InputHint>
+													<ContextMenu name="ОГРНКонтекстноеМеню" id="20"/>
+													<ExtendedTooltip name="ОГРНРасширеннаяПодсказка" id="21"/>
+													<Events>
+														<Event name="TextEditEnd">ОГРНОкончаниеВводаТекста</Event>
+													</Events>
+												</InputField>
+											</ChildItems>
+										</UsualGroup>
+									</ChildItems>
+								</UsualGroup>
+								<UsualGroup name="ГруппаНаименование" id="108">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа наименование</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа наименование</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Group>Vertical</Group>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ГруппаНаименованиеРасширеннаяПодсказка" id="109"/>
+									<ChildItems>
+										<InputField name="Наименование" id="4">
+											<DataPath>Объект.Description</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<Width>67</Width>
+											<ContextMenu name="НаименованиеКонтекстноеМеню" id="5"/>
+											<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="6"/>
+											<Events>
+												<Event name="OnChange">НаименованиеПриИзменении</Event>
+											</Events>
+										</InputField>
+										<InputField name="ПолноеНаименование" id="25">
+											<DataPath>Объект.ПолноеНаименование</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<Width>67</Width>
+											<AutoMarkIncomplete>true</AutoMarkIncomplete>
+											<ContextMenu name="ПолноеНаименованиеКонтекстноеМеню" id="26"/>
+											<ExtendedTooltip name="ПолноеНаименованиеРасширеннаяПодсказка" id="27"/>
+										</InputField>
+										<InputField name="КодОКОПФ" id="79">
+											<DataPath>Объект.КодОКОПФ</DataPath>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Форма собственности</v8:content>
+												</v8:item>
+											</Title>
+											<Width>67</Width>
+											<DropListButton>false</DropListButton>
+											<ChoiceButton>true</ChoiceButton>
+											<ChoiceButtonRepresentation>ShowInInputField</ChoiceButtonRepresentation>
+											<AutoMarkIncomplete>true</AutoMarkIncomplete>
+											<ContextMenu name="КодОКОПФКонтекстноеМеню" id="80"/>
+											<ExtendedTooltip name="КодОКОПФРасширеннаяПодсказка" id="81"/>
+										</InputField>
+									</ChildItems>
+								</UsualGroup>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="РеквизитыФизическогоЛица" id="39">
+							<EnableContentChange>true</EnableContentChange>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Реквизиты физического лица</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Реквизиты физического лица</v8:content>
+								</v8:item>
+							</ToolTip>
+							<ShowTitle>false</ShowTitle>
+							<ThroughAlign>Use</ThroughAlign>
+							<ExtendedTooltip name="РеквизитыФизическогоЛицаРасширеннаяПодсказка" id="40"/>
+							<ChildItems>
+								<UsualGroup name="ГруппаКодыИННОГРН" id="94">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа коды ИННОГРН</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа коды ИННОГРН</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ГруппаКодыИННОГРНРасширеннаяПодсказка" id="95"/>
+									<ChildItems>
+										<InputField name="ФизическоеЛицоИНН" id="10">
+											<DataPath>Объект.ИНН</DataPath>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>ИНН</v8:content>
+												</v8:item>
+											</Title>
+											<EditMode>EnterOnInput</EditMode>
+											<Width>18</Width>
+											<InputHint>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Введите ИНН 12 цифр</v8:content>
+												</v8:item>
+											</InputHint>
+											<ContextMenu name="ФизическоеЛицоИННКонтекстноеМеню" id="11"/>
+											<ExtendedTooltip name="ФизическоеЛицоИННРасширеннаяПодсказка" id="12"/>
+											<Events>
+												<Event name="OnChange">ИННПриИзменении</Event>
+												<Event name="EditTextChange">ФизическоеЛицоИННИзменениеТекстаРедактирования</Event>
+											</Events>
+										</InputField>
+										<Button name="ЗаполнитьПоИННФизЛицо" id="100">
+											<Type>UsualButton</Type>
+											<Representation>Picture</Representation>
+											<OnlyInAllActions>false</OnlyInAllActions>
+											<CommandName>Form.Command.ЗаполнитьРеквизитыПоИНН</CommandName>
+											<Picture>
+												<xr:Ref>CommonPicture.ЗаполнитьФорму</xr:Ref>
+												<xr:LoadTransparent>true</xr:LoadTransparent>
+											</Picture>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Заполнить реквизиты контрагента по ИНН</v8:content>
+												</v8:item>
+											</Title>
+											<ExtendedTooltip name="ЗаполнитьПоИННФизЛицоРасширеннаяПодсказка" id="101"/>
+										</Button>
+										<InputField name="ИндивидуальныйПредпринимательОГРН" id="91">
+											<DataPath>Объект.ОГРН</DataPath>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>ОГРНИП</v8:content>
+												</v8:item>
+											</Title>
+											<EditMode>EnterOnInput</EditMode>
+											<Width>18</Width>
+											<InputHint>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Введите ОГРНИП</v8:content>
+												</v8:item>
+											</InputHint>
+											<ContextMenu name="ИндивидуальныйПредпринимательОГРНКонтекстноеМеню" id="92"/>
+											<ExtendedTooltip name="ИндивидуальныйПредпринимательОГРНРасширеннаяПодсказка" id="93"/>
+											<Events>
+												<Event name="TextEditEnd">ОГРНОкончаниеВводаТекста</Event>
+											</Events>
+										</InputField>
+									</ChildItems>
+								</UsualGroup>
+								<UsualGroup name="ГруппаФИО" id="102">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа ФИО</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа ФИО</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Group>Horizontal</Group>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ГруппаФИОРасширеннаяПодсказка" id="103"/>
+									<ChildItems>
+										<InputField name="ФИО" id="31">
+											<DataPath>Объект.Description</DataPath>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>ФИО</v8:content>
+												</v8:item>
+											</Title>
+											<EditMode>EnterOnInput</EditMode>
+											<Width>67</Width>
+											<AutoMarkIncomplete>true</AutoMarkIncomplete>
+											<ContextMenu name="ФИОКонтекстноеМеню" id="32"/>
+											<ExtendedTooltip name="ФИОРасширеннаяПодсказка" id="33"/>
+										</InputField>
+									</ChildItems>
+								</UsualGroup>
+								<InputField name="НомерПаспорта" id="16">
+									<DataPath>Объект.НомерПаспорта</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<Width>67</Width>
+									<ContextMenu name="НомерПаспортаКонтекстноеМеню" id="17"/>
+									<ExtendedTooltip name="НомерПаспортаРасширеннаяПодсказка" id="18"/>
+								</InputField>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="РеквизитыИнностранногоКонтрагента" id="121">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Реквизиты инностранного контрагента</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Реквизиты инностранного контрагента</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Vertical</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="РеквизитыИнностранногоКонтрагентаРасширеннаяПодсказка" id="122"/>
+							<ChildItems>
+								<UsualGroup name="ГруппаИННИнностранногоКонтрагента" id="123">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа ИНН</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа ИНН</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Group>Horizontal</Group>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ГруппаИННИнностранногоКонтрагентаРасширеннаяПодсказка" id="124"/>
+									<ChildItems>
+										<InputField name="ИнностранныйКонтрагентИНН" id="125">
+											<DataPath>Объект.ИНН</DataPath>
+											<ContextMenu name="ИнностранныйКонтрагентИННКонтекстноеМеню" id="126"/>
+											<ExtendedTooltip name="ИнностранныйКонтрагентИННРасширеннаяПодсказка" id="127"/>
+											<Events>
+												<Event name="OnChange">ИННПриИзменении</Event>
+												<Event name="EditTextChange">ЮридическоеЛицоИННИзменениеТекстаРедактирования</Event>
+											</Events>
+										</InputField>
+										<Button name="ЗаполнитьПоИННИнностранногоКонтрагента" id="128">
+											<Type>UsualButton</Type>
+											<Representation>Picture</Representation>
+											<OnlyInAllActions>false</OnlyInAllActions>
+											<CommandName>Form.Command.ЗаполнитьРеквизитыПоИНН</CommandName>
+											<Picture>
+												<xr:Ref>CommonPicture.ЗаполнитьФорму</xr:Ref>
+												<xr:LoadTransparent>true</xr:LoadTransparent>
+											</Picture>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Заполнить реквизиты контрагента по ИНН</v8:content>
+												</v8:item>
+											</Title>
+											<ExtendedTooltip name="ЗаполнитьПоИННИнностранногоКонтрагентаРасширеннаяПодсказка" id="129"/>
+										</Button>
+									</ChildItems>
+								</UsualGroup>
+								<InputField name="НаименованиеИнностранногоКонтрагента" id="139">
+									<DataPath>Объект.Description</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<Width>67</Width>
+									<ContextMenu name="НаименованиеИнностранногоКонтрагентаКонтекстноеМеню" id="140"/>
+									<ExtendedTooltip name="НаименованиеИнностранногоКонтрагентаРасширеннаяПодсказка" id="141"/>
+									<Events>
+										<Event name="OnChange">НаименованиеИнностранногоКонтрагентаПриИзменении</Event>
+									</Events>
+								</InputField>
+								<InputField name="ПолноеНаименованиеИнностранногоКонтрагента" id="134">
+									<DataPath>Объект.ПолноеНаименование</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<Width>67</Width>
+									<AutoMarkIncomplete>true</AutoMarkIncomplete>
+									<ContextMenu name="ПолноеНаименованиеИнностранногоКонтрагентаКонтекстноеМеню" id="135"/>
+									<ExtendedTooltip name="ПолноеНаименованиеИнностранногоКонтрагентаРасширеннаяПодсказка" id="136"/>
+								</InputField>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</Page>
+				<Page name="ГруппаКонтактнаяИнформация" id="71">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Адреса, телефоны</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа контактная информация</v8:content>
+						</v8:item>
+					</ToolTip>
+					<HorizontalStretch>true</HorizontalStretch>
+					<ExtendedTooltip name="ГруппаКонтактнаяИнформацияExtendedTooltip" id="72"/>
+				</Page>
+			</ChildItems>
+		</Pages>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:CatalogObject.Контрагенты</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+		<Attribute name="Организация" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Организация</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.Организации</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ОснованиеДобавленияИзменения" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Основание добавления изменения</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>255</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="КонтрагентУчетнойСистемы" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Контрагент учетной системы</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.КонтрагентыУчетнойСистемы</v8:Type>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ЗаполнитьРеквизитыПоИНН" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заполнить реквизиты по ИНН</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заполнить реквизиты по ИНН</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ЗаполнитьРеквизитыПоИНН</Action>
+			<ModifiesSavedData>true</ModifiesSavedData>
+		</Command>
+		<Command name="СписокПредприятийХозяйствующегоСубъекта" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Список привязанных предприятий хозяйствующего субъекта</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Список предприятий хозяйствующего субъекта</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Use>
+				<xr:Common>false</xr:Common>
+				<xr:Value name="Role.АдминистраторСистемы">true</xr:Value>
+				<xr:Value name="Role.Администрирование">true</xr:Value>
+				<xr:Value name="Role.БазовыеПрава">false</xr:Value>
+				<xr:Value name="Role.БазовыеПраваВнешнегоПользователя">false</xr:Value>
+				<xr:Value name="Role.БазовыеПраваУВС">false</xr:Value>
+				<xr:Value name="Role.ВыводНаПринтерФайлБуферОбмена">false</xr:Value>
+				<xr:Value name="Role.ВызовОнлайнПоддержки">false</xr:Value>
+				<xr:Value name="Role.ВыполнениеСинхронизацииДанных">false</xr:Value>
+				<xr:Value name="Role.ВыполнениеСинхронизацииСУчетнойСистемой">false</xr:Value>
+				<xr:Value name="Role.ДобавлениеИзменениеАдресныхСведений">false</xr:Value>
+				<xr:Value name="Role.ДобавлениеИзменениеАннулированийВСД">false</xr:Value>
+				<xr:Value name="Role.ДобавлениеИзменениеАннулированийВСДГрупповое">false</xr:Value>
+				<xr:Value name="Role.ДобавлениеИзменениеБанков">false</xr:Value>
+				<xr:Value name="Role.ДобавлениеИзменениеБлагополучияМестности">false</xr:Value>
+				<xr:Value name="Role.ДобавлениеИзменениеВариантовОтчетов">false</xr:Value>
+				<xr:Value name="Role.ДобавлениеИзменениеВзаимодействий">false</xr:Value>
+				<xr:Value name="Role.ДобавлениеИзменениеВидовКонтактнойИнформации">false</xr:Value>
+				<xr:Value name="Role.ДобавлениеИзменениеВнесенийНомеровТранспортныхСредств">false</xr:Value>
+				<xr:Value name="Role.ДобавлениеИзменениеВнесенийНомеровТранспортныхСредствГрупповое">false</xr:Value>
+				<xr:Value name="Role.ДобавлениеИзменениеВнешнихПользователей">false</xr:Value>
+				<xr:Value name="Role.ДобавлениеИзменениеВСД">false</xr:Value>
+				<xr:Value name="Role.ДобавлениеИзменениеГрафиковРаботы">false</xr:Value>
+				<xr:Value name="Role.ДобавлениеИзменениеДатЗапретаИзменения">false</xr:Value>
+				<xr:Value name="Role.ДобавлениеИзменениеДополнительныхОтчетовИОбработок">false</xr:Value>
+				<xr:Value name="Role.ДобавлениеИзменениеДополнительныхРеквизитовИСведений">false</xr:Value>
+				<xr:Value name="Role.ДобавлениеИзменениеЖурналаВыполненияРегламентныхЗаданий">false</xr:Value>
+				<xr:Value name="Role.ДобавлениеИзменениеЖурналаЗагрузкиДанныхПоВСД">false</xr:Value>
+				<xr:Value name="Role.ДобавлениеИзменениеЗаданий">false</xr:Value>
+				<xr:Value name="Role.ДобавлениеИзменениеЗаметок">false</xr:Value>
+				<xr:Value name="Role.ДобавлениеИзменениеИдентификаторовВерсийОбъектов">false</xr:Value>
+				<xr:Value name="Role.ДобавлениеИзменениеИнвентаризаций">false</xr:Value>
+				<xr:Value name="Role.ДобавлениеИзменениеКалендарныхГрафиков">false</xr:Value>
+				<xr:Value name="Role.ДобавлениеИзменениеКонтрагентов">true</xr:Value>
+				<xr:Value name="Role.ДобавлениеИзменениеКорректировокОстатковЗаписейСкладскогоЖурнала">false</xr:Value>
+				<xr:Value name="Role.ДобавлениеИзменениеКурсовВалют">false</xr:Value>
+				<xr:Value name="Role.ДобавлениеИзменениеЛичныхВариантовОтчетов">false</xr:Value>
+				<xr:Value name="Role.ДобавлениеИзменениеМестПроведенияМероприятий">false</xr:Value>
+				<xr:Value name="Role.ДобавлениеИзменениеНапоминаний">false</xr:Value>
+				<xr:Value name="Role.ДобавлениеИзменениеОбъединенийЗаписейСкладскогоЖурнала">false</xr:Value>
+				<xr:Value name="Role.ДобавлениеИзменениеОпросов">false</xr:Value>
+				<xr:Value name="Role.ДобавлениеИзменениеОрганизацийОператоров">false</xr:Value>
+				<xr:Value name="Role.ДобавлениеИзменениеОтветовНаВопросыАнкет">false</xr:Value>
+				<xr:Value name="Role.ДобавлениеИзменениеПапокИФайлов">false</xr:Value>
+				<xr:Value name="Role.ДобавлениеИзменениеПользователей">false</xr:Value>
+				<xr:Value name="Role.ДобавлениеИзменениеПользователейСистемыМеркурий">false</xr:Value>
+				<xr:Value name="Role.ДобавлениеИзменениеПредприятий">false</xr:Value>
+				<xr:Value name="Role.ДобавлениеИзменениеПриходныхОпераций">false</xr:Value>
+				<xr:Value name="Role.ДобавлениеИзменениеПриходныхОперацийСводно">false</xr:Value>
+				<xr:Value name="Role.ДобавлениеИзменениеПродукции">false</xr:Value>
+				<xr:Value name="Role.ДобавлениеИзменениеПроизводственныхОпераций">false</xr:Value>
+				<xr:Value name="Role.ДобавлениеИзменениеПунктовПерегрузки">false</xr:Value>
+				<xr:Value name="Role.ДобавлениеИзменениеРассылокОтчетов">false</xr:Value>
+				<xr:Value name="Role.ДобавлениеИзменениеРолейИсполнителей">false</xr:Value>
+				<xr:Value name="Role.ДобавлениеИзменениеСведенийОКарантинировании">false</xr:Value>
+				<xr:Value name="Role.ДобавлениеИзменениеСвойствЗаписейСкладскогоЖурнала">false</xr:Value>
+				<xr:Value name="Role.ДобавлениеИзменениеСвязейМеждуЗаписямиСкладскогоЖурналаИВСД">false</xr:Value>
+				<xr:Value name="Role.ДобавлениеИзменениеТранспорта">false</xr:Value>
+				<xr:Value name="Role.ДобавлениеИзменениеТранспортныхОпераций">false</xr:Value>
+				<xr:Value name="Role.ДобавлениеИзменениеУпаковок">false</xr:Value>
+				<xr:Value name="Role.ДобавлениеИзменениеУчетныхЗаписейЭлектроннойПочты">false</xr:Value>
+				<xr:Value name="Role.ДобавлениеИзменениеШаблоновАнкет">false</xr:Value>
+				<xr:Value name="Role.ДобавлениеИзменениеШаблоновСообщений">false</xr:Value>
+				<xr:Value name="Role.ДобавлениеИзменениеЭлектронныхПодписейИШифрование">false</xr:Value>
+				<xr:Value name="Role.ЗагрузкаАктуальныхОстатков">false</xr:Value>
+				<xr:Value name="Role.ЗапускAutomation">false</xr:Value>
+				<xr:Value name="Role.ЗапускВебКлиента">false</xr:Value>
+				<xr:Value name="Role.ЗапускВнешнегоСоединения">false</xr:Value>
+				<xr:Value name="Role.ЗапускТолстогоКлиента">false</xr:Value>
+				<xr:Value name="Role.ЗапускТонкогоКлиента">false</xr:Value>
+				<xr:Value name="Role.ИзменениеВыполнениеЗадач">false</xr:Value>
+				<xr:Value name="Role.ИзменениеДополнительныхСведений">false</xr:Value>
+				<xr:Value name="Role.ИзменениеМакетовПечатныхФорм">false</xr:Value>
+				<xr:Value name="Role.ИзменениеУчастниковГруппДоступа">false</xr:Value>
+				<xr:Value name="Role.ИнтерактивноеОткрытиеВнешнихОтчетовИОбработок">false</xr:Value>
+				<xr:Value name="Role.ИспользованиеОбработкиТекущиеДела">false</xr:Value>
+				<xr:Value name="Role.ИспользованиеУниверсальногоОтчета">false</xr:Value>
+				<xr:Value name="Role.НастройкаИОценкаПроизводительности">false</xr:Value>
+				<xr:Value name="Role.НастройкаСинхронизацииФайлов">false</xr:Value>
+				<xr:Value name="Role.ОбновлениеКонфигурацииБазыДанных">false</xr:Value>
+				<xr:Value name="Role.ОтправкаSMS">false</xr:Value>
+				<xr:Value name="Role.ПолныеПрава">true</xr:Value>
+				<xr:Value name="Role.ПроверкаВозможностиОсуществленияПеревозки">false</xr:Value>
+				<xr:Value name="Role.ПросмотрЖурналаРегистрации">false</xr:Value>
+				<xr:Value name="Role.ПросмотрОписанияИзмененийПрограммы">false</xr:Value>
+				<xr:Value name="Role.ПросмотрСвязанныеДокументы">false</xr:Value>
+				<xr:Value name="Role.РазделАдминистрирование">false</xr:Value>
+				<xr:Value name="Role.РазделАдминистрированиеНСИИСМеркурий">false</xr:Value>
+				<xr:Value name="Role.РазделОтгрузка">false</xr:Value>
+				<xr:Value name="Role.РазделПоступление">false</xr:Value>
+				<xr:Value name="Role.РазделПроизводство">false</xr:Value>
+				<xr:Value name="Role.РазделСклад">false</xr:Value>
+				<xr:Value name="Role.РедактированиеПечатныхФорм">false</xr:Value>
+				<xr:Value name="Role.РедактированиеРеквизитовОбъектов">false</xr:Value>
+				<xr:Value name="Role.РежимВсеФункции">false</xr:Value>
+				<xr:Value name="Role.слкУправлениеМенеджеромЛицензийСЛК">false</xr:Value>
+				<xr:Value name="Role.СохранениеДанныхПользователя">false</xr:Value>
+				<xr:Value name="Role.УдаленныйДоступБазоваяФункциональность">false</xr:Value>
+				<xr:Value name="Role.УдаленныйДоступОбменСообщениями">false</xr:Value>
+				<xr:Value name="Role.ФормированиеЗаявокНаОформлениеОпераций">false</xr:Value>
+				<xr:Value name="Role.ЧтениеАннулированийВСД">false</xr:Value>
+				<xr:Value name="Role.ЧтениеАннулированийВСДГрупповое">false</xr:Value>
+				<xr:Value name="Role.ЧтениеБлагополучияМестности">false</xr:Value>
+				<xr:Value name="Role.ЧтениеВариантовОтчетов">false</xr:Value>
+				<xr:Value name="Role.ЧтениеВводаНачальныхОстатков">false</xr:Value>
+				<xr:Value name="Role.ЧтениеВерсийОбъектов">false</xr:Value>
+				<xr:Value name="Role.ЧтениеВнесенийНомеровТранспортныхСредств">false</xr:Value>
+				<xr:Value name="Role.ЧтениеВнесенийНомеровТранспортныхСредствГрупповое">false</xr:Value>
+				<xr:Value name="Role.ЧтениеВнешнихПользователей">false</xr:Value>
+				<xr:Value name="Role.ЧтениеВСД">false</xr:Value>
+				<xr:Value name="Role.ЧтениеГрафиковРаботы">false</xr:Value>
+				<xr:Value name="Role.ЧтениеДатПоследнихЗагрузокВСД">false</xr:Value>
+				<xr:Value name="Role.ЧтениеДвижениеПродукции">false</xr:Value>
+				<xr:Value name="Role.ЧтениеДополнительныхОтчетовИОбработок">false</xr:Value>
+				<xr:Value name="Role.ЧтениеДополнительныхСведений">false</xr:Value>
+				<xr:Value name="Role.ЧтениеЖурналаВыполненияРегламентныхЗаданий">false</xr:Value>
+				<xr:Value name="Role.ЧтениеЖурналаЗагрузкиДанныхПоВСД">false</xr:Value>
+				<xr:Value name="Role.ЧтениеЖурналаРегистрацииСостоянийЗаявокНаОформлениеОпераций">false</xr:Value>
+				<xr:Value name="Role.ЧтениеЗаданий">false</xr:Value>
+				<xr:Value name="Role.ЧтениеЗадач">false</xr:Value>
+				<xr:Value name="Role.ЧтениеИнвентаризаций">false</xr:Value>
+				<xr:Value name="Role.ЧтениеИнформацииОВерсияхОбъектов">false</xr:Value>
+				<xr:Value name="Role.ЧтениеКонтрагентов">false</xr:Value>
+				<xr:Value name="Role.ЧтениеКорректировокОстатковЗаписейСкладскогоЖурнала">false</xr:Value>
+				<xr:Value name="Role.ЧтениеКурсовВалют">false</xr:Value>
+				<xr:Value name="Role.ЧтениеМестПроведенияМероприятий">false</xr:Value>
+				<xr:Value name="Role.ЧтениеНормативноСправочнойИнформации">false</xr:Value>
+				<xr:Value name="Role.ЧтениеНормативноСправочнойИнформацииУчетнойСистемы">false</xr:Value>
+				<xr:Value name="Role.ЧтениеОбъединенийЗаписейСкладскогоЖурнала">false</xr:Value>
+				<xr:Value name="Role.ЧтениеОрганизаций">false</xr:Value>
+				<xr:Value name="Role.ЧтениеОрганизацийОператоров">false</xr:Value>
+				<xr:Value name="Role.ЧтениеОтветовНаВопросыАнкет">false</xr:Value>
+				<xr:Value name="Role.ЧтениеПользователейСистемыМеркурий">false</xr:Value>
+				<xr:Value name="Role.ЧтениеПредприятий">false</xr:Value>
+				<xr:Value name="Role.ЧтениеПриходныхОпераций">false</xr:Value>
+				<xr:Value name="Role.ЧтениеПриходныхОперацийСводно">false</xr:Value>
+				<xr:Value name="Role.ЧтениеПродукции">false</xr:Value>
+				<xr:Value name="Role.ЧтениеПроизводственныхОпераций">false</xr:Value>
+				<xr:Value name="Role.ЧтениеПунктовПерегрузки">false</xr:Value>
+				<xr:Value name="Role.ЧтениеРезультатовПроверкиУчета">false</xr:Value>
+				<xr:Value name="Role.ЧтениеСведенийОКарантинировании">false</xr:Value>
+				<xr:Value name="Role.ЧтениеСвойствЗаписейСкладскогоЖурнала">false</xr:Value>
+				<xr:Value name="Role.ЧтениеСвязейМеждуЗаписямиСкладскогоЖурналаИВСД">false</xr:Value>
+				<xr:Value name="Role.ЧтениеТранспорта">false</xr:Value>
+				<xr:Value name="Role.ЧтениеТранспортныхОпераций">false</xr:Value>
+				<xr:Value name="Role.ЧтениеУпаковок">false</xr:Value>
+				<xr:Value name="Role.ДобавлениеИзменениеНастроекОбменаВетисAPI">false</xr:Value>
+				<xr:Value name="Role.ЧтениеНастроекОбменаВетисAPI">false</xr:Value>
+			</Use>
+			<Action>СписокПредприятийХозяйствующегоСубъекта</Action>
+		</Command>
+	</Commands>
+	<CommandInterface>
+		<CommandBar>
+			<Item>
+				<Command>Form.Command.СписокПредприятийХозяйствующегоСубъекта</Command>
+				<Type>Added</Type>
+				<CommandGroup>CommandGroup.ВзаимодействиеСИСМеркурий</CommandGroup>
+				<Index>2</Index>
+				<DefaultVisible>false</DefaultVisible>
+			</Item>
+			<Item>
+				<Command>Catalog.Контрагенты.Command.ЗаполнитьДаннымиИзМеркурия</Command>
+				<Type>Auto</Type>
+				<CommandGroup>CommandGroup.ВзаимодействиеСИСМеркурий</CommandGroup>
+				<Index>1</Index>
+				<Visible>
+					<xr:Common>false</xr:Common>
+				</Visible>
+			</Item>
+			<Item>
+				<Command>Catalog.Контрагенты.Command.РегистрацияОбновлениеКонтрагентов</Command>
+				<Type>Auto</Type>
+				<CommandGroup>CommandGroup.ВзаимодействиеСИСМеркурий</CommandGroup>
+				<Visible>
+					<xr:Common>false</xr:Common>
+				</Visible>
+			</Item>
+		</CommandBar>
+	</CommandInterface>
+</Form>

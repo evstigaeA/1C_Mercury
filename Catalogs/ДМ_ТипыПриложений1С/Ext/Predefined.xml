@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<PredefinedData xmlns="http://v8.1c.ru/8.3/xcf/predef" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="CatalogPredefinedItems" version="2.5">
+	<Item id="11c822fa-aae0-4c86-af52-1d0b0e637e9c">
+		<Name>BackgroundJob</Name>
+		<Code>BackgroundJob</Code>
+		<Description>Background job</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="caa016ba-aef4-4de0-8124-e7d33d527fdb">
+		<Name>COMConnection</Name>
+		<Code>COMConnection</Code>
+		<Description>COMConnection</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="2fb32b1c-0c15-4aaa-bf12-f195ec0e5a02">
+		<Name>COMConsole</Name>
+		<Code>COMConsole</Code>
+		<Description>COMConsole</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="27938b37-eef3-4663-b464-0f6da18a31ba">
+		<Name>Debugger</Name>
+		<Code>Debugger</Code>
+		<Description>Debugger</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="6e64c188-fdab-4bb9-82ca-aa87d7b27021">
+		<Name>JobScheduler</Name>
+		<Code>JobScheduler</Code>
+		<Description>Job scheduler</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="c8d4c381-ae04-4b9a-9068-e49764d3bab7">
+		<Name>OpenIDProvider</Name>
+		<Code>OpenIDProvider</Code>
+		<Description>OpenID Provider</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="879a203c-4d34-4b13-82cf-8a1cf4549fd8">
+		<Name>RAS</Name>
+		<Code>RAS</Code>
+		<Description>RAS</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="a8cff712-defb-4e7f-94f4-a100a2e34e52">
+		<Name>SrvrConsole</Name>
+		<Code>SrvrConsole</Code>
+		<Description>Srvr console</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="9e906229-8c29-4f2d-b70d-596c865e498f">
+		<Name>SystemBackgroundJob</Name>
+		<Code>SystemBackgroundJob</Code>
+		<Description>System background job</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="e9ef5594-ad99-4e25-9d8a-7553fb6322d6">
+		<Name>WSConnection</Name>
+		<Code>WSConnection</Code>
+		<Description>WSConnection</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="aecd6e30-df61-4474-b5b7-a435cee80190">
+		<Name>WebClient</Name>
+		<Code>WebClient</Code>
+		<Description>Веб-клиент</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="12545c4b-0f49-465d-a2d6-518e379c0701">
+		<Name>Конфигуратор</Name>
+		<Code>Designer</Code>
+		<Description>Конфигуратор</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="76917364-1994-442a-959f-5b6043c277bc">
+		<Name>ТолстыйКлиент</Name>
+		<Code>1CV8</Code>
+		<Description>Толстый клиент</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="6c5f0c17-e062-417d-8415-896333d12622">
+		<Name>ТонкийКлиент</Name>
+		<Code>1CV8C</Code>
+		<Description>Тонкий клиент</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+</PredefinedData>

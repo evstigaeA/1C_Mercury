@@ -1,0 +1,129 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<PredefinedData xmlns="http://v8.1c.ru/8.3/xcf/predef" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="CatalogPredefinedItems" version="2.5">
+	<Item id="49dd143c-9865-4b62-8b0d-ccf79001dba4">
+		<Name>АдминистрированиеПользователей</Name>
+		<Code>000000018</Code>
+		<Description>Администрирование пользователей</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="b21b0489-15e2-44f8-9792-a3ee6e8cc5e1">
+		<Name>АктуализацияКонтрагентов</Name>
+		<Code>000000005</Code>
+		<Description>Актуализация контрагентов</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="fc18f195-a8f7-4632-8567-6413dddac112">
+		<Name>АктуализацияПредприятий</Name>
+		<Code>000000006</Code>
+		<Description>Актуализация предприятий</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="bc7c3c16-65d6-4e2c-bfef-74e0819784f5">
+		<Name>АктуализацияПродукции</Name>
+		<Code>000000007</Code>
+		<Description>Актуализация продукции</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="dee93664-edc9-4202-a643-f768a4fd1b6e">
+		<Name>ЗагрузкаАктуальныхДанныхВСД</Name>
+		<Code>000000022</Code>
+		<Description>Загрузка актуальных данных ВСД</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="7810377f-8832-4ec8-b03a-33a0df11df43">
+		<Name>ЗагрузкаАктуальныхОстатков</Name>
+		<Code>000000004</Code>
+		<Description>Загрузка актуальных остатков</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="726ab7d3-c971-4ec2-8a3d-1a72ee9a8c39">
+		<Name>ЗагрузкаБазовойНСИИСМеркурий</Name>
+		<Code>000000001</Code>
+		<Description>Загрузка базовой НСИ "ИС Меркурий"</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="37deb41a-7548-4c66-8598-bf3ecd536b90">
+		<Name>ЗагрузкаВсехВСД</Name>
+		<Code>000000012</Code>
+		<Description>Загрузка всех ВСД</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="d9bbc388-fd6d-4fb2-8804-b6b3d6521258">
+		<Name>ЗагрузкаДанныхПоВСД</Name>
+		<Code>000000002</Code>
+		<Description>Загрузка данных по ВСД</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="2feb5871-849d-4782-9faf-00aa59bf61e9">
+		<Name>ЗагрузкаДанныхПоЗаписямСкладскогоЖурнала</Name>
+		<Code>000000010</Code>
+		<Description>Загрузка данных по записям складского журнала</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="0ea3386f-d0b2-4855-90b1-550e9a430620">
+		<Name>НазначениеЗонОтветственностиПользователей</Name>
+		<Code>000000020</Code>
+		<Description>Назначение зон ответственности пользователей</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="4509e2ea-e764-4e2c-b62a-947575f36455">
+		<Name>НазначениеПравПользователей</Name>
+		<Code>000000019</Code>
+		<Description>Назначение прав пользователей</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="ddad6a89-986c-4d09-b757-b6819a958674">
+		<Name>ОбновлениеДанныхПоВСД</Name>
+		<Code>000000008</Code>
+		<Description>Обновление данных по ВСД</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="f8bee595-683e-4b4a-bfba-f162ce630047">
+		<Name>ОбновлениеДанныхПоЗаписиСкладскогоЖурнала</Name>
+		<Code>000000009</Code>
+		<Description>Обновление данных по записи складского журнала</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="1ff0ea9b-97f4-41f4-bb4e-96e8c4b9ef03">
+		<Name>ПолучениеАдреснойИнформации</Name>
+		<Code>000000011</Code>
+		<Description>Получение адресной информации</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="edd75de7-c3d5-427c-bff5-f3da15b6e94b">
+		<Name>ПолучениеДанныхПользователя</Name>
+		<Code>000000016</Code>
+		<Description>Получение данных пользователя по логину</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="f042ae6d-4617-43b3-97de-fc617318644a">
+		<Name>ПолучениеСпискаПользователейКонтрагента</Name>
+		<Code>000000014</Code>
+		<Description>Получение списка пользователей хоз. субъекта</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="e0ad3e86-7958-4b51-89be-8af74405954b">
+		<Name>ПолученияСпискаПравПользователей</Name>
+		<Code>000000021</Code>
+		<Description>Получения списка прав пользователей</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="c57e53f0-ccc3-485d-81ee-a2faae3724a9">
+		<Name>ПроверкаУсловийРегионализации</Name>
+		<Code>000000003</Code>
+		<Description>Проверка условий регионализации</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="e5784790-5f5e-4679-90d9-89775dc2d6b3">
+		<Name>РегистрацияПривязкаПользователей</Name>
+		<Code>000000015</Code>
+		<Description>Регистрация привязка пользователей</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="a1fb474a-0978-418b-86d7-0eb9fc7a8a2b">
+		<Name>УдалениеСвязиПользователяСКонтрагентом</Name>
+		<Code>000000017</Code>
+		<Description>Удаление связи пользователя с хоз. субъектом</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+</PredefinedData>

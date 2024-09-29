@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<PredefinedData xmlns="http://v8.1c.ru/8.3/xcf/predef" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="CatalogPredefinedItems" version="2.5">
+	<Item id="0a64ba0e-0b64-4312-ae66-719a53d615b6">
+		<Name>ВнутреннееПеремещение</Name>
+		<Code>000000002</Code>
+		<Description>Внутреннее перемещение</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="22514892-974c-4206-a4ae-f9206d9b1b12">
+		<Name>ГашениеВСД</Name>
+		<Code>000000005</Code>
+		<Description>Гашение ВСД</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="297f7296-2d8a-4cca-bbf0-969ca4612d2f">
+		<Name>Инвентаризация</Name>
+		<Code>000000008</Code>
+		<Description>Инвентаризация</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="39d75d12-397e-4b50-9aee-ee7db5104583">
+		<Name>Клиент</Name>
+		<Code>000000001</Code>
+		<Description>Клиент</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="ebe24f10-0ed4-4288-be20-116e9467bf40">
+		<Name>ОбогащенныеDESADV</Name>
+		<Code>000000009</Code>
+		<Description>Обогащенные DESADV</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="e67719ea-47b6-442c-91e9-e98c3527dfc0">
+		<Name>Производство</Name>
+		<Code>000000007</Code>
+		<Description>Производство</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="72607419-60f5-4721-a6a7-8bab4335cd06">
+		<Name>СторнированиеОтгрузки</Name>
+		<Code>000000006</Code>
+		<Description>Сторнирование отгрузки</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+</PredefinedData>

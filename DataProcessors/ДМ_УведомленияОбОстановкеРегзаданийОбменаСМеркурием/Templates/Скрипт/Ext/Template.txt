@@ -1,0 +1,66 @@
+﻿$fpath = "%10"
+Try 
+{
+$isfile = Test-Path $fpath -ErrorAction Stop
+}
+Catch
+{
+		$smtpserver = '%1'
+		$port = %2
+		$UseSsl = %3
+		$emailTo = @(%4)
+		$emailFrom = '%5'
+		$Subject = '%6'
+		$Body = 'File '+ $fpath + ' unavailable
+		'+ $error[0].Exception
+		%8
+
+		$utf8 = [System.Text.Encoding]::GetEncoding('UTF-8')
+
+		Send-MailMessage -To $emailTo -Subject $Subject -Body $Body -SmtpServer $smtpserver -Port $Port -From $emailFrom -Encoding $utf8 %9
+	Return
+} 
+
+if($isfile -eq "True") {
+
+	$led = cat $fpath
+	$ds = $led.substring(0,19)
+	$d1 = Get-Date($ds)
+	$d2 = Get-Date
+	$maxinterval = %11
+	$interval = ($d2-$d1).TotalSeconds
+	if ($interval -gt $maxinterval) {
+
+		$smtpserver = '%1'
+		$port = %2
+		$UseSsl = %3
+		$emailTo = @(%4)
+		$emailFrom = '%5'
+		$Subject = '%6'
+		$Body = '%7
+
+		Last run: '+$ds
+		%8
+
+		$utf8 = [System.Text.Encoding]::GetEncoding('UTF-8')
+
+		Send-MailMessage -To $emailTo -Subject $Subject -Body $Body -SmtpServer $smtpserver -Port $Port -From $emailFrom -Encoding $utf8 %9
+
+	}
+}
+else {
+
+		$smtpserver = '%1'
+		$port = %2
+		$UseSsl = %3
+		$emailTo = @(%4)
+		$emailFrom = '%5'
+		$Subject = '%6'
+		$Body = 'File '+ $fpath + ' not found or unavailable'
+		%8
+
+		$utf8 = [System.Text.Encoding]::GetEncoding('UTF-8')
+
+		Send-MailMessage -To $emailTo -Subject $Subject -Body $Body -SmtpServer $smtpserver -Port $Port -From $emailFrom -Encoding $utf8 %9
+	
+}

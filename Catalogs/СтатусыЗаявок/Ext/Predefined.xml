@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<PredefinedData xmlns="http://v8.1c.ru/8.3/xcf/predef" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="CatalogPredefinedItems" version="2.5">
+	<Item id="3d80c529-6bab-42cd-9098-9afc2010ac0e">
+		<Name>IDОтправлен</Name>
+		<Code>ID_RECEIVED</Code>
+		<Description>ID заявки отправлен</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="5821faec-856f-4491-b322-d1ecfe13a936">
+		<Name>IDПолучен</Name>
+		<Code>ID_SENT</Code>
+		<Description>ID заявки получен</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="3712b26d-5e91-446c-aa19-e5967a87c22a">
+		<Name>Подготовлен</Name>
+		<Code>READY</Code>
+		<Description>Заявка готова к отправке</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="7f9ecd4b-846b-443d-89d8-3e4c73e6273c">
+		<Name>Закрыта</Name>
+		<Code>CLOSED</Code>
+		<Description>Заявка закрыта</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="935cf1e7-1cac-4cb7-a68c-e3737f801d29">
+		<Name>Обрабатывается</Name>
+		<Code>IN_PROCESS</Code>
+		<Description>Заявка обрабатывается</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="af390e4d-610e-4739-a305-da5a1736ca93">
+		<Name>Отклонена</Name>
+		<Code>REJECTED</Code>
+		<Description>Заявка отклонена</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="ea5465ca-488c-4586-ad4b-0a590a2c6ecd">
+		<Name>ЗаявкаОтмененаАдминистратором</Name>
+		<Code>CANCELEDBYADMIN</Code>
+		<Description>Заявка отменена администратором</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="cc668df0-cc58-44ed-8b35-5757df111c0d">
+		<Name>Отправлена</Name>
+		<Code>DISPATCH</Code>
+		<Description>Заявка отправлена</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="5174c7db-7ec8-42da-9483-3671bbae80ac">
+		<Name>Принята</Name>
+		<Code>ACCEPTED</Code>
+		<Description>Заявка принята</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="0e35058a-62d4-47cf-8bcf-3bd88f5c7ca8">
+		<Name>УспешноОбработана</Name>
+		<Code>COMPLETED</Code>
+		<Description>Заявка успешно обработана</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="1efa0862-9fb0-4d63-af93-7ac3d6f812f7">
+		<Name>Новая</Name>
+		<Code>NEW</Code>
+		<Description>Новая заявка</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="f18ec6bf-12fd-47eb-822e-34e09ceed8f6">
+		<Name>ОшибкаОбработкиОтвета</Name>
+		<Code>ERR2</Code>
+		<Description>Ошибка обработки ответа</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="c9dd9bde-662e-42e4-9174-ea18632ea33a">
+		<Name>ОшибкаОтправкиID</Name>
+		<Code>ERR3</Code>
+		<Description>Ошибка отправки ID</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="73253871-07c7-48bd-b766-6da4a8c1f3c0">
+		<Name>ОшибкаОтправкиЗапроса</Name>
+		<Code>ERR1</Code>
+		<Description>Ошибка отправки запроса</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="46327511-09a6-413d-9b48-2a6bb4d95787">
+		<Name>Черновик</Name>
+		<Code>DRAFT</Code>
+		<Description>Черновик</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+</PredefinedData>

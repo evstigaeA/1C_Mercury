@@ -1,0 +1,128 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.5">
+	<Subsystem uuid="8e7a706a-8e9c-424a-b825-430f6f03e244">
+		<Properties>
+			<Name>Служебная</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Служебная</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment>C7F8</Comment>
+			<IncludeHelpInContents>false</IncludeHelpInContents>
+			<IncludeInCommandInterface>false</IncludeInCommandInterface>
+			<Explanation/>
+			<Picture/>
+			<Content>
+				<xr:Item xsi:type="xr:MDObjectRef">EventSubscription.КонтрольДублейОбъектовПоGUID_Справочники</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.ДвижениеПродукции</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.КонтрольДублейGUIDСервер</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.КонтрольЗаписиОбъектов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.КоличествоПопытокОпросаСервера</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ОбновлениеИнформационнойБазыУВС</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ВводДанныхПоСвязаннымДокументам</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ТипыПродукции</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ПодборПродукции</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.ВСД</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">EventSubscription.КонтрольДублейОбъектовПоGUID_Документы</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">EventSubscription.КонтрольЗаписиНеразрешенныхСправочников</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ЗагрузитьДанныеИзФайла</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ВидыПредприятий</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.СтраныМира</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonCommand.СформироватьЗаявку</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ТипыТТН</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ВидыПродукции</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonForm.ФормаПодбораПроизводителей</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ТипыПредприятий</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.КлассификаторЕдиницИзмерения</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ИнформацияОбработкиЗапроса</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.СтатусыВСД</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Контрагенты</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.МестаПроведенияМероприятий</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.НазначениеГрузов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.ВерсииЗаписейСкладскогоЖурнала</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DocumentJournal.ОбщийЖурналДокументов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ПериодыНахожденияЖивотныхНаТерритории</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ПодвидыПродукции</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Предприятия</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.ЗависимостиВырабатываемойПродукцииОтСырья</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.ИспользоватьСертификатыБезопасностиПриПодключении</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.РезультатыКонтроляПоставки</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.НомераПроизводственныхПартий</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonForm.ФормаЗаданияДат</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.ПроизводственныеОперации</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ТипыТранспортныхСредств</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.РешенияОПриемеВходнойПартии</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.СвойстваЗаписейСкладскогоЖурнала</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.ПроизводственныеПартии</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.СпособыХраненияПродукцииПриПеревозке</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.ПолучатьФайлВетеринарнойСправкиПриЗагрузкеВСД</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonForm.ФормаРезультатаЗагрузки</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.СтатусыВСД</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.СтатусыЗаявок</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ВидыТребованийДляПеремещения</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.УдалитьОбслуживаемыеПредприятия</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonTemplate.ДанныеСЛК</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ТипыВСД</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.ИдентификаторыВерсийОбъектов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ТипыДокументов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Продукция</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">EventSubscription.КонтрольОтменыПроведенияДокументов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Транспорт</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">EventSubscription.КонтрольПометкиНаУдалениеДокументов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.УровниУпаковок</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Упаковки</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ФормыВСД</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.ТранспортныеОперации</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ПодборЗаписейСкладскогоЖурналаДляВнесенияМероприятий</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.СтатусыВерсийЗаписейСкладскогоЖурнала</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">AccumulationRegister.ДвижениеПродукции</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.ВидСервераВетисAPI</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.РегистраторЗаписи</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.СвязиМеждуКонтрагентамиИПредприятиями</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.БлагополучиеМестности</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Пользователи</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.СпособыЗаданияДаты</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.ТаймаутОпросаСервера</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ФорматQRCode</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.КлассификаторОКОПФ</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.УполномоченноеГашение</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.КоллекцияСтатусыОбмена</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Организации</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ТипыМаркировок</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.РезультатыЛабораторногоИсследования</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ТипыПроизводственногоПроцесса</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.РолиПредприятий</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ИзменениеСвязиМеждуХозяйствующимСубъектомИПредприятиями</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ПунктыПерегрузки</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ВводДанныхПоУпаковкам</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.СвязиМеждуЗаписямиСкладскогоЖурналаИВСД</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonCommand.ОткрытьПротоколОбмена</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ПодборЗаписейСкладскогоЖурнала</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.ДопустимыеФорматыДатПродукции</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ПодборУсловийПеремещенияВРамкахРегионализации</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ВидыОперацийОбменаAPI</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ОрганизацииОператоры</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ЗагрузкаВСД</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">FunctionalOption.ИспользоватьОбменЧерезУниверсальныйФормат</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.УдалитьСмещениеВСпискахЗапросов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.ВремяОпросаЗаявокВСтатусеЗаявкаОбрабатывается</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.СтатусЗаявкиПоОкончаниюОпросаЗаявокВСтатусеЗаявкаОбрабатывается</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ИзменениеСтатусовЗаявок</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.ТаймаутСоединения</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.ЗагружатьПогашенныеИАннулированныеВСД</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.ОрганизацияДляПолученияНСИ</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ЗагрузкаДанныхИзВнешнихФайлов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonForm.ФормаСообщенияПротоколаОбмена</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonForm.ФормаСообщенияРезультатаОбмена</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.ПриходныеОперации</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.НеобработанныеДокументы</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonForm.ЗаполнениеРеквизитовКонтрагента</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.НастройкиПечатиОбъектов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.СкладскиеЗаписиБезВСД</xr:Item>
+			</Content>
+		</Properties>
+		<ChildObjects/>
+	</Subsystem>
+</MetaDataObject>

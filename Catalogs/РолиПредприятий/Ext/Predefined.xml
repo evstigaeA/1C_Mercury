@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<PredefinedData xmlns="http://v8.1c.ru/8.3/xcf/predef" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="CatalogPredefinedItems" version="2.5">
+	<Item id="e26aa8ea-8fd6-4ae3-b9a7-6841b3b51a15">
+		<Name>БойняМясокомбинат</Name>
+		<Code>SLAUGHTER_HOUSE</Code>
+		<Description>Бойня (мясокомбинат)</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="b6752bc1-e45c-4297-b3f3-3434f04f6f80">
+		<Name>РазделочноеПредприятие</Name>
+		<Code>CUTTING_PLANT</Code>
+		<Description>Разделочное предприятие</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="7b751f56-df55-42bb-ad4d-f226e31c8a95">
+		<Name>РольНеОпределена</Name>
+		<Code>UNKNOWN</Code>
+		<Description>Роль не определена</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="e64f1460-eddc-426e-aac6-063f9675c544">
+		<Name>УпаковочноеПредприятие</Name>
+		<Code>PACKAGING_PLANT</Code>
+		<Description>Упаковочное предприятие</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="59f6aa28-43ed-40cf-833f-cd7f78cb8828">
+		<Name>Холодильник</Name>
+		<Code>COLD_STORE</Code>
+		<Description>Холодильник</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="6476e459-e59e-41d0-a1fb-940c60226542">
+		<Name>ЯвляетсяПроизводителемПродукции</Name>
+		<Code>PRODUCER</Code>
+		<Description>Является производителем продукции (в том числе выращивание)</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+</PredefinedData>

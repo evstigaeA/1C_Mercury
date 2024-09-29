@@ -1,0 +1,412 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.5">
+	<DocumentJournal uuid="c78a8019-ab0f-4a6b-b66a-1a6da1287cd0">
+		<InternalInfo>
+			<xr:GeneratedType name="DocumentJournalSelection.ОбщийЖурналДокументов" category="Selection">
+				<xr:TypeId>e41e30e4-3b11-480f-beab-2817d79f7f08</xr:TypeId>
+				<xr:ValueId>b65fbb6c-53e1-4b36-bab2-fb548a7f2ac7</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentJournalList.ОбщийЖурналДокументов" category="List">
+				<xr:TypeId>a79053f6-c8af-4750-b170-aac527a5d029</xr:TypeId>
+				<xr:ValueId>a2c09414-c952-4d6d-8375-8e579a26b3f2</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentJournalManager.ОбщийЖурналДокументов" category="Manager">
+				<xr:TypeId>2543b4a2-99d8-43a9-88dc-59b01b9100e7</xr:TypeId>
+				<xr:ValueId>5bee4427-535a-41e2-ac4a-e1efb283f63b</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<Name>ОбщийЖурналДокументов</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Общий журнал документов</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment/>
+			<DefaultForm>DocumentJournal.ОбщийЖурналДокументов.Form.ФормаСписка</DefaultForm>
+			<AuxiliaryForm/>
+			<UseStandardCommands>true</UseStandardCommands>
+			<RegisteredDocuments>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.ПроизводственныеОперации</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.ТранспортныеОперации</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.ПриходныеОперации</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.АннулированиеВСД</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.АннулированиеВСДГрупповое</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.ВнесениеНомеровТранспортныхСредств</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.ВнесениеНомеровТранспортныхСредствГрупповое</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.Инвентаризации</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.КорректировкаОстатковЗаписейСкладскогоЖурнала</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.ОбъединениеЗаписейСкладскогоЖурнала</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.ПриходныеОперацииСводно</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.ВнесениеСведенийОЛабораторныхИсследованиях</xr:Item>
+			</RegisteredDocuments>
+			<IncludeHelpInContents>true</IncludeHelpInContents>
+			<StandardAttributes>
+				<xr:StandardAttribute name="Type">
+					<xr:LinkByType/>
+					<xr:FillChecking>DontCheck</xr:FillChecking>
+					<xr:MultiLine>false</xr:MultiLine>
+					<xr:FillFromFillingValue>false</xr:FillFromFillingValue>
+					<xr:CreateOnInput>Auto</xr:CreateOnInput>
+					<xr:MaxValue xsi:nil="true"/>
+					<xr:ToolTip/>
+					<xr:ExtendedEdit>false</xr:ExtendedEdit>
+					<xr:Format/>
+					<xr:ChoiceForm/>
+					<xr:QuickChoice>Auto</xr:QuickChoice>
+					<xr:ChoiceHistoryOnInput>Auto</xr:ChoiceHistoryOnInput>
+					<xr:EditFormat/>
+					<xr:PasswordMode>false</xr:PasswordMode>
+					<xr:DataHistory>Use</xr:DataHistory>
+					<xr:MarkNegatives>false</xr:MarkNegatives>
+					<xr:MinValue xsi:nil="true"/>
+					<xr:Synonym/>
+					<xr:Comment/>
+					<xr:FullTextSearch>Use</xr:FullTextSearch>
+					<xr:ChoiceParameterLinks/>
+					<xr:FillValue xsi:nil="true"/>
+					<xr:Mask/>
+					<xr:ChoiceParameters/>
+				</xr:StandardAttribute>
+				<xr:StandardAttribute name="Ref">
+					<xr:LinkByType/>
+					<xr:FillChecking>DontCheck</xr:FillChecking>
+					<xr:MultiLine>false</xr:MultiLine>
+					<xr:FillFromFillingValue>false</xr:FillFromFillingValue>
+					<xr:CreateOnInput>Auto</xr:CreateOnInput>
+					<xr:MaxValue xsi:nil="true"/>
+					<xr:ToolTip/>
+					<xr:ExtendedEdit>false</xr:ExtendedEdit>
+					<xr:Format/>
+					<xr:ChoiceForm/>
+					<xr:QuickChoice>Auto</xr:QuickChoice>
+					<xr:ChoiceHistoryOnInput>Auto</xr:ChoiceHistoryOnInput>
+					<xr:EditFormat/>
+					<xr:PasswordMode>false</xr:PasswordMode>
+					<xr:DataHistory>Use</xr:DataHistory>
+					<xr:MarkNegatives>false</xr:MarkNegatives>
+					<xr:MinValue xsi:nil="true"/>
+					<xr:Synonym/>
+					<xr:Comment/>
+					<xr:FullTextSearch>Use</xr:FullTextSearch>
+					<xr:ChoiceParameterLinks/>
+					<xr:FillValue xsi:nil="true"/>
+					<xr:Mask/>
+					<xr:ChoiceParameters/>
+				</xr:StandardAttribute>
+				<xr:StandardAttribute name="Date">
+					<xr:LinkByType/>
+					<xr:FillChecking>DontCheck</xr:FillChecking>
+					<xr:MultiLine>false</xr:MultiLine>
+					<xr:FillFromFillingValue>false</xr:FillFromFillingValue>
+					<xr:CreateOnInput>Auto</xr:CreateOnInput>
+					<xr:MaxValue xsi:nil="true"/>
+					<xr:ToolTip/>
+					<xr:ExtendedEdit>false</xr:ExtendedEdit>
+					<xr:Format/>
+					<xr:ChoiceForm/>
+					<xr:QuickChoice>Auto</xr:QuickChoice>
+					<xr:ChoiceHistoryOnInput>Auto</xr:ChoiceHistoryOnInput>
+					<xr:EditFormat/>
+					<xr:PasswordMode>false</xr:PasswordMode>
+					<xr:DataHistory>Use</xr:DataHistory>
+					<xr:MarkNegatives>false</xr:MarkNegatives>
+					<xr:MinValue xsi:nil="true"/>
+					<xr:Synonym/>
+					<xr:Comment/>
+					<xr:FullTextSearch>Use</xr:FullTextSearch>
+					<xr:ChoiceParameterLinks/>
+					<xr:FillValue xsi:nil="true"/>
+					<xr:Mask/>
+					<xr:ChoiceParameters/>
+				</xr:StandardAttribute>
+				<xr:StandardAttribute name="Posted">
+					<xr:LinkByType/>
+					<xr:FillChecking>DontCheck</xr:FillChecking>
+					<xr:MultiLine>false</xr:MultiLine>
+					<xr:FillFromFillingValue>false</xr:FillFromFillingValue>
+					<xr:CreateOnInput>Auto</xr:CreateOnInput>
+					<xr:MaxValue xsi:nil="true"/>
+					<xr:ToolTip/>
+					<xr:ExtendedEdit>false</xr:ExtendedEdit>
+					<xr:Format/>
+					<xr:ChoiceForm/>
+					<xr:QuickChoice>Auto</xr:QuickChoice>
+					<xr:ChoiceHistoryOnInput>Auto</xr:ChoiceHistoryOnInput>
+					<xr:EditFormat/>
+					<xr:PasswordMode>false</xr:PasswordMode>
+					<xr:DataHistory>Use</xr:DataHistory>
+					<xr:MarkNegatives>false</xr:MarkNegatives>
+					<xr:MinValue xsi:nil="true"/>
+					<xr:Synonym/>
+					<xr:Comment/>
+					<xr:FullTextSearch>Use</xr:FullTextSearch>
+					<xr:ChoiceParameterLinks/>
+					<xr:FillValue xsi:nil="true"/>
+					<xr:Mask/>
+					<xr:ChoiceParameters/>
+				</xr:StandardAttribute>
+				<xr:StandardAttribute name="DeletionMark">
+					<xr:LinkByType/>
+					<xr:FillChecking>DontCheck</xr:FillChecking>
+					<xr:MultiLine>false</xr:MultiLine>
+					<xr:FillFromFillingValue>false</xr:FillFromFillingValue>
+					<xr:CreateOnInput>Auto</xr:CreateOnInput>
+					<xr:MaxValue xsi:nil="true"/>
+					<xr:ToolTip/>
+					<xr:ExtendedEdit>false</xr:ExtendedEdit>
+					<xr:Format/>
+					<xr:ChoiceForm/>
+					<xr:QuickChoice>Auto</xr:QuickChoice>
+					<xr:ChoiceHistoryOnInput>Auto</xr:ChoiceHistoryOnInput>
+					<xr:EditFormat/>
+					<xr:PasswordMode>false</xr:PasswordMode>
+					<xr:DataHistory>Use</xr:DataHistory>
+					<xr:MarkNegatives>false</xr:MarkNegatives>
+					<xr:MinValue xsi:nil="true"/>
+					<xr:Synonym/>
+					<xr:Comment/>
+					<xr:FullTextSearch>Use</xr:FullTextSearch>
+					<xr:ChoiceParameterLinks/>
+					<xr:FillValue xsi:nil="true"/>
+					<xr:Mask/>
+					<xr:ChoiceParameters/>
+				</xr:StandardAttribute>
+				<xr:StandardAttribute name="Number">
+					<xr:LinkByType/>
+					<xr:FillChecking>DontCheck</xr:FillChecking>
+					<xr:MultiLine>false</xr:MultiLine>
+					<xr:FillFromFillingValue>false</xr:FillFromFillingValue>
+					<xr:CreateOnInput>Auto</xr:CreateOnInput>
+					<xr:MaxValue xsi:nil="true"/>
+					<xr:ToolTip/>
+					<xr:ExtendedEdit>false</xr:ExtendedEdit>
+					<xr:Format/>
+					<xr:ChoiceForm/>
+					<xr:QuickChoice>Auto</xr:QuickChoice>
+					<xr:ChoiceHistoryOnInput>Auto</xr:ChoiceHistoryOnInput>
+					<xr:EditFormat/>
+					<xr:PasswordMode>false</xr:PasswordMode>
+					<xr:DataHistory>Use</xr:DataHistory>
+					<xr:MarkNegatives>false</xr:MarkNegatives>
+					<xr:MinValue xsi:nil="true"/>
+					<xr:Synonym/>
+					<xr:Comment/>
+					<xr:FullTextSearch>Use</xr:FullTextSearch>
+					<xr:ChoiceParameterLinks/>
+					<xr:FillValue xsi:nil="true"/>
+					<xr:Mask/>
+					<xr:ChoiceParameters/>
+				</xr:StandardAttribute>
+			</StandardAttributes>
+			<ListPresentation/>
+			<ExtendedListPresentation/>
+			<Explanation/>
+		</Properties>
+		<ChildObjects>
+			<Column uuid="2f357814-23da-4955-bdb9-6b87eb3b7623">
+				<Properties>
+					<Name>Организация</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Организация</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<Indexing>IndexWithAdditionalOrder</Indexing>
+					<References>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.ПроизводственныеОперации.Attribute.Организация</xr:Item>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.ТранспортныеОперации.Attribute.Организация</xr:Item>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.ПриходныеОперации.Attribute.Организация</xr:Item>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.АннулированиеВСД.Attribute.Организация</xr:Item>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.АннулированиеВСДГрупповое.Attribute.Организация</xr:Item>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.ВнесениеНомеровТранспортныхСредств.Attribute.Организация</xr:Item>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.ВнесениеНомеровТранспортныхСредствГрупповое.Attribute.Организация</xr:Item>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.Инвентаризации.Attribute.Организация</xr:Item>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.КорректировкаОстатковЗаписейСкладскогоЖурнала.Attribute.Организация</xr:Item>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.ОбъединениеЗаписейСкладскогоЖурнала.Attribute.Организация</xr:Item>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.ПриходныеОперацииСводно.Attribute.Организация</xr:Item>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.ВнесениеСведенийОЛабораторныхИсследованиях.Attribute.Организация</xr:Item>
+					</References>
+				</Properties>
+			</Column>
+			<Column uuid="a8e83608-16d1-4147-8e6b-7a182d5c54d9">
+				<Properties>
+					<Name>ХозяйствующийСубъект</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Хозяйствующий субъект</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<Indexing>DontIndex</Indexing>
+					<References>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.ПроизводственныеОперации.Attribute.Контрагент</xr:Item>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.ТранспортныеОперации.Attribute.КонтрагентПолучатель</xr:Item>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.ПриходныеОперации.Attribute.КонтрагентОтправитель</xr:Item>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.АннулированиеВСД.Attribute.Контрагент</xr:Item>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.АннулированиеВСДГрупповое.Attribute.Контрагент</xr:Item>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.ВнесениеНомеровТранспортныхСредств.Attribute.Контрагент</xr:Item>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.ВнесениеНомеровТранспортныхСредствГрупповое.Attribute.Контрагент</xr:Item>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.Инвентаризации.Attribute.Контрагент</xr:Item>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.КорректировкаОстатковЗаписейСкладскогоЖурнала.Attribute.Контрагент</xr:Item>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.ОбъединениеЗаписейСкладскогоЖурнала.Attribute.Контрагент</xr:Item>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.ПриходныеОперацииСводно.Attribute.КонтрагентОтправитель</xr:Item>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.ВнесениеСведенийОЛабораторныхИсследованиях.Attribute.Контрагент</xr:Item>
+					</References>
+				</Properties>
+			</Column>
+			<Column uuid="6626aa8f-6d19-4297-aa66-528edf7106cd">
+				<Properties>
+					<Name>Предприятие</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Предприятие</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<Indexing>DontIndex</Indexing>
+					<References>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.ПроизводственныеОперации.Attribute.Предприятие</xr:Item>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.АннулированиеВСД.Attribute.Предприятие</xr:Item>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.АннулированиеВСДГрупповое.Attribute.Предприятие</xr:Item>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.ВнесениеНомеровТранспортныхСредств.Attribute.Предприятие</xr:Item>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.ВнесениеНомеровТранспортныхСредствГрупповое.Attribute.Предприятие</xr:Item>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.Инвентаризации.Attribute.Предприятие</xr:Item>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.КорректировкаОстатковЗаписейСкладскогоЖурнала.Attribute.Предприятие</xr:Item>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.ОбъединениеЗаписейСкладскогоЖурнала.Attribute.Предприятие</xr:Item>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.ВнесениеСведенийОЛабораторныхИсследованиях.Attribute.Предприятие</xr:Item>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.ПриходныеОперации.Attribute.ПредприятиеПолучатель</xr:Item>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.ПриходныеОперацииСводно.Attribute.ПредприятиеПолучатель</xr:Item>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.ТранспортныеОперации.Attribute.ПредприятиеОтправитель</xr:Item>
+					</References>
+				</Properties>
+			</Column>
+			<Column uuid="b6f16a55-ef6a-4d17-8e91-9a28ff3eae2f">
+				<Properties>
+					<Name>ДМ_ХозяйствующийСубъектОтправителя</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ХС отправителя</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<Indexing>DontIndex</Indexing>
+					<References>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.ПроизводственныеОперации.Attribute.Контрагент</xr:Item>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.ПриходныеОперации.Attribute.КонтрагентОтправитель</xr:Item>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.АннулированиеВСД.Attribute.Контрагент</xr:Item>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.АннулированиеВСДГрупповое.Attribute.Контрагент</xr:Item>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.ВнесениеНомеровТранспортныхСредств.Attribute.Контрагент</xr:Item>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.ВнесениеНомеровТранспортныхСредствГрупповое.Attribute.Контрагент</xr:Item>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.Инвентаризации.Attribute.Контрагент</xr:Item>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.КорректировкаОстатковЗаписейСкладскогоЖурнала.Attribute.Контрагент</xr:Item>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.ОбъединениеЗаписейСкладскогоЖурнала.Attribute.Контрагент</xr:Item>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.ПриходныеОперацииСводно.Attribute.КонтрагентОтправитель</xr:Item>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.ТранспортныеОперации.Attribute.КонтрагентОтправитель</xr:Item>
+					</References>
+				</Properties>
+			</Column>
+			<Column uuid="4158121b-5b58-401b-8af0-17d6bfbf164c">
+				<Properties>
+					<Name>ДМ_ХозяйствующийСубъектПолучателя</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ХС получателя</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<Indexing>DontIndex</Indexing>
+					<References>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.ПроизводственныеОперации.Attribute.Контрагент</xr:Item>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.ТранспортныеОперации.Attribute.КонтрагентПолучатель</xr:Item>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.АннулированиеВСД.Attribute.Контрагент</xr:Item>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.АннулированиеВСДГрупповое.Attribute.Контрагент</xr:Item>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.ВнесениеНомеровТранспортныхСредств.Attribute.Контрагент</xr:Item>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.ВнесениеНомеровТранспортныхСредствГрупповое.Attribute.Контрагент</xr:Item>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.Инвентаризации.Attribute.Контрагент</xr:Item>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.КорректировкаОстатковЗаписейСкладскогоЖурнала.Attribute.Контрагент</xr:Item>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.ОбъединениеЗаписейСкладскогоЖурнала.Attribute.Контрагент</xr:Item>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.ПриходныеОперацииСводно.Attribute.КонтрагентПолучатель</xr:Item>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.ПриходныеОперации.Attribute.КонтрагентПолучатель</xr:Item>
+					</References>
+				</Properties>
+			</Column>
+			<Column uuid="4ae14619-d165-4b76-8324-616f4207b551">
+				<Properties>
+					<Name>ДМ_НомерДокументаВСистемеДанон</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Поставка</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment>(для вывода в трекере)</Comment>
+					<Indexing>DontIndex</Indexing>
+					<References>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.Инвентаризации.Attribute.ДМ_НомерДокументаВСистемеДанон</xr:Item>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.ПриходныеОперации.Attribute.ДМ_НомерДокументаВСистемеДанон</xr:Item>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.ТранспортныеОперации.Attribute.ДМ_НомерДокументаВСистемеДанон</xr:Item>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.ПроизводственныеОперации.Attribute.ДМ_НомерДокументаВСистемеДанон</xr:Item>
+					</References>
+				</Properties>
+			</Column>
+			<Column uuid="c1f119d0-f89f-47b4-9443-4b8acf2ad34e">
+				<Properties>
+					<Name>ДМ_ДопНомерДокументаОтгрузки</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Номер транспортировки</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment>(для вывода в трекере)</Comment>
+					<Indexing>DontIndex</Indexing>
+					<References>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.ТранспортныеОперации.Attribute.ДМ_ДопНомерДокументаОтгрузки</xr:Item>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.ПроизводственныеОперации.Attribute.ДМ_ДопНомерДокументаОтгрузки</xr:Item>
+					</References>
+				</Properties>
+			</Column>
+			<Column uuid="6b1a953b-d0c3-44e9-9f2a-08f091b1e7fa">
+				<Properties>
+					<Name>ДМ_ТипЭлектронногоСообщения</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Тип электронного сообщения</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment>(для вывода в трекере)</Comment>
+					<Indexing>DontIndex</Indexing>
+					<References>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.ТранспортныеОперации.Attribute.ДМ_ТипЭлектронногоСообщения</xr:Item>
+					</References>
+				</Properties>
+			</Column>
+			<Column uuid="af337fe3-3f23-492e-835e-80ffc9668395">
+				<Properties>
+					<Name>ДМ_ТипОперацииВМеркурии</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Тип операции в Меркурии</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment>(для вывода в трекере)</Comment>
+					<Indexing>DontIndex</Indexing>
+					<References>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.ТранспортныеОперации.Attribute.ДМ_ТипОперацииВМеркурии</xr:Item>
+					</References>
+				</Properties>
+			</Column>
+			<Form>ФормаСписка</Form>
+		</ChildObjects>
+	</DocumentJournal>
+</MetaDataObject>

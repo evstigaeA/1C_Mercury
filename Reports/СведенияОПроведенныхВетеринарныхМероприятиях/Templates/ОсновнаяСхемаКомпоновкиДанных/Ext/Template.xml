@@ -1,0 +1,241 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<DataCompositionSchema xmlns="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcscom="http://v8.1c.ru/8.1/data-composition-system/common" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<dataSource>
+		<name>ИсточникДанных1</name>
+		<dataSourceType>Local</dataSourceType>
+	</dataSource>
+	<dataSet xsi:type="DataSetQuery">
+		<name>НаборДанных1</name>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Заключение</dataPath>
+			<field>Заключение</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ДополнительныеСведения</dataPath>
+			<field>ДополнительныеСведения</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>РезультатИсследования</dataPath>
+			<field>РезультатИсследования</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ПоказательБезопасности</dataPath>
+			<field>ПоказательБезопасности</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ДатаПолученияРезультата</dataPath>
+			<field>ДатаПолученияРезультата</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ОрганизацияОператор</dataPath>
+			<field>ОрганизацияОператор</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>НомерЭкспертизы</dataPath>
+			<field>НомерЭкспертизы</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>МетодИсследования</dataPath>
+			<field>МетодИсследования</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ТипМероприятия</dataPath>
+			<field>ТипМероприятия</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>НомерАктаОтбораПроб</dataPath>
+			<field>НомерАктаОтбораПроб</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ЗаписьСкладскогоЖурнала</dataPath>
+			<field>ЗаписьСкладскогоЖурнала</field>
+			<role>
+				<dcscom:dimension>true</dcscom:dimension>
+			</role>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ДатаОтбораПроб</dataPath>
+			<field>ДатаОтбораПроб</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Препарат</dataPath>
+			<field>Препарат</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>СерияПрепарата</dataPath>
+			<field>СерияПрепарата</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Заболевание</dataPath>
+			<field>Заболевание</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ДатаСобытия</dataPath>
+			<field>ДатаСобытия</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ДополнительныеСведенияИммунизация</dataPath>
+			<field>ДополнительныеСведенияИммунизация</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Дополнительные сведения иммунизация</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ТипМероприятияИммунизация</dataPath>
+			<field>ТипМероприятияИммунизация</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Тип мероприятия иммунизация</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<dataSource>ИсточникДанных1</dataSource>
+		<query>ВЫБРАТЬ РАЗРЕШЕННЫЕ
+	ЕСТЬNULL(ЛабораторныеИсследования.ЗаписьСкладскогоЖурнала, СведенияОбИммунизации.ЗаписьСкладскогоЖурнала) КАК ЗаписьСкладскогоЖурнала,
+	ЛабораторныеИсследования.ДатаОтбораПроб КАК ДатаОтбораПроб,
+	ЛабораторныеИсследования.ДатаПолученияРезультата КАК ДатаПолученияРезультата,
+	ЛабораторныеИсследования.МетодИсследования КАК МетодИсследования,
+	ЛабораторныеИсследования.НомерАктаОтбораПроб КАК НомерАктаОтбораПроб,
+	ЛабораторныеИсследования.НомерЭкспертизы КАК НомерЭкспертизы,
+	ЛабораторныеИсследования.ОрганизацияОператор КАК ОрганизацияОператор,
+	ЛабораторныеИсследования.ПоказательБезопасности КАК ПоказательБезопасности,
+	ЛабораторныеИсследования.РезультатИсследования КАК РезультатИсследования,
+	ЛабораторныеИсследования.ТипМероприятия КАК ТипМероприятия,
+	ЛабораторныеИсследования.ДополнительныеСведения КАК ДополнительныеСведения,
+	ЛабораторныеИсследования.Заключение КАК Заключение,
+	СведенияОбИммунизации.ДатаСобытия КАК ДатаСобытия,
+	СведенияОбИммунизации.Заболевание КАК Заболевание,
+	СведенияОбИммунизации.Препарат КАК Препарат,
+	СведенияОбИммунизации.СерияПрепарата КАК СерияПрепарата,
+	СведенияОбИммунизации.ТипМероприятия КАК ТипМероприятияИммунизация,
+	СведенияОбИммунизации.ДополнительныеСведения КАК ДополнительныеСведенияИммунизация
+ИЗ
+	РегистрСведений.ЛабораторныеИсследования КАК ЛабораторныеИсследования
+		ПОЛНОЕ СОЕДИНЕНИЕ РегистрСведений.СведенияОбИммунизации КАК СведенияОбИммунизации
+		ПО ЛабораторныеИсследования.ЗаписьСкладскогоЖурнала = СведенияОбИммунизации.ЗаписьСкладскогоЖурнала</query>
+	</dataSet>
+	<settingsVariant>
+		<dcsset:name>Основной</dcsset:name>
+		<dcsset:presentation xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Сведения о проведенных ветеринарных мероприятиях</v8:content>
+			</v8:item>
+		</dcsset:presentation>
+		<dcsset:settings xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows">
+			<dcsset:selection>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ЗаписьСкладскогоЖурнала</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemFolder">
+					<dcsset:lwsTitle>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Лабораторные Исследования</v8:content>
+						</v8:item>
+					</dcsset:lwsTitle>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>ТипМероприятия</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>ОрганизацияОператор</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>ДатаПолученияРезультата</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>МетодИсследования</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>ПоказательБезопасности</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>НомерАктаОтбораПроб</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>ДатаОтбораПроб</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>НомерЭкспертизы</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>ДополнительныеСведения</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>РезультатИсследования</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>Заключение</dcsset:field>
+					</dcsset:item>
+					<dcsset:placement>Auto</dcsset:placement>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemFolder">
+					<dcsset:lwsTitle>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Сведения об иммунизации</v8:content>
+						</v8:item>
+					</dcsset:lwsTitle>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>ТипМероприятияИммунизация</dcsset:field>
+						<dcsset:lwsTitle>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Тип мероприятия</v8:content>
+							</v8:item>
+						</dcsset:lwsTitle>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>Заболевание</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>ДатаСобытия</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>Препарат</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>СерияПрепарата</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>ДополнительныеСведенияИммунизация</dcsset:field>
+						<dcsset:lwsTitle>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Дополнительные сведения</v8:content>
+							</v8:item>
+						</dcsset:lwsTitle>
+					</dcsset:item>
+					<dcsset:placement>Auto</dcsset:placement>
+				</dcsset:item>
+			</dcsset:selection>
+			<dcsset:outputParameters>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>ВыводитьЗаголовок</dcscor:parameter>
+					<dcscor:value xsi:type="dcsset:DataCompositionTextOutputType">Output</dcscor:value>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Заголовок</dcscor:parameter>
+					<dcscor:value xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Сведения о проведенных ветеринарных мероприятиях</v8:content>
+						</v8:item>
+					</dcscor:value>
+				</dcscor:item>
+			</dcsset:outputParameters>
+			<dcsset:item xsi:type="dcsset:StructureItemGroup">
+				<dcsset:order>
+					<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+				</dcsset:order>
+				<dcsset:selection>
+					<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+				</dcsset:selection>
+			</dcsset:item>
+		</dcsset:settings>
+	</settingsVariant>
+</DataCompositionSchema>

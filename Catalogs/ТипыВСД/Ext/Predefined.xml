@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<PredefinedData xmlns="http://v8.1c.ru/8.3/xcf/predef" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="CatalogPredefinedItems" version="2.5">
+	<Item id="4be88c8c-cfe0-4cef-971a-185732b901e7">
+		<Name>ВозвратныйВСД</Name>
+		<Code>RETURNABLE</Code>
+		<Description>Возвратный ВСД</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="56a4178c-d368-41cf-992b-3fb1e7dd9762">
+		<Name>Входящий</Name>
+		<Code>INCOMING</Code>
+		<Description>Входящий ВСД</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="8f88b3fe-72e6-47f0-bb73-b855f9b450a4">
+		<Name>Импортный</Name>
+		<Code>IMPORT</Code>
+		<Description>Импортный</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="1c68505a-2b8e-4f23-9ade-204517cbce02">
+		<Name>Исходящий</Name>
+		<Code>OUTGOING</Code>
+		<Description>Исходящий ВСД</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="dbd8a2cc-cfac-4d4a-9509-f0f65fbf7005">
+		<Name>НаПеремещение</Name>
+		<Code>MOVEMENT</Code>
+		<Description>На перемещение</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="6602a45f-c533-475b-96bd-825ac6d3a22a">
+		<Name>ПроизводственныйВСД</Name>
+		<Code>PRODUCTIVE</Code>
+		<Description>Производственный ВСД</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="3bb0bcc3-8372-449f-83bd-8b933a32bcf6">
+		<Name>Транспортный</Name>
+		<Code>TRANSPORT</Code>
+		<Description>Транспортный ВСД</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+</PredefinedData>

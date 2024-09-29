@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<PredefinedData xmlns="http://v8.1c.ru/8.3/xcf/predef" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="CatalogPredefinedItems" version="2.5">
+	<Item id="bf9892e7-b0d5-4574-8fed-5f986970c14c">
+		<Name>ГрузОтличается</Name>
+		<Code>MISMATCH</Code>
+		<Description>Груз отличается от сведений, указанных в сопроводительных документах</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="f740251e-9114-463e-878e-92231c9af2cf">
+		<Name>ГрузСоответствует</Name>
+		<Code>CORRESPONDS</Code>
+		<Description>Груз соответствует сведениям, заявленным в документах</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="624d27c5-dae5-4676-b0f1-16bb7adaa4be">
+		<Name>КонтрольНеПроводился</Name>
+		<Code>UNSUPERVISED</Code>
+		<Description>Контроль не проводился</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+</PredefinedData>

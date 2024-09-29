@@ -1,0 +1,160 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.5">
+	<AutoTime>CurrentOrLast</AutoTime>
+	<UsePostingMode>Auto</UsePostingMode>
+	<RepostOnWrite>true</RepostOnWrite>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<ChildItems>
+		<InputField name="Номер" id="1">
+			<DataPath>Объект.Number</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="НомерКонтекстноеМеню" id="2"/>
+			<ExtendedTooltip name="НомерРасширеннаяПодсказка" id="3"/>
+		</InputField>
+		<InputField name="Дата" id="4">
+			<DataPath>Объект.Date</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="ДатаКонтекстноеМеню" id="5"/>
+			<ExtendedTooltip name="ДатаРасширеннаяПодсказка" id="6"/>
+		</InputField>
+		<InputField name="ИмяФайла" id="19">
+			<DataPath>Объект.ИмяФайла</DataPath>
+			<ContextMenu name="ИмяФайлаКонтекстноеМеню" id="20"/>
+			<ExtendedTooltip name="ИмяФайлаРасширеннаяПодсказка" id="21"/>
+		</InputField>
+		<InputField name="ДатаЗагрузкиИсходногоФайла" id="22">
+			<DataPath>Объект.ДатаЗагрузкиИсходногоФайла</DataPath>
+			<ContextMenu name="ДатаЗагрузкиИсходногоФайлаКонтекстноеМеню" id="23"/>
+			<ExtendedTooltip name="ДатаЗагрузкиИсходногоФайлаРасширеннаяПодсказка" id="24"/>
+		</InputField>
+		<InputField name="ДатаЗаписиОбработанногоФайла" id="25">
+			<DataPath>Объект.ДатаЗаписиОбработанногоФайла</DataPath>
+			<ContextMenu name="ДатаЗаписиОбработанногоФайлаКонтекстноеМеню" id="26"/>
+			<ExtendedTooltip name="ДатаЗаписиОбработанногоФайлаРасширеннаяПодсказка" id="27"/>
+		</InputField>
+		<InputField name="Hash" id="28">
+			<DataPath>Объект.Hash</DataPath>
+			<ContextMenu name="HashКонтекстноеМеню" id="29"/>
+			<ExtendedTooltip name="HashРасширеннаяПодсказка" id="30"/>
+		</InputField>
+		<InputField name="СтатусДокумента" id="31">
+			<DataPath>Объект.СтатусДокумента</DataPath>
+			<ContextMenu name="СтатусДокументаКонтекстноеМеню" id="32"/>
+			<ExtendedTooltip name="СтатусДокументаРасширеннаяПодсказка" id="33"/>
+		</InputField>
+		<InputField name="Ответственный" id="7">
+			<DataPath>Объект.Ответственный</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="ОтветственныйКонтекстноеМеню" id="8"/>
+			<ExtendedTooltip name="ОтветственныйРасширеннаяПодсказка" id="9"/>
+		</InputField>
+		<InputField name="Кодировка" id="34">
+			<DataPath>Объект.Кодировка</DataPath>
+			<ContextMenu name="КодировкаКонтекстноеМеню" id="35"/>
+			<ExtendedTooltip name="КодировкаРасширеннаяПодсказка" id="36"/>
+		</InputField>
+		<InputField name="ДМ_СвязанныйДокументУВС" id="37">
+			<DataPath>Объект.ДМ_СвязанныйДокументУВС</DataPath>
+			<SkipOnInput>true</SkipOnInput>
+			<OpenButton>true</OpenButton>
+			<ContextMenu name="ДМ_СвязанныйДокументУВСКонтекстноеМеню" id="38"/>
+			<ExtendedTooltip name="ДМ_СвязанныйДокументУВСРасширеннаяПодсказка" id="39"/>
+		</InputField>
+		<InputField name="ДМ_GLNСети" id="40">
+			<DataPath>Объект.ДМ_GLNСети</DataPath>
+			<SkipOnInput>true</SkipOnInput>
+			<ContextMenu name="ДМ_GLNСетиКонтекстноеМеню" id="41"/>
+			<ExtendedTooltip name="ДМ_GLNСетиРасширеннаяПодсказка" id="42"/>
+		</InputField>
+		<InputField name="Организация" id="43">
+			<DataPath>Объект.Организация</DataPath>
+			<SkipOnInput>true</SkipOnInput>
+			<ContextMenu name="ОрганизацияКонтекстноеМеню" id="44"/>
+			<ExtendedTooltip name="ОрганизацияРасширеннаяПодсказка" id="45"/>
+		</InputField>
+		<InputField name="Предприятие" id="46">
+			<DataPath>Объект.Предприятие</DataPath>
+			<SkipOnInput>true</SkipOnInput>
+			<ContextMenu name="ПредприятиеКонтекстноеМеню" id="47"/>
+			<ExtendedTooltip name="ПредприятиеРасширеннаяПодсказка" id="48"/>
+		</InputField>
+		<UsualGroup name="Группа1" id="68">
+			<Group>Vertical</Group>
+			<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="69"/>
+			<ChildItems>
+				<LabelDecoration name="Декорация1" id="70">
+					<Title formatted="false">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Связанные документы УВС</v8:content>
+						</v8:item>
+					</Title>
+					<ContextMenu name="Декорация1КонтекстноеМеню" id="71"/>
+					<ExtendedTooltip name="Декорация1РасширеннаяПодсказка" id="72"/>
+				</LabelDecoration>
+				<Table name="ДМ_СвязанныеДокументыУВС" id="49">
+					<AutoInsertNewRow>true</AutoInsertNewRow>
+					<EnableStartDrag>true</EnableStartDrag>
+					<EnableDrag>true</EnableDrag>
+					<DataPath>Объект.ДМ_СвязанныеДокументыУВС</DataPath>
+					<RowFilter xsi:nil="true"/>
+					<ContextMenu name="ДМ_СвязанныеДокументыУВСКонтекстноеМеню" id="50"/>
+					<AutoCommandBar name="ДМ_СвязанныеДокументыУВСКоманднаяПанель" id="51">
+						<Autofill>false</Autofill>
+					</AutoCommandBar>
+					<ExtendedTooltip name="ДМ_СвязанныеДокументыУВСРасширеннаяПодсказка" id="52"/>
+					<SearchStringAddition name="ДМ_СвязанныеДокументыУВССтрокаПоиска" id="53">
+						<AdditionSource>
+							<Item>ДМ_СвязанныеДокументыУВС</Item>
+							<Type>SearchStringRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="ДМ_СвязанныеДокументыУВССтрокаПоискаКонтекстноеМеню" id="54"/>
+						<ExtendedTooltip name="ДМ_СвязанныеДокументыУВССтрокаПоискаРасширеннаяПодсказка" id="55"/>
+					</SearchStringAddition>
+					<ViewStatusAddition name="ДМ_СвязанныеДокументыУВССостояниеПросмотра" id="56">
+						<AdditionSource>
+							<Item>ДМ_СвязанныеДокументыУВС</Item>
+							<Type>ViewStatusRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="ДМ_СвязанныеДокументыУВССостояниеПросмотраКонтекстноеМеню" id="57"/>
+						<ExtendedTooltip name="ДМ_СвязанныеДокументыУВССостояниеПросмотраРасширеннаяПодсказка" id="58"/>
+					</ViewStatusAddition>
+					<SearchControlAddition name="ДМ_СвязанныеДокументыУВСУправлениеПоиском" id="59">
+						<AdditionSource>
+							<Item>ДМ_СвязанныеДокументыУВС</Item>
+							<Type>SearchControl</Type>
+						</AdditionSource>
+						<ContextMenu name="ДМ_СвязанныеДокументыУВСУправлениеПоискомКонтекстноеМеню" id="60"/>
+						<ExtendedTooltip name="ДМ_СвязанныеДокументыУВСУправлениеПоискомРасширеннаяПодсказка" id="61"/>
+					</SearchControlAddition>
+					<ChildItems>
+						<LabelField name="ДМ_СвязанныеДокументыУВСНомерСтроки" id="62">
+							<DataPath>Объект.ДМ_СвязанныеДокументыУВС.LineNumber</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="ДМ_СвязанныеДокументыУВСНомерСтрокиКонтекстноеМеню" id="63"/>
+							<ExtendedTooltip name="ДМ_СвязанныеДокументыУВСНомерСтрокиРасширеннаяПодсказка" id="64"/>
+						</LabelField>
+						<InputField name="ДМ_СвязанныеДокументыУВСДМ_СвязанныйДокументУВС" id="65">
+							<DataPath>Объект.ДМ_СвязанныеДокументыУВС.ДМ_СвязанныйДокументУВС</DataPath>
+							<EditMode>Directly</EditMode>
+							<ContextMenu name="ДМ_СвязанныеДокументыУВСДМ_СвязанныйДокументУВСКонтекстноеМеню" id="66"/>
+							<ExtendedTooltip name="ДМ_СвязанныеДокументыУВСДМ_СвязанныйДокументУВСРасширеннаяПодсказка" id="67"/>
+						</InputField>
+					</ChildItems>
+				</Table>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DocumentObject.ДМ_ФайлыОбменаDanoneКлиент</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+			<UseAlways>
+				<Field>Объект.RegisterRecords</Field>
+			</UseAlways>
+		</Attribute>
+	</Attributes>
+</Form>

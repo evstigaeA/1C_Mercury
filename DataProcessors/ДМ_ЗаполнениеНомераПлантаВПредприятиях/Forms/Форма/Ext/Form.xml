@@ -1,0 +1,140 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.5">
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<Autofill>false</Autofill>
+	</AutoCommandBar>
+	<ChildItems>
+		<Table name="Предприятия" id="1">
+			<Representation>List</Representation>
+			<AutoInsertNewRow>true</AutoInsertNewRow>
+			<EnableStartDrag>true</EnableStartDrag>
+			<EnableDrag>true</EnableDrag>
+			<DataPath>Объект.Предприятия</DataPath>
+			<RowFilter xsi:nil="true"/>
+			<ContextMenu name="ПредприятияКонтекстноеМеню" id="2"/>
+			<AutoCommandBar name="ПредприятияКоманднаяПанель" id="3">
+				<ChildItems>
+					<Button name="ПредприятияЗаполнитьТаблицу" id="26">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.ЗаполнитьТаблицу</CommandName>
+						<ExtendedTooltip name="ПредприятияЗаполнитьТаблицуРасширеннаяПодсказка" id="27"/>
+					</Button>
+					<Button name="ПредприятияОбновитьСправочникПредприятия" id="28">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.ОбновитьСправочникПредприятия</CommandName>
+						<ExtendedTooltip name="ПредприятияОбновитьСправочникПредприятияРасширеннаяПодсказка" id="29"/>
+					</Button>
+				</ChildItems>
+			</AutoCommandBar>
+			<ExtendedTooltip name="ПредприятияРасширеннаяПодсказка" id="4"/>
+			<SearchStringAddition name="ПредприятияСтрокаПоиска" id="5">
+				<AdditionSource>
+					<Item>Предприятия</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ПредприятияСтрокаПоискаКонтекстноеМеню" id="6"/>
+				<ExtendedTooltip name="ПредприятияСтрокаПоискаРасширеннаяПодсказка" id="7"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="ПредприятияСостояниеПросмотра" id="8">
+				<AdditionSource>
+					<Item>Предприятия</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ПредприятияСостояниеПросмотраКонтекстноеМеню" id="9"/>
+				<ExtendedTooltip name="ПредприятияСостояниеПросмотраРасширеннаяПодсказка" id="10"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="ПредприятияУправлениеПоиском" id="11">
+				<AdditionSource>
+					<Item>Предприятия</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="ПредприятияУправлениеПоискомКонтекстноеМеню" id="12"/>
+				<ExtendedTooltip name="ПредприятияУправлениеПоискомРасширеннаяПодсказка" id="13"/>
+			</SearchControlAddition>
+			<ChildItems>
+				<LabelField name="ПредприятияНомерСтроки" id="14">
+					<DataPath>Объект.Предприятия.LineNumber</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ПредприятияНомерСтрокиКонтекстноеМеню" id="15"/>
+					<ExtendedTooltip name="ПредприятияНомерСтрокиРасширеннаяПодсказка" id="16"/>
+				</LabelField>
+				<InputField name="ПредприятияПредприятие" id="17">
+					<DataPath>Объект.Предприятия.Предприятие</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ПредприятияПредприятиеКонтекстноеМеню" id="18"/>
+					<ExtendedTooltip name="ПредприятияПредприятиеРасширеннаяПодсказка" id="19"/>
+					<Events>
+						<Event name="OnChange">ПредприятияПредприятиеПриИзменении</Event>
+					</Events>
+				</InputField>
+				<InputField name="ПредприятияДМ_НомерПланта" id="20">
+					<DataPath>Объект.Предприятия.ДМ_НомерПланта</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ПредприятияДМ_НомерПлантаКонтекстноеМеню" id="21"/>
+					<ExtendedTooltip name="ПредприятияДМ_НомерПлантаРасширеннаяПодсказка" id="22"/>
+				</InputField>
+				<InputField name="ПредприятияОрганизация" id="30">
+					<DataPath>Объект.Предприятия.Организация</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ПредприятияОрганизацияКонтекстноеМеню" id="31"/>
+					<ExtendedTooltip name="ПредприятияОрганизацияРасширеннаяПодсказка" id="32"/>
+				</InputField>
+				<CheckBoxField name="ПредприятияОбновлять" id="23">
+					<DataPath>Объект.Предприятия.Обновлять</DataPath>
+					<EditMode>Directly</EditMode>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ПредприятияОбновлятьКонтекстноеМеню" id="24"/>
+					<ExtendedTooltip name="ПредприятияОбновлятьРасширеннаяПодсказка" id="25"/>
+				</CheckBoxField>
+				<CheckBoxField name="ПредприятияВыполнено" id="33">
+					<DataPath>Объект.Предприятия.Выполнено</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<EditMode>EnterOnInput</EditMode>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ПредприятияВыполненоКонтекстноеМеню" id="34"/>
+					<ExtendedTooltip name="ПредприятияВыполненоРасширеннаяПодсказка" id="35"/>
+				</CheckBoxField>
+			</ChildItems>
+		</Table>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.ДМ_ЗаполнениеНомераПлантаВПредприятиях</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ЗаполнитьТаблицу" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заполнить таблицу</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заполнить таблицу</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ЗаполнитьТаблицу</Action>
+		</Command>
+		<Command name="ОбновитьСправочникПредприятия" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить справочник Предприятия</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить справочник предприятия</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОбновитьСправочникПредприятия</Action>
+		</Command>
+	</Commands>
+</Form>

@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<PredefinedData xmlns="http://v8.1c.ru/8.3/xcf/predef" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="CatalogPredefinedItems" version="2.5">
+	<Item id="c7fcce9e-2925-4dfb-8d1c-58b04e6c3790">
+		<Name>ОформитьВозвратНаВсюПоставку</Name>
+		<Code>RETURN_ALL</Code>
+		<Description>Оформить возврат на всю поставку</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="64782e4c-26d8-40a1-a4cb-a96bfcca5be5">
+		<Name>ПринятьВсюПоставку</Name>
+		<Code>ACCEPT_ALL</Code>
+		<Description>Принять всю поставку</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="d51a8fd9-7b4f-4a96-8e45-d20577c35029">
+		<Name>ПринятьЧастьГруза</Name>
+		<Code>PARTIALLY</Code>
+		<Description>Принять часть груза, на оставшуюся оформить возврат</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+</PredefinedData>

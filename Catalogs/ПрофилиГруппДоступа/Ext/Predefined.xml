@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<PredefinedData xmlns="http://v8.1c.ru/8.3/xcf/predef" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="CatalogPredefinedItems" version="2.5">
+	<Item id="6c4b0307-43a4-4141-9c35-3dd7e9586d41">
+		<Name>Администратор</Name>
+		<Code/>
+		<Description>Администратор</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="6a3ee0c5-9e5d-4b54-8423-e6793146a749">
+		<Name>АдминистраторХС</Name>
+		<Code/>
+		<Description>Администратор ХС</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="7b5c4041-1306-43c4-a4ba-a85b3f0c5c7b">
+		<Name>ОператорВнесениеЛабораторныхИсследований</Name>
+		<Code/>
+		<Description>Оператор (внесение лабораторных исследований)</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="a298b325-bdcf-487d-8a21-ff633e6f5ea8">
+		<Name>ОператорОперацииПоступления</Name>
+		<Code/>
+		<Description>Оператор (операции поступления)</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="ad7930b7-a8d0-4dc9-826b-84f0d4f12145">
+		<Name>ОператорПроизводственныеОперации</Name>
+		<Code/>
+		<Description>Оператор (производственные операции)</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="2f0cebc7-82fb-41f2-a023-05c1e0a91fb2">
+		<Name>ОператорСкладскиеОперации</Name>
+		<Code/>
+		<Description>Оператор (складские операции)</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="90824ab7-be9c-46ac-8369-9c8cd46ccd58">
+		<Name>ОператорТранспортныеОперации</Name>
+		<Code/>
+		<Description>Оператор (транспортные операции)</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="78d98788-693d-4496-9827-b12ad7b854be">
+		<Name>ОтветственныйЗаВнесениеЛабораторныхИсследований</Name>
+		<Code/>
+		<Description>Ответственный за внесение лабораторных исследований</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="866f21a2-4921-4653-a541-33bb784f04d6">
+		<Name>ОтветственныйЗаОперацииПоступления</Name>
+		<Code/>
+		<Description>Ответственный за операции поступления</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="88f0ff13-057b-4e4c-9f8b-ace02f37a9d9">
+		<Name>ОтветственныйЗаПроизводственныеОперации</Name>
+		<Code/>
+		<Description>Ответственный за производственные операции</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="7c5d2688-3773-4308-bb2a-f89dfb5bf201">
+		<Name>ОтветственныйЗаСкладскиеОперации</Name>
+		<Code/>
+		<Description>Ответственный за складские операции</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="cdb018c2-7182-4417-ab4c-00201fa3ce53">
+		<Name>ОтветственныйЗаТранспортныеОперации</Name>
+		<Code/>
+		<Description>Ответственный за транспортные операции</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+</PredefinedData>

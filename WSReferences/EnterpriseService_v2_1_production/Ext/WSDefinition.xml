@@ -1,0 +1,676 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<definitions xmlns="http://schemas.xmlsoap.org/wsdl/"
+		xmlns:soap12bind="http://schemas.xmlsoap.org/wsdl/soap12/"
+		xmlns:soapbind="http://schemas.xmlsoap.org/wsdl/soap/"
+		xmlns:tns="http://api.vetrf.ru/schema/cdm/registry/enterprise/service/v2"
+		xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy"
+		xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd"
+		xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+		xmlns:xsd1="0"
+		xmlns:xsd2="http://api.vetrf.ru/schema/cdm/base"
+		xmlns:xsd3="http://api.vetrf.ru/schema/cdm/base/ws-definitions"
+		xmlns:xsd4="http://api.vetrf.ru/schema/cdm/dictionary/v2"
+		xmlns:xsd5="http://api.vetrf.ru/schema/cdm/registry/ws-definitions/v2"
+		name="EnterpriseService"
+		targetNamespace="http://api.vetrf.ru/schema/cdm/registry/enterprise/service/v2">
+	<documentation>
+        Service: EnterpriseService
+        Version: 2.0.4
+    </documentation>
+	<types>
+		<schema xmlns="http://www.w3.org/2001/XMLSchema"
+				xmlns:bdef="http://api.vetrf.ru/schema/cdm/base/ws-definitions"
+				xmlns:rdef="http://api.vetrf.ru/schema/cdm/registry/ws-definitions/v2"
+				xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/"
+				xmlns:tns="0"
+				xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/"
+				targetNamespace="0">
+			<import namespace="http://api.vetrf.ru/schema/cdm/base/ws-definitions"
+					schemaLocation="file://1.xsd"/>
+			<default:import xmlns:default="http://www.w3.org/2001/XMLSchema"
+					namespace="http://api.vetrf.ru/schema/cdm/registry/ws-definitions/v2"
+					schemaLocation="file://3.xsd"/>
+		</schema>
+	</types>
+	<message name="GetBusinessEntityByGuid">
+		<part name="request"
+				element="xsd5:getBusinessEntityByGuidRequest"/>
+	</message>
+	<message name="GetBusinessEntityByGuidResponse">
+		<part name="response"
+				element="xsd5:getBusinessEntityByGuidResponse"/>
+	</message>
+	<message name="GetBusinessEntityByUuid">
+		<part name="request"
+				element="xsd5:getBusinessEntityByUuidRequest"/>
+	</message>
+	<message name="GetBusinessEntityByUuidResponse">
+		<part name="response"
+				element="xsd5:getBusinessEntityByUuidResponse"/>
+	</message>
+	<message name="GetBusinessEntityList">
+		<part name="request"
+				element="xsd5:getBusinessEntityListRequest"/>
+	</message>
+	<message name="GetBusinessEntityListResponse">
+		<part name="response"
+				element="xsd5:getBusinessEntityListResponse"/>
+	</message>
+	<message name="GetBusinessEntityChangesList">
+		<part name="request"
+				element="xsd5:getBusinessEntityChangesListRequest"/>
+	</message>
+	<message name="GetBusinessEntityChangesListResponse">
+		<part name="response"
+				element="xsd5:getBusinessEntityChangesListResponse"/>
+	</message>
+	<message name="GetEnterpriseByGuid">
+		<part name="request"
+				element="xsd5:getEnterpriseByGuidRequest"/>
+	</message>
+	<message name="GetEnterpriseByGuidResponse">
+		<part name="response"
+				element="xsd5:getEnterpriseByGuidResponse"/>
+	</message>
+	<message name="GetEnterpriseByUuid">
+		<part name="request"
+				element="xsd5:getEnterpriseByUuidRequest"/>
+	</message>
+	<message name="GetEnterpriseByUuidResponse">
+		<part name="response"
+				element="xsd5:getEnterpriseByUuidResponse"/>
+	</message>
+	<message name="GetForeignEnterpriseList">
+		<part name="request"
+				element="xsd5:getForeignEnterpriseListRequest"/>
+	</message>
+	<message name="GetForeignEnterpriseListResponse">
+		<part name="response"
+				element="xsd5:getForeignEnterpriseListResponse"/>
+	</message>
+	<message name="GetRussianEnterpriseList">
+		<part name="request"
+				element="xsd5:getRussianEnterpriseListRequest"/>
+	</message>
+	<message name="GetRussianEnterpriseListResponse">
+		<part name="response"
+				element="xsd5:getRussianEnterpriseListResponse"/>
+	</message>
+	<message name="GetForeignEnterpriseChangesList">
+		<part name="request"
+				element="xsd5:getForeignEnterpriseChangesListRequest"/>
+	</message>
+	<message name="GetForeignEnterpriseChangesListResponse">
+		<part name="response"
+				element="xsd5:getForeignEnterpriseChangesListResponse"/>
+	</message>
+	<message name="GetRussianEnterpriseChangesList">
+		<part name="request"
+				element="xsd5:getRussianEnterpriseChangesListRequest"/>
+	</message>
+	<message name="GetRussianEnterpriseChangesListResponse">
+		<part name="response"
+				element="xsd5:getRussianEnterpriseChangesListResponse"/>
+	</message>
+	<message name="GetBusinessMemberByGLN">
+		<part name="request"
+				element="xsd5:getBusinessMemberByGLNRequest"/>
+	</message>
+	<message name="GetBusinessMemberByGLNResponse">
+		<part name="response"
+				element="xsd5:getBusinessMemberByGLNResponse"/>
+	</message>
+	<message name="GetActivityLocationList">
+		<part name="request"
+				element="xsd5:getActivityLocationListRequest"/>
+	</message>
+	<message name="GetActivityLocationListResponse">
+		<part name="response"
+				element="xsd5:getActivityLocationListResponse"/>
+	</message>
+	<message name="EntityNotFoundFault">
+		<documentation>
+            Запись с указанным идентификатором не найдена.
+        </documentation>
+		<part name="fault"
+				element="xsd3:entityNotFoundFault"/>
+	</message>
+	<message name="IncorrectRequestFault">
+		<documentation>
+            Реакция системы на некорректный запрос.
+        </documentation>
+		<part name="fault"
+				element="xsd3:incorrectRequestFault"/>
+	</message>
+	<message name="InternalServiceFault">
+		<documentation>
+            Внутренняя ошибка выполнения операции на сервере.
+        </documentation>
+		<part name="fault"
+				element="xsd3:internalServiceFault"/>
+	</message>
+	<message name="OffsetOutOfRangeFault">
+		<documentation> </documentation>
+		<part name="fault"
+				element="xsd3:offsetOutOfRangeFault"/>
+	</message>
+	<portType name="EnterpriseServicePortType">
+		<operation name="GetBusinessEntityByGuid">
+			<documentation>Получение ХС по его глобальному идентификатору.
+                Критериями поиска являются глобальный идентификатор и поле last (т.е. запись должна быть последний в
+                истории).
+                Выполнение операции заканчивается либо возвратом искомого типа продукции,
+                либо ошибкой, в случае если запись ХС не найдена или произошла иная ошибка выполнения запроса.
+            </documentation>
+			<input name="businessEntityByGuid"
+					message="tns:GetBusinessEntityByGuid">
+				<documentation>Запрос, содержащий глобальный идентификатор ХС.</documentation>
+			</input>
+			<output name="businessEntityByResponse"
+					message="tns:GetBusinessEntityByGuidResponse">
+				<documentation>Искомая запись ХС (с указанным идентификатором).</documentation>
+			</output>
+			<fault name="internalServiceFault"
+					message="tns:InternalServiceFault">
+				<documentation>Внутренняя ошибка выполнения операции на сервере.</documentation>
+			</fault>
+			<fault name="incorrectRequestFault"
+					message="tns:IncorrectRequestFault">
+				<documentation>Реакция системы на некорректный запрос. Скорее всего в запросе не указан идентификатор
+                    типа продукции.
+                </documentation>
+			</fault>
+			<fault name="entityNotFoundFault"
+					message="tns:EntityNotFoundFault">
+				<documentation>Ошибка, свидетельствующая о том, что тип продукции с указанным идентификатором не
+                    найден.
+                </documentation>
+			</fault>
+		</operation>
+		<operation name="GetBusinessEntityByUuid">
+			<documentation>Получение записи ХС по его идентификатору.
+                Выполнение операции заканчивается либо возвратом искомого типа продукции,
+                либо ошибкой, в случае если запись ХС не найдена или произошла иная ошибка выполнения запроса.
+            </documentation>
+			<input name="businessEntityByUuid"
+					message="tns:GetBusinessEntityByUuid">
+				<documentation>Запрос, содержащий идентификатор записи ХС. Остальные элементы необязательны для
+                    заполнения.
+                </documentation>
+			</input>
+			<output name="businessEntityByUuidResponse"
+					message="tns:GetBusinessEntityByUuidResponse">
+				<documentation>Искомая запись ХС (с указанным идентификатором).</documentation>
+			</output>
+			<fault name="internalServiceFault"
+					message="tns:InternalServiceFault">
+				<documentation>Внутренняя ошибка выполнения операции на сервере.</documentation>
+			</fault>
+			<fault name="incorrectRequestFault"
+					message="tns:IncorrectRequestFault">
+				<documentation>Реакция системы на некорректный запрос. Скорее всего в запросе не указан идентификатор
+                    типа продукции.
+                </documentation>
+			</fault>
+			<fault name="entityNotFoundFault"
+					message="tns:EntityNotFoundFault">
+				<documentation>Ошибка, свидетельствующая о том, что тип продукции с указанным идентификатором не
+                    найден.
+                </documentation>
+			</fault>
+		</operation>
+		<operation name="GetBusinessEntityList">
+			<input name="businessEntityList"
+					message="tns:GetBusinessEntityList"/>
+			<output name="businessEntityListResponse"
+					message="tns:GetBusinessEntityListResponse"/>
+			<fault name="internalServiceFault"
+					message="tns:InternalServiceFault"/>
+			<fault name="incorrectRequestFault"
+					message="tns:IncorrectRequestFault"/>
+			<fault name="offsetOutOfRangeFault"
+					message="tns:OffsetOutOfRangeFault"/>
+		</operation>
+		<operation name="GetBusinessEntityChangesList">
+			<input name="businessEntityChangesList"
+					message="tns:GetBusinessEntityChangesList"/>
+			<output name="businessEntityChangesListResponse"
+					message="tns:GetBusinessEntityChangesListResponse"/>
+			<fault name="internalServiceFault"
+					message="tns:InternalServiceFault"/>
+			<fault name="incorrectRequestFault"
+					message="tns:IncorrectRequestFault"/>
+			<fault name="offsetOutOfRangeFault"
+					message="tns:OffsetOutOfRangeFault"/>
+		</operation>
+		<operation name="GetEnterpriseByGuid">
+			<documentation>Получение ХС по его глобальному идентификатору.
+                Критериями поиска являются глобальный идентификатор и поле last (т.е. запись должна быть последний в
+                истории).
+                Выполнение операции заканчивается либо возвратом искомого типа продукции,
+                либо ошибкой, в случае если запись ХС не найдена или произошла иная ошибка выполнения запроса.
+            </documentation>
+			<input name="enterpriseByGuid"
+					message="tns:GetEnterpriseByGuid">
+				<documentation>Запрос, содержащий глобальный идентификатор ХС.</documentation>
+			</input>
+			<output name="enterpriseByResponse"
+					message="tns:GetEnterpriseByGuidResponse">
+				<documentation>Искомая запись ХС (с указанным идентификатором).</documentation>
+			</output>
+			<fault name="internalServiceFault"
+					message="tns:InternalServiceFault">
+				<documentation>Внутренняя ошибка выполнения операции на сервере.</documentation>
+			</fault>
+			<fault name="incorrectRequestFault"
+					message="tns:IncorrectRequestFault">
+				<documentation>Реакция системы на некорректный запрос. Скорее всего в запросе не указан идентификатор
+                    типа продукции.
+                </documentation>
+			</fault>
+			<fault name="entityNotFoundFault"
+					message="tns:EntityNotFoundFault">
+				<documentation>Ошибка, свидетельствующая о том, что тип продукции с указанным идентификатором не
+                    найден.
+                </documentation>
+			</fault>
+		</operation>
+		<operation name="GetEnterpriseByUuid">
+			<documentation>Получение записи ХС по его идентификатору.
+                Выполнение операции заканчивается либо возвратом искомого типа продукции,
+                либо ошибкой, в случае если запись ХС не найдена или произошла иная ошибка выполнения запроса.
+            </documentation>
+			<input name="enterpriseByUuid"
+					message="tns:GetEnterpriseByUuid">
+				<documentation>Запрос, содержащий идентификатор записи ХС. Остальные элементы необязательны для
+                    заполнения.
+                </documentation>
+			</input>
+			<output name="enterpriseByUuidResponse"
+					message="tns:GetEnterpriseByUuidResponse">
+				<documentation>Искомая запись ХС (с указанным идентификатором).</documentation>
+			</output>
+			<fault name="internalServiceFault"
+					message="tns:InternalServiceFault">
+				<documentation>Внутренняя ошибка выполнения операции на сервере.</documentation>
+			</fault>
+			<fault name="incorrectRequestFault"
+					message="tns:IncorrectRequestFault">
+				<documentation>Реакция системы на некорректный запрос. Скорее всего в запросе не указан идентификатор
+                    типа продукции.
+                </documentation>
+			</fault>
+			<fault name="entityNotFoundFault"
+					message="tns:EntityNotFoundFault">
+				<documentation>Ошибка, свидетельствующая о том, что тип продукции с указанным идентификатором не
+                    найден.
+                </documentation>
+			</fault>
+		</operation>
+		<operation name="GetForeignEnterpriseList">
+			<input name="foreignEnterpriseList"
+					message="tns:GetForeignEnterpriseList"/>
+			<output name="foreignEnterpriseListResponse"
+					message="tns:GetForeignEnterpriseListResponse"/>
+			<fault name="internalServiceFault"
+					message="tns:InternalServiceFault"/>
+			<fault name="incorrectRequestFault"
+					message="tns:IncorrectRequestFault"/>
+			<fault name="offsetOutOfRangeFault"
+					message="tns:OffsetOutOfRangeFault"/>
+		</operation>
+		<operation name="GetRussianEnterpriseList">
+			<input name="russianEnterpriseList"
+					message="tns:GetRussianEnterpriseList"/>
+			<output name="russianEnterpriseListResponse"
+					message="tns:GetRussianEnterpriseListResponse"/>
+			<fault name="internalServiceFault"
+					message="tns:InternalServiceFault"/>
+			<fault name="incorrectRequestFault"
+					message="tns:IncorrectRequestFault"/>
+			<fault name="offsetOutOfRangeFault"
+					message="tns:OffsetOutOfRangeFault"/>
+		</operation>
+		<operation name="GetForeignEnterpriseChangesList">
+			<input name="foreignEnterpriseChangesList"
+					message="tns:GetForeignEnterpriseChangesList"/>
+			<output name="foreignEnterpriseChangesListResponse"
+					message="tns:GetForeignEnterpriseChangesListResponse"/>
+			<fault name="internalServiceFault"
+					message="tns:InternalServiceFault"/>
+			<fault name="incorrectRequestFault"
+					message="tns:IncorrectRequestFault"/>
+			<fault name="offsetOutOfRangeFault"
+					message="tns:OffsetOutOfRangeFault"/>
+		</operation>
+		<operation name="GetRussianEnterpriseChangesList">
+			<input name="russianEnterpriseChangesList"
+					message="tns:GetRussianEnterpriseChangesList"/>
+			<output name="russianEnterpriseChangesListResponse"
+					message="tns:GetRussianEnterpriseChangesListResponse"/>
+			<fault name="internalServiceFault"
+					message="tns:InternalServiceFault"/>
+			<fault name="incorrectRequestFault"
+					message="tns:IncorrectRequestFault"/>
+			<fault name="offsetOutOfRangeFault"
+					message="tns:OffsetOutOfRangeFault"/>
+		</operation>
+		<operation name="GetBusinessMemberByGLN">
+			<documentation>Получение пары ХС-площадка по её глобальному идентификатору GLN.
+                Выполнение операции заканчивается либо возвратом искомой пары,
+                либо ошибкой, в случае если запись с указанным GLN не найдена или произошла иная ошибка выполнения запроса.
+            </documentation>
+			<input name="businessMemberByGLN"
+					message="tns:GetBusinessMemberByGLN">
+				<documentation>Запрос, содержащий глобальный идентификатор GLN.</documentation>
+			</input>
+			<output name="businessMemberByGLNResponse"
+					message="tns:GetBusinessMemberByGLNResponse">
+				<documentation>Искомая запись ХС-площадка (с указанным GLN).</documentation>
+			</output>
+			<fault name="internalServiceFault"
+					message="tns:InternalServiceFault">
+				<documentation>Внутренняя ошибка выполнения операции на сервере.</documentation>
+			</fault>
+			<fault name="incorrectRequestFault"
+					message="tns:IncorrectRequestFault">
+				<documentation>Реакция системы на некорректный запрос. Скорее всего в запросе не указан идентификатор
+                    типа продукции.
+                </documentation>
+			</fault>
+			<fault name="entityNotFoundFault"
+					message="tns:EntityNotFoundFault">
+				<documentation>Ошибка, свидетельствующая о том, что пара ХС-площадка с указанным идентификатором не
+                    найдена.
+                </documentation>
+			</fault>
+		</operation>
+		<operation name="GetActivityLocationList">
+			<input name="activityLocationList"
+					message="tns:GetActivityLocationList"/>
+			<output name="activityLocationListResponse"
+					message="tns:GetActivityLocationListResponse"/>
+			<fault name="internalServiceFault"
+					message="tns:InternalServiceFault"/>
+			<fault name="incorrectRequestFault"
+					message="tns:IncorrectRequestFault"/>
+			<fault name="offsetOutOfRangeFault"
+					message="tns:OffsetOutOfRangeFault"/>
+		</operation>
+	</portType>
+	<binding name="EnterpriseServiceBinding"
+			type="tns:EnterpriseServicePortType">
+		<soapbind:binding style="document"
+				transport="http://schemas.xmlsoap.org/soap/http"/>
+		<operation name="GetBusinessEntityByGuid">
+			<soapbind:operation style="document"
+					soapAction="GetBusinessEntityByGuid"/>
+			<input>
+				<soapbind:body use="literal"/>
+			</input>
+			<output>
+				<soapbind:body use="literal"/>
+			</output>
+			<fault name="internalServiceFault">
+				<soapbind:fault name="internalServiceFault"
+						use="literal"/>
+			</fault>
+			<fault name="incorrectRequestFault">
+				<soapbind:fault name="incorrectRequestFault"
+						use="literal"/>
+			</fault>
+			<fault name="entityNotFoundFault">
+				<soapbind:fault name="entityNotFoundFault"
+						use="literal"/>
+			</fault>
+		</operation>
+		<operation name="GetBusinessEntityByUuid">
+			<soapbind:operation style="document"
+					soapAction="GetBusinessEntityByUuid"/>
+			<input>
+				<soapbind:body use="literal"/>
+			</input>
+			<output>
+				<soapbind:body use="literal"/>
+			</output>
+			<fault name="internalServiceFault">
+				<soapbind:fault name="internalServiceFault"
+						use="literal"/>
+			</fault>
+			<fault name="incorrectRequestFault">
+				<soapbind:fault name="incorrectRequestFault"
+						use="literal"/>
+			</fault>
+			<fault name="entityNotFoundFault">
+				<soapbind:fault name="entityNotFoundFault"
+						use="literal"/>
+			</fault>
+		</operation>
+		<operation name="GetBusinessEntityList">
+			<soapbind:operation style="document"
+					soapAction="GetBusinessEntityList"/>
+			<input>
+				<soapbind:body use="literal"/>
+			</input>
+			<output>
+				<soapbind:body use="literal"/>
+			</output>
+			<fault name="internalServiceFault">
+				<soapbind:fault name="internalServiceFault"
+						use="literal"/>
+			</fault>
+			<fault name="incorrectRequestFault">
+				<soapbind:fault name="incorrectRequestFault"
+						use="literal"/>
+			</fault>
+			<fault name="offsetOutOfRangeFault">
+				<soapbind:fault name="offsetOutOfRangeFault"
+						use="literal"/>
+			</fault>
+		</operation>
+		<operation name="GetBusinessEntityChangesList">
+			<soapbind:operation style="document"
+					soapAction="GetBusinessEntityChangesList"/>
+			<input>
+				<soapbind:body use="literal"/>
+			</input>
+			<output>
+				<soapbind:body use="literal"/>
+			</output>
+			<fault name="internalServiceFault">
+				<soapbind:fault name="internalServiceFault"
+						use="literal"/>
+			</fault>
+			<fault name="incorrectRequestFault">
+				<soapbind:fault name="incorrectRequestFault"
+						use="literal"/>
+			</fault>
+			<fault name="offsetOutOfRangeFault">
+				<soapbind:fault name="offsetOutOfRangeFault"
+						use="literal"/>
+			</fault>
+		</operation>
+		<operation name="GetEnterpriseByGuid">
+			<soapbind:operation style="document"
+					soapAction="GetEnterpriseByGuid"/>
+			<input>
+				<soapbind:body use="literal"/>
+			</input>
+			<output>
+				<soapbind:body use="literal"/>
+			</output>
+			<fault name="internalServiceFault">
+				<soapbind:fault name="internalServiceFault"
+						use="literal"/>
+			</fault>
+			<fault name="incorrectRequestFault">
+				<soapbind:fault name="incorrectRequestFault"
+						use="literal"/>
+			</fault>
+			<fault name="entityNotFoundFault">
+				<soapbind:fault name="entityNotFoundFault"
+						use="literal"/>
+			</fault>
+		</operation>
+		<operation name="GetEnterpriseByUuid">
+			<soapbind:operation style="document"
+					soapAction="GetEnterpriseByUuid"/>
+			<input>
+				<soapbind:body use="literal"/>
+			</input>
+			<output>
+				<soapbind:body use="literal"/>
+			</output>
+			<fault name="internalServiceFault">
+				<soapbind:fault name="internalServiceFault"
+						use="literal"/>
+			</fault>
+			<fault name="incorrectRequestFault">
+				<soapbind:fault name="incorrectRequestFault"
+						use="literal"/>
+			</fault>
+			<fault name="entityNotFoundFault">
+				<soapbind:fault name="entityNotFoundFault"
+						use="literal"/>
+			</fault>
+		</operation>
+		<operation name="GetForeignEnterpriseList">
+			<soapbind:operation style="document"
+					soapAction="GetForeignEnterpriseList"/>
+			<input>
+				<soapbind:body use="literal"/>
+			</input>
+			<output>
+				<soapbind:body use="literal"/>
+			</output>
+			<fault name="internalServiceFault">
+				<soapbind:fault name="internalServiceFault"
+						use="literal"/>
+			</fault>
+			<fault name="incorrectRequestFault">
+				<soapbind:fault name="incorrectRequestFault"
+						use="literal"/>
+			</fault>
+			<fault name="offsetOutOfRangeFault">
+				<soapbind:fault name="offsetOutOfRangeFault"
+						use="literal"/>
+			</fault>
+		</operation>
+		<operation name="GetRussianEnterpriseList">
+			<soapbind:operation style="document"
+					soapAction="GetRussianEnterpriseList"/>
+			<input>
+				<soapbind:body use="literal"/>
+			</input>
+			<output>
+				<soapbind:body use="literal"/>
+			</output>
+			<fault name="internalServiceFault">
+				<soapbind:fault name="internalServiceFault"
+						use="literal"/>
+			</fault>
+			<fault name="incorrectRequestFault">
+				<soapbind:fault name="incorrectRequestFault"
+						use="literal"/>
+			</fault>
+			<fault name="offsetOutOfRangeFault">
+				<soapbind:fault name="offsetOutOfRangeFault"
+						use="literal"/>
+			</fault>
+		</operation>
+		<operation name="GetForeignEnterpriseChangesList">
+			<soapbind:operation style="document"
+					soapAction="GetForeignEnterpriseChangesList"/>
+			<input>
+				<soapbind:body use="literal"/>
+			</input>
+			<output>
+				<soapbind:body use="literal"/>
+			</output>
+			<fault name="internalServiceFault">
+				<soapbind:fault name="internalServiceFault"
+						use="literal"/>
+			</fault>
+			<fault name="incorrectRequestFault">
+				<soapbind:fault name="incorrectRequestFault"
+						use="literal"/>
+			</fault>
+			<fault name="offsetOutOfRangeFault">
+				<soapbind:fault name="offsetOutOfRangeFault"
+						use="literal"/>
+			</fault>
+		</operation>
+		<operation name="GetRussianEnterpriseChangesList">
+			<soapbind:operation style="document"
+					soapAction="GetRussianEnterpriseChangesList"/>
+			<input>
+				<soapbind:body use="literal"/>
+			</input>
+			<output>
+				<soapbind:body use="literal"/>
+			</output>
+			<fault name="internalServiceFault">
+				<soapbind:fault name="internalServiceFault"
+						use="literal"/>
+			</fault>
+			<fault name="incorrectRequestFault">
+				<soapbind:fault name="incorrectRequestFault"
+						use="literal"/>
+			</fault>
+			<fault name="offsetOutOfRangeFault">
+				<soapbind:fault name="offsetOutOfRangeFault"
+						use="literal"/>
+			</fault>
+		</operation>
+		<operation name="GetBusinessMemberByGLN">
+			<soapbind:operation style="document"
+					soapAction="GetBusinessMemberByGLN"/>
+			<input>
+				<soapbind:body use="literal"/>
+			</input>
+			<output>
+				<soapbind:body use="literal"/>
+			</output>
+			<fault name="internalServiceFault">
+				<soapbind:fault name="internalServiceFault"
+						use="literal"/>
+			</fault>
+			<fault name="incorrectRequestFault">
+				<soapbind:fault name="incorrectRequestFault"
+						use="literal"/>
+			</fault>
+			<fault name="entityNotFoundFault">
+				<soapbind:fault name="entityNotFoundFault"
+						use="literal"/>
+			</fault>
+		</operation>
+		<operation name="GetActivityLocationList">
+			<soapbind:operation style="document"
+					soapAction="GetActivityLocationList"/>
+			<input>
+				<soapbind:body use="literal"/>
+			</input>
+			<output>
+				<soapbind:body use="literal"/>
+			</output>
+			<fault name="internalServiceFault">
+				<soapbind:fault name="internalServiceFault"
+						use="literal"/>
+			</fault>
+			<fault name="incorrectRequestFault">
+				<soapbind:fault name="incorrectRequestFault"
+						use="literal"/>
+			</fault>
+			<fault name="offsetOutOfRangeFault">
+				<soapbind:fault name="offsetOutOfRangeFault"
+						use="literal"/>
+			</fault>
+		</operation>
+	</binding>
+	<service name="EnterpriseServiceBindingQSService">
+		<port name="EnterpriseServiceBindingQSPort"
+				binding="tns:EnterpriseServiceBinding">
+			<soapbind:address location="https://api.vetrf.ru/platform/services/2.1/EnterpriseService"/>
+		</port>
+	</service>
+</definitions>

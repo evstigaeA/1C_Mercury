@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<PredefinedData xmlns="http://v8.1c.ru/8.3/xcf/predef" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="CatalogPredefinedItems" version="2.5">
+	<Item id="ce514319-198e-4371-b9dd-4ac930b09222">
+		<Name>Авиатранспортный</Name>
+		<Code xsi:type="xs:decimal">3</Code>
+		<Description>Авиатранспортный</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="93999045-6a5d-4cb2-9152-13890f6c63c5">
+		<Name>Автомобильный</Name>
+		<Code xsi:type="xs:decimal">1</Code>
+		<Description>Автомобильный</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="ce699df8-45b6-430d-a38e-49acaf9555ae">
+		<Name>Железнодорожный</Name>
+		<Code xsi:type="xs:decimal">2</Code>
+		<Description>Железнодорожный</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="287e5b0b-a74d-401c-adbc-dae7a28bbb11">
+		<Name>МорскойКонтейнер</Name>
+		<Code xsi:type="xs:decimal">4</Code>
+		<Description>Морской (контейнер)</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="6879c1c3-9fe4-4948-82cf-e82538117dbc">
+		<Name>МорскойТрюм</Name>
+		<Code xsi:type="xs:decimal">5</Code>
+		<Description>Морской (трюм)</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="4293ab92-d908-49f0-8769-9dfd2b237d4b">
+		<Name>Перегон</Name>
+		<Code xsi:type="xs:decimal">7</Code>
+		<Description>Перегон (скота)</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="cdd698be-cd05-42ff-80a6-decaf0f8a619">
+		<Name>Речной</Name>
+		<Code xsi:type="xs:decimal">6</Code>
+		<Description>Речной</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+</PredefinedData>

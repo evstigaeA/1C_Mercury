@@ -1,0 +1,238 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.5">
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<Autofill>false</Autofill>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<InputField name="ИдентификаторЗаявки" id="17">
+			<DataPath>ИдентификаторЗаявки</DataPath>
+			<ReadOnly>true</ReadOnly>
+			<Width>50</Width>
+			<ContextMenu name="ИдентификаторЗаявкиКонтекстноеМеню" id="18"/>
+			<ExtendedTooltip name="ИдентификаторЗаявкиРасширеннаяПодсказка" id="19"/>
+		</InputField>
+		<UsualGroup name="ГруппаКодСтатус" id="29">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа код статус</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа код статус</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаКодСтатусРасширеннаяПодсказка" id="30"/>
+			<ChildItems>
+				<InputField name="СтатусЗаявки" id="23">
+					<DataPath>СтатусЗаявки</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<Width>23</Width>
+					<HorizontalStretch>false</HorizontalStretch>
+					<ContextMenu name="СтатусЗаявкиКонтекстноеМеню" id="24"/>
+					<ExtendedTooltip name="СтатусЗаявкиРасширеннаяПодсказка" id="25"/>
+				</InputField>
+				<InputField name="КодСостоянияСервера" id="20">
+					<DataPath>КодСостоянияСервера</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<ContextMenu name="КодСостоянияСервераКонтекстноеМеню" id="21"/>
+					<ExtendedTooltip name="КодСостоянияСервераРасширеннаяПодсказка" id="22"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<InputField name="ТекстОшибки" id="26">
+			<DataPath>ТекстОшибки</DataPath>
+			<ReadOnly>true</ReadOnly>
+			<TitleLocation>Left</TitleLocation>
+			<Width>50</Width>
+			<VerticalStretch>false</VerticalStretch>
+			<MultiLine>true</MultiLine>
+			<ExtendedEdit>true</ExtendedEdit>
+			<ContextMenu name="ТекстОшибкиКонтекстноеМеню" id="27"/>
+			<ExtendedTooltip name="ТекстОшибкиРасширеннаяПодсказка" id="28"/>
+		</InputField>
+		<UsualGroup name="ГруппаОтправка" id="1">
+			<ReadOnly>true</ReadOnly>
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отправка данных</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа отправка</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Vertical</Group>
+			<Representation>None</Representation>
+			<ExtendedTooltip name="ГруппаОтправкаРасширеннаяПодсказка" id="2"/>
+			<ChildItems>
+				<TextDocumentField name="ТекстЗапросаФормированияЗаявки" id="3">
+					<DataPath>ТекстЗапросаФормированияЗаявки</DataPath>
+					<Height>5</Height>
+					<AutoMaxHeight>false</AutoMaxHeight>
+					<ContextMenu name="ТекстЗапросаФормированияЗаявкиКонтекстноеМеню" id="4"/>
+					<ExtendedTooltip name="ТекстЗапросаФормированияЗаявкиРасширеннаяПодсказка" id="5"/>
+				</TextDocumentField>
+				<TextDocumentField name="ТекстОтветаФормированияЗаявки" id="6">
+					<DataPath>ТекстОтветаФормированияЗаявки</DataPath>
+					<Height>5</Height>
+					<AutoMaxHeight>false</AutoMaxHeight>
+					<ContextMenu name="ТекстОтветаФормированияЗаявкиКонтекстноеМеню" id="7"/>
+					<ExtendedTooltip name="ТекстОтветаФормированияЗаявкиРасширеннаяПодсказка" id="8"/>
+				</TextDocumentField>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаПолучениеРезультата" id="9">
+			<ReadOnly>true</ReadOnly>
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Полученный результат</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа получение результата</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Vertical</Group>
+			<Representation>None</Representation>
+			<ExtendedTooltip name="ГруппаПолучениеРезультатаРасширеннаяПодсказка" id="10"/>
+			<ChildItems>
+				<TextDocumentField name="ТекстЗапросаПолучениеРезультата" id="11">
+					<DataPath>ТекстЗапросаПолучениеРезультата</DataPath>
+					<Height>5</Height>
+					<AutoMaxHeight>false</AutoMaxHeight>
+					<ContextMenu name="ТекстЗапросаПолучениеРезультатаКонтекстноеМеню" id="12"/>
+					<ExtendedTooltip name="ТекстЗапросаПолучениеРезультатаРасширеннаяПодсказка" id="13"/>
+				</TextDocumentField>
+				<TextDocumentField name="ТекстОтветаПолучениеРезультата" id="14">
+					<DataPath>ТекстОтветаПолучениеРезультата</DataPath>
+					<Height>5</Height>
+					<AutoMaxHeight>false</AutoMaxHeight>
+					<ContextMenu name="ТекстОтветаПолучениеРезультатаКонтекстноеМеню" id="15"/>
+					<ExtendedTooltip name="ТекстОтветаПолучениеРезультатаРасширеннаяПодсказка" id="16"/>
+				</TextDocumentField>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.ИнформацияОбработкиЗапроса</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+		<Attribute name="ИдентификаторЗаявки" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Идентификатор заявки</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>36</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="КодСостоянияСервера" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Код состояния сервера</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>10</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="СтатусЗаявки" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Статус заявки</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.СтатусыЗаявок</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ТекстЗапросаФормированияЗаявки" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Текст запроса формирования заявки</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type xmlns:d5p1="http://v8.1c.ru/8.1/data/txtedt">d5p1:TextDocument</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ТекстОтветаФормированияЗаявки" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Текст ответа формирования заявки</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type xmlns:d5p1="http://v8.1c.ru/8.1/data/txtedt">d5p1:TextDocument</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ТекстЗапросаПолучениеРезультата" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Текст запроса получение результата</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type xmlns:d5p1="http://v8.1c.ru/8.1/data/txtedt">d5p1:TextDocument</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ТекстОтветаПолучениеРезультата" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Текст ответа получение результата</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type xmlns:d5p1="http://v8.1c.ru/8.1/data/txtedt">d5p1:TextDocument</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ТекстОшибки" id="9">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Текст ошибки</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+	</Attributes>
+</Form>

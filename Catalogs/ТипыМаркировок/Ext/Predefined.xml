@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<PredefinedData xmlns="http://v8.1c.ru/8.3/xcf/predef" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="CatalogPredefinedItems" version="2.5">
+	<Item id="7545d41f-98d8-4f4f-84aa-8fabccaaaadc">
+		<Name>EAN128</Name>
+		<Code>EAN128</Code>
+		<Description>EAN128</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="6b24f749-408f-4a49-943b-2ba38d0a01c1">
+		<Name>EAN13</Name>
+		<Code>EAN13</Code>
+		<Description>EAN13</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="c5b0bcaf-51e9-45c6-93c8-34f1ceb7e908">
+		<Name>EAN8</Name>
+		<Code>EAN8</Code>
+		<Description>EAN8</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="67432d4f-9395-4c17-9c2d-ba44c04d40a6">
+		<Name>SSCC_код</Name>
+		<Code>SSCC</Code>
+		<Description>SSCC-код</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="22dfa872-5081-4570-bff8-6c49e9f0717a">
+		<Name>КлассНеопределен</Name>
+		<Code>UNDEFINED</Code>
+		<Description>Класс неопределен</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="8a605a7e-af92-4f0c-949f-a131fa9cc1a8">
+		<Name>МаркировкаВышестоящейГрупповойУпаковки</Name>
+		<Code>BUNDLE</Code>
+		<Description>Маркировка вышестоящей групповой упаковки</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="fd7fb03e-9362-4b64-9c68-7375141c469b">
+		<Name>НомерПроизводственнойПартии</Name>
+		<Code>BN</Code>
+		<Description>Номер производственной партии</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+</PredefinedData>

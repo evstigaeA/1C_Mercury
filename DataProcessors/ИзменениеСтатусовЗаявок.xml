@@ -1,0 +1,103 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.5">
+	<DataProcessor uuid="fc09aef2-0545-4dce-ac06-5b93885d198c">
+		<InternalInfo>
+			<xr:GeneratedType name="DataProcessorObject.ИзменениеСтатусовЗаявок" category="Object">
+				<xr:TypeId>e89b51af-a7db-42d9-acaa-d21c4765a377</xr:TypeId>
+				<xr:ValueId>22ab66c6-7465-4e2c-9555-614edec9c53a</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DataProcessorManager.ИзменениеСтатусовЗаявок" category="Manager">
+				<xr:TypeId>9c07f02a-0cf4-4294-b200-f2a80fa7fefb</xr:TypeId>
+				<xr:ValueId>219f776d-efe3-4538-aa56-e7c382c417fe</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<Name>ИзменениеСтатусовЗаявок</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Изменение статусов заявок</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment/>
+			<UseStandardCommands>true</UseStandardCommands>
+			<DefaultForm>DataProcessor.ИзменениеСтатусовЗаявок.Form.ИзменениеСтатуса</DefaultForm>
+			<AuxiliaryForm/>
+			<IncludeHelpInContents>false</IncludeHelpInContents>
+			<ExtendedPresentation/>
+			<Explanation/>
+		</Properties>
+		<ChildObjects>
+			<Form>ИзменениеСтатуса</Form>
+			<Form>ГрупповоеИзменениеСтатусов</Form>
+			<Command uuid="ea0c52f4-74a3-4db1-931a-2e9624709ee4">
+				<Properties>
+					<Name>ИзменениеСтатусаЗаявки</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Изменение статуса заявки</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<Group>FormCommandBarImportant</Group>
+					<CommandParameterType>
+						<v8:Type>cfg:DocumentRef.ПриходныеОперации</v8:Type>
+						<v8:Type>cfg:DocumentRef.ОбъединениеЗаписейСкладскогоЖурнала</v8:Type>
+						<v8:Type>cfg:DocumentRef.ВнесениеСведенийОЛабораторныхИсследованиях</v8:Type>
+						<v8:Type>cfg:DocumentRef.ПроизводственныеОперации</v8:Type>
+						<v8:Type>cfg:DocumentRef.ВнесениеНомеровТранспортныхСредств</v8:Type>
+						<v8:Type>cfg:DocumentRef.Инвентаризации</v8:Type>
+						<v8:Type>cfg:DocumentRef.ТранспортныеОперации</v8:Type>
+						<v8:Type>cfg:DocumentRef.АннулированиеВСД</v8:Type>
+					</CommandParameterType>
+					<ParameterUseMode>Single</ParameterUseMode>
+					<ModifiesData>false</ModifiesData>
+					<Representation>Text</Representation>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Принудительная смена статуса документа</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Picture/>
+					<Shortcut/>
+				</Properties>
+			</Command>
+			<Command uuid="9484b473-912f-48fd-b3f8-dafc84e34ad3">
+				<Properties>
+					<Name>ГрупповоеИзменениеСтатусовЗаявок</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Групповое изменение статусов заявок</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<Group>FormCommandBarImportant</Group>
+					<CommandParameterType>
+						<v8:Type>cfg:DocumentRef.ПриходныеОперации</v8:Type>
+						<v8:Type>cfg:DocumentRef.ОбъединениеЗаписейСкладскогоЖурнала</v8:Type>
+						<v8:Type>cfg:DocumentRef.ВнесениеСведенийОЛабораторныхИсследованиях</v8:Type>
+						<v8:Type>cfg:DocumentRef.ПроизводственныеОперации</v8:Type>
+						<v8:Type>cfg:DocumentRef.ВнесениеНомеровТранспортныхСредств</v8:Type>
+						<v8:Type>cfg:DocumentRef.Инвентаризации</v8:Type>
+						<v8:Type>cfg:DocumentRef.ТранспортныеОперации</v8:Type>
+						<v8:Type>cfg:DocumentRef.АннулированиеВСД</v8:Type>
+					</CommandParameterType>
+					<ParameterUseMode>Single</ParameterUseMode>
+					<ModifiesData>false</ModifiesData>
+					<Representation>Auto</Representation>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Принудительная смена статусов документов</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Picture/>
+					<Shortcut/>
+				</Properties>
+			</Command>
+		</ChildObjects>
+	</DataProcessor>
+</MetaDataObject>

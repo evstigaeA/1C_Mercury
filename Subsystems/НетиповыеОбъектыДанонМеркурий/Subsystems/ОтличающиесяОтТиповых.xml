@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.5">
+	<Subsystem uuid="2150a0ad-497f-40b6-a668-d5ebc5666fba">
+		<Properties>
+			<Name>ОтличающиесяОтТиповых</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отличающиеся от типовых</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment/>
+			<IncludeHelpInContents>false</IncludeHelpInContents>
+			<IncludeInCommandInterface>false</IncludeInCommandInterface>
+			<Explanation/>
+			<Picture/>
+			<Content>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Продукция</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ИнтеграцияВетисAPIБазоваяНСИ</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ИнтеграцияВетисAPIПродукция</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ИнтеграцияВетисAPIКонтрагентыПредприятия</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ИнтеграцияВетисAPIОбработкаРезультатовОформленияЗаявок</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ИнтеграцияВетисAPIОтправкаЗаявокНаОформление</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ГруппыДоступа</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.АннулированиеВСД</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.АннулированиеВСДГрупповое</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.ВнесениеНомеровТранспортныхСредств</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.ВнесениеНомеровТранспортныхСредствГрупповое</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.Инвентаризации</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.КорректировкаОстатковЗаписейСкладскогоЖурнала</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.ОбъединениеЗаписейСкладскогоЖурнала</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.ПриходныеОперации</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.ПриходныеОперацииСводно</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.ПроизводственныеОперации</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.ТранспортныеОперации</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DocumentJournal.ОбщийЖурналДокументов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.ЖурналРегистрацииСостоянийЗаявокНаОформлениеОпераций</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ОбщегоНазначенияКлиентСервер</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.УправлениеДоступомПереопределяемый</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonForm.ОписаниеИзмененийПрограммы</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ОбновлениеИнформационнойБазыСлужебный</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ОбновлениеИнформационнойБазыКлиентПереопределяемый</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Предприятия</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Организации</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.УдалитьОбслуживаемыеПредприятия</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.ВСД</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ПользователиСлужебный</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonForm.ПраваДоступа</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">FilterCriterion.СвязанныеДокументы</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.РаботаСЖурналамиЗагрузкиДанныхСлужебный</xr:Item>
+			</Content>
+		</Properties>
+		<ChildObjects/>
+	</Subsystem>
+</MetaDataObject>

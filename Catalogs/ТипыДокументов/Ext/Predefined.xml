@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<PredefinedData xmlns="http://v8.1c.ru/8.3/xcf/predef" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="CatalogPredefinedItems" version="2.5">
+	<Item id="cc9d7450-8204-4db0-b5e9-6de183325a6a">
+		<Name>БумажныйДокумент</Name>
+		<Code>PAPER</Code>
+		<Description>Бумажный документ</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="36eabcca-e8a5-44fe-8470-8573dee1c000">
+		<Name>ЭлектронныйДокумент</Name>
+		<Code>ELECTRONIC</Code>
+		<Description>Электронный документ</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+</PredefinedData>

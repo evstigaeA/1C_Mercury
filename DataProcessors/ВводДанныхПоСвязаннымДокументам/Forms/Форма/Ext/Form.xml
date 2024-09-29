@@ -1,0 +1,142 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.5">
+	<Title>
+		<v8:item>
+			<v8:lang>ru</v8:lang>
+			<v8:content>Сведения о дополнительных документах</v8:content>
+		</v8:item>
+	</Title>
+	<AutoTitle>false</AutoTitle>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<Autofill>false</Autofill>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<Table name="ДанныеОСвязанныхДокументах" id="1">
+			<Representation>List</Representation>
+			<AutoInsertNewRow>true</AutoInsertNewRow>
+			<EnableStartDrag>true</EnableStartDrag>
+			<EnableDrag>true</EnableDrag>
+			<DataPath>Объект.ДанныеОСвязанныхДокументах</DataPath>
+			<RowFilter xsi:nil="true"/>
+			<ContextMenu name="ДанныеОСвязанныхДокументахКонтекстноеМеню" id="2"/>
+			<AutoCommandBar name="ДанныеОСвязанныхДокументахКоманднаяПанель" id="3"/>
+			<ExtendedTooltip name="ДанныеОСвязанныхДокументахРасширеннаяПодсказка" id="4"/>
+			<SearchStringAddition name="ДанныеОСвязанныхДокументахСтрокаПоиска" id="5">
+				<AdditionSource>
+					<Item>ДанныеОСвязанныхДокументах</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ДанныеОСвязанныхДокументахСтрокаПоискаКонтекстноеМеню" id="6"/>
+				<ExtendedTooltip name="ДанныеОСвязанныхДокументахСтрокаПоискаРасширеннаяПодсказка" id="7"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="ДанныеОСвязанныхДокументахСостояниеПросмотра" id="8">
+				<AdditionSource>
+					<Item>ДанныеОСвязанныхДокументах</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ДанныеОСвязанныхДокументахСостояниеПросмотраКонтекстноеМеню" id="9"/>
+				<ExtendedTooltip name="ДанныеОСвязанныхДокументахСостояниеПросмотраРасширеннаяПодсказка" id="10"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="ДанныеОСвязанныхДокументахУправлениеПоиском" id="11">
+				<AdditionSource>
+					<Item>ДанныеОСвязанныхДокументах</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="ДанныеОСвязанныхДокументахУправлениеПоискомКонтекстноеМеню" id="12"/>
+				<ExtendedTooltip name="ДанныеОСвязанныхДокументахУправлениеПоискомРасширеннаяПодсказка" id="13"/>
+			</SearchControlAddition>
+			<Events>
+				<Event name="BeforeAddRow">ДанныеОСвязанныхДокументахПередНачаломДобавления</Event>
+			</Events>
+			<ChildItems>
+				<LabelField name="ДанныеОСвязанныхДокументахНомерСтроки" id="14">
+					<DataPath>Объект.ДанныеОСвязанныхДокументах.LineNumber</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ДанныеОСвязанныхДокументахНомерСтрокиКонтекстноеМеню" id="15"/>
+					<ExtendedTooltip name="ДанныеОСвязанныхДокументахНомерСтрокиРасширеннаяПодсказка" id="16"/>
+				</LabelField>
+				<InputField name="ДанныеОСвязанныхДокументахДатаСвязанногоДокумента" id="17">
+					<DataPath>Объект.ДанныеОСвязанныхДокументах.ДатаСвязанногоДокумента</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ДанныеОСвязанныхДокументахДатаСвязанногоДокументаКонтекстноеМеню" id="18"/>
+					<ExtendedTooltip name="ДанныеОСвязанныхДокументахДатаСвязанногоДокументаРасширеннаяПодсказка" id="19"/>
+				</InputField>
+				<InputField name="ДанныеОСвязанныхДокументахНомерСвязанногоДокумента" id="20">
+					<DataPath>Объект.ДанныеОСвязанныхДокументах.НомерСвязанногоДокумента</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ДанныеОСвязанныхДокументахНомерСвязанногоДокументаКонтекстноеМеню" id="21"/>
+					<ExtendedTooltip name="ДанныеОСвязанныхДокументахНомерСвязанногоДокументаРасширеннаяПодсказка" id="22"/>
+				</InputField>
+				<InputField name="ДанныеОСвязанныхДокументахСерияСвязанногоДокумента" id="23">
+					<DataPath>Объект.ДанныеОСвязанныхДокументах.СерияСвязанногоДокумента</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ДанныеОСвязанныхДокументахСерияСвязанногоДокументаКонтекстноеМеню" id="24"/>
+					<ExtendedTooltip name="ДанныеОСвязанныхДокументахСерияСвязанногоДокументаРасширеннаяПодсказка" id="25"/>
+				</InputField>
+				<InputField name="ДанныеОСвязанныхДокументахТипСвязанногоДокумента" id="26">
+					<DataPath>Объект.ДанныеОСвязанныхДокументах.ТипСвязанногоДокумента</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ДанныеОСвязанныхДокументахТипСвязанногоДокументаКонтекстноеМеню" id="27"/>
+					<ExtendedTooltip name="ДанныеОСвязанныхДокументахТипСвязанногоДокументаРасширеннаяПодсказка" id="28"/>
+				</InputField>
+				<InputField name="ДанныеОСвязанныхДокументахТипСвязиСвязанногоДокумента" id="29">
+					<DataPath>Объект.ДанныеОСвязанныхДокументах.ТипСвязиСвязанногоДокумента</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ДанныеОСвязанныхДокументахТипСвязиСвязанногоДокументаКонтекстноеМеню" id="30"/>
+					<ExtendedTooltip name="ДанныеОСвязанныхДокументахТипСвязиСвязанногоДокументаРасширеннаяПодсказка" id="31"/>
+				</InputField>
+			</ChildItems>
+		</Table>
+		<Button name="ПеренестиВДокумент" id="32">
+			<Type>UsualButton</Type>
+			<DefaultButton>true</DefaultButton>
+			<GroupHorizontalAlign>Right</GroupHorizontalAlign>
+			<CommandName>Form.Command.ПеренестиВДокумент</CommandName>
+			<ExtendedTooltip name="ПеренестиВДокументРасширеннаяПодсказка" id="33"/>
+		</Button>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.ВводДанныхПоСвязаннымДокументам</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+		<Attribute name="АдресХранения" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Адрес хранения</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ПеренестиВДокумент" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Перенести в документ</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Перенести в документ</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПеренестиВДокумент</Action>
+			<ModifiesSavedData>true</ModifiesSavedData>
+		</Command>
+	</Commands>
+</Form>

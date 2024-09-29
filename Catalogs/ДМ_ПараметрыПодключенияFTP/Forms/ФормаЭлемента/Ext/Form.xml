@@ -1,0 +1,116 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.5">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<UseForFoldersAndItems>Items</UseForFoldersAndItems>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="BeforeWrite">ПередЗаписью</Event>
+	</Events>
+	<ChildItems>
+		<Pages name="Группа1" id="28">
+			<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="29"/>
+			<ChildItems>
+				<Page name="Основное" id="30">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Основное</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Основное</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="ОсновноеРасширеннаяПодсказка" id="31"/>
+					<ChildItems>
+						<InputField name="Наименование" id="1">
+							<DataPath>Объект.Description</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="НаименованиеКонтекстноеМеню" id="2"/>
+							<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="3"/>
+						</InputField>
+						<InputField name="ДоменноеИмя" id="4">
+							<DataPath>Объект.ДоменноеИмя</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="ДоменноеИмяКонтекстноеМеню" id="5"/>
+							<ExtendedTooltip name="ДоменноеИмяРасширеннаяПодсказка" id="6"/>
+						</InputField>
+						<InputField name="IPАдрес" id="7">
+							<DataPath>Объект.IPАдрес</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="IPАдресКонтекстноеМеню" id="8"/>
+							<ExtendedTooltip name="IPАдресРасширеннаяПодсказка" id="9"/>
+						</InputField>
+						<InputField name="Логин" id="10">
+							<DataPath>Объект.Логин</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="ЛогинКонтекстноеМеню" id="11"/>
+							<ExtendedTooltip name="ЛогинРасширеннаяПодсказка" id="12"/>
+						</InputField>
+						<InputField name="Пароль" id="13">
+							<DataPath>Объект.Пароль</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="ПарольКонтекстноеМеню" id="14"/>
+							<ExtendedTooltip name="ПарольРасширеннаяПодсказка" id="15"/>
+						</InputField>
+						<InputField name="Порт" id="16">
+							<DataPath>Объект.Порт</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="ПортКонтекстноеМеню" id="17"/>
+							<ExtendedTooltip name="ПортРасширеннаяПодсказка" id="18"/>
+						</InputField>
+						<InputField name="КаталогЗагрузкиFTP" id="19">
+							<DataPath>Объект.КаталогЗагрузкиFTP</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="КаталогЗагрузкиFTPКонтекстноеМеню" id="20"/>
+							<ExtendedTooltip name="КаталогЗагрузкиFTPРасширеннаяПодсказка" id="21"/>
+						</InputField>
+						<CheckBoxField name="АктивныйРежимРаботы" id="22">
+							<DataPath>Объект.АктивныйРежимРаботы</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="АктивныйРежимРаботыКонтекстноеМеню" id="23"/>
+							<ExtendedTooltip name="АктивныйРежимРаботыРасширеннаяПодсказка" id="24"/>
+						</CheckBoxField>
+						<CheckBoxField name="ЗащищенноеСоединение" id="25">
+							<DataPath>Объект.ЗащищенноеСоединение</DataPath>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="ЗащищенноеСоединениеКонтекстноеМеню" id="26"/>
+							<ExtendedTooltip name="ЗащищенноеСоединениеРасширеннаяПодсказка" id="27"/>
+							<Events>
+								<Event name="OnChange">ЗащищенноеСоединениеПриИзменении</Event>
+							</Events>
+						</CheckBoxField>
+					</ChildItems>
+				</Page>
+				<Page name="ПараметрыЗащищенногоСоединения" id="32">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Параметры защищенного соединения</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Параметры защищенного соединения</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="ПараметрыЗащищенногоСоединенияРасширеннаяПодсказка" id="33"/>
+				</Page>
+			</ChildItems>
+		</Pages>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:CatalogObject.ДМ_ПараметрыПодключенияFTP</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+	</Attributes>
+</Form>

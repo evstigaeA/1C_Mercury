@@ -1,0 +1,504 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.5">
+	<AutoTime>CurrentOrLast</AutoTime>
+	<UsePostingMode>Auto</UsePostingMode>
+	<RepostOnWrite>true</RepostOnWrite>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<Autofill>false</Autofill>
+		<ChildItems>
+			<Button name="ФормаПровестиИЗакрыть" id="94">
+				<Type>CommandBarButton</Type>
+				<DefaultButton>true</DefaultButton>
+				<CommandName>Form.StandardCommand.PostAndClose</CommandName>
+				<ExtendedTooltip name="ФормаПровестиИЗакрытьРасширеннаяПодсказка" id="95"/>
+			</Button>
+			<Button name="ФормаЗаписать" id="96">
+				<Type>CommandBarButton</Type>
+				<Representation>Picture</Representation>
+				<CommandName>Form.StandardCommand.Write</CommandName>
+				<ExtendedTooltip name="ФормаЗаписатьРасширеннаяПодсказка" id="97"/>
+			</Button>
+			<Button name="ФормаПровести" id="98">
+				<Type>CommandBarButton</Type>
+				<Representation>Picture</Representation>
+				<CommandName>Form.StandardCommand.Post</CommandName>
+				<ExtendedTooltip name="ФормаПровестиРасширеннаяПодсказка" id="99"/>
+			</Button>
+			<ButtonGroup name="ГруппаГлобальныеКоманды" id="100">
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Группа глобальные команды</v8:content>
+					</v8:item>
+				</Title>
+				<ToolTip>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Группа глобальные команды</v8:content>
+					</v8:item>
+				</ToolTip>
+				<CommandSource>Form</CommandSource>
+				<ExtendedTooltip name="ГруппаГлобальныеКомандыРасширеннаяПодсказка" id="101"/>
+			</ButtonGroup>
+			<Popup name="ПодменюПечать" id="102">
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Печать</v8:content>
+					</v8:item>
+				</Title>
+				<ToolTip>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Команды печати</v8:content>
+					</v8:item>
+				</ToolTip>
+				<Picture>
+					<xr:Ref>StdPicture.Print</xr:Ref>
+					<xr:LoadTransparent>true</xr:LoadTransparent>
+				</Picture>
+				<ExtendedTooltip name="ПодменюПечатьРасширеннаяПодсказка" id="103"/>
+			</Popup>
+			<Button name="ФормаСправка" id="104">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.StandardCommand.Help</CommandName>
+				<ExtendedTooltip name="ФормаСправкаРасширеннаяПодсказка" id="105"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<Events>
+		<Event name="AfterWrite">ПослеЗаписи</Event>
+		<Event name="ChoiceProcessing">ОбработкаВыбора</Event>
+		<Event name="AfterWriteAtServer">ПослеЗаписиНаСервере</Event>
+		<Event name="OnReadAtServer">ПриЧтенииНаСервере</Event>
+		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="BeforeWrite">ПередЗаписью</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="ГруппаКод" id="38">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа код</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа код</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Horizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаКодРасширеннаяПодсказка" id="39"/>
+			<ChildItems>
+				<InputField name="Номер" id="1">
+					<DataPath>Объект.Number</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<Width>10</Width>
+					<HorizontalStretch>false</HorizontalStretch>
+					<ContextMenu name="НомерКонтекстноеМеню" id="2"/>
+					<ExtendedTooltip name="НомерРасширеннаяПодсказка" id="3"/>
+				</InputField>
+				<InputField name="Дата" id="4">
+					<DataPath>Объект.Date</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>от</v8:content>
+						</v8:item>
+					</Title>
+					<EditMode>EnterOnInput</EditMode>
+					<Width>14</Width>
+					<HorizontalStretch>false</HorizontalStretch>
+					<ContextMenu name="ДатаКонтекстноеМеню" id="5"/>
+					<ExtendedTooltip name="ДатаРасширеннаяПодсказка" id="6"/>
+				</InputField>
+				<LabelField name="Статус" id="89">
+					<DataPath>Объект.Статус</DataPath>
+					<TextColor>style:ГиперссылкаЦвет</TextColor>
+					<ContextMenu name="СтатусКонтекстноеМеню" id="90"/>
+					<ExtendedTooltip name="СтатусРасширеннаяПодсказка" id="91"/>
+				</LabelField>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаДляБлокировки" id="92">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа для блокировки</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа для блокировки</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаДляБлокировкиРасширеннаяПодсказка" id="93"/>
+			<ChildItems>
+				<Pages name="ГруппаСтраницы" id="66">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа страницы</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа страницы</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="ГруппаСтраницыРасширеннаяПодсказка" id="67"/>
+					<ChildItems>
+						<Page name="ГруппаОбщиеСведения" id="68">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Основное</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа общие сведения</v8:content>
+								</v8:item>
+							</ToolTip>
+							<ExtendedTooltip name="ГруппаОбщиеСведенияРасширеннаяПодсказка" id="69"/>
+							<ChildItems>
+								<InputField name="Организация" id="63">
+									<DataPath>Объект.Организация</DataPath>
+									<ContextMenu name="ОрганизацияКонтекстноеМеню" id="64"/>
+									<ExtendedTooltip name="ОрганизацияРасширеннаяПодсказка" id="65"/>
+									<Events>
+										<Event name="OnChange">ОрганизацияПриИзменении</Event>
+									</Events>
+								</InputField>
+								<InputField name="Контрагент" id="7">
+									<DataPath>Объект.Контрагент</DataPath>
+									<ReadOnly>true</ReadOnly>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Хозяйствующий
+субъект</v8:content>
+										</v8:item>
+									</Title>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="КонтрагентКонтекстноеМеню" id="8"/>
+									<ExtendedTooltip name="КонтрагентРасширеннаяПодсказка" id="9"/>
+								</InputField>
+								<InputField name="Предприятие" id="13">
+									<DataPath>Объект.Предприятие</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<DropListButton>false</DropListButton>
+									<ChoiceButtonRepresentation>ShowInInputField</ChoiceButtonRepresentation>
+									<ClearButton>true</ClearButton>
+									<ChoiceHistoryOnInput>DontUse</ChoiceHistoryOnInput>
+									<ContextMenu name="ПредприятиеКонтекстноеМеню" id="14"/>
+									<ExtendedTooltip name="ПредприятиеРасширеннаяПодсказка" id="15"/>
+									<Events>
+										<Event name="OnChange">ПредприятиеПриИзменении</Event>
+										<Event name="AutoComplete">ПредприятиеАвтоПодбор</Event>
+										<Event name="StartChoice">ПредприятиеНачалоВыбора</Event>
+										<Event name="TextEditEnd">ПредприятиеОкончаниеВводаТекста</Event>
+									</Events>
+								</InputField>
+								<InputField name="Комментарий" id="72">
+									<DataPath>Объект.Комментарий</DataPath>
+									<TitleLocation>Left</TitleLocation>
+									<Width>64</Width>
+									<VerticalStretch>false</VerticalStretch>
+									<ContextMenu name="КомментарийКонтекстноеМеню" id="73"/>
+									<ExtendedTooltip name="КомментарийРасширеннаяПодсказка" id="74"/>
+								</InputField>
+							</ChildItems>
+						</Page>
+						<Page name="ГруппаСписокВСД" id="70">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Список ВСД</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа список ВСД</v8:content>
+								</v8:item>
+							</ToolTip>
+							<ExtendedTooltip name="ГруппаСписокВСДРасширеннаяПодсказка" id="71"/>
+							<ChildItems>
+								<Table name="СписокАннулируемыхВСД" id="16">
+									<Representation>List</Representation>
+									<AutoInsertNewRow>true</AutoInsertNewRow>
+									<EnableStartDrag>true</EnableStartDrag>
+									<EnableDrag>true</EnableDrag>
+									<DataPath>Объект.СписокАннулируемыхВСД</DataPath>
+									<CommandSet>
+										<ExcludedCommand>Add</ExcludedCommand>
+										<ExcludedCommand>Copy</ExcludedCommand>
+										<ExcludedCommand>CopyToClipboard</ExcludedCommand>
+									</CommandSet>
+									<RowFilter xsi:nil="true"/>
+									<ContextMenu name="СписокАннулируемыхВСДКонтекстноеМеню" id="17"/>
+									<AutoCommandBar name="СписокАннулируемыхВСДКоманднаяПанель" id="18">
+										<ChildItems>
+											<Popup name="СписокАннулируемыхВСДПодборДокументов" id="83">
+												<Title>
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>Подбор документов</v8:content>
+													</v8:item>
+												</Title>
+												<ToolTip>
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>Список аннулируемых ВСДПодбор документов</v8:content>
+													</v8:item>
+												</ToolTip>
+												<ExtendedTooltip name="СписокАннулируемыхВСДПодборДокументовРасширеннаяПодсказка" id="84"/>
+												<ChildItems>
+													<Button name="СписокАннулируемыхВСДПодборВСД" id="85">
+														<Type>CommandBarButton</Type>
+														<CommandName>Form.Command.ПодборВСД</CommandName>
+														<Title>
+															<v8:item>
+																<v8:lang>ru</v8:lang>
+																<v8:content>ВСД</v8:content>
+															</v8:item>
+														</Title>
+														<ExtendedTooltip name="СписокАннулируемыхВСДПодборВСДРасширеннаяПодсказка" id="86"/>
+													</Button>
+													<Button name="СписокАннулируемыхВСДПодборТранспортныхОпераций" id="87">
+														<Type>CommandBarButton</Type>
+														<CommandName>Form.Command.ПодборТранспортныхОпераций</CommandName>
+														<Title>
+															<v8:item>
+																<v8:lang>ru</v8:lang>
+																<v8:content>Транспортные операции</v8:content>
+															</v8:item>
+														</Title>
+														<ExtendedTooltip name="СписокАннулируемыхВСДПодборТранспортныхОперацийРасширеннаяПодсказка" id="88"/>
+													</Button>
+												</ChildItems>
+											</Popup>
+											<Button name="СписокАннулируемыхВСДГрупповоеЗаполнениеРеквизитов" id="81">
+												<Type>CommandBarButton</Type>
+												<CommandName>Form.Command.ГрупповоеЗаполнениеРеквизитов</CommandName>
+												<ExtendedTooltip name="СписокАннулируемыхВСДГрупповоеЗаполнениеРеквизитовРасширеннаяПодсказка" id="82"/>
+											</Button>
+											<Button name="СписокАннулируемыхВСДОформитьАннулированиеВСД" id="42">
+												<Type>CommandBarButton</Type>
+												<Representation>PictureAndText</Representation>
+												<CommandName>Form.Command.ОформитьАннулированиеВСД</CommandName>
+												<Picture>
+													<xr:Ref>CommonPicture.ЗаполнитьФорму</xr:Ref>
+													<xr:LoadTransparent>true</xr:LoadTransparent>
+												</Picture>
+												<ExtendedTooltip name="СписокАннулируемыхВСДОформитьАннулированиеВСДРасширеннаяПодсказка" id="43"/>
+											</Button>
+										</ChildItems>
+									</AutoCommandBar>
+									<ExtendedTooltip name="СписокАннулируемыхВСДРасширеннаяПодсказка" id="19"/>
+									<SearchStringAddition name="СписокАннулируемыхВСДСтрокаПоиска" id="20">
+										<AdditionSource>
+											<Item>СписокАннулируемыхВСД</Item>
+											<Type>SearchStringRepresentation</Type>
+										</AdditionSource>
+										<ContextMenu name="СписокАннулируемыхВСДСтрокаПоискаКонтекстноеМеню" id="21"/>
+										<ExtendedTooltip name="СписокАннулируемыхВСДСтрокаПоискаРасширеннаяПодсказка" id="22"/>
+									</SearchStringAddition>
+									<ViewStatusAddition name="СписокАннулируемыхВСДСостояниеПросмотра" id="23">
+										<AdditionSource>
+											<Item>СписокАннулируемыхВСД</Item>
+											<Type>ViewStatusRepresentation</Type>
+										</AdditionSource>
+										<ContextMenu name="СписокАннулируемыхВСДСостояниеПросмотраКонтекстноеМеню" id="24"/>
+										<ExtendedTooltip name="СписокАннулируемыхВСДСостояниеПросмотраРасширеннаяПодсказка" id="25"/>
+									</ViewStatusAddition>
+									<SearchControlAddition name="СписокАннулируемыхВСДУправлениеПоиском" id="26">
+										<AdditionSource>
+											<Item>СписокАннулируемыхВСД</Item>
+											<Type>SearchControl</Type>
+										</AdditionSource>
+										<ContextMenu name="СписокАннулируемыхВСДУправлениеПоискомКонтекстноеМеню" id="27"/>
+										<ExtendedTooltip name="СписокАннулируемыхВСДУправлениеПоискомРасширеннаяПодсказка" id="28"/>
+									</SearchControlAddition>
+									<Events>
+										<Event name="Selection">СписокАннулируемыхВСДВыбор</Event>
+									</Events>
+									<ChildItems>
+										<LabelField name="СписокАннулируемыхВСДНомерСтроки" id="29">
+											<DataPath>Объект.СписокАннулируемыхВСД.LineNumber</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="СписокАннулируемыхВСДНомерСтрокиКонтекстноеМеню" id="30"/>
+											<ExtendedTooltip name="СписокАннулируемыхВСДНомерСтрокиРасширеннаяПодсказка" id="31"/>
+										</LabelField>
+										<InputField name="СписокАннулируемыхВСДВСД" id="32">
+											<DataPath>Объект.СписокАннулируемыхВСД.ВСД</DataPath>
+											<ReadOnly>true</ReadOnly>
+											<EditMode>EnterOnInput</EditMode>
+											<ChoiceParameterLinks>
+												<xr:Link>
+													<xr:Name>Отбор.КонтрагентОтправитель</xr:Name>
+													<xr:DataPath xsi:type="xs:string">Объект.Контрагент</xr:DataPath>
+													<xr:ValueChange>Clear</xr:ValueChange>
+												</xr:Link>
+												<xr:Link>
+													<xr:Name>Отбор.ПредприятиеОтправитель</xr:Name>
+													<xr:DataPath xsi:type="xs:string">Объект.Предприятие</xr:DataPath>
+													<xr:ValueChange>Clear</xr:ValueChange>
+												</xr:Link>
+											</ChoiceParameterLinks>
+											<ChoiceHistoryOnInput>DontUse</ChoiceHistoryOnInput>
+											<ContextMenu name="СписокАннулируемыхВСДВСДКонтекстноеМеню" id="33"/>
+											<ExtendedTooltip name="СписокАннулируемыхВСДВСДРасширеннаяПодсказка" id="34"/>
+										</InputField>
+										<InputField name="СписокАннулируемыхВСДТранспортнаяОперация" id="57">
+											<DataPath>Объект.СписокАннулируемыхВСД.ТранспортнаяОперация</DataPath>
+											<ReadOnly>true</ReadOnly>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="СписокАннулируемыхВСДТранспортнаяОперацияКонтекстноеМеню" id="58"/>
+											<ExtendedTooltip name="СписокАннулируемыхВСДТранспортнаяОперацияРасширеннаяПодсказка" id="59"/>
+										</InputField>
+										<InputField name="СписокАннулируемыхВСДЗаписьСкладскогоЖурнала" id="60">
+											<DataPath>Объект.СписокАннулируемыхВСД.ЗаписьСкладскогоЖурнала</DataPath>
+											<ReadOnly>true</ReadOnly>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="СписокАннулируемыхВСДЗаписьСкладскогоЖурналаКонтекстноеМеню" id="61"/>
+											<ExtendedTooltip name="СписокАннулируемыхВСДЗаписьСкладскогоЖурналаРасширеннаяПодсказка" id="62"/>
+										</InputField>
+										<InputField name="СписокАннулируемыхВСДКоличество" id="75">
+											<DataPath>Объект.СписокАннулируемыхВСД.ВСД.Количество</DataPath>
+											<ReadOnly>true</ReadOnly>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="СписокАннулируемыхВСДКоличествоКонтекстноеМеню" id="76"/>
+											<ExtendedTooltip name="СписокАннулируемыхВСДКоличествоРасширеннаяПодсказка" id="77"/>
+										</InputField>
+										<InputField name="СписокАннулируемыхВСДДокументАннулированиеВСД" id="44">
+											<DataPath>Объект.СписокАннулируемыхВСД.ДокументАннулированиеВСД</DataPath>
+											<ReadOnly>true</ReadOnly>
+											<EditMode>EnterOnInput</EditMode>
+											<AutoMarkIncomplete>true</AutoMarkIncomplete>
+											<ContextMenu name="СписокАннулируемыхВСДДокументАннулированиеВСДКонтекстноеМеню" id="45"/>
+											<ExtendedTooltip name="СписокАннулируемыхВСДДокументАннулированиеВСДРасширеннаяПодсказка" id="46"/>
+										</InputField>
+										<InputField name="СписокАннулируемыхВСДОтветственныйЗаАннулирование" id="78">
+											<DataPath>Объект.СписокАннулируемыхВСД.ОтветственныйЗаАннулирование</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="СписокАннулируемыхВСДОтветственныйЗаАннулированиеКонтекстноеМеню" id="79"/>
+											<ExtendedTooltip name="СписокАннулируемыхВСДОтветственныйЗаАннулированиеРасширеннаяПодсказка" id="80"/>
+										</InputField>
+										<InputField name="СписокАннулируемыхВСДПричинаНесоответствия" id="35">
+											<DataPath>Объект.СписокАннулируемыхВСД.ПричинаАннулирования</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="СписокАннулируемыхВСДПричинаНесоответствияКонтекстноеМеню" id="36"/>
+											<ExtendedTooltip name="СписокАннулируемыхВСДПричинаНесоответствияРасширеннаяПодсказка" id="37"/>
+										</InputField>
+									</ChildItems>
+								</Table>
+							</ChildItems>
+						</Page>
+					</ChildItems>
+				</Pages>
+			</ChildItems>
+		</UsualGroup>
+		<InputField name="Ответственный" id="10">
+			<DataPath>Объект.Ответственный</DataPath>
+			<ReadOnly>true</ReadOnly>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="ОтветственныйКонтекстноеМеню" id="11"/>
+			<ExtendedTooltip name="ОтветственныйРасширеннаяПодсказка" id="12"/>
+		</InputField>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DocumentObject.АннулированиеВСДГрупповое</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+			<UseAlways>
+				<Field>Объект.RegisterRecords</Field>
+			</UseAlways>
+		</Attribute>
+		<Attribute name="ПараметрыПодключаемыхКоманд" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Параметры подключаемых команд</v8:content>
+				</v8:item>
+			</Title>
+			<Type/>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ОформитьАннулированиеВСД" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сформировать/обновить аннулирование ВСД</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Оформить аннулирование ВСД</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОформитьАннулированиеВСД</Action>
+		</Command>
+		<Command name="ГрупповоеЗаполнениеРеквизитов" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заполнение реквизитов</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Позволяет во всех строках документа установить выбранные значения</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ГрупповоеЗаполнениеРеквизитов</Action>
+			<ModifiesSavedData>true</ModifiesSavedData>
+		</Command>
+		<Command name="ПодборВСД" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Подбор ВСД</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Подбор ВСД</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПодборВСД</Action>
+		</Command>
+		<Command name="ПодборТранспортныхОпераций" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Подбор транспортных операций</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Подбор транспортных операций</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПодборТранспортныхОпераций</Action>
+		</Command>
+	</Commands>
+</Form>

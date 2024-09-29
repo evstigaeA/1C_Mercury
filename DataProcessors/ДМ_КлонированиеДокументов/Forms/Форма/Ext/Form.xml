@@ -1,0 +1,277 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.5">
+	<AutoSaveDataInSettings>Use</AutoSaveDataInSettings>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<ChildItems>
+		<InputField name="ИсходнаяОрганизация" id="42">
+			<DataPath>Объект.ИсходнаяОрганизация</DataPath>
+			<ContextMenu name="ИсходнаяОрганизацияКонтекстноеМеню" id="43"/>
+			<ExtendedTooltip name="ИсходнаяОрганизацияРасширеннаяПодсказка" id="44"/>
+		</InputField>
+		<InputField name="КоличествоЦиклов" id="45">
+			<DataPath>Объект.КоличествоЦиклов</DataPath>
+			<ContextMenu name="КоличествоЦикловКонтекстноеМеню" id="46"/>
+			<ExtendedTooltip name="КоличествоЦикловРасширеннаяПодсказка" id="47"/>
+		</InputField>
+		<Table name="Организации" id="4">
+			<Representation>List</Representation>
+			<AutoInsertNewRow>true</AutoInsertNewRow>
+			<EnableStartDrag>true</EnableStartDrag>
+			<EnableDrag>true</EnableDrag>
+			<DataPath>Объект.Организации</DataPath>
+			<RowFilter xsi:nil="true"/>
+			<ContextMenu name="ОрганизацииКонтекстноеМеню" id="5"/>
+			<AutoCommandBar name="ОрганизацииКоманднаяПанель" id="6">
+				<ChildItems>
+					<Button name="ОрганизацииЗаполнитьТаблицу" id="29">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.ЗаполнитьТаблицу</CommandName>
+						<ExtendedTooltip name="ОрганизацииЗаполнитьТаблицуРасширеннаяПодсказка" id="30"/>
+					</Button>
+					<Button name="ОрганизацииКлонироватьДокументы" id="35">
+						<Type>CommandBarButton</Type>
+						<DefaultButton>true</DefaultButton>
+						<CommandName>Form.Command.КлонироватьДокументы</CommandName>
+						<ExtendedTooltip name="ОрганизацииКлонироватьДокументыРасширеннаяПодсказка" id="36"/>
+					</Button>
+					<ButtonGroup name="ОрганизацииГруппа1" id="37">
+						<ExtendedTooltip name="ОрганизацииГруппа1РасширеннаяПодсказка" id="38"/>
+						<ChildItems>
+							<Button name="ОрганизацииВыбратьВсе" id="31">
+								<Type>CommandBarButton</Type>
+								<CommandName>Form.Command.ВыбратьВсе</CommandName>
+								<ExtendedTooltip name="ОрганизацииВыбратьВсеРасширеннаяПодсказка" id="32"/>
+							</Button>
+							<Button name="ОрганизацииСнятьВсе" id="33">
+								<Type>CommandBarButton</Type>
+								<CommandName>Form.Command.СнятьВсе</CommandName>
+								<ExtendedTooltip name="ОрганизацииСнятьВсеРасширеннаяПодсказка" id="34"/>
+							</Button>
+						</ChildItems>
+					</ButtonGroup>
+				</ChildItems>
+			</AutoCommandBar>
+			<ExtendedTooltip name="ОрганизацииРасширеннаяПодсказка" id="7"/>
+			<SearchStringAddition name="ОрганизацииСтрокаПоиска" id="8">
+				<AdditionSource>
+					<Item>Организации</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ОрганизацииСтрокаПоискаКонтекстноеМеню" id="9"/>
+				<ExtendedTooltip name="ОрганизацииСтрокаПоискаРасширеннаяПодсказка" id="10"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="ОрганизацииСостояниеПросмотра" id="11">
+				<AdditionSource>
+					<Item>Организации</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ОрганизацииСостояниеПросмотраКонтекстноеМеню" id="12"/>
+				<ExtendedTooltip name="ОрганизацииСостояниеПросмотраРасширеннаяПодсказка" id="13"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="ОрганизацииУправлениеПоиском" id="14">
+				<AdditionSource>
+					<Item>Организации</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="ОрганизацииУправлениеПоискомКонтекстноеМеню" id="15"/>
+				<ExtendedTooltip name="ОрганизацииУправлениеПоискомРасширеннаяПодсказка" id="16"/>
+			</SearchControlAddition>
+			<ChildItems>
+				<LabelField name="ОрганизацииНомерСтроки" id="17">
+					<DataPath>Объект.Организации.LineNumber</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ОрганизацииНомерСтрокиКонтекстноеМеню" id="18"/>
+					<ExtendedTooltip name="ОрганизацииНомерСтрокиРасширеннаяПодсказка" id="19"/>
+				</LabelField>
+				<InputField name="ОрганизацииОрганизация" id="20">
+					<DataPath>Объект.Организации.Организация</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ОрганизацииОрганизацияКонтекстноеМеню" id="21"/>
+					<ExtendedTooltip name="ОрганизацииОрганизацияРасширеннаяПодсказка" id="22"/>
+					<Events>
+						<Event name="OnChange">ОрганизацииОрганизацияПриИзменении</Event>
+					</Events>
+				</InputField>
+				<CheckBoxField name="ОрганизацииОбновлять" id="23">
+					<DataPath>Объект.Организации.Обновлять</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ОрганизацииОбновлятьКонтекстноеМеню" id="24"/>
+					<ExtendedTooltip name="ОрганизацииОбновлятьРасширеннаяПодсказка" id="25"/>
+				</CheckBoxField>
+				<InputField name="ОрганизацииНаименование" id="39">
+					<DataPath>Объект.Организации.Наименование</DataPath>
+					<UserVisible>
+						<xr:Common>false</xr:Common>
+					</UserVisible>
+					<ReadOnly>true</ReadOnly>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ОрганизацииНаименованиеКонтекстноеМеню" id="40"/>
+					<ExtendedTooltip name="ОрганизацииНаименованиеРасширеннаяПодсказка" id="41"/>
+				</InputField>
+				<InputField name="ОрганизацииВыполнено" id="48">
+					<DataPath>Объект.Организации.Выполнено</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ОрганизацииВыполненоКонтекстноеМеню" id="49"/>
+					<ExtendedTooltip name="ОрганизацииВыполненоРасширеннаяПодсказка" id="50"/>
+				</InputField>
+			</ChildItems>
+		</Table>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.ДМ_КлонированиеДокументов</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<Save>
+				<Field>1/0:63e60cd3-6b56-444a-9ab5-507a6d4d8153</Field>
+				<Field>Объект.ИсходнаяОрганизация</Field>
+				<Field>Объект.КоличествоЦиклов</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="ДанныеДляКлонирования" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Данные для клонирования</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="Ссылка" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Ссылка</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:TypeSet>cfg:DocumentRef</v8:TypeSet>
+					</Type>
+				</Column>
+				<Column name="ТипДанных" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Тип данных</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>1</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="Обработано" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обработано</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>10</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ВсегоДанных" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Всего данных</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>10</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ЗаполнитьТаблицу" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заполнить таблицу</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заполнить таблицу</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ЗаполнитьТаблицу</Action>
+		</Command>
+		<Command name="ВыбратьВсе" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выбрать все</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выбрать все</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.CheckAll</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ВыбратьВсе</Action>
+		</Command>
+		<Command name="СнятьВсе" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Снять все</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Снять все</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.UncheckAll</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>СнятьВсе</Action>
+		</Command>
+		<Command name="КлонироватьДокументы" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Клонировать документы</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Клонировать документы</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>КлонироватьДокументы</Action>
+		</Command>
+	</Commands>
+</Form>

@@ -1,0 +1,234 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.5">
+	<DocumentJournal uuid="8fe7cf11-615e-4484-8157-0c0728b891bf">
+		<InternalInfo>
+			<xr:GeneratedType name="DocumentJournalSelection.ДМ_ЗагруженныеФайлыОбмена" category="Selection">
+				<xr:TypeId>ff1658c2-de8e-4d46-8baf-579be68448d0</xr:TypeId>
+				<xr:ValueId>b2c408e7-668d-4c78-8384-ec584d0af841</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentJournalList.ДМ_ЗагруженныеФайлыОбмена" category="List">
+				<xr:TypeId>cc7d2b73-a11d-4135-afbc-116029c788f0</xr:TypeId>
+				<xr:ValueId>ff75fae8-f094-4e99-9458-86a1091e8836</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentJournalManager.ДМ_ЗагруженныеФайлыОбмена" category="Manager">
+				<xr:TypeId>df2020d0-33c6-49a6-ac4c-1c55843cf8ea</xr:TypeId>
+				<xr:ValueId>f60269e9-76d8-402f-b470-7fe8ffe80a94</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<Name>ДМ_ЗагруженныеФайлыОбмена</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Загруженные файлы обмена</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment/>
+			<DefaultForm>DocumentJournal.ДМ_ЗагруженныеФайлыОбмена.Form.ФормаСписка</DefaultForm>
+			<AuxiliaryForm/>
+			<UseStandardCommands>true</UseStandardCommands>
+			<RegisteredDocuments>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.ДМ_ФайлыОбменаDanoneКлиент</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.ДМ_ФайлыОбменаDanoneВнутреннееПеремещение</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.ДМ_ФайлыОбменаDanoneГашениеВСД</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.ДМ_ФайлыОбменаDanoneСторнированиеОтгрузки</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.ДМ_ФайлыОбменаDanoneПроизводство</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.ДМ_ФайлыОбменаDanoneИнвентаризация</xr:Item>
+			</RegisteredDocuments>
+			<IncludeHelpInContents>false</IncludeHelpInContents>
+			<ListPresentation/>
+			<ExtendedListPresentation/>
+			<Explanation/>
+		</Properties>
+		<ChildObjects>
+			<Column uuid="d9873a3b-d821-4fde-b72d-1a0e3acb9eab">
+				<Properties>
+					<Name>Ответственный</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Ответственный</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<Indexing>DontIndex</Indexing>
+					<References>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.ДМ_ФайлыОбменаDanoneКлиент.Attribute.Ответственный</xr:Item>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.ДМ_ФайлыОбменаDanoneВнутреннееПеремещение.Attribute.Ответственный</xr:Item>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.ДМ_ФайлыОбменаDanoneГашениеВСД.Attribute.Ответственный</xr:Item>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.ДМ_ФайлыОбменаDanoneСторнированиеОтгрузки.Attribute.Ответственный</xr:Item>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.ДМ_ФайлыОбменаDanoneПроизводство.Attribute.Ответственный</xr:Item>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.ДМ_ФайлыОбменаDanoneИнвентаризация.Attribute.Ответственный</xr:Item>
+					</References>
+				</Properties>
+			</Column>
+			<Column uuid="657be190-59ad-498a-9fd9-f35c64542b04">
+				<Properties>
+					<Name>ДатаЗагрузкиИсходногоФайла</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Дата загрузки исходного файла</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<Indexing>DontIndex</Indexing>
+					<References>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.ДМ_ФайлыОбменаDanoneКлиент.Attribute.ДатаЗагрузкиИсходногоФайла</xr:Item>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.ДМ_ФайлыОбменаDanoneВнутреннееПеремещение.Attribute.ДатаЗагрузкиИсходногоФайла</xr:Item>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.ДМ_ФайлыОбменаDanoneГашениеВСД.Attribute.ДатаЗагрузкиИсходногоФайла</xr:Item>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.ДМ_ФайлыОбменаDanoneСторнированиеОтгрузки.Attribute.ДатаЗагрузкиИсходногоФайла</xr:Item>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.ДМ_ФайлыОбменаDanoneПроизводство.Attribute.ДатаЗагрузкиИсходногоФайла</xr:Item>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.ДМ_ФайлыОбменаDanoneИнвентаризация.Attribute.ДатаЗагрузкиИсходногоФайла</xr:Item>
+					</References>
+				</Properties>
+			</Column>
+			<Column uuid="b5cfab55-8509-4ee6-9bc9-ded02747f320">
+				<Properties>
+					<Name>ДатаЗаписиОбработанногоФайла</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Дата записи обработанного файла</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<Indexing>DontIndex</Indexing>
+					<References>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.ДМ_ФайлыОбменаDanoneКлиент.Attribute.ДатаЗаписиОбработанногоФайла</xr:Item>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.ДМ_ФайлыОбменаDanoneВнутреннееПеремещение.Attribute.ДатаЗаписиОбработанногоФайла</xr:Item>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.ДМ_ФайлыОбменаDanoneГашениеВСД.Attribute.ДатаЗаписиОбработанногоФайла</xr:Item>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.ДМ_ФайлыОбменаDanoneСторнированиеОтгрузки.Attribute.ДатаЗаписиОбработанногоФайла</xr:Item>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.ДМ_ФайлыОбменаDanoneПроизводство.Attribute.ДатаЗаписиОбработанногоФайла</xr:Item>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.ДМ_ФайлыОбменаDanoneИнвентаризация.Attribute.ДатаЗаписиОбработанногоФайла</xr:Item>
+					</References>
+				</Properties>
+			</Column>
+			<Column uuid="29dfa7db-110a-4ea9-8258-3a8aeeb500a0">
+				<Properties>
+					<Name>Hash</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Hash</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<Indexing>DontIndex</Indexing>
+					<References>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.ДМ_ФайлыОбменаDanoneКлиент.Attribute.Hash</xr:Item>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.ДМ_ФайлыОбменаDanoneВнутреннееПеремещение.Attribute.Hash</xr:Item>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.ДМ_ФайлыОбменаDanoneГашениеВСД.Attribute.Hash</xr:Item>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.ДМ_ФайлыОбменаDanoneСторнированиеОтгрузки.Attribute.Hash</xr:Item>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.ДМ_ФайлыОбменаDanoneПроизводство.Attribute.Hash</xr:Item>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.ДМ_ФайлыОбменаDanoneИнвентаризация.Attribute.Hash</xr:Item>
+					</References>
+				</Properties>
+			</Column>
+			<Column uuid="79fd88f1-5481-4806-8af7-1530f4f72799">
+				<Properties>
+					<Name>ИмяФайла</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Имя файла</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<Indexing>DontIndex</Indexing>
+					<References>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.ДМ_ФайлыОбменаDanoneКлиент.Attribute.ИмяФайла</xr:Item>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.ДМ_ФайлыОбменаDanoneВнутреннееПеремещение.Attribute.ИмяФайла</xr:Item>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.ДМ_ФайлыОбменаDanoneГашениеВСД.Attribute.ИмяФайла</xr:Item>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.ДМ_ФайлыОбменаDanoneСторнированиеОтгрузки.Attribute.ИмяФайла</xr:Item>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.ДМ_ФайлыОбменаDanoneПроизводство.Attribute.ИмяФайла</xr:Item>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.ДМ_ФайлыОбменаDanoneИнвентаризация.Attribute.ИмяФайла</xr:Item>
+					</References>
+				</Properties>
+			</Column>
+			<Column uuid="8c7b8318-d1ab-46a3-bba9-d1e84bf97454">
+				<Properties>
+					<Name>СтатусДокумента</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Статус документа</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<Indexing>DontIndex</Indexing>
+					<References>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.ДМ_ФайлыОбменаDanoneКлиент.Attribute.СтатусДокумента</xr:Item>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.ДМ_ФайлыОбменаDanoneВнутреннееПеремещение.Attribute.СтатусДокумента</xr:Item>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.ДМ_ФайлыОбменаDanoneГашениеВСД.Attribute.СтатусДокумента</xr:Item>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.ДМ_ФайлыОбменаDanoneСторнированиеОтгрузки.Attribute.СтатусДокумента</xr:Item>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.ДМ_ФайлыОбменаDanoneПроизводство.Attribute.СтатусДокумента</xr:Item>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.ДМ_ФайлыОбменаDanoneИнвентаризация.Attribute.СтатусДокумента</xr:Item>
+					</References>
+				</Properties>
+			</Column>
+			<Column uuid="a4ac60bd-9aa4-4c0c-b351-beb9554d851a">
+				<Properties>
+					<Name>Кодировка</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Кодировка</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<Indexing>DontIndex</Indexing>
+					<References>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.ДМ_ФайлыОбменаDanoneКлиент.Attribute.Кодировка</xr:Item>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.ДМ_ФайлыОбменаDanoneВнутреннееПеремещение.Attribute.Кодировка</xr:Item>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.ДМ_ФайлыОбменаDanoneГашениеВСД.Attribute.Кодировка</xr:Item>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.ДМ_ФайлыОбменаDanoneСторнированиеОтгрузки.Attribute.Кодировка</xr:Item>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.ДМ_ФайлыОбменаDanoneПроизводство.Attribute.Кодировка</xr:Item>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.ДМ_ФайлыОбменаDanoneИнвентаризация.Attribute.Кодировка</xr:Item>
+					</References>
+				</Properties>
+			</Column>
+			<Column uuid="ed08a59f-4245-442e-85f1-0fec2b3ebc4c">
+				<Properties>
+					<Name>Организация</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Организация</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<Indexing>IndexWithAdditionalOrder</Indexing>
+					<References>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.ДМ_ФайлыОбменаDanoneКлиент.Attribute.Организация</xr:Item>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.ДМ_ФайлыОбменаDanoneВнутреннееПеремещение.Attribute.Организация</xr:Item>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.ДМ_ФайлыОбменаDanoneГашениеВСД.Attribute.Организация</xr:Item>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.ДМ_ФайлыОбменаDanoneПроизводство.Attribute.Организация</xr:Item>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.ДМ_ФайлыОбменаDanoneИнвентаризация.Attribute.Организация</xr:Item>
+					</References>
+				</Properties>
+			</Column>
+			<Column uuid="07f89e72-dacf-4654-baf2-14bfbaf97705">
+				<Properties>
+					<Name>Предприятие</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Предприятие</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<Indexing>DontIndex</Indexing>
+					<References>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.ДМ_ФайлыОбменаDanoneКлиент.Attribute.Предприятие</xr:Item>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.ДМ_ФайлыОбменаDanoneВнутреннееПеремещение.Attribute.Предприятие</xr:Item>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.ДМ_ФайлыОбменаDanoneГашениеВСД.Attribute.Предприятие</xr:Item>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.ДМ_ФайлыОбменаDanoneПроизводство.Attribute.Предприятие</xr:Item>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.ДМ_ФайлыОбменаDanoneИнвентаризация.Attribute.Предприятие</xr:Item>
+					</References>
+				</Properties>
+			</Column>
+			<Form>ФормаСписка</Form>
+		</ChildObjects>
+	</DocumentJournal>
+</MetaDataObject>

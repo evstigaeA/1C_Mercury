@@ -1,0 +1,138 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.5">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+		<Event name="BeforeWriteAtServer">ПередЗаписьюНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<InputField name="ТипОбъекта" id="1">
+			<DataPath>Запись.ТипОбъекта</DataPath>
+			<ListChoiceMode>true</ListChoiceMode>
+			<ContextMenu name="ТипОбъектаКонтекстноеМеню" id="2"/>
+			<ExtendedTooltip name="ТипОбъектаРасширеннаяПодсказка" id="3"/>
+		</InputField>
+		<InputField name="ВариантРазбивкиДокументовНаСтраницы" id="4">
+			<DataPath>Запись.ВариантРазбивкиДокументовНаСтраницы</DataPath>
+			<ListChoiceMode>true</ListChoiceMode>
+			<ContextMenu name="ВариантРазбивкиДокументовНаСтраницыКонтекстноеМеню" id="5"/>
+			<ExtendedTooltip name="ВариантРазбивкиДокументовНаСтраницыРасширеннаяПодсказка" id="6"/>
+			<Events>
+				<Event name="OnChange">ВариантРазбивкиДокументовНаСтраницыПриИзменении</Event>
+			</Events>
+		</InputField>
+		<InputField name="Пользователь" id="31">
+			<DataPath>Запись.Пользователь</DataPath>
+			<ContextMenu name="ПользовательКонтекстноеМеню" id="32"/>
+			<ExtendedTooltip name="ПользовательРасширеннаяПодсказка" id="33"/>
+		</InputField>
+		<Table name="РеквизитыРазбивкиСтраниц" id="7">
+			<Representation>List</Representation>
+			<Header>false</Header>
+			<HorizontalLines>false</HorizontalLines>
+			<VerticalLines>false</VerticalLines>
+			<AutoInsertNewRow>true</AutoInsertNewRow>
+			<DataPath>РеквизитыРазбивкиСтраниц</DataPath>
+			<RowPictureDataPath>РеквизитыРазбивкиСтраниц.Picture</RowPictureDataPath>
+			<CommandSet>
+				<ExcludedCommand>Add</ExcludedCommand>
+				<ExcludedCommand>Copy</ExcludedCommand>
+				<ExcludedCommand>Delete</ExcludedCommand>
+			</CommandSet>
+			<ContextMenu name="РеквизитыРазбивкиСтраницКонтекстноеМеню" id="8"/>
+			<AutoCommandBar name="РеквизитыРазбивкиСтраницКоманднаяПанель" id="9">
+				<Autofill>false</Autofill>
+				<ChildItems>
+					<Button name="РеквизитыГруппировкиСтраницКнопкаПереместитьВверх" id="23">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Item.РеквизитыРазбивкиСтраниц.StandardCommand.MoveUp</CommandName>
+						<ExtendedTooltip name="РеквизитыГруппировкиСтраницКнопкаПереместитьВверхРасширеннаяПодсказка" id="24"/>
+					</Button>
+					<Button name="РеквизитыГруппировкиСтраницКнопкаПереместитьВниз" id="25">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Item.РеквизитыРазбивкиСтраниц.StandardCommand.MoveDown</CommandName>
+						<ExtendedTooltip name="РеквизитыГруппировкиСтраницКнопкаПереместитьВнизРасширеннаяПодсказка" id="26"/>
+					</Button>
+					<Button name="РеквизитыГруппировкиСтраницКнопкаУстановитьФлажки" id="27">
+						<Type>CommandBarButton</Type>
+						<OnlyInAllActions>true</OnlyInAllActions>
+						<CommandName>Form.Item.РеквизитыРазбивкиСтраниц.StandardCommand.CheckAll</CommandName>
+						<ExtendedTooltip name="РеквизитыГруппировкиСтраницКнопкаУстановитьФлажкиРасширеннаяПодсказка" id="28"/>
+					</Button>
+					<Button name="РеквизитыГруппировкиСтраницКнопкаСнятьФлажки" id="29">
+						<Type>CommandBarButton</Type>
+						<OnlyInAllActions>true</OnlyInAllActions>
+						<CommandName>Form.Item.РеквизитыРазбивкиСтраниц.StandardCommand.UncheckAll</CommandName>
+						<ExtendedTooltip name="РеквизитыГруппировкиСтраницКнопкаСнятьФлажкиРасширеннаяПодсказка" id="30"/>
+					</Button>
+				</ChildItems>
+			</AutoCommandBar>
+			<ExtendedTooltip name="РеквизитыРазбивкиСтраницРасширеннаяПодсказка" id="10"/>
+			<SearchStringAddition name="РеквизитыРазбивкиСтраницСтрокаПоиска" id="11">
+				<AdditionSource>
+					<Item>РеквизитыРазбивкиСтраниц</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="РеквизитыРазбивкиСтраницСтрокаПоискаКонтекстноеМеню" id="12"/>
+				<ExtendedTooltip name="РеквизитыРазбивкиСтраницСтрокаПоискаРасширеннаяПодсказка" id="13"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="РеквизитыРазбивкиСтраницСостояниеПросмотра" id="14">
+				<AdditionSource>
+					<Item>РеквизитыРазбивкиСтраниц</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="РеквизитыРазбивкиСтраницСостояниеПросмотраКонтекстноеМеню" id="15"/>
+				<ExtendedTooltip name="РеквизитыРазбивкиСтраницСостояниеПросмотраРасширеннаяПодсказка" id="16"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="РеквизитыРазбивкиСтраницУправлениеПоиском" id="17">
+				<AdditionSource>
+					<Item>РеквизитыРазбивкиСтраниц</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="РеквизитыРазбивкиСтраницУправлениеПоискомКонтекстноеМеню" id="18"/>
+				<ExtendedTooltip name="РеквизитыРазбивкиСтраницУправлениеПоискомРасширеннаяПодсказка" id="19"/>
+			</SearchControlAddition>
+			<Events>
+				<Event name="BeforeAddRow">РеквизитыРазбивкиСтраницПередНачаломДобавления</Event>
+				<Event name="BeforeDeleteRow">РеквизитыРазбивкиСтраницПередУдалением</Event>
+			</Events>
+			<ChildItems>
+				<CheckBoxField name="РеквизитыРазбивкиСтраницПометка" id="34">
+					<DataPath>РеквизитыРазбивкиСтраниц.Check</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="РеквизитыРазбивкиСтраницПометкаКонтекстноеМеню" id="35"/>
+					<ExtendedTooltip name="РеквизитыРазбивкиСтраницПометкаРасширеннаяПодсказка" id="36"/>
+				</CheckBoxField>
+				<InputField name="РеквизитыРазбивкиСтраницЗначение" id="20">
+					<DataPath>РеквизитыРазбивкиСтраниц.Value</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="РеквизитыРазбивкиСтраницЗначениеКонтекстноеМеню" id="21"/>
+					<ExtendedTooltip name="РеквизитыРазбивкиСтраницЗначениеРасширеннаяПодсказка" id="22"/>
+				</InputField>
+			</ChildItems>
+		</Table>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Запись" id="1">
+			<Type>
+				<v8:Type>cfg:InformationRegisterRecordManager.НастройкиПечатиОбъектов</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+		<Attribute name="РеквизитыРазбивкиСтраниц" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Реквизиты разбивки страниц</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueListType</v8:Type>
+			</Type>
+		</Attribute>
+	</Attributes>
+</Form>

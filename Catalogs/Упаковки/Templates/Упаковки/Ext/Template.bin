@@ -1,0 +1,2688 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ValueTable xmlns="http://v8.1c.ru/8.1/data/core" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="ValueTable">
+  <column>
+    <Name xsi:type="xs:string">GUID_Меркурий</Name>
+    <ValueType>
+      <Type>xs:string</Type>
+      <StringQualifiers>
+        <Length>36</Length>
+        <AllowedLength>Variable</AllowedLength>
+      </StringQualifiers>
+    </ValueType>
+  </column>
+  <column>
+    <Name xsi:type="xs:string">Наименование</Name>
+    <ValueType>
+      <Type>xs:string</Type>
+      <StringQualifiers>
+        <Length>150</Length>
+        <AllowedLength>Variable</AllowedLength>
+      </StringQualifiers>
+    </ValueType>
+  </column>
+  <column>
+    <Name xsi:type="xs:string">КодЕЭК</Name>
+    <ValueType>
+      <Type>xs:string</Type>
+      <StringQualifiers>
+        <Length>2</Length>
+        <AllowedLength>Variable</AllowedLength>
+      </StringQualifiers>
+    </ValueType>
+  </column>
+  <column>
+    <Name xsi:type="xs:string">СтароеНаименование</Name>
+    <ValueType>
+      <Type>xs:string</Type>
+      <StringQualifiers>
+        <Length>25</Length>
+        <AllowedLength>Variable</AllowedLength>
+      </StringQualifiers>
+    </ValueType>
+  </column>
+  <column>
+    <Name xsi:type="xs:string">НеИспользуется</Name>
+    <ValueType>
+      <Type>xs:boolean</Type>
+    </ValueType>
+  </column>
+  <row>
+    <Value>5ad138ef-2493-4117-bf83-b76e4e5f609d</Value>
+    <Value>Ампула, защищенная</Value>
+    <Value>AP</Value>
+    <Value />
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>1f9a9273-be63-4e4b-b29b-dfee1f0da370</Value>
+    <Value>Ампула, незащищенная</Value>
+    <Value>AM</Value>
+    <Value />
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>975160ee-6cb0-4501-a821-9e3574f09446</Value>
+    <Value>Аэрозольная упаковка</Value>
+    <Value>AE</Value>
+    <Value />
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>ec29a5a8-17fa-480c-a1d5-333a4411e393</Value>
+    <Value>Багаж</Value>
+    <Value>LE</Value>
+    <Value />
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>0f4cc0b5-af48-4571-a06b-96504ec89012</Value>
+    <Value>Бадья</Value>
+    <Value>BJ</Value>
+    <Value />
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>93bdc740-0f32-4019-a3fd-ed661f2bc3b9</Value>
+    <Value>Бак</Value>
+    <Value>VA</Value>
+    <Value />
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>bc29f22a-6086-4438-acd2-1f40a3b00a66</Value>
+    <Value>Балка</Value>
+    <Value>GI</Value>
+    <Value />
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>491e8863-7850-4b06-8abc-52c09dd05d0d</Value>
+    <Value>Балка в пакете/пачке/связке</Value>
+    <Value>GZ</Value>
+    <Value />
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>6a10e7ae-b8ff-4249-a23d-1dec8128c4a1</Value>
+    <Value>Баллон, газовый</Value>
+    <Value>GB</Value>
+    <Value />
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>0fdf7f98-6595-480b-8988-5544d8ff40b3</Value>
+    <Value>Баллон, защищенный</Value>
+    <Value>BP</Value>
+    <Value />
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>49e8e70e-e539-4ce1-8d20-5a49ae276f77</Value>
+    <Value>Баллон, незащищенный</Value>
+    <Value>BF</Value>
+    <Value />
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>8a9c1190-aeeb-498d-8e80-5ddfbc3f7df2</Value>
+    <Value>Бандероль</Value>
+    <Value>PC</Value>
+    <Value />
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>0cc66f67-3111-4e77-9dcc-c9a9df725bed</Value>
+    <Value>Банка (емкостью менее 5 л) жестяная прямоугольная</Value>
+    <Value>CA</Value>
+    <Value />
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>18a67ab0-21a3-4e8c-9058-d8f42820938d</Value>
+    <Value>Банка (емкостью менее 5 л) жестяная с ручкой и выпускным отверстием</Value>
+    <Value>CD</Value>
+    <Value />
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>54ed0793-c32e-41c1-9321-608c1a224edc</Value>
+    <Value>Банка (емкостью менее 5 л) жестяная цилиндрическая</Value>
+    <Value>CX</Value>
+    <Value />
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>91f360ff-5731-4c1c-bf11-7ea3d6d1a3ca</Value>
+    <Value>Банка жестяная для сухих продуктов (массой до 2,2 кг)</Value>
+    <Value>CI</Value>
+    <Value />
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>c1f40234-bff1-42c8-8e19-d6cad7f00fce</Value>
+    <Value>Банка широкогорлая (емкостью около 4,5 литров)</Value>
+    <Value>JR</Value>
+    <Value />
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>fedf422e-053c-11e1-99b4-d8d385fbc9e8</Value>
+    <Value>Банка, жестяная (консервная)</Value>
+    <Value>TN</Value>
+    <Value>жестяные банки</Value>
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>13f13e66-adf4-431a-9cff-22cfd839047b</Value>
+    <Value>Барабан</Value>
+    <Value>DR</Value>
+    <Value />
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>2e53354c-4023-434b-926f-bbdd1af00a37</Value>
+    <Value>Барабан алюминиевый с несъемным днищем</Value>
+    <Value>QC</Value>
+    <Value />
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>970e40fd-3436-48ed-ac99-e78802f57119</Value>
+    <Value>Барабан алюминиевый со съемным днищем</Value>
+    <Value>QD</Value>
+    <Value />
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>eec09740-2c4c-460b-94ed-c4d4ef437f1b</Value>
+    <Value>Барабан пластмассовый с несъемным днищем</Value>
+    <Value>QF</Value>
+    <Value />
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>d565dd82-5fc1-4303-a55d-495c35ac22ec</Value>
+    <Value>Барабан пластмассовый со съемным днищем</Value>
+    <Value>QG</Value>
+    <Value />
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>02f1c682-8f53-47f8-b8dc-72404d986e66</Value>
+    <Value>Барабан стальной</Value>
+    <Value>1A</Value>
+    <Value />
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>c113fb0c-23eb-4ce5-ad44-8250598f173e</Value>
+    <Value>Барабан стальной с несъемным днищем</Value>
+    <Value>QA</Value>
+    <Value />
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>1852b14d-39a0-4712-9e55-90a7005d5469</Value>
+    <Value>Барабан стальной со съемным днищем</Value>
+    <Value>QB</Value>
+    <Value />
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>e5f7f98d-6a9c-4866-8cac-4819f71e41b3</Value>
+    <Value>Барабан фанерный</Value>
+    <Value>1D</Value>
+    <Value />
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>6bf25be3-0cf7-4dd8-a383-049a02862968</Value>
+    <Value>Барабан фибровый</Value>
+    <Value>1G</Value>
+    <Value />
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>ed90911b-d130-4d3b-ae0b-2f0754d23fd4</Value>
+    <Value>Барабан, алюминиевый</Value>
+    <Value>1B</Value>
+    <Value />
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>0ef53349-5258-4efc-ac2a-23d1e33f387b</Value>
+    <Value>Барабан, деревянный</Value>
+    <Value>1W</Value>
+    <Value />
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>bbe136bd-0da4-42fd-800a-79435f4dd2c0</Value>
+    <Value>Барабан, железный</Value>
+    <Value>DI</Value>
+    <Value />
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>dd7c7ba0-dbc3-435d-94f7-5b758ca36898</Value>
+    <Value>Барабан, пластмассовый</Value>
+    <Value>IH</Value>
+    <Value />
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>ae0b5e58-8771-48f7-8c3c-11dfdb17ebad</Value>
+    <Value>Без клети</Value>
+    <Value>UC</Value>
+    <Value />
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>34e245a7-cd7c-4d8b-a436-482dcbcf1f38</Value>
+    <Value>Бидон</Value>
+    <Value>CC</Value>
+    <Value />
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>41e9ff79-b6c4-46e7-a2d4-6f5bf3ee1002</Value>
+    <Value>Бобина</Value>
+    <Value>BB</Value>
+    <Value />
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>fedf412a-053c-11e1-99b4-d8d385fbc9e8</Value>
+    <Value>Бочка</Value>
+    <Value>CK</Value>
+    <Value>бочки</Value>
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>3630beae-fe03-49ff-9264-93925ca7ce80</Value>
+    <Value>Бочка (емкостью около 164 л)</Value>
+    <Value>BA</Value>
+    <Value />
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>5623e14a-903b-48e4-8afa-07db65991173</Value>
+    <Value>Бочка (емкостью около 164 л) деревянная</Value>
+    <Value>2C</Value>
+    <Value />
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>3c78e2e1-d19a-40d3-b970-4fe6d2b722d0</Value>
+    <Value>Бочка (емкостью около 164 л) деревянная со съемным днищем</Value>
+    <Value>QJ</Value>
+    <Value />
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>021bc2d9-f514-4491-b21a-ffe63023236f</Value>
+    <Value>Бочка (емкостью около 164 л) деревянная шпунтованная</Value>
+    <Value>QH</Value>
+    <Value />
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>37495e99-e19f-4221-97e8-39565c0192b8</Value>
+    <Value>Бочка деревянная (емкостью около 200 л)</Value>
+    <Value>TI</Value>
+    <Value />
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>c8066a6e-5f19-4429-85e1-9b2df548afa1</Value>
+    <Value>Бочка для вина или пива</Value>
+    <Value>BU</Value>
+    <Value />
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>f1d48fb7-8536-4b99-8668-bd6a55167306</Value>
+    <Value>Бочка для вина или пива большая (емкостью около 1146 л) (тан)</Value>
+    <Value>TO</Value>
+    <Value />
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>6583f8bf-8317-4ba4-bf4b-fafcd1d13bc1</Value>
+    <Value>Бочка емкостью 238 л (хогсхед)</Value>
+    <Value>HG</Value>
+    <Value />
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>8915e7eb-4f39-48aa-8171-7a629c95b69e</Value>
+    <Value>Бочонок (емкостью около 41 л)</Value>
+    <Value>FI</Value>
+    <Value />
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>8fe0727a-b2ed-4040-9df5-a14e4ad7f6a8</Value>
+    <Value>Бочонок (емкостью около 46 л)</Value>
+    <Value>KG</Value>
+    <Value />
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>07f35ce7-6d5a-49e7-a7e2-659b6cf74def</Value>
+    <Value>Бревно</Value>
+    <Value>LG</Value>
+    <Value />
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>0e0ccdf4-8779-4d65-84e2-d9e689314630</Value>
+    <Value>Бревно в пакете/пачке/связке</Value>
+    <Value>LZ</Value>
+    <Value />
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>d9afec35-b224-404f-a3ff-74a0496c128d</Value>
+    <Value>Брезент</Value>
+    <Value>CZ</Value>
+    <Value />
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>0ed01082-9c8e-49fa-8ba4-a91879d4b192</Value>
+    <Value>Брус (брусок)</Value>
+    <Value>BR</Value>
+    <Value />
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>086a3064-ab16-4d38-a7fa-3a28ee66b58b</Value>
+    <Value>Брус (брусок) в пакете/пачке/связке</Value>
+    <Value>BZ</Value>
+    <Value />
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>d2ed24d1-c72a-4dc6-b3a8-ff8ca179c5c4</Value>
+    <Value>Бункер</Value>
+    <Value>BI</Value>
+    <Value />
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>a23634f3-9e71-4c80-abc5-e4c77ac70c88</Value>
+    <Value>Бутылка оплетенная</Value>
+    <Value>WB</Value>
+    <Value />
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>f7183d0a-5cee-4de8-9d08-bd5c7512ea7c</Value>
+    <Value>Бутылка с выпуклыми стенками защищенная</Value>
+    <Value>BV</Value>
+    <Value />
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>883a32f4-984e-43c1-8e03-ad02929cbfe4</Value>
+    <Value>Бутылка с выпуклыми стенками незащищенная</Value>
+    <Value>BS</Value>
+    <Value />
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>9adfe441-f411-4fcc-9568-8274ec2a0697</Value>
+    <Value>Бутылка цилиндрическая защищенная</Value>
+    <Value>BQ</Value>
+    <Value />
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>1b986c7e-dcff-452f-b9c5-bc47afa6ccdc</Value>
+    <Value>Бутылка цилиндрическая незащищенная</Value>
+    <Value>BO</Value>
+    <Value />
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>3e311a74-00dd-4554-b656-748aa45cc069</Value>
+    <Value>Бутыль оплетенная большая (емкостью от 9 до 54 л) защищенная</Value>
+    <Value>DP</Value>
+    <Value />
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>b654b00e-7601-408e-b059-783ab0371b35</Value>
+    <Value>Бутыль оплетенная большая (емкостью от 9 до 54 л) незащищенная</Value>
+    <Value>DJ</Value>
+    <Value />
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>fc881dea-5868-43ea-8b84-768aad44bc39</Value>
+    <Value>Бутыль оплетенная защищенная</Value>
+    <Value>CP</Value>
+    <Value />
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>f8552b0c-1de2-4509-8de9-06284d01bdff</Value>
+    <Value>Бутыль оплетенная незащищенная</Value>
+    <Value>CO</Value>
+    <Value />
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>87cff419-7bd1-4a2a-b52e-3f6c358138c8</Value>
+    <Value>Бухта</Value>
+    <Value>CL</Value>
+    <Value />
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>04735711-516d-4331-92c6-b55e5f8e3710</Value>
+    <Value>В вакуумной упаковке</Value>
+    <Value>VP</Value>
+    <Value />
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>b49dbb7b-56b9-48e3-9fd3-74a328dbcea3</Value>
+    <Value>В термоусадочной пленке</Value>
+    <Value>SW</Value>
+    <Value />
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>165fd412-0bfa-4bb5-8993-bcfaa5d82e1b</Value>
+    <Value>Ведро</Value>
+    <Value>PL</Value>
+    <Value />
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>657fad4d-71a4-4939-90a4-3fb0c9aea7f7</Value>
+    <Value>Гильза</Value>
+    <Value>SY</Value>
+    <Value />
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>a423d25a-2a14-40b8-bf13-f6a85b8fc887</Value>
+    <Value>Гнездо (ячейка)</Value>
+    <Value>NS</Value>
+    <Value />
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>4a7ea673-c3ac-40b5-836f-cfdd066b8020</Value>
+    <Value>Горшок</Value>
+    <Value>PT</Value>
+    <Value />
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>668e236b-70b0-4afc-8ab3-3fb9335f909e</Value>
+    <Value>Грейферный ковш</Value>
+    <Value>AI</Value>
+    <Value />
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>17f78e53-8978-4b58-9be5-d919c049a239</Value>
+    <Value>Гроб</Value>
+    <Value>CJ</Value>
+    <Value />
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>d2612f44-ca2a-4146-986d-6650e6fe9194</Value>
+    <Value>Грузовая партия (лот)</Value>
+    <Value>LT</Value>
+    <Value />
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>af4d4677-3ea7-46ba-9fe0-504ba81ebea7</Value>
+    <Value>Дозатор</Value>
+    <Value>DN</Value>
+    <Value />
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>b8d3ee58-c120-4c4e-bd31-0e1d3451f5de</Value>
+    <Value>Доска</Value>
+    <Value>BD</Value>
+    <Value />
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>c84cb473-a0cc-4433-8b56-c7beb88fc59b</Value>
+    <Value>Доска в пакете/пачке/связке</Value>
+    <Value>BY</Value>
+    <Value />
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>3dca7c38-3a10-4fb6-9c1f-0c64ab79d63b</Value>
+    <Value>Доска толстая в пакете/пачке/связке</Value>
+    <Value>PZ</Value>
+    <Value />
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>4d5772a0-9fa4-47ab-8c32-9a07729740ad</Value>
+    <Value>Доска, толстая</Value>
+    <Value>PN</Value>
+    <Value />
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>5e5f4afb-d5f8-483a-999e-cb985af7580b</Value>
+    <Value>Единица</Value>
+    <Value>UN</Value>
+    <Value />
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>207dccd8-7a12-44c3-a77b-7dd945a7b0bd</Value>
+    <Value>Кадка</Value>
+    <Value>TB</Value>
+    <Value />
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>6046383e-9e59-40bc-a70b-a0538ef536ca</Value>
+    <Value>Кадка с крышкой</Value>
+    <Value>TL</Value>
+    <Value />
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>4d9bd778-5ce4-411c-8d78-a1959ac55590</Value>
+    <Value>Канистра пластмассовая с несъемным днищем</Value>
+    <Value>QM</Value>
+    <Value />
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>ba61904f-f946-448a-958b-518655d8f567</Value>
+    <Value>Канистра пластмассовая со съемным днищем</Value>
+    <Value>QN</Value>
+    <Value />
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>a2110164-70b4-49f6-afaa-f3abde1be0f1</Value>
+    <Value>Канистра стальная с несъемным днищем</Value>
+    <Value>QK</Value>
+    <Value />
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>72896fbf-b156-4c7b-868d-ac13c5a85c7e</Value>
+    <Value>Канистра стальная со съемным днищем</Value>
+    <Value>QL</Value>
+    <Value />
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>12829e8e-7983-4745-8d01-5425d0244df6</Value>
+    <Value>Канистра, пластмассовая</Value>
+    <Value>3H</Value>
+    <Value />
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>a17e05ea-2fd6-485f-8db6-5aed1606f851</Value>
+    <Value>Канистра, прямоугольная</Value>
+    <Value>JC</Value>
+    <Value />
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>315646b0-01b2-4728-ab20-39911b080c26</Value>
+    <Value>Канистра, стальная</Value>
+    <Value>3A</Value>
+    <Value />
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>a7eb10cf-5a71-4cd2-97eb-c7369a407ccf</Value>
+    <Value>Канистра, цилиндрическая</Value>
+    <Value>JY</Value>
+    <Value />
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>8bcdee71-cca5-4536-ae2e-8a423d7dab60</Value>
+    <Value>Капсула</Value>
+    <Value>AV</Value>
+    <Value />
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>0f402761-1d53-45dc-9566-d709cd1ccb4d</Value>
+    <Value>Кардная лента</Value>
+    <Value>CM</Value>
+    <Value />
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>8211a6d5-11ea-4a5e-96dd-b52c3fe0a801</Value>
+    <Value>Кассета</Value>
+    <Value>CQ</Value>
+    <Value />
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>c7ee807d-56a9-47c5-95d7-72021f303167</Value>
+    <Value>Кассета с пленкой (фильмпак)</Value>
+    <Value>FP</Value>
+    <Value />
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>4b3478b2-bd43-4fe1-85bd-77a457a1cd72</Value>
+    <Value>Катушка</Value>
+    <Value>RL</Value>
+    <Value />
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>31ff0ebc-8b93-4ab4-9e6f-04dcab641eb2</Value>
+    <Value>Кипа, неспрессованная</Value>
+    <Value>BN</Value>
+    <Value />
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>90ae449d-76c3-47a2-a0ec-39febdc0c965</Value>
+    <Value>Кипа, спрессованная</Value>
+    <Value>BL</Value>
+    <Value />
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>6da6c216-abc1-4534-825c-821a41b2dbc2</Value>
+    <Value>Клеть</Value>
+    <Value>CG</Value>
+    <Value />
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>09f4ec10-6101-4c3d-b57a-251aa11e7752</Value>
+    <Value>Клеть (многооборотная) Общего фонда транспортировочного оборудования EC</Value>
+    <Value>DG</Value>
+    <Value />
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>4770cd27-c22b-4da6-bba5-c69dcd601b74</Value>
+    <Value>Клеть, роликовая</Value>
+    <Value>CW</Value>
+    <Value />
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>538f0705-e05d-4154-bfb5-0e63ab30122b</Value>
+    <Value>Кольцо</Value>
+    <Value>RG</Value>
+    <Value />
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>d0416c04-368d-48bf-b5fb-d3fe21f3977c</Value>
+    <Value>Комбинированная упаковка: пластмассовый сосуд</Value>
+    <Value>6H</Value>
+    <Value />
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>858efe47-f7d6-4f6e-9408-79b8e3d9ae83</Value>
+    <Value>Комбинированная упаковка: пластмассовый сосуд в барабане алюминиевом</Value>
+    <Value>YC</Value>
+    <Value />
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>b95eb3b6-d08a-441e-9a3a-6d3f9501cc99</Value>
+    <Value>Комбинированная упаковка: пластмассовый сосуд в барабане пластмассовом</Value>
+    <Value>YL</Value>
+    <Value />
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>6b8efc02-9611-451c-b215-503bc29301cd</Value>
+    <Value>Комбинированная упаковка: пластмассовый сосуд в барабане стальном</Value>
+    <Value>YA</Value>
+    <Value />
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>21246938-dd6f-49aa-8e2a-d1cb13b0be17</Value>
+    <Value>Комбинированная упаковка: пластмассовый сосуд в барабане фибровом</Value>
+    <Value>YJ</Value>
+    <Value />
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>05e4976b-9504-44ac-8645-06bf6a24ad59</Value>
+    <Value>Комбинированная упаковка: пластмассовый сосуд в деревянной коробке</Value>
+    <Value>YF</Value>
+    <Value />
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>5e8755cb-a874-499d-bb4d-34e465df0978</Value>
+    <Value>Комбинированная упаковка: пластмассовый сосуд в коробке из твердой пластмассы</Value>
+    <Value>YM</Value>
+    <Value />
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>eb55f088-06cc-4bab-9f84-49f2f999f428</Value>
+    <Value>Комбинированная упаковка: пластмассовый сосуд в коробке из фибрового картона</Value>
+    <Value>YK</Value>
+    <Value />
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>ab579955-759f-4de1-b8b9-460ad80facfb</Value>
+    <Value>Комбинированная упаковка: пластмассовый сосуд в коробке фанерной</Value>
+    <Value>YH</Value>
+    <Value />
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>95307257-321c-4dd1-9a30-e30cbcffcfb1</Value>
+    <Value>Комбинированная упаковка: пластмассовый сосуд в ящике решетчатом (или обрешетке) из алюминия</Value>
+    <Value>YD</Value>
+    <Value />
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>43c6ad00-832f-42c6-8e2a-fe2273814b66</Value>
+    <Value>Комбинированная упаковка: пластмассовый сосуд в ящике решетчатом (или обрешетке) из стали</Value>
+    <Value>YB</Value>
+    <Value />
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>380c561e-749a-4408-88de-ad5399c8a53f</Value>
+    <Value>Комбинированная упаковка: стеклянный сосуд</Value>
+    <Value>6P</Value>
+    <Value />
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>2e460cc7-7c38-4bf4-aa19-7768cb14d234</Value>
+    <Value>Комбинированная упаковка: стеклянный сосуд в барабане алюминиевом</Value>
+    <Value>YQ</Value>
+    <Value />
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>fa1d17e8-e12d-4544-9461-db80f49cfe4b</Value>
+    <Value>Комбинированная упаковка: стеклянный сосуд в барабане фанерном</Value>
+    <Value>YT</Value>
+    <Value />
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>40c8a0db-74c9-4190-9449-6f3f8ac2eaa7</Value>
+    <Value>Комбинированная упаковка: стеклянный сосуд в барабане фибровом</Value>
+    <Value>YW</Value>
+    <Value />
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>32936c38-e9fa-439b-8108-5b7e3c482f6c</Value>
+    <Value>Комбинированная упаковка: стеклянный сосуд в корзине плетеной с крышкой</Value>
+    <Value>YV</Value>
+    <Value />
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>4195a944-7c45-44e9-9cf9-d366386ad86e</Value>
+    <Value>Комбинированная упаковка: стеклянный сосуд в коробке деревянной</Value>
+    <Value>YS</Value>
+    <Value />
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>eabbfb7f-b3ea-4858-981a-201a18be8a0a</Value>
+    <Value>Комбинированная упаковка: стеклянный сосуд в коробке из фибрового картона</Value>
+    <Value>YX</Value>
+    <Value />
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>5a349e4c-ce4c-485e-81db-beec4aa09fa4</Value>
+    <Value>Комбинированная упаковка: стеклянный сосуд в пакете из твердой пластмассы</Value>
+    <Value>YZ</Value>
+    <Value />
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>ce9f36bf-2f90-424c-b34f-e8715dd15e02</Value>
+    <Value>Комбинированная упаковка: стеклянный сосуд в пакете пенопластовом</Value>
+    <Value>YY</Value>
+    <Value />
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>57eeeadf-7c4b-4614-9731-6e47d4b273a9</Value>
+    <Value>Комбинированная упаковка: стеклянный сосуд в стальном барабане</Value>
+    <Value>YN</Value>
+    <Value />
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>6355c3ee-6d1c-4bc5-a6ff-2a808274f222</Value>
+    <Value>Комбинированная упаковка: стеклянный сосуд в ящике решетчатом (или обрешетке) из алюминия</Value>
+    <Value>YR</Value>
+    <Value />
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>5893d315-48c8-49f7-9dc4-2dde43e090b9</Value>
+    <Value>Комбинированная упаковка: стеклянный сосуд в ящике решетчатом (или обрешетке) из стали</Value>
+    <Value>YP</Value>
+    <Value />
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>b5cd2c76-152f-4d8f-a5c2-d196dd920426</Value>
+    <Value>Комплект</Value>
+    <Value>SX</Value>
+    <Value />
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>3cb38979-51da-44a5-8bdc-8f549bb0aa68</Value>
+    <Value>Конверт</Value>
+    <Value>EN</Value>
+    <Value />
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>dddd429e-0376-4030-bb9e-2ad9cba0f3c4</Value>
+    <Value>Конверт, стальной</Value>
+    <Value>SV</Value>
+    <Value />
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>d90e17f4-8bed-46be-a1d1-9bb7f0f4d736</Value>
+    <Value>Консоль для оборудования, помещающаяся в минифургон</Value>
+    <Value>VK</Value>
+    <Value />
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>5d753d93-c512-4f55-8fc8-0c0f1461d6a0</Value>
+    <Value>Контейнер для пищевых продуктов</Value>
+    <Value>FT</Value>
+    <Value />
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>9ef6b142-22e7-4a1c-bc5f-7945dc5a654f</Value>
+    <Value>Контейнер металлический</Value>
+    <Value>ME</Value>
+    <Value />
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>d273dbfd-c8ed-4637-9ad2-5e40d7ecbf3a</Value>
+    <Value>Контейнер наружный</Value>
+    <Value>OU</Value>
+    <Value />
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>fedf606a-053c-11e1-99b4-d8d385fbc9e8</Value>
+    <Value>Контейнер средней грузоподъемности для массовых грузов</Value>
+    <Value>WA</Value>
+    <Value>контейнер</Value>
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>b86afba4-7492-4910-b266-6ab67235095c</Value>
+    <Value>Контейнер средней грузоподъемности для массовых грузов алюминиевый</Value>
+    <Value>WD</Value>
+    <Value />
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>6505c314-3e58-496e-becc-9ee71c08eacc</Value>
+    <Value>Контейнер средней грузоподъемности для массовых грузов алюминиевый герметизированный свыше 10 КПа</Value>
+    <Value>WH</Value>
+    <Value />
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>caeda84d-f591-4ca8-888f-2b0857d6d66a</Value>
+    <Value>Контейнер средней грузоподъемности для массовых грузов бумажный многослойный</Value>
+    <Value>ZA</Value>
+    <Value />
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>566c12fc-5fc1-4189-8fc4-f4ff072c4897</Value>
+    <Value>Контейнер средней грузоподъемности для массовых грузов бумажный многослойный влагонепроницаемый</Value>
+    <Value>ZC</Value>
+    <Value />
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>800fc586-864c-4c29-ae15-d0d405e5d82a</Value>
+    <Value>Контейнер средней грузоподъемности для массовых грузов герметизированный 10 Кпа</Value>
+    <Value>WJ</Value>
+    <Value />
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>3a762c62-7b9e-4ccc-95e7-50fed26da877</Value>
+    <Value>Контейнер средней грузоподъемности для массовых грузов герметизированный свыше 10 КПа</Value>
+    <Value>WG</Value>
+    <Value />
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>1061b465-9f46-48ba-8939-e4e14afd6270</Value>
+    <Value>Контейнер средней грузоподъемности для массовых грузов гибкий</Value>
+    <Value>ZU</Value>
+    <Value />
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>e143c99a-f5c3-4e66-a50b-52a5cabc6325</Value>
+    <Value>Контейнер средней грузоподъемности для массовых грузов из древесного материала</Value>
+    <Value>ZY</Value>
+    <Value />
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>828064d7-80be-4ba4-a13c-7a17476e763e</Value>
+    <Value>Контейнер средней грузоподъемности для массовых грузов из древесного материала с внутренним вкладышем</Value>
+    <Value>WZ</Value>
+    <Value />
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>057ea6ec-aab1-4e2c-be58-f976fd3bbb37</Value>
+    <Value>Контейнер средней грузоподъемности для массовых грузов из естественной древесины</Value>
+    <Value>ZW</Value>
+    <Value />
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>c5f0a52e-2496-45f0-9c5d-0cca7c1643a1</Value>
+    <Value>Контейнер средней грузоподъемности для массовых грузов из естественной древесины с внутренним вкладышем</Value>
+    <Value>WU</Value>
+    <Value />
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>5cea30bc-bd13-4c2a-af79-90a2e1804b07</Value>
+    <Value>Контейнер средней грузоподъемности для массовых грузов из жесткой пластмассы</Value>
+    <Value>AA</Value>
+    <Value />
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>e729238b-88ff-4991-a67e-8ec66cded23c</Value>
+    <Value>Контейнер средней грузоподъемности для массовых грузов из жесткой пластмассы автономный герметизированный</Value>
+    <Value>ZH</Value>
+    <Value />
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>2b58bc8f-b007-4ef4-808b-a4eedc9df54c</Value>
+    <Value>Контейнер средней грузоподъемности для массовых грузов из жесткой пластмассы с конструкционным оснащением герметизированный</Value>
+    <Value>ZG</Value>
+    <Value />
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>c159513f-dcf5-4402-ab16-8a1970e7b9d4</Value>
+    <Value>Контейнер средней грузоподъемности для массовых грузов из пластикового волокна с покрытием и вкладышем</Value>
+    <Value>WR</Value>
+    <Value />
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>92765566-620c-4877-a58f-4107c3c6d468</Value>
+    <Value>Контейнер средней грузоподъемности для массовых грузов из полимерной пленки</Value>
+    <Value>WS</Value>
+    <Value />
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>9c415e68-6f34-4e5c-81c2-696e994a77cc</Value>
+    <Value>Контейнер средней грузоподъемности для массовых грузов из полимерной ткани без покрытия/вкладыша</Value>
+    <Value>WN</Value>
+    <Value />
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>fed6b6cb-60b7-4df5-b81e-37b7a2b2a24e</Value>
+    <Value>Контейнер средней грузоподъемности для массовых грузов из полимерной ткани с вкладышем</Value>
+    <Value>WQ</Value>
+    <Value />
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>3d3bf9e3-12bb-4f0c-82ab-c79df71fcfdf</Value>
+    <Value>Контейнер средней грузоподъемности для массовых грузов из полимерной ткани с покрытием</Value>
+    <Value>WP</Value>
+    <Value />
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>778afe34-03a9-4255-89ce-78229c9d233c</Value>
+    <Value>Контейнер средней грузоподъемности для массовых грузов из прочего металла, кроме стали</Value>
+    <Value>ZV</Value>
+    <Value />
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>5a86d172-8b82-4992-b88c-8b1f80765ff5</Value>
+    <Value>Контейнер средней грузоподъемности для массовых грузов из фибрового картона</Value>
+    <Value>ZT</Value>
+    <Value />
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>769f3e00-3bc6-4b59-b201-8972cd649ccc</Value>
+    <Value>Контейнер средней грузоподъемности для массовых грузов металлический</Value>
+    <Value>WF</Value>
+    <Value />
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>fab06db6-977d-48df-8822-fb5ef954434c</Value>
+    <Value>Контейнер средней грузоподъемности для массовых грузов составной</Value>
+    <Value>ZS</Value>
+    <Value />
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>a3ee4967-a24f-4815-8f07-9d49ffe1de53</Value>
+    <Value>Контейнер средней грузоподъемности для массовых грузов составной из гибкой пластмассы герметизированный</Value>
+    <Value>ZP</Value>
+    <Value />
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>fee9277d-adb9-4af6-aae9-3117412de104</Value>
+    <Value>Контейнер средней грузоподъемности для массовых грузов составной из жесткой пластмассы герметизированный</Value>
+    <Value>ZN</Value>
+    <Value />
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>a14e9f47-e745-4fb5-861e-642b8da576d9</Value>
+    <Value>Контейнер средней грузоподъемности для массовых грузов стальной</Value>
+    <Value>WC</Value>
+    <Value />
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>cb247727-4eaf-49dd-85cf-6e2dd7f2a3ab</Value>
+    <Value>Контейнер средней грузоподъемности для массовых грузов текстильный без покрытия/вкладыша</Value>
+    <Value>WT</Value>
+    <Value />
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>5c416509-50d7-464b-9455-9439604c2479</Value>
+    <Value>Контейнер средней грузоподъемности для массовых грузов текстильный с вкладышем</Value>
+    <Value>WW</Value>
+    <Value />
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>111583f5-39e6-4b45-a941-b67d41ef4cae</Value>
+    <Value>Контейнер средней грузоподъемности для массовых грузов текстильный с покрытием</Value>
+    <Value>WV</Value>
+    <Value />
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>0d51ebba-b636-4a01-9a3a-e1f10fcc73df</Value>
+    <Value>Контейнер средней грузоподъемности для массовых грузов текстильный с покрытием и вкладышем</Value>
+    <Value>WX</Value>
+    <Value />
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>6bc17666-63d7-49fd-9a82-fd98ff408dff</Value>
+    <Value>Контейнер средней грузоподъемности для массовых грузов фанерный</Value>
+    <Value>ZX</Value>
+    <Value />
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>8015c596-6a81-40bc-bfca-f5961327bca4</Value>
+    <Value>Контейнер средней грузоподъемности для массовых грузов фанерный с внутренним вкладышем</Value>
+    <Value>WY</Value>
+    <Value />
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>a41e2a9a-d9f8-43f7-8781-15da3e5713d8</Value>
+    <Value>Контейнер средней грузоподъемности для наливных грузов алюминиевый</Value>
+    <Value>WL</Value>
+    <Value />
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>4dfaab91-aacd-4a1b-a052-f40f873e6a46</Value>
+    <Value>Контейнер средней грузоподъемности для наливных грузов из жесткой пластмассы автономный</Value>
+    <Value>ZK</Value>
+    <Value />
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>5389a88d-8a7d-4fc6-9758-4205df09bd30</Value>
+    <Value>Контейнер средней грузоподъемности для наливных грузов из жесткой пластмассы с конструкционным оснащением</Value>
+    <Value>ZJ</Value>
+    <Value />
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>ceb9b05c-6a68-4663-ae9a-72c1f38e1ef8</Value>
+    <Value>Контейнер средней грузоподъемности для наливных грузов металлический</Value>
+    <Value>WM</Value>
+    <Value />
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>dd97947e-4e78-41df-a4ef-1f34346db79e</Value>
+    <Value>Контейнер средней грузоподъемности для наливных грузов составной из гибкой пластмассы</Value>
+    <Value>ZR</Value>
+    <Value />
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>f9c0a4b5-0576-4aeb-9822-0a85f59b4c7f</Value>
+    <Value>Контейнер средней грузоподъемности для наливных грузов составной из жесткой пластмассы</Value>
+    <Value>ZQ</Value>
+    <Value />
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>517d28bb-afa9-4a66-87e7-b707121a70fb</Value>
+    <Value>Контейнер средней грузоподъемности для наливных грузов стальной</Value>
+    <Value>WK</Value>
+    <Value />
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>690e086c-89b8-4c17-8838-4478d4c2e4eb</Value>
+    <Value>Контейнер средней грузоподъемности для твердых навалочных/насыпных грузов из жесткой пластмассы автономный</Value>
+    <Value>ZF</Value>
+    <Value />
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>c979e057-03e8-4dda-8fcd-3dba27e4dfc5</Value>
+    <Value>Контейнер средней грузоподъемности для твердых навалочных/насыпных грузов из жесткой пластмассы с конструкционным оснащением</Value>
+    <Value>ZD</Value>
+    <Value />
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>9eba63f1-0e89-47a1-b75a-8c0cb099af3d</Value>
+    <Value>Контейнер средней грузоподъемности для твердых навалочных/насыпных грузов составной из гибкой пластмассы</Value>
+    <Value>ZM</Value>
+    <Value />
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>3850fb20-746c-4001-827c-5825630f7ce7</Value>
+    <Value>Контейнер средней грузоподъемности для твердых навалочных/насыпных грузов составной из жесткой пластмассы</Value>
+    <Value>ZL</Value>
+    <Value />
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>4258d946-8f37-43ac-90c2-ab29814daaeb</Value>
+    <Value>Контейнер, галлон</Value>
+    <Value>GL</Value>
+    <Value />
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>0239b3d5-ec19-498f-9379-013e4df8c882</Value>
+    <Value>Контейнер, гибкий</Value>
+    <Value>1F</Value>
+    <Value />
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>8f20bf8f-afd5-4e30-9e6b-b664f3973c16</Value>
+    <Value>Контейнер, прочее транспортировочное оборудование, кроме поименованного</Value>
+    <Value>CN</Value>
+    <Value />
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>fedf5cb4-053c-11e1-99b4-d8d385fbc9e8</Value>
+    <Value>Корзина</Value>
+    <Value>BK</Value>
+    <Value>корзины</Value>
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>2bbef079-d872-469a-9a38-37101bba2e07</Value>
+    <Value>Корзина из шпона для ягод и фруктов</Value>
+    <Value>PJ</Value>
+    <Value />
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>4be2b716-28a4-4d33-8d3e-266ce1e34942</Value>
+    <Value>Корзина с крышкой</Value>
+    <Value>HR</Value>
+    <Value />
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>497050a3-b994-4ba4-badd-8b7fd98426ac</Value>
+    <Value>Корзина с ручкой из древесины</Value>
+    <Value>HB</Value>
+    <Value />
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>02684a03-6f18-43d0-b79d-3ce05d562435</Value>
+    <Value>Корзина с ручкой, картонная</Value>
+    <Value>HC</Value>
+    <Value />
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>ecd94698-e572-4b54-91a8-54bccd9f5644</Value>
+    <Value>Корзина с ручкой, пластмассовая</Value>
+    <Value>HA</Value>
+    <Value />
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>e3c233ff-30d4-4ee1-89ac-c19062f1a09d</Value>
+    <Value>Корзина, рыбацкая</Value>
+    <Value>CE</Value>
+    <Value />
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>2b91c7f0-2705-40a1-a180-64e20626a2a0</Value>
+    <Value>Короб деревянный (лифтван) размером около 220 см (длина) x 115 см (ширина) x 220 см (высота)</Value>
+    <Value>LV</Value>
+    <Value />
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>fedf5ad4-053c-11e1-99b4-d8d385fbc9e8</Value>
+    <Value>Коробка</Value>
+    <Value>BX</Value>
+    <Value>коробки</Value>
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>5a5960a3-121e-4da1-8437-130b3cbc55c6</Value>
+    <Value>Коробка (многооборотная) из Общего фонда транспортировочного оборудования ЕС, Еврокоробка</Value>
+    <Value>DH</Value>
+    <Value />
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>ff3bfc50-0b9f-47cc-ada2-ac40a4a18cc0</Value>
+    <Value>Коробка деревянная из естественной древесины обыкновенная</Value>
+    <Value>QP</Value>
+    <Value />
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>fddc5698-8738-460f-b603-f49c7053b473</Value>
+    <Value>Коробка деревянная из естественной древесины с плотно пригнанными стенками</Value>
+    <Value>QQ</Value>
+    <Value />
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>77b8f79a-6a69-4b4f-b0b2-a8a9f0f4ca12</Value>
+    <Value>Коробка для жидкостей</Value>
+    <Value>BW</Value>
+    <Value />
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>9f0f9e11-cce0-4484-9a50-bc4fed7ee1e9</Value>
+    <Value>Коробка из древесного материала</Value>
+    <Value>4F</Value>
+    <Value />
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>89f4e420-504e-4b2e-9291-ae483d7e9bdd</Value>
+    <Value>Коробка из естественной древесины</Value>
+    <Value>4C</Value>
+    <Value />
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>8b1ffe26-1485-477f-8d2d-8050397beab2</Value>
+    <Value>Коробка из твердой пластмассы</Value>
+    <Value>QS</Value>
+    <Value />
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>aa308c04-0fe0-4a87-ab8c-7527b3f261f4</Value>
+    <Value>Коробка из фибрового картона</Value>
+    <Value>4G</Value>
+    <Value />
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>56e38905-209b-43cc-ac8f-3657f5ec2bdc</Value>
+    <Value>Коробка, алюминиевая</Value>
+    <Value>4B</Value>
+    <Value />
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>fedf4328-053c-11e1-99b4-d8d385fbc9e8</Value>
+    <Value>Коробка, картонная</Value>
+    <Value>CT</Value>
+    <Value>картонные коробки</Value>
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>50c21cb9-3e09-4cc7-a30f-c724d248e996</Value>
+    <Value>Коробка, пенопластовая</Value>
+    <Value>QR</Value>
+    <Value />
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>2c7a7ee3-2bc3-4be3-b94c-9eb1b2b94cbb</Value>
+    <Value>Коробка, пенопластовая</Value>
+    <Value>QR</Value>
+    <Value />
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>dae4571f-d2e8-11e4-8109-d89d67148660</Value>
+    <Value>Коробка, пластмассовая</Value>
+    <Value>4H</Value>
+    <Value>пластмассовые ящики</Value>
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>9c0e3d26-e6c5-4b8e-bb47-0a4ecf8867a3</Value>
+    <Value>Коробка, стальная</Value>
+    <Value>4A</Value>
+    <Value />
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>2c76df5b-bdf1-4c36-b136-41240961deb0</Value>
+    <Value>Коробка, фанерная</Value>
+    <Value>4D</Value>
+    <Value />
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>890d2d2d-9ed5-40a5-8d6f-bad8546bfee4</Value>
+    <Value>Кофр</Value>
+    <Value>CF</Value>
+    <Value />
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>fedf6240-053c-11e1-99b4-d8d385fbc9e8</Value>
+    <Value>Крюк</Value>
+    <Value>HN</Value>
+    <Value>на подвесе</Value>
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>3ae14a0a-3970-45ef-bd53-f278e217bf4f</Value>
+    <Value>Кувшин, большой</Value>
+    <Value>PH</Value>
+    <Value />
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>548062b8-8f49-4fe2-8e93-d6c5103a9113</Value>
+    <Value>Кувшин, маленький</Value>
+    <Value>JG</Value>
+    <Value />
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>5444b894-aa2b-456f-aa27-e1f470568338</Value>
+    <Value>Кулек</Value>
+    <Value>AJ</Value>
+    <Value />
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>62120ab7-da8c-46f5-8d06-8cb3f9376a13</Value>
+    <Value>Лента</Value>
+    <Value>B4</Value>
+    <Value />
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>b9dec3d6-c0d8-4170-8b57-2f79042b9a8d</Value>
+    <Value>Лист</Value>
+    <Value>ST</Value>
+    <Value />
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>b883ff05-483d-4e82-be5f-c1b90d004d1c</Value>
+    <Value>Лист в пакете/пачке/связке</Value>
+    <Value>SZ</Value>
+    <Value />
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>a2e60b9e-ee4d-47b5-956b-690bda852392</Value>
+    <Value>Лист с пластмассовым покрытием</Value>
+    <Value>SP</Value>
+    <Value />
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>d6831ad1-3dc9-48d0-8c92-402db32c4031</Value>
+    <Value>Лист, металлический</Value>
+    <Value>SM</Value>
+    <Value />
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>e49e5e21-09f1-4194-b637-655959ce5510</Value>
+    <Value>Лист, прокладной</Value>
+    <Value>SL</Value>
+    <Value />
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>3d72e4ec-f771-4c0d-a9b9-452dd7a08406</Value>
+    <Value>Лоток</Value>
+    <Value>PU</Value>
+    <Value />
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>ea504ad8-c159-449f-a752-1ab2eecc8fe1</Value>
+    <Value>Лоток</Value>
+    <Value>P2</Value>
+    <Value />
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>a5c9db95-0858-401c-a0f8-f1e17f44c156</Value>
+    <Value>Лоток с двумя настилами без покрытия деревянный</Value>
+    <Value>DX</Value>
+    <Value />
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>816aecc8-f89d-4bce-add3-bcea3782ebfa</Value>
+    <Value>Лоток с двумя настилами без покрытия картонный</Value>
+    <Value>DY</Value>
+    <Value />
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>2834ba2d-8030-4b5d-8812-186ff267f89c</Value>
+    <Value>Лоток с двумя настилами без покрытия пластмассовый</Value>
+    <Value>DW</Value>
+    <Value />
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>d5122def-d46e-4989-b845-9ed0754c2a07</Value>
+    <Value>Лоток с одним настилом без покрытия деревянный</Value>
+    <Value>DT</Value>
+    <Value />
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>b6b93b6c-286a-4c49-b646-bef408d4cf8b</Value>
+    <Value>Лоток с одним настилом без покрытия картонный</Value>
+    <Value>DV</Value>
+    <Value />
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>3614ce14-9970-453c-81df-9645c4c5fe2c</Value>
+    <Value>Лоток с одним настилом без покрытия пластмассовый</Value>
+    <Value>DS</Value>
+    <Value />
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>9c27dc4c-875d-4de5-af1f-d6d066e0d88f</Value>
+    <Value>Лоток с одним настилом без покрытия полистироловый</Value>
+    <Value>DU</Value>
+    <Value />
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>c8bc51d4-de57-44ee-9492-85360eada3a5</Value>
+    <Value>Мешок</Value>
+    <Value>TT</Value>
+    <Value />
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>fedf451c-053c-11e1-99b4-d8d385fbc9e8</Value>
+    <Value>Мешок</Value>
+    <Value>BG</Value>
+    <Value>мешки</Value>
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>803b1dd4-ea8b-464e-9f7e-1bfa573c90bc</Value>
+    <Value>Мешок (куль)</Value>
+    <Value>SA</Value>
+    <Value />
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>a71f0123-63c4-440b-bce8-eb46d7a854e2</Value>
+    <Value>Мешок (куль) многослойный</Value>
+    <Value>MS</Value>
+    <Value />
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>fedf401c-053c-11e1-99b4-d8d385fbc9e8</Value>
+    <Value>Мешок большой</Value>
+    <Value>JB</Value>
+    <Value>биг бэги</Value>
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>933312a8-dc11-43ee-9daa-abb240bf9e3f</Value>
+    <Value>Мешок большой для крупноразмерных навалочных грузов</Value>
+    <Value>43</Value>
+    <Value />
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>fedf4422-053c-11e1-99b4-d8d385fbc9e8</Value>
+    <Value>Мешок бумажный многослойный</Value>
+    <Value>XJ</Value>
+    <Value>крафтмешки</Value>
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>9f15aaba-d9e1-43ea-8cc7-0f0a29ed7be8</Value>
+    <Value>Мешок бумажный многослойный влагонепроницаемый</Value>
+    <Value>XK</Value>
+    <Value />
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>87da1e8c-2d92-4de6-8448-6ab233f3847e</Value>
+    <Value>Мешок из мешковины</Value>
+    <Value>GY</Value>
+    <Value />
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>5080bd27-e2b5-4c27-9cb0-7004109f362f</Value>
+    <Value>Мешок из полимерной пленки</Value>
+    <Value>XD</Value>
+    <Value />
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>fedf4616-053c-11e1-99b4-d8d385fbc9e8</Value>
+    <Value>Мешок из полимерной ткани</Value>
+    <Value>5H</Value>
+    <Value>мешки полипропиленовые</Value>
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>c088e3b0-4d1f-4079-8ce3-eca7486da24f</Value>
+    <Value>Мешок из полимерной ткани без внутреннего покрытия/вкладыша</Value>
+    <Value>XA</Value>
+    <Value />
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>8d2b467f-d19a-49ad-9d4d-9769fc8adb68</Value>
+    <Value>Мешок из полимерной ткани влагонепроницаемый</Value>
+    <Value>XC</Value>
+    <Value />
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>c311b4f0-1f83-47ff-b5eb-085aa296a443</Value>
+    <Value>Мешок из полимерной ткани, плотный</Value>
+    <Value>XB</Value>
+    <Value />
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>f8296670-1b9b-42fa-9e29-76dc5ba0a8c0</Value>
+    <Value>Мешок текстильный</Value>
+    <Value>5L</Value>
+    <Value />
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>e50c3c66-a104-46d2-bf1c-b1fb6f649698</Value>
+    <Value>Мешок текстильный без внутреннего покрытия/вкладыша</Value>
+    <Value>XF</Value>
+    <Value />
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>84b62344-fe4f-4585-bdf2-efb3bc68d982</Value>
+    <Value>Мешок текстильный влагонепроницаемый</Value>
+    <Value>XH</Value>
+    <Value />
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>c97033bd-2cf6-4029-a570-0a59b238e68b</Value>
+    <Value>Мешок текстильный плотный</Value>
+    <Value>XG</Value>
+    <Value />
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>8bb62b02-1b8b-4d1e-8886-93c9484fa5c2</Value>
+    <Value>Мешок, большой</Value>
+    <Value>ZB</Value>
+    <Value />
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>fedf5e80-053c-11e1-99b4-d8d385fbc9e8</Value>
+    <Value>Мешок, бумажный</Value>
+    <Value>5M</Value>
+    <Value>мешки бумажные</Value>
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>fdbf9ad8-68d8-49ee-814f-b7d76d806545</Value>
+    <Value>Мешок, гибкий контейнер</Value>
+    <Value>FX</Value>
+    <Value />
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>198ddc36-88da-4659-a5a6-d9acb8416d9d</Value>
+    <Value>Мешок, джутовый</Value>
+    <Value>JT</Value>
+    <Value />
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>501e2c46-d364-44f5-9f7f-c9697115e4fd</Value>
+    <Value>Мешок, пластмассовый</Value>
+    <Value>EC</Value>
+    <Value />
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>e806470b-dcf2-447e-8394-b4144b9138df</Value>
+    <Value>Мешок, рогожный</Value>
+    <Value>MT</Value>
+    <Value />
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>577431f6-7f08-4f20-af71-7ede3ac2a564</Value>
+    <Value>Мягкий мешок, Гибкая цистерна</Value>
+    <Value>FE</Value>
+    <Value />
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>d2aeda76-b593-42c6-b6b0-dc1c8338dc54</Value>
+    <Value>Набор</Value>
+    <Value>KI</Value>
+    <Value />
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>3050ca0a-7e39-4cd4-a762-253b981bad21</Value>
+    <Value>Навалом металлолом</Value>
+    <Value>VS</Value>
+    <Value />
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>a521f8b3-eeeb-4027-941c-45928d0ecb16</Value>
+    <Value>Наливом газ (при 1031 мБар и 15°C)</Value>
+    <Value>VG</Value>
+    <Value />
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>791bd3df-24eb-466f-b575-57d9dd1f95b7</Value>
+    <Value>Наливом газ сжиженный (при температуре/давлении, отличающихся от нормальных)</Value>
+    <Value>VQ</Value>
+    <Value />
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>22f90a6e-6872-4bd5-a143-063761da6e1a</Value>
+    <Value>Наливом жидкость</Value>
+    <Value>VL</Value>
+    <Value />
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>f8ca4252-9ca3-45bd-9a95-8b6a5b538208</Value>
+    <Value>Насыпью твердые гранулированные частицы (гранулы)</Value>
+    <Value>VR</Value>
+    <Value />
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>df053993-cf00-43c9-97ea-4c2fa0d07f96</Value>
+    <Value>Насыпью твердые крупные частицы (мелкие куски)</Value>
+    <Value>VO</Value>
+    <Value />
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>efb4b760-611d-4f20-80a8-273c315f4db0</Value>
+    <Value>Насыпью твердые мелкие частицы (порошки)</Value>
+    <Value>VY</Value>
+    <Value />
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>0e254eeb-d882-425d-85cf-ae68b8e50980</Value>
+    <Value>Нет сведений</Value>
+    <Value>NA</Value>
+    <Value />
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>fedf46fc-053c-11e1-99b4-d8d385fbc9e8</Value>
+    <Value>Неупакованный или нерасфасованный</Value>
+    <Value>NE</Value>
+    <Value>навалом</Value>
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>3fd40265-127d-4fc6-9999-1cdf62f25faf</Value>
+    <Value>Неупакованный или нерасфасованный многоместный груз</Value>
+    <Value>NG</Value>
+    <Value />
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>2def57e9-6280-4d7d-8765-840aa86e45e1</Value>
+    <Value>Неупакованный или нерасфасованный одноместный груз</Value>
+    <Value>NF</Value>
+    <Value />
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>ed9473f1-647c-4dfc-8ac2-3cba09217165</Value>
+    <Value>Октабин</Value>
+    <Value>OT</Value>
+    <Value />
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>fedf48dc-053c-11e1-99b4-d8d385fbc9e8</Value>
+    <Value>Пакет</Value>
+    <Value>PA</Value>
+    <Value>пакеты</Value>
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>cd449f46-29f4-42af-8d36-046f0954ae63</Value>
+    <Value>Пакет (мешочек)</Value>
+    <Value>PO</Value>
+    <Value />
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>f0b0ec9b-8341-4e95-bc0e-80898be598cb</Value>
+    <Value>Пакет (пачка/связка)</Value>
+    <Value>BE</Value>
+    <Value />
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>6fddb358-43dd-4030-a1a7-a1a3c8c489ad</Value>
+    <Value>Пакет бумажный многослойный</Value>
+    <Value>MB</Value>
+    <Value />
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>cf45058e-1f10-42fa-ae97-b2afefac9489</Value>
+    <Value>Пакетик</Value>
+    <Value>SH</Value>
+    <Value />
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>63c5ba04-a314-4d41-9a0f-d328fba0144a</Value>
+    <Value>Пачка (пакет/связка)</Value>
+    <Value>BH</Value>
+    <Value />
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>aeba3537-a7ed-4c11-8cfc-a05de5280f73</Value>
+    <Value>Пачка деревянная</Value>
+    <Value>8C</Value>
+    <Value />
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>fedf5f70-053c-11e1-99b4-d8d385fbc9e8</Value>
+    <Value>пенопластовые коробки</Value>
+    <Value />
+    <Value>пенопластовые коробки</Value>
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>fedf55e8-053c-11e1-99b4-d8d385fbc9e8</Value>
+    <Value>пенопластовые ящики</Value>
+    <Value />
+    <Value>пенопластовые ящики</Value>
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>240ef107-fad5-4fca-bad1-ae65ab388ac6</Value>
+    <Value>Плита</Value>
+    <Value>PG</Value>
+    <Value />
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>4b2de153-2c3e-499e-91f8-a7ce1926157a</Value>
+    <Value>Плиты в пакете/пачке/связке</Value>
+    <Value>PY</Value>
+    <Value />
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>a8e05c09-1c89-46a8-8362-b2388f820fdb</Value>
+    <Value>По взаимному определению</Value>
+    <Value>ZZ</Value>
+    <Value />
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>fedf615a-053c-11e1-99b4-d8d385fbc9e8</Value>
+    <Value>Поддон</Value>
+    <Value>PX</Value>
+    <Value>поддоны</Value>
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>fedf56f6-053c-11e1-99b4-d8d385fbc9e8</Value>
+    <Value>Поддон</Value>
+    <Value>TW</Value>
+    <Value>паллеты</Value>
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>83ee9a1e-5c1c-438b-bb63-48ed654e63ef</Value>
+    <Value>Поддон 100 x 110 см</Value>
+    <Value>AH</Value>
+    <Value />
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>280069cf-3cff-4cb3-a96d-5632944e3f9c</Value>
+    <Value>Поддон в термоусадочной пленке</Value>
+    <Value>AG</Value>
+    <Value />
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>d520e4b3-dd9b-4f34-9148-ccac220b9c84</Value>
+    <Value>Поддон деревянный</Value>
+    <Value>8A</Value>
+    <Value />
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>82286818-b97d-42ef-b5e2-d1a1ac1c18cf</Value>
+    <Value>Поддон модульный с обечайкой 80 x 100 см</Value>
+    <Value>PD</Value>
+    <Value />
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>d1d65e12-85c6-4492-8407-de44d792ac1f</Value>
+    <Value>Поддон модульный с обечайкой 80 x 60 см</Value>
+    <Value>AF</Value>
+    <Value />
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>d79600b3-7498-4a9b-a873-d58fce2a667d</Value>
+    <Value>Поддон модульный с обечайкой 80 х 120 см</Value>
+    <Value>PE</Value>
+    <Value />
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>d9d55e79-0ba6-4c11-9761-0e10dc1c6c8e</Value>
+    <Value>Поддон, ящичный</Value>
+    <Value>PB</Value>
+    <Value />
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>81b74091-f9db-436f-b6a9-2438f3fbba32</Value>
+    <Value>Прут</Value>
+    <Value>RD</Value>
+    <Value />
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>cfc437d8-9bfe-4d56-8d0e-4f35e5ae3af6</Value>
+    <Value>Прут в пакете/пачке/связке</Value>
+    <Value>RZ</Value>
+    <Value />
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>c91b91dc-6dff-49f6-90eb-19824f81b675</Value>
+    <Value>Пульверизатор</Value>
+    <Value>AT</Value>
+    <Value />
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>770d2025-1d5e-463a-82bc-ce7bceb3cc90</Value>
+    <Value>Рама</Value>
+    <Value>FR</Value>
+    <Value />
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>2d523fde-44a2-4c21-891b-4bccdcb1a33e</Value>
+    <Value>Рулон (обивочного или настилочного материала)</Value>
+    <Value>BT</Value>
+    <Value />
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>f65e0788-1ba1-46f5-b677-d7590cc6c745</Value>
+    <Value>Рулон (полосового материала)</Value>
+    <Value>RO</Value>
+    <Value />
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>07aa7b0e-2a80-45ba-b3bd-6060eef8376b</Value>
+    <Value>Связка</Value>
+    <Value>TS</Value>
+    <Value />
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>ed7372ee-8b55-4e69-aa90-956a68b836ae</Value>
+    <Value>Сетка</Value>
+    <Value>NT</Value>
+    <Value />
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>5f3d0b50-196e-498d-8994-7dfd1d9661cc</Value>
+    <Value>Сетка типа используемой для овощей или фруктов</Value>
+    <Value>RT</Value>
+    <Value />
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>fe9cc400-101e-4dee-a90f-705c71bb560e</Value>
+    <Value>Сетка трубчатая пластмассовая</Value>
+    <Value>NU</Value>
+    <Value />
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>1943c156-b96c-4b64-8935-dfd11e95d495</Value>
+    <Value>Сетка трубчатая текстильная</Value>
+    <Value>NV</Value>
+    <Value />
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>29f1456b-e328-4f1b-b855-41eda829a9e1</Value>
+    <Value>Слитки в пакете/пачке/связке</Value>
+    <Value>IZ</Value>
+    <Value />
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>c954a839-e145-40f0-8945-de8e4faad748</Value>
+    <Value>Слиток</Value>
+    <Value>IN</Value>
+    <Value />
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>000000f8-8e27-4cb0-9e34-6d99fd90d7df</Value>
+    <Value>Сляб</Value>
+    <Value>SB</Value>
+    <Value />
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>322566af-9e46-4f63-bf22-041d4d2d9c58</Value>
+    <Value>Сосуд с пластмассовым покрытием</Value>
+    <Value>MW</Value>
+    <Value />
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>bc592630-266f-425c-be8b-911425c04ccf</Value>
+    <Value>Сосуд, бумажный</Value>
+    <Value>AC</Value>
+    <Value />
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>a7a51764-3c6d-4dec-997d-c5b08d8e2d74</Value>
+    <Value>Сосуд, деревянный</Value>
+    <Value>AD</Value>
+    <Value />
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>0509b85d-01ca-4a62-bc40-283eff6ead2d</Value>
+    <Value>Сосуд, металлический</Value>
+    <Value>MR</Value>
+    <Value />
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>876203e4-1352-455a-8c97-92c3460acc3a</Value>
+    <Value>Сосуд, пластмассовый</Value>
+    <Value>PR</Value>
+    <Value />
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>251a4096-c3d6-4b0c-8534-65b31d41f633</Value>
+    <Value>Сосуд, стеклянный</Value>
+    <Value>GR</Value>
+    <Value />
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>ef542239-f46a-4552-a332-db330f73b646</Value>
+    <Value>Сосуд, фибровый</Value>
+    <Value>AB</Value>
+    <Value />
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>6bcddbae-2d7b-455c-83b3-6a65731d4e9f</Value>
+    <Value>Спичечный коробок</Value>
+    <Value>MX</Value>
+    <Value />
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>2f2ba5e2-c9ab-41af-83d8-592f65c01db4</Value>
+    <Value>Стеллаж</Value>
+    <Value>SI</Value>
+    <Value />
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>2d3b2408-d028-42e1-bc72-941b7fa149b5</Value>
+    <Value>Стойка</Value>
+    <Value>RK</Value>
+    <Value />
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>28f26068-5294-4c8a-b409-c0a7ae10efd9</Value>
+    <Value>Стойка, вешалка для одежды</Value>
+    <Value>RJ</Value>
+    <Value />
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>ed6ec9a4-fb93-420a-9e1d-884aa58849c4</Value>
+    <Value>Сундук</Value>
+    <Value>CH</Value>
+    <Value />
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>bf12e4f9-56be-4b62-a0d6-22f01585db25</Value>
+    <Value>Сундук, дорожный</Value>
+    <Value>TR</Value>
+    <Value />
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>022887ce-8f39-4b81-b26e-785f114c7ac7</Value>
+    <Value>Сундук, морской</Value>
+    <Value>SE</Value>
+    <Value />
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>dbff7b51-2571-451e-bf15-66e2ceed2fcb</Value>
+    <Value>Сундучок</Value>
+    <Value>FO</Value>
+    <Value />
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>730968d5-30e1-4cc8-b413-d5997e8898a5</Value>
+    <Value>Таблетка</Value>
+    <Value>T1</Value>
+    <Value />
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>7c585ad5-34f3-4975-a0aa-a78229e71808</Value>
+    <Value>Труба</Value>
+    <Value>PI</Value>
+    <Value />
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>f5144819-a94a-486d-91d7-eb38a074c6c1</Value>
+    <Value>Труба в пакете/пачке/связке</Value>
+    <Value>PV</Value>
+    <Value />
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>06eb9e3a-d6a8-49c3-809a-b4150b90e210</Value>
+    <Value>Трубка или туба</Value>
+    <Value>TU</Value>
+    <Value />
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>54d1cc31-f51c-4e2a-9230-009c57aaa517</Value>
+    <Value>Трубка или туба в пакете/пачке/связке</Value>
+    <Value>TZ</Value>
+    <Value />
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>0c009153-57e0-4dfa-8e5f-ece82ae4dfef</Value>
+    <Value>Трубка или туба с насадкой</Value>
+    <Value>TV</Value>
+    <Value />
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>6858e1ff-229f-43e0-9b3b-dd6ac0b41485</Value>
+    <Value>Трубка или туба, складывающаяся</Value>
+    <Value>TD</Value>
+    <Value />
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>eb23a947-4fd9-46e6-8a6f-f258433500e7</Value>
+    <Value>Упаковка</Value>
+    <Value>PK</Value>
+    <Value />
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>7ca4b4f3-fcac-4c00-8d7a-b258acaa97f0</Value>
+    <Value>Упаковка в оберточной бумаге</Value>
+    <Value>IG</Value>
+    <Value />
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>b5dd6d4d-b99e-4245-8a92-abc119e1889f</Value>
+    <Value>Упаковка демонстрационная деревянная</Value>
+    <Value>IA</Value>
+    <Value />
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>67129e5f-36d2-4397-8122-0c18747d2344</Value>
+    <Value>Упаковка демонстрационная картонная</Value>
+    <Value>IB</Value>
+    <Value />
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>add23067-88c7-4cc0-a251-8c67953d00ce</Value>
+    <Value>Упаковка демонстрационная металлическая</Value>
+    <Value>ID</Value>
+    <Value />
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>dfe5cf21-dbc5-4f51-b7fd-ad45259f9677</Value>
+    <Value>Упаковка демонстрационная пластмассовая</Value>
+    <Value>IC</Value>
+    <Value />
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>c2645eda-085d-4ae7-bfc2-641fc380ebae</Value>
+    <Value>Упаковка картонная с отверстиями для бутылок</Value>
+    <Value>IK</Value>
+    <Value />
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>24e176e2-25fb-4889-f24f-59e080af35a9</Value>
+    <Value>Упаковка не определена</Value>
+    <Value>XX</Value>
+    <Value />
+    <Value>true</Value>
+  </row>
+  <row>
+    <Value>9b0b180a-7cbb-4d9a-ba41-fd08b0eae3ba</Value>
+    <Value>Упаковка, выпрессованная</Value>
+    <Value>IF</Value>
+    <Value />
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>ec874c34-8d51-4e04-bd2c-9ec9642d1e0e</Value>
+    <Value>Упаковка, выставочная</Value>
+    <Value>IE</Value>
+    <Value />
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>a283d481-0a41-4d0a-9c38-e386caac0d70</Value>
+    <Value>Флакон</Value>
+    <Value>VI</Value>
+    <Value />
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>2ca9172d-edad-4d6f-a4b8-e4fbaae098cb</Value>
+    <Value>Фляга</Value>
+    <Value>FL</Value>
+    <Value />
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>07c59e7c-4a8c-4035-8048-2847491c88ea</Value>
+    <Value>Цилиндр</Value>
+    <Value>CY</Value>
+    <Value />
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>fedf5d9a-053c-11e1-99b4-d8d385fbc9e8</Value>
+    <Value>Цистерна контейнер универсальный</Value>
+    <Value>TG</Value>
+    <Value />
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>a5e4fb2f-f40b-40ab-bd2d-f6ddabbd4460</Value>
+    <Value>Цистерна, прямоугольная</Value>
+    <Value>TK</Value>
+    <Value />
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>6fd54b8c-d35a-4655-b2f2-2491429b0931</Value>
+    <Value>Цистерна, цилиндрическая</Value>
+    <Value>TY</Value>
+    <Value />
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>59eac884-a3ee-4c87-86ef-2508d1328ee6</Value>
+    <Value>Чайная коробка</Value>
+    <Value>TC</Value>
+    <Value />
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>6eb46a7f-f1c0-49fd-b38c-47c8177aa9e1</Value>
+    <Value>Чан</Value>
+    <Value>BM</Value>
+    <Value />
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>bfbecab2-acff-4791-8f4f-b03d435d00c8</Value>
+    <Value>Чаша</Value>
+    <Value>CU</Value>
+    <Value />
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>8f4c7cbd-7d4a-48d6-873f-9f4a37bd576c</Value>
+    <Value>Чемодан</Value>
+    <Value>SU</Value>
+    <Value />
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>354aee98-06a3-4780-bc9a-00a57edd8ca7</Value>
+    <Value>Чехол</Value>
+    <Value>CV</Value>
+    <Value />
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>62f322c4-ce6d-4584-ba3f-4c771406f54d</Value>
+    <Value>Шар</Value>
+    <Value>AL</Value>
+    <Value />
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>0bf57833-4b9d-4d99-96a3-53c7263e01e6</Value>
+    <Value>Шина</Value>
+    <Value>TE</Value>
+    <Value />
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>dd7b8b5b-fcf3-46bf-9955-e2c5f9cc25f6</Value>
+    <Value>Шпиндель</Value>
+    <Value>SD</Value>
+    <Value />
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>969bfad0-be8f-43fe-84d8-32ebfe32d37d</Value>
+    <Value>Шпулька</Value>
+    <Value>SO</Value>
+    <Value />
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>25b9eab3-0f9f-42c1-912b-10f78bc63901</Value>
+    <Value>Штабель</Value>
+    <Value>PF</Value>
+    <Value />
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>6090531d-d038-4f6c-a8df-77ba92267ec4</Value>
+    <Value>Штука</Value>
+    <Value>PP</Value>
+    <Value />
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>bd8a4719-4595-4e82-a2e6-9ea20afcbf6e</Value>
+    <Value>Ящик</Value>
+    <Value>CS</Value>
+    <Value />
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>7c29a864-e469-4c64-89e7-153000939d61</Value>
+    <Value>Ящик</Value>
+    <Value>LU</Value>
+    <Value />
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>563fadd5-faa2-4d28-9139-1f23e08ae0af</Value>
+    <Value>Ящик автомобильный</Value>
+    <Value>7A</Value>
+    <Value />
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>3d01bd9f-6629-4ec1-9ebe-532d82379a14</Value>
+    <Value>Ящик деревянный</Value>
+    <Value>8B</Value>
+    <Value />
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>61079f21-ef62-44bc-97a7-817029f4d251</Value>
+    <Value>Ящик деревянный</Value>
+    <Value>7B</Value>
+    <Value />
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>d8f7a02c-5076-41a2-9258-cca3427993b4</Value>
+    <Value>Ящик металлический</Value>
+    <Value>MA</Value>
+    <Value />
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>668f1a9f-3b4c-496a-8c01-c6d1bd87d917</Value>
+    <Value>Ящик решетчатый (или обрешетка) мелкий</Value>
+    <Value>SC</Value>
+    <Value />
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>aabbf190-ba1f-4611-8a97-6ce660a1dbc3</Value>
+    <Value>Ящик решетчатый (или обрешетка) многослойный деревянный</Value>
+    <Value>DB</Value>
+    <Value />
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>f1a52766-b434-4e89-8440-60ba8df518c3</Value>
+    <Value>Ящик решетчатый (или обрешетка) многослойный картонный</Value>
+    <Value>DC</Value>
+    <Value />
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>5fc55705-10dd-4071-a5ec-bd2337e98b95</Value>
+    <Value>Ящик решетчатый (или обрешетка) многослойный пластмассовый</Value>
+    <Value>DA</Value>
+    <Value />
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>c1444369-7a47-4e53-8e62-c33c290d73c2</Value>
+    <Value>Ящик решетчатый (или обрешетка) рамный</Value>
+    <Value>FD</Value>
+    <Value />
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>fe47d256-3d2b-4460-87e3-349ee65f6ac0</Value>
+    <Value>Ящик решетчатый для бутылок</Value>
+    <Value>BC</Value>
+    <Value />
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>e879ae24-cac7-4dd1-a0e5-1d433b3493ab</Value>
+    <Value>Ящик решетчатый для массовых грузов деревянный</Value>
+    <Value>DM</Value>
+    <Value />
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>ebf8776f-0e3d-4aff-bc64-28fb6e93a6fb</Value>
+    <Value>Ящик решетчатый для массовых грузов картонный</Value>
+    <Value>DK</Value>
+    <Value />
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>7c4ea86f-477d-499e-b9b5-281c8d7cb2a5</Value>
+    <Value>Ящик решетчатый для массовых грузов пластмассовый</Value>
+    <Value>DL</Value>
+    <Value />
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>dcf6eeb2-a0fd-4f1c-83db-7a85354a7c84</Value>
+    <Value>Ящик решетчатый для молока</Value>
+    <Value>MC</Value>
+    <Value />
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>9e2b9bfb-8f54-4a66-ad38-d650ca479e44</Value>
+    <Value>Ящик решетчатый для пива</Value>
+    <Value>CB</Value>
+    <Value />
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>3ea227b5-df09-40c2-b802-8abd1427c73e</Value>
+    <Value>Ящик решетчатый для фруктов</Value>
+    <Value>FC</Value>
+    <Value />
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>93266aa3-4642-4162-8155-01851a5c0811</Value>
+    <Value>Ящик с поддоном</Value>
+    <Value>ED</Value>
+    <Value />
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>a106dd9b-f9ee-45d6-a4f7-d8c18a1c53ea</Value>
+    <Value>Ящик с поддоном деревянный</Value>
+    <Value>EE</Value>
+    <Value />
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>dbb7a1d0-aa1f-4141-90e2-1db559dd20f7</Value>
+    <Value>Ящик с поддоном картонный</Value>
+    <Value>EF</Value>
+    <Value />
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>4ad07608-39ee-4991-baac-9cd2bdb5b2b0</Value>
+    <Value>Ящик с поддоном металлический</Value>
+    <Value>EH</Value>
+    <Value />
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>215592ec-b08d-401b-800d-d36bda9ba0b5</Value>
+    <Value>Ящик с поддоном пластмассовый</Value>
+    <Value>EG</Value>
+    <Value />
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>a451a297-b510-48fc-8a31-a41e311a0d82</Value>
+    <Value>Ящик, изотермический</Value>
+    <Value>EI</Value>
+    <Value />
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>5bca0d26-c06d-4fbd-a75a-39b098f7a5d8</Value>
+    <Value>Ящик, каркасный</Value>
+    <Value>SK</Value>
+    <Value />
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>e2437340-c529-4655-9774-c61054d429a5</Value>
+    <Value>Ящик, решетчатый (или обрешетка)</Value>
+    <Value>CR</Value>
+    <Value />
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>a4992438-8d0c-45b2-9ffd-669dff708417</Value>
+    <Value>Ящик, стальной</Value>
+    <Value>SS</Value>
+    <Value />
+    <Value>false</Value>
+  </row>
+  <row>
+    <Value>fedf3e32-053c-11e1-99b4-d8d385fbc9e8</Value>
+    <Value>банки</Value>
+    <Value>XX</Value>
+    <Value />
+    <Value>true</Value>
+  </row>
+  <row>
+    <Value>fedf6344-053c-11e1-99b4-d8d385fbc9e8</Value>
+    <Value>кипы</Value>
+    <Value>XX</Value>
+    <Value />
+    <Value>true</Value>
+  </row>
+  <row>
+    <Value>fedf58e0-053c-11e1-99b4-d8d385fbc9e8</Value>
+    <Value>картон</Value>
+    <Value>XX</Value>
+    <Value />
+    <Value>true</Value>
+  </row>
+  <row>
+    <Value>fedf47ec-053c-11e1-99b4-d8d385fbc9e8</Value>
+    <Value>насыпью</Value>
+    <Value>XX</Value>
+    <Value />
+    <Value>true</Value>
+  </row>
+  <row>
+    <Value>fedf49cc-053c-11e1-99b4-d8d385fbc9e8</Value>
+    <Value>полиблоки</Value>
+    <Value>XX</Value>
+    <Value />
+    <Value>true</Value>
+  </row>
+  <row>
+    <Value>a99ecd22-d2e8-11e4-8109-d89d67148660</Value>
+    <Value>гофроящики</Value>
+    <Value>XX</Value>
+    <Value />
+    <Value>true</Value>
+  </row>
+  <row>
+    <Value>fedf5bc4-053c-11e1-99b4-d8d385fbc9e8</Value>
+    <Value>прицеп</Value>
+    <Value>XX</Value>
+    <Value />
+    <Value>true</Value>
+  </row>
+  <row>
+    <Value>fedf57f0-053c-11e1-99b4-d8d385fbc9e8</Value>
+    <Value>полиэтилен</Value>
+    <Value>XX</Value>
+    <Value />
+    <Value>true</Value>
+  </row>
+  <row>
+    <Value>fedf59da-053c-11e1-99b4-d8d385fbc9e8</Value>
+    <Value>стокинеты</Value>
+    <Value>XX</Value>
+    <Value />
+    <Value>true</Value>
+  </row>
+</ValueTable>

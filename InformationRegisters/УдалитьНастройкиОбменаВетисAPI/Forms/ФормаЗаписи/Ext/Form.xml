@@ -1,0 +1,128 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.5">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="ГруппаОрганизация" id="18">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа организация</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Необходимо указать организацию, настройки подключения которой будут использоваться для загрузки НСИ</v8:content>
+				</v8:item>
+			</ToolTip>
+			<ToolTipRepresentation>ShowTop</ToolTipRepresentation>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаОрганизацияРасширеннаяПодсказка" id="19"/>
+			<ChildItems>
+				<InputField name="ОрганизацияДляПолученияНСИ" id="1">
+					<DataPath>Запись.ОрганизацияДляПолученияНСИ</DataPath>
+					<ContextMenu name="ОрганизацияДляПолученияНСИКонтекстноеМеню" id="2"/>
+					<ExtendedTooltip name="ОрганизацияДляПолученияНСИРасширеннаяПодсказка" id="3"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаНастройкаСинхронизации" id="16">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа настройка синхронизации</v8:content>
+				</v8:item>
+			</Title>
+			<Group>Vertical</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаНастройкаСинхронизацииРасширеннаяПодсказка" id="17"/>
+			<ChildItems>
+				<LabelDecoration name="Декорация1" id="20">
+					<HorizontalStretch>true</HorizontalStretch>
+					<TextColor>style:ПоясняющийТекст</TextColor>
+					<Title formatted="true">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Для справочников "Хозяйствующие субъекты", "Предприятия" и "Продукция" можно задать вариант обновления данных.
+&lt;b&gt;По изменениям&lt;/&gt; - происходит запрос измененных данных всего справочника ИС "Меркурий".
+Рекомендуется, если в системе используется большой объем информации этого справочника. 
+&lt;b&gt;По каждому&lt;/&gt; - происходит запрос данных каждого элемента, который загружен.
+Рекомендуется, если в системе используется не большой объем информации этого справочника.</v8:content>
+						</v8:item>
+					</Title>
+					<ContextMenu name="Декорация1КонтекстноеМеню" id="21"/>
+					<ExtendedTooltip name="Декорация1РасширеннаяПодсказка" id="22"/>
+				</LabelDecoration>
+				<CheckBoxField name="ОбновлениеКонтрагентовПоИзменениям" id="13">
+					<DataPath>Запись.ОбновлениеКонтрагентовПоИзменениям</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Актуализация хоз. субъектов</v8:content>
+						</v8:item>
+					</Title>
+					<CheckBoxType>Tumbler</CheckBoxType>
+					<EditFormat>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>БЛ='По каждому'; БИ='По изменениям'</v8:content>
+						</v8:item>
+					</EditFormat>
+					<ContextMenu name="ОбновлениеКонтрагентовПоИзменениямКонтекстноеМеню" id="14"/>
+					<ExtendedTooltip name="ОбновлениеКонтрагентовПоИзменениямРасширеннаяПодсказка" id="15"/>
+				</CheckBoxField>
+				<CheckBoxField name="ОбновлениеПредприятийПоИзменениям" id="7">
+					<DataPath>Запись.ОбновлениеПредприятийПоИзменениям</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Актуализация предприятий</v8:content>
+						</v8:item>
+					</Title>
+					<CheckBoxType>Tumbler</CheckBoxType>
+					<EditFormat>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>БЛ='По каждому'; БИ='По изменениям'</v8:content>
+						</v8:item>
+					</EditFormat>
+					<ContextMenu name="ОбновлениеПредприятийПоИзменениямКонтекстноеМеню" id="8"/>
+					<ExtendedTooltip name="ОбновлениеПредприятийПоИзменениямРасширеннаяПодсказка" id="9"/>
+				</CheckBoxField>
+				<CheckBoxField name="ОбновлениеПродукцииПоИзменениям" id="10">
+					<DataPath>Запись.ОбновлениеПродукцииПоИзменениям</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Актуализация продукции</v8:content>
+						</v8:item>
+					</Title>
+					<CheckBoxType>Tumbler</CheckBoxType>
+					<EditFormat>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>БЛ='По каждому'; БИ='По изменениям'</v8:content>
+						</v8:item>
+					</EditFormat>
+					<ContextMenu name="ОбновлениеПродукцииПоИзменениямКонтекстноеМеню" id="11"/>
+					<ExtendedTooltip name="ОбновлениеПродукцииПоИзменениямРасширеннаяПодсказка" id="12"/>
+				</CheckBoxField>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Запись" id="1">
+			<Type>
+				<v8:Type>cfg:InformationRegisterRecordManager.УдалитьНастройкиОбменаВетисAPI</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+	</Attributes>
+</Form>

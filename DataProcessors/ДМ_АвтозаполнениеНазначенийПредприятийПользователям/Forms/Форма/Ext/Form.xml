@@ -1,0 +1,170 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.5">
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<ChildItems>
+			<Button name="ФормаЗаполнитьНазначения" id="39">
+				<Type>CommandBarButton</Type>
+				<Representation>PictureAndText</Representation>
+				<CommandName>Form.Command.ЗаполнитьНазначения</CommandName>
+				<Picture>
+					<xr:Ref>StdPicture.Write</xr:Ref>
+					<xr:LoadTransparent>true</xr:LoadTransparent>
+				</Picture>
+				<ExtendedTooltip name="ФормаЗаполнитьНазначенияРасширеннаяПодсказка" id="40"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<InputField name="ДатаДок" id="49">
+			<DataPath>Объект.ДатаДок</DataPath>
+			<ContextMenu name="ДатаДокКонтекстноеМеню" id="50"/>
+			<ExtendedTooltip name="ДатаДокРасширеннаяПодсказка" id="51"/>
+		</InputField>
+		<CheckBoxField name="ИспользоватьДляЗагрузкиВСД" id="41">
+			<DataPath>1/0:73401b76-1d7e-43e9-b2e8-5ecafd208afc</DataPath>
+			<CheckBoxType>Auto</CheckBoxType>
+			<ContextMenu name="ИспользоватьДляЗагрузкиВСДКонтекстноеМеню" id="42"/>
+			<ExtendedTooltip name="ИспользоватьДляЗагрузкиВСДРасширеннаяПодсказка" id="43"/>
+		</CheckBoxField>
+		<Table name="Пользователи" id="1">
+			<EnableStartDrag>true</EnableStartDrag>
+			<EnableDrag>true</EnableDrag>
+			<DataPath>Объект.Пользователи</DataPath>
+			<RowFilter xsi:nil="true"/>
+			<ContextMenu name="ПользователиКонтекстноеМеню" id="2"/>
+			<AutoCommandBar name="ПользователиКоманднаяПанель" id="3"/>
+			<ExtendedTooltip name="ПользователиРасширеннаяПодсказка" id="4"/>
+			<SearchStringAddition name="ПользователиСтрокаПоиска" id="5">
+				<AdditionSource>
+					<Item>Пользователи</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ПользователиСтрокаПоискаКонтекстноеМеню" id="6"/>
+				<ExtendedTooltip name="ПользователиСтрокаПоискаРасширеннаяПодсказка" id="7"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="ПользователиСостояниеПросмотра" id="8">
+				<AdditionSource>
+					<Item>Пользователи</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ПользователиСостояниеПросмотраКонтекстноеМеню" id="9"/>
+				<ExtendedTooltip name="ПользователиСостояниеПросмотраРасширеннаяПодсказка" id="10"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="ПользователиУправлениеПоиском" id="11">
+				<AdditionSource>
+					<Item>Пользователи</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="ПользователиУправлениеПоискомКонтекстноеМеню" id="12"/>
+				<ExtendedTooltip name="ПользователиУправлениеПоискомРасширеннаяПодсказка" id="13"/>
+			</SearchControlAddition>
+			<ChildItems>
+				<LabelField name="ПользователиНомерСтроки" id="14">
+					<DataPath>Объект.Пользователи.LineNumber</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ПользователиНомерСтрокиКонтекстноеМеню" id="15"/>
+					<ExtendedTooltip name="ПользователиНомерСтрокиРасширеннаяПодсказка" id="16"/>
+				</LabelField>
+				<InputField name="ПользователиПользователь" id="17">
+					<DataPath>Объект.Пользователи.Пользователь</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ПользователиПользовательКонтекстноеМеню" id="18"/>
+					<ExtendedTooltip name="ПользователиПользовательРасширеннаяПодсказка" id="19"/>
+				</InputField>
+			</ChildItems>
+		</Table>
+		<UsualGroup name="Группа1" id="44">
+			<Group>Vertical</Group>
+			<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="45"/>
+			<ChildItems>
+				<LabelDecoration name="Декорация1" id="46">
+					<Font ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+					<Title formatted="false">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Организации для назначения (если не заполнены, то по всем непомеченным на удаление)</v8:content>
+						</v8:item>
+					</Title>
+					<HorizontalAlign>Center</HorizontalAlign>
+					<ContextMenu name="Декорация1КонтекстноеМеню" id="47"/>
+					<ExtendedTooltip name="Декорация1РасширеннаяПодсказка" id="48"/>
+				</LabelDecoration>
+				<Table name="Организации" id="20">
+					<EnableStartDrag>true</EnableStartDrag>
+					<EnableDrag>true</EnableDrag>
+					<DataPath>Объект.Организации</DataPath>
+					<RowFilter xsi:nil="true"/>
+					<ContextMenu name="ОрганизацииКонтекстноеМеню" id="21"/>
+					<AutoCommandBar name="ОрганизацииКоманднаяПанель" id="22"/>
+					<ExtendedTooltip name="ОрганизацииРасширеннаяПодсказка" id="23"/>
+					<SearchStringAddition name="ОрганизацииСтрокаПоиска" id="24">
+						<AdditionSource>
+							<Item>Организации</Item>
+							<Type>SearchStringRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="ОрганизацииСтрокаПоискаКонтекстноеМеню" id="25"/>
+						<ExtendedTooltip name="ОрганизацииСтрокаПоискаРасширеннаяПодсказка" id="26"/>
+					</SearchStringAddition>
+					<ViewStatusAddition name="ОрганизацииСостояниеПросмотра" id="27">
+						<AdditionSource>
+							<Item>Организации</Item>
+							<Type>ViewStatusRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="ОрганизацииСостояниеПросмотраКонтекстноеМеню" id="28"/>
+						<ExtendedTooltip name="ОрганизацииСостояниеПросмотраРасширеннаяПодсказка" id="29"/>
+					</ViewStatusAddition>
+					<SearchControlAddition name="ОрганизацииУправлениеПоиском" id="30">
+						<AdditionSource>
+							<Item>Организации</Item>
+							<Type>SearchControl</Type>
+						</AdditionSource>
+						<ContextMenu name="ОрганизацииУправлениеПоискомКонтекстноеМеню" id="31"/>
+						<ExtendedTooltip name="ОрганизацииУправлениеПоискомРасширеннаяПодсказка" id="32"/>
+					</SearchControlAddition>
+					<ChildItems>
+						<LabelField name="ОрганизацииНомерСтроки" id="33">
+							<DataPath>Объект.Организации.LineNumber</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="ОрганизацииНомерСтрокиКонтекстноеМеню" id="34"/>
+							<ExtendedTooltip name="ОрганизацииНомерСтрокиРасширеннаяПодсказка" id="35"/>
+						</LabelField>
+						<InputField name="ОрганизацииОрганизация" id="36">
+							<DataPath>Объект.Организации.Организация</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="ОрганизацииОрганизацияКонтекстноеМеню" id="37"/>
+							<ExtendedTooltip name="ОрганизацииОрганизацияРасширеннаяПодсказка" id="38"/>
+						</InputField>
+					</ChildItems>
+				</Table>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.ДМ_АвтозаполнениеНазначенийПредприятийПользователям</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ЗаполнитьНазначения" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заполнить назначения</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заполнить назначения</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ЗаполнитьНазначения</Action>
+		</Command>
+	</Commands>
+</Form>

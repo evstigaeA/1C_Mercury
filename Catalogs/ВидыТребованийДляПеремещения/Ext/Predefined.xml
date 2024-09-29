@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<PredefinedData xmlns="http://v8.1c.ru/8.3/xcf/predef" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="CatalogPredefinedItems" version="2.5">
+	<Item id="fb78b6e7-619b-437f-9ee8-15e91240d85f">
+		<Name>ПеремещениеЗапрещено</Name>
+		<Code>3</Code>
+		<Description>Перемещение запрещено</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="af98393e-ac36-4e76-a223-25cec921c75f">
+		<Name>ПеремещениеРазрешено</Name>
+		<Code>1</Code>
+		<Description>Перемещение разрешено</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="474c96ab-46db-4a0f-9d28-b4f760e5972e">
+		<Name>ПеремещениеРазрешеноПриУсловии</Name>
+		<Code>2</Code>
+		<Description>Перемещение разрешено при обязательном соблюдении условий</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+</PredefinedData>

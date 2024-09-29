@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<PredefinedData xmlns="http://v8.1c.ru/8.3/xcf/predef" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="CatalogPredefinedItems" version="2.5">
+	<Item id="e87e989d-9d71-42a1-98c3-9b6d6e7caca4">
+		<Name>Исключен</Name>
+		<Code>CANCELED</Code>
+		<Description>Исключен из реестра</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="4b45d820-99ad-481f-ad49-5858014bd6fd">
+		<Name>НеПодтвержден</Name>
+		<Code>UNVERIFIED</Code>
+		<Description>Не подтверджен (не в реестре)</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="a52acf26-f18a-4690-9a74-6ef532c786a5">
+		<Name>Подтвержден</Name>
+		<Code>VERIFIED</Code>
+		<Description>Подтвержден (включен в реестр)</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="dd703bf2-0b0a-4e6d-bfba-6bbf9fb47e6f">
+		<Name>Удален</Name>
+		<Code>DELETED</Code>
+		<Description>Удален</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+</PredefinedData>

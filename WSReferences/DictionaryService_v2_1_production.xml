@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.5">
+	<WSReference uuid="b78481d6-e1a9-4d03-bad3-5d104eecb1e5">
+		<InternalInfo>
+			<xr:GeneratedType name="WSReferenceManager.DictionaryService_v2_1_production" category="Manager">
+				<xr:TypeId>103b6981-5717-4202-a75d-e0ad8282a7e0</xr:TypeId>
+				<xr:ValueId>98e81f04-0ef2-4c67-9323-96d22924e957</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<Name>DictionaryService_v2_1_production</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Dictionary service v.2.1 production</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment/>
+			<LocationURL>http://api.vetrf.ru/schema/platform/services/2.1-RC-last/DictionaryService_v2.1_production.wsdl</LocationURL>
+		</Properties>
+	</WSReference>
+</MetaDataObject>

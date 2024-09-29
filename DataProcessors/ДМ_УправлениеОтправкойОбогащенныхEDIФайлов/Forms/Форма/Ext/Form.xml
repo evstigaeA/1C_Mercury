@@ -1,0 +1,275 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.5">
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<Autofill>false</Autofill>
+	</AutoCommandBar>
+	<ChildItems>
+		<UsualGroup name="Группа1" id="32">
+			<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="33"/>
+			<ChildItems>
+				<Button name="ЗаполнитьНеОтправленные" id="34">
+					<Type>UsualButton</Type>
+					<CommandName>Form.Command.ЗаполнитьНеОтправленные</CommandName>
+					<ExtendedTooltip name="ЗаполнитьНеОтправленныеРасширеннаяПодсказка" id="35"/>
+				</Button>
+				<Button name="ЗаполнитьОтправленные" id="36">
+					<Type>UsualButton</Type>
+					<CommandName>Form.Command.ЗаполнитьОтправленные</CommandName>
+					<ExtendedTooltip name="ЗаполнитьОтправленныеРасширеннаяПодсказка" id="37"/>
+				</Button>
+				<Button name="ЗарегистрироватьКОтправке" id="46">
+					<Type>UsualButton</Type>
+					<CommandName>Form.Command.ЗарегистрироватьКОтправке</CommandName>
+					<ExtendedTooltip name="ЗарегистрироватьКОтправкеРасширеннаяПодсказка" id="47"/>
+				</Button>
+			</ChildItems>
+		</UsualGroup>
+		<Table name="ДокументыНаОтправку" id="1">
+			<AutoInsertNewRow>true</AutoInsertNewRow>
+			<EnableStartDrag>true</EnableStartDrag>
+			<EnableDrag>true</EnableDrag>
+			<DataPath>Объект.ДокументыНаОтправку</DataPath>
+			<RowFilter xsi:nil="true"/>
+			<ContextMenu name="ДокументыНаОтправкуКонтекстноеМеню" id="2"/>
+			<AutoCommandBar name="ДокументыНаОтправкуКоманднаяПанель" id="3">
+				<ChildItems>
+					<ButtonGroup name="ДокументыНаОтправкуГруппа1" id="28">
+						<Representation>Usual</Representation>
+						<ExtendedTooltip name="ДокументыНаОтправкуГруппа1РасширеннаяПодсказка" id="29"/>
+						<ChildItems>
+							<Button name="ВыбратьВсе" id="26">
+								<Type>CommandBarButton</Type>
+								<Representation>Picture</Representation>
+								<CommandName>Form.Command.ВыбратьВсе</CommandName>
+								<Title>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>ВыбратьВсе</v8:content>
+									</v8:item>
+								</Title>
+								<ExtendedTooltip name="ВыбратьВсеРасширеннаяПодсказка" id="27"/>
+							</Button>
+							<Button name="СнятьВсе" id="30">
+								<Type>CommandBarButton</Type>
+								<Representation>Picture</Representation>
+								<CommandName>Form.Command.СнятьВсе</CommandName>
+								<Title>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>СнятьВсе</v8:content>
+									</v8:item>
+								</Title>
+								<ExtendedTooltip name="СнятьВсеРасширеннаяПодсказка" id="31"/>
+							</Button>
+						</ChildItems>
+					</ButtonGroup>
+				</ChildItems>
+			</AutoCommandBar>
+			<ExtendedTooltip name="ДокументыНаОтправкуРасширеннаяПодсказка" id="4"/>
+			<SearchStringAddition name="ДокументыНаОтправкуСтрокаПоиска" id="5">
+				<AdditionSource>
+					<Item>ДокументыНаОтправку</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ДокументыНаОтправкуСтрокаПоискаКонтекстноеМеню" id="6"/>
+				<ExtendedTooltip name="ДокументыНаОтправкуСтрокаПоискаРасширеннаяПодсказка" id="7"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="ДокументыНаОтправкуСостояниеПросмотра" id="8">
+				<AdditionSource>
+					<Item>ДокументыНаОтправку</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ДокументыНаОтправкуСостояниеПросмотраКонтекстноеМеню" id="9"/>
+				<ExtendedTooltip name="ДокументыНаОтправкуСостояниеПросмотраРасширеннаяПодсказка" id="10"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="ДокументыНаОтправкуУправлениеПоиском" id="11">
+				<AdditionSource>
+					<Item>ДокументыНаОтправку</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="ДокументыНаОтправкуУправлениеПоискомКонтекстноеМеню" id="12"/>
+				<ExtendedTooltip name="ДокументыНаОтправкуУправлениеПоискомРасширеннаяПодсказка" id="13"/>
+			</SearchControlAddition>
+			<Events>
+				<Event name="BeforeAddRow">ДокументыНаОтправкуПередНачаломДобавления</Event>
+				<Event name="BeforeDeleteRow">ДокументыНаОтправкуПередУдалением</Event>
+			</Events>
+			<ChildItems>
+				<LabelField name="ДокументыНаОтправкуНомерСтроки" id="14">
+					<DataPath>Объект.ДокументыНаОтправку.LineNumber</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ДокументыНаОтправкуНомерСтрокиКонтекстноеМеню" id="15"/>
+					<ExtendedTooltip name="ДокументыНаОтправкуНомерСтрокиРасширеннаяПодсказка" id="16"/>
+				</LabelField>
+				<InputField name="ДокументыНаОтправкуТранспортнаяОперация" id="17">
+					<DataPath>Объект.ДокументыНаОтправку.ТранспортнаяОперация</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<Width>29</Width>
+					<OpenButton>true</OpenButton>
+					<ContextMenu name="ДокументыНаОтправкуТранспортнаяОперацияКонтекстноеМеню" id="18"/>
+					<ExtendedTooltip name="ДокументыНаОтправкуТранспортнаяОперацияРасширеннаяПодсказка" id="19"/>
+				</InputField>
+				<InputField name="ДокументыНаОтправкуФайлыОбменаDanoneКлиент" id="20">
+					<DataPath>Объект.ДокументыНаОтправку.ФайлыОбменаDanoneКлиент</DataPath>
+					<Visible>false</Visible>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ДокументыНаОтправкуФайлыОбменаDanoneКлиентКонтекстноеМеню" id="21"/>
+					<ExtendedTooltip name="ДокументыНаОтправкуФайлыОбменаDanoneКлиентРасширеннаяПодсказка" id="22"/>
+				</InputField>
+				<CheckBoxField name="ДокументыНаОтправкуЗарегистрирован" id="40">
+					<DataPath>Объект.ДокументыНаОтправку.Зарегистрирован</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<EditMode>EnterOnInput</EditMode>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ДокументыНаОтправкуЗарегистрированКонтекстноеМеню" id="41"/>
+					<ExtendedTooltip name="ДокументыНаОтправкуЗарегистрированРасширеннаяПодсказка" id="42"/>
+				</CheckBoxField>
+				<CheckBoxField name="ДокументыНаОтправкуОтправлен" id="43">
+					<DataPath>Объект.ДокументыНаОтправку.ДатаОтправки</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<EditMode>EnterOnInput</EditMode>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ДокументыНаОтправкуОтправленКонтекстноеМеню" id="44"/>
+					<ExtendedTooltip name="ДокументыНаОтправкуОтправленРасширеннаяПодсказка" id="45"/>
+				</CheckBoxField>
+				<CheckBoxField name="ДокументыНаОтправкуЗарегистрироватьДляОтправки" id="23">
+					<DataPath>Объект.ДокументыНаОтправку.ЗарегистрироватьДляОтправки</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ДокументыНаОтправкуЗарегистрироватьДляОтправкиКонтекстноеМеню" id="24"/>
+					<ExtendedTooltip name="ДокументыНаОтправкуЗарегистрироватьДляОтправкиРасширеннаяПодсказка" id="25"/>
+				</CheckBoxField>
+			</ChildItems>
+		</Table>
+		<Button name="ФормаПоказатьСтрокиЗаписейЖурналаРегистрации" id="48">
+			<Type>UsualButton</Type>
+			<CommandName>Form.Command.ПоказатьСтрокиЗаписейЖурналаРегистрации</CommandName>
+			<ExtendedTooltip name="ФормаПоказатьСтрокиЗаписейЖурналаРегистрацииРасширеннаяПодсказка" id="49"/>
+		</Button>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.ДМ_УправлениеОтправкойОбогащенныхEDIФайлов</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ВыбратьВсе" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выбрать все</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выбрать все строки для регистрации документов на отправку обогащенных файлов</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.CheckAll</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ВыбратьВсе</Action>
+			<Representation>Picture</Representation>
+		</Command>
+		<Command name="СнятьВсе" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Снять все</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Снять признак регистрации документов на отправку обогащенных файлов</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.UncheckAll</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>СнятьВсе</Action>
+			<Representation>Picture</Representation>
+		</Command>
+		<Command name="ЗаполнитьНеОтправленные" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заполнить не отправленные</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заполнить не отправленные</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ЗаполнитьНеОтправленные</Action>
+		</Command>
+		<Command name="ЗаполнитьОтправленные" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заполнить отправленные</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заполнить отправленные</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ЗаполнитьОтправленные</Action>
+		</Command>
+		<Command name="ВыполнитьРегистрацию" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выполнить регистрацию</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выполнить регистрацию</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ВыполнитьРегистрацию</Action>
+		</Command>
+		<Command name="ЗарегистрироватьКОтправке" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Зарегистрировать к отправке</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Зарегистрировать к отправке</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ЗарегистрироватьКОтправке</Action>
+		</Command>
+		<Command name="ПоказатьСтрокиЗаписейЖурналаРегистрации" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Показать строки записей журнала регистрации</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Показать строки записей журнала регистрации</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПоказатьСтрокиЗаписейЖурналаРегистрации</Action>
+		</Command>
+	</Commands>
+</Form>

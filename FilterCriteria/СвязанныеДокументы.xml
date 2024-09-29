@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.5">
+	<FilterCriterion uuid="18bf6916-83cc-41e5-a35b-1489450ae632">
+		<InternalInfo>
+			<xr:GeneratedType name="FilterCriterionManager.СвязанныеДокументы" category="Manager">
+				<xr:TypeId>f3419e42-7083-4e23-8233-2155ef776262</xr:TypeId>
+				<xr:ValueId>f672e9f7-cdcc-4293-b1f2-e4c26f912c00</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="FilterCriterionList.СвязанныеДокументы" category="List">
+				<xr:TypeId>9e16ad15-d167-4333-93b1-dd05dfe4196d</xr:TypeId>
+				<xr:ValueId>13494fee-f044-4f98-94ee-527ae8a7d2bb</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<Name>СвязанныеДокументы</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Связанные документы</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment/>
+			<Type>
+				<v8:Type>cfg:DocumentRef.ДМ_ФайлыОбменаDanoneГашениеВСД</v8:Type>
+				<v8:Type>cfg:DocumentRef.ПриходныеОперации</v8:Type>
+				<v8:Type>cfg:DocumentRef.ДМ_ФайлыОбменаDanoneПроизводство</v8:Type>
+				<v8:Type>cfg:DocumentRef.ДМ_ФайлыОбменаDanoneКлиент</v8:Type>
+				<v8:Type>cfg:DocumentRef.ВнесениеСведенийОЛабораторныхИсследованиях</v8:Type>
+				<v8:Type>cfg:DocumentRef.ПроизводственныеОперации</v8:Type>
+				<v8:Type>cfg:DocumentRef.ВСД</v8:Type>
+				<v8:Type>cfg:DocumentRef.ВнесениеНомеровТранспортныхСредств</v8:Type>
+				<v8:Type>cfg:DocumentRef.Инвентаризации</v8:Type>
+				<v8:Type>cfg:DocumentRef.ТранспортныеОперации</v8:Type>
+				<v8:Type>cfg:DocumentRef.АннулированиеВСД</v8:Type>
+				<v8:Type>cfg:DocumentRef.ДМ_ФайлыОбменаDanoneВнутреннееПеремещение</v8:Type>
+				<v8:Type>cfg:DocumentRef.ДМ_ФайлыОбменаDanoneИнвентаризация</v8:Type>
+				<v8:Type>cfg:DocumentRef.АннулированиеВСДГрупповое</v8:Type>
+				<v8:Type>cfg:DocumentRef.ПриходныеОперацииСводно</v8:Type>
+				<v8:Type>cfg:DocumentRef.ВнесениеНомеровТранспортныхСредствГрупповое</v8:Type>
+			</Type>
+			<UseStandardCommands>false</UseStandardCommands>
+			<Content>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.АннулированиеВСД.Attribute.ВСД</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.АннулированиеВСД.Attribute.ТранспортнаяОперация</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.АннулированиеВСДГрупповое.TabularSection.СписокАннулируемыхВСД.Attribute.ДокументАннулированиеВСД</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.ВнесениеНомеровТранспортныхСредств.Attribute.ВСД</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.ВнесениеНомеровТранспортныхСредствГрупповое.Attribute.ДокументОснование</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.ВнесениеНомеровТранспортныхСредствГрупповое.TabularSection.ТочкиПерегрузки.Attribute.ВСД</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.ВнесениеНомеровТранспортныхСредствГрупповое.TabularSection.ТочкиПерегрузки.Attribute.ДокументВнесения</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.ВнесениеСведенийОЛабораторныхИсследованиях.Attribute.ДокументОснование</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.ПриходныеОперации.Attribute.ВСД</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.ПриходныеОперации.Attribute.ВСД_Возврат</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.ПриходныеОперацииСводно.Attribute.ДокументОснование</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.ПриходныеОперацииСводно.TabularSection.ТаблицаДанных.Attribute.ВСД</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.ПриходныеОперацииСводно.TabularSection.ТаблицаДанных.Attribute.ПриходнаяОперация</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.ПроизводственныеОперации.TabularSection.ТаблицаВСД.Attribute.ВСД</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.ТранспортныеОперации.TabularSection.ТаблицаВСД.Attribute.ВСД</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.ДМ_ФайлыОбменаDanoneКлиент.Attribute.ДМ_СвязанныйДокументУВС</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.ДМ_ФайлыОбменаDanoneКлиент.TabularSection.ДМ_СвязанныеДокументыУВС.Attribute.ДМ_СвязанныйДокументУВС</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.ДМ_ФайлыОбменаDanoneВнутреннееПеремещение.Attribute.ДМ_СвязанныйДокументУВС</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.ДМ_ФайлыОбменаDanoneВнутреннееПеремещение.TabularSection.ДМ_СвязанныеДокументыУВС.Attribute.ДМ_СвязанныйДокументУВС</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.ДМ_ФайлыОбменаDanoneГашениеВСД.Attribute.ДМ_СвязанныйДокументУВС</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.ДМ_ФайлыОбменаDanoneГашениеВСД.Attribute.ДМ_ФайлыОбменаПеремещениеИсходный</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.ДМ_ФайлыОбменаDanoneГашениеВСД.TabularSection.ДМ_СвязанныеДокументыУВС.Attribute.Приемка</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.ДМ_ФайлыОбменаDanoneПроизводство.Attribute.ДМ_СвязанныйДокументУВС</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.ДМ_ФайлыОбменаDanoneПроизводство.TabularSection.ДМ_СвязанныеДокументыУВС.Attribute.ДМ_СвязанныйДокументУВС</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.ДМ_ФайлыОбменаDanoneИнвентаризация.Attribute.ДМ_СвязанныйДокументУВС</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.ДМ_ФайлыОбменаDanoneИнвентаризация.TabularSection.ДМ_СвязанныеДокументыУВС.Attribute.ДМ_СвязанныйДокументУВС</xr:Item>
+			</Content>
+			<DefaultForm/>
+			<AuxiliaryForm/>
+			<ListPresentation/>
+			<ExtendedListPresentation/>
+			<Explanation/>
+		</Properties>
+		<ChildObjects/>
+	</FilterCriterion>
+</MetaDataObject>

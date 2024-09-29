@@ -1,0 +1,726 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.5">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<CommandSet>
+		<ExcludedCommand>Change</ExcludedCommand>
+		<ExcludedCommand>Copy</ExcludedCommand>
+		<ExcludedCommand>Create</ExcludedCommand>
+		<ExcludedCommand>Delete</ExcludedCommand>
+		<ExcludedCommand>SetDeletionMark</ExcludedCommand>
+	</CommandSet>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<Autofill>false</Autofill>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="ГруппаКоманднаяПанельФормы" id="182">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа командная панель формы</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа командная панель формы</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаКоманднаяПанельФормыРасширеннаяПодсказка" id="183"/>
+			<ChildItems>
+				<Button name="ФормаВыбратьЗначениеЗаписиСкладскогоЖурнала" id="197">
+					<Type>UsualButton</Type>
+					<DefaultButton>true</DefaultButton>
+					<CommandName>Form.Command.ВыбратьЗначениеЗаписиСкладскогоЖурнала</CommandName>
+					<ExtendedTooltip name="ФормаВыбратьЗначениеЗаписиСкладскогоЖурналаРасширеннаяПодсказка" id="198"/>
+				</Button>
+				<LabelField name="Организация" id="188">
+					<DataPath>Организация</DataPath>
+					<ContextMenu name="ОрганизацияКонтекстноеМеню" id="189"/>
+					<ExtendedTooltip name="ОрганизацияРасширеннаяПодсказка" id="190"/>
+				</LabelField>
+				<LabelField name="Предприятие" id="191">
+					<DataPath>Предприятие</DataPath>
+					<ContextMenu name="ПредприятиеКонтекстноеМеню" id="192"/>
+					<ExtendedTooltip name="ПредприятиеРасширеннаяПодсказка" id="193"/>
+				</LabelField>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="СписокКомпоновщикНастроекПользовательскиеНастройки" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа пользовательских настроек</v8:content>
+				</v8:item>
+			</Title>
+			<VerticalStretch>false</VerticalStretch>
+			<Group>Vertical</Group>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="СписокКомпоновщикНастроекПользовательскиеНастройкиРасширеннаяПодсказка" id="2"/>
+		</UsualGroup>
+		<UsualGroup name="ГруппаПоискПродукции" id="33">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа поиск продукции</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа поиск продукции</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Horizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаПоискПродукцииРасширеннаяПодсказка" id="34"/>
+			<ChildItems>
+				<UsualGroup name="ГруппаНайденнаяПродукция" id="35">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа найденная продукция</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа найденная продукция</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Height>5</Height>
+					<Group>Vertical</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаНайденнаяПродукцияРасширеннаяПодсказка" id="36"/>
+					<ChildItems>
+						<Table name="СписокПродукции" id="37">
+							<Representation>List</Representation>
+							<SkipOnInput>false</SkipOnInput>
+							<VerticalScrollBar>DontUse</VerticalScrollBar>
+							<UseAlternationRowColor>true</UseAlternationRowColor>
+							<SearchOnInput>Use</SearchOnInput>
+							<EnableStartDrag>true</EnableStartDrag>
+							<DataPath>СписокПродукции</DataPath>
+							<RowPictureDataPath>СписокПродукции.DefaultPicture</RowPictureDataPath>
+							<CommandSet>
+								<ExcludedCommand>Change</ExcludedCommand>
+								<ExcludedCommand>Copy</ExcludedCommand>
+								<ExcludedCommand>Create</ExcludedCommand>
+								<ExcludedCommand>Delete</ExcludedCommand>
+								<ExcludedCommand>SetDeletionMark</ExcludedCommand>
+							</CommandSet>
+							<AutoRefresh>true</AutoRefresh>
+							<AutoRefreshPeriod>60</AutoRefreshPeriod>
+							<Period>
+								<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+								<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+								<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+							</Period>
+							<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+							<RestoreCurrentRow>false</RestoreCurrentRow>
+							<TopLevelParent xsi:nil="true"/>
+							<ShowRoot>true</ShowRoot>
+							<AllowRootChoice>false</AllowRootChoice>
+							<UpdateOnDataChange>Auto</UpdateOnDataChange>
+							<ContextMenu name="СписокПродукцииКонтекстноеМеню" id="38"/>
+							<AutoCommandBar name="СписокПродукцииКоманднаяПанель" id="39">
+								<ChildItems>
+									<Button name="ФормаКнопкаИзменитьФорму" id="86">
+										<Type>CommandBarButton</Type>
+										<Representation>Picture</Representation>
+										<OnlyInAllActions>false</OnlyInAllActions>
+										<GroupHorizontalAlign>Right</GroupHorizontalAlign>
+										<CommandName>Form.StandardCommand.CustomizeForm</CommandName>
+										<ExtendedTooltip name="ФормаКнопкаИзменитьФормуРасширеннаяПодсказка" id="87"/>
+									</Button>
+								</ChildItems>
+							</AutoCommandBar>
+							<ExtendedTooltip name="СписокПродукцииРасширеннаяПодсказка" id="40"/>
+							<SearchStringAddition name="СписокПродукцииСтрокаПоиска" id="41">
+								<AdditionSource>
+									<Item>СписокПродукции</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="СписокПродукцииСтрокаПоискаКонтекстноеМеню" id="42"/>
+								<ExtendedTooltip name="СписокПродукцииСтрокаПоискаРасширеннаяПодсказка" id="43"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="СписокПродукцииСостояниеПросмотра" id="44">
+								<AdditionSource>
+									<Item>СписокПродукции</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="СписокПродукцииСостояниеПросмотраКонтекстноеМеню" id="45"/>
+								<ExtendedTooltip name="СписокПродукцииСостояниеПросмотраРасширеннаяПодсказка" id="46"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="СписокПродукцииУправлениеПоиском" id="47">
+								<AdditionSource>
+									<Item>СписокПродукции</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="СписокПродукцииУправлениеПоискомКонтекстноеМеню" id="48"/>
+								<ExtendedTooltip name="СписокПродукцииУправлениеПоискомРасширеннаяПодсказка" id="49"/>
+							</SearchControlAddition>
+							<Events>
+								<Event name="Selection">СписокПродукцииВыбор</Event>
+								<Event name="BeforeAddRow">СписокПередНачаломДобавления</Event>
+								<Event name="BeforeDeleteRow">СписокПередУдалением</Event>
+							</Events>
+							<ChildItems>
+								<LabelField name="Ссылка" id="194">
+									<DataPath>СписокПродукции.Ссылка</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Запись складского журнала</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="СсылкаКонтекстноеМеню" id="195"/>
+									<ExtendedTooltip name="СсылкаРасширеннаяПодсказка" id="196"/>
+								</LabelField>
+								<LabelField name="СписокПродукцииЕдиницаИзмерения" id="149">
+									<DataPath>СписокПродукции.ЕдиницаИзмерения</DataPath>
+									<ContextMenu name="СписокПродукцииЕдиницаИзмеренияКонтекстноеМеню" id="150"/>
+									<ExtendedTooltip name="СписокПродукцииЕдиницаИзмеренияРасширеннаяПодсказка" id="151"/>
+								</LabelField>
+								<ColumnGroup name="СписокПродукцииПризнаки" id="59">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Список продукции признаки</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Список продукции признаки</v8:content>
+										</v8:item>
+									</ToolTip>
+									<ExtendedTooltip name="СписокПродукцииПризнакиРасширеннаяПодсказка" id="60"/>
+									<ChildItems>
+										<CheckBoxField name="СписокПродукцииСкоропортящаясяПродукция" id="179">
+											<DataPath>СписокПродукции.СкоропортящаясяПродукция</DataPath>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>С</v8:content>
+												</v8:item>
+											</Title>
+											<CheckBoxType>Auto</CheckBoxType>
+											<ContextMenu name="СписокПродукцииСкоропортящаясяПродукцияКонтекстноеМеню" id="180"/>
+											<ExtendedTooltip name="СписокПродукцииСкоропортящаясяПродукцияРасширеннаяПодсказка" id="181"/>
+										</CheckBoxField>
+										<CheckBoxField name="СписокПродукцииНекачественныйГруз" id="155">
+											<DataPath>СписокПродукции.НекачественныйГруз</DataPath>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Н</v8:content>
+												</v8:item>
+											</Title>
+											<CheckBoxType>Auto</CheckBoxType>
+											<ContextMenu name="СписокПродукцииНекачественныйГрузКонтекстноеМеню" id="156"/>
+											<ExtendedTooltip name="СписокПродукцииНекачественныйГрузРасширеннаяПодсказка" id="157"/>
+										</CheckBoxField>
+									</ChildItems>
+								</ColumnGroup>
+								<ColumnGroup name="СписокПродукцииСрокиВыработки" id="75">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Сроки выработки</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Список продукции сроки выработки</v8:content>
+										</v8:item>
+									</ToolTip>
+									<ExtendedTooltip name="СписокПродукцииСрокиВыработкиРасширеннаяПодсказка" id="76"/>
+									<ChildItems>
+										<LabelField name="СписокПродукцииДатаВыработкиНачало" id="131">
+											<DataPath>СписокПродукции.ДатаВыработкиНачало</DataPath>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Сроки выработки</v8:content>
+												</v8:item>
+											</Title>
+											<Width>14</Width>
+											<HorizontalStretch>false</HorizontalStretch>
+											<ContextMenu name="СписокПродукцииДатаВыработкиНачалоКонтекстноеМеню" id="132"/>
+											<ExtendedTooltip name="СписокПродукцииДатаВыработкиНачалоРасширеннаяПодсказка" id="133"/>
+										</LabelField>
+										<LabelField name="СписокПродукцииДатаВыработкиОкончание" id="134">
+											<DataPath>СписокПродукции.ДатаВыработкиОкончание</DataPath>
+											<TitleLocation>None</TitleLocation>
+											<ShowInHeader>false</ShowInHeader>
+											<Width>14</Width>
+											<HorizontalStretch>false</HorizontalStretch>
+											<ContextMenu name="СписокПродукцииДатаВыработкиОкончаниеКонтекстноеМеню" id="135"/>
+											<ExtendedTooltip name="СписокПродукцииДатаВыработкиОкончаниеРасширеннаяПодсказка" id="136"/>
+										</LabelField>
+									</ChildItems>
+								</ColumnGroup>
+								<ColumnGroup name="СписокПродукцииСрокГодности" id="67">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Срок годности</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Список продукции срок годности</v8:content>
+										</v8:item>
+									</ToolTip>
+									<ExtendedTooltip name="СписокПродукцииСрокГодностиРасширеннаяПодсказка" id="68"/>
+									<ChildItems>
+										<LabelField name="СписокПродукцииСрокГодностиНачало" id="140">
+											<DataPath>СписокПродукции.СрокГодностиНачало</DataPath>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Срок годности</v8:content>
+												</v8:item>
+											</Title>
+											<Width>14</Width>
+											<HorizontalStretch>false</HorizontalStretch>
+											<ContextMenu name="СписокПродукцииСрокГодностиНачалоКонтекстноеМеню" id="141"/>
+											<ExtendedTooltip name="СписокПродукцииСрокГодностиНачалоРасширеннаяПодсказка" id="142"/>
+										</LabelField>
+										<LabelField name="СписокПродукцииСрокГодностиОкончание" id="143">
+											<DataPath>СписокПродукции.СрокГодностиОкончание</DataPath>
+											<TitleLocation>None</TitleLocation>
+											<ShowInHeader>false</ShowInHeader>
+											<Width>14</Width>
+											<HorizontalStretch>false</HorizontalStretch>
+											<ContextMenu name="СписокПродукцииСрокГодностиОкончаниеКонтекстноеМеню" id="144"/>
+											<ExtendedTooltip name="СписокПродукцииСрокГодностиОкончаниеРасширеннаяПодсказка" id="145"/>
+										</LabelField>
+									</ChildItems>
+								</ColumnGroup>
+								<LabelField name="СписокПродукцииНомерПартии" id="161">
+									<DataPath>СписокПродукции.НомерПартии</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Номер партии</v8:content>
+										</v8:item>
+									</Title>
+									<Width>10</Width>
+									<ContextMenu name="СписокПродукцииНомерПартииКонтекстноеМеню" id="162"/>
+									<ExtendedTooltip name="СписокПродукцииНомерПартииРасширеннаяПодсказка" id="163"/>
+								</LabelField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="ГруппаПродукция" id="88">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа продукция</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа продукция</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Width>25</Width>
+					<Group>Vertical</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаПродукцияРасширеннаяПодсказка" id="89"/>
+					<ChildItems>
+						<UsualGroup name="ГруппаФильтры" id="90">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа фильтры</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа фильтры</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаФильтрыРасширеннаяПодсказка" id="91"/>
+							<ChildItems>
+								<LabelDecoration name="Декорация1" id="92">
+									<ContextMenu name="Декорация1КонтекстноеМеню" id="93"/>
+									<ExtendedTooltip name="Декорация1РасширеннаяПодсказка" id="94"/>
+								</LabelDecoration>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ГруппаИерархияПродукции" id="95">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа иерархия продукции</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа иерархия продукции</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаИерархияПродукцииРасширеннаяПодсказка" id="96"/>
+							<ChildItems>
+								<Table name="ИерархияПродукции" id="97">
+									<Representation>Tree</Representation>
+									<Header>false</Header>
+									<VerticalScrollBar>DontUse</VerticalScrollBar>
+									<UseAlternationRowColor>true</UseAlternationRowColor>
+									<InitialTreeView>ExpandTopLevel</InitialTreeView>
+									<EnableStartDrag>true</EnableStartDrag>
+									<DataPath>ИерархияПродукции</DataPath>
+									<RowPictureDataPath>ИерархияПродукции.DefaultPicture</RowPictureDataPath>
+									<CommandSet>
+										<ExcludedCommand>CancelSearch</ExcludedCommand>
+										<ExcludedCommand>Change</ExcludedCommand>
+										<ExcludedCommand>Choose</ExcludedCommand>
+										<ExcludedCommand>Copy</ExcludedCommand>
+										<ExcludedCommand>CopyToClipboard</ExcludedCommand>
+										<ExcludedCommand>Create</ExcludedCommand>
+										<ExcludedCommand>Delete</ExcludedCommand>
+										<ExcludedCommand>DynamicListStandardSettings</ExcludedCommand>
+										<ExcludedCommand>Find</ExcludedCommand>
+										<ExcludedCommand>FindByCurrentValue</ExcludedCommand>
+										<ExcludedCommand>ListSettings</ExcludedCommand>
+										<ExcludedCommand>LoadDynamicListSettings</ExcludedCommand>
+										<ExcludedCommand>OutputList</ExcludedCommand>
+										<ExcludedCommand>Refresh</ExcludedCommand>
+										<ExcludedCommand>SaveDynamicListSettings</ExcludedCommand>
+										<ExcludedCommand>SearchHistory</ExcludedCommand>
+										<ExcludedCommand>SetDeletionMark</ExcludedCommand>
+										<ExcludedCommand>ShowMultipleSelection</ExcludedCommand>
+									</CommandSet>
+									<AutoRefresh>false</AutoRefresh>
+									<AutoRefreshPeriod>60</AutoRefreshPeriod>
+									<Period>
+										<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+										<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+										<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+									</Period>
+									<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+									<RestoreCurrentRow>false</RestoreCurrentRow>
+									<TopLevelParent xsi:nil="true"/>
+									<ShowRoot>true</ShowRoot>
+									<AllowRootChoice>false</AllowRootChoice>
+									<UpdateOnDataChange>Auto</UpdateOnDataChange>
+									<ContextMenu name="ИерархияПродукцииКонтекстноеМеню" id="98"/>
+									<AutoCommandBar name="ИерархияПродукцииКоманднаяПанель" id="99">
+										<Autofill>false</Autofill>
+									</AutoCommandBar>
+									<ExtendedTooltip name="ИерархияПродукцииРасширеннаяПодсказка" id="100"/>
+									<SearchStringAddition name="ИерархияПродукцииСтрокаПоиска" id="101">
+										<AdditionSource>
+											<Item>ИерархияПродукции</Item>
+											<Type>SearchStringRepresentation</Type>
+										</AdditionSource>
+										<ContextMenu name="ИерархияПродукцииСтрокаПоискаКонтекстноеМеню" id="102"/>
+										<ExtendedTooltip name="ИерархияПродукцииСтрокаПоискаРасширеннаяПодсказка" id="103"/>
+									</SearchStringAddition>
+									<ViewStatusAddition name="ИерархияПродукцииСостояниеПросмотра" id="104">
+										<AdditionSource>
+											<Item>ИерархияПродукции</Item>
+											<Type>ViewStatusRepresentation</Type>
+										</AdditionSource>
+										<ContextMenu name="ИерархияПродукцииСостояниеПросмотраКонтекстноеМеню" id="105"/>
+										<ExtendedTooltip name="ИерархияПродукцииСостояниеПросмотраРасширеннаяПодсказка" id="106"/>
+									</ViewStatusAddition>
+									<SearchControlAddition name="ИерархияПродукцииУправлениеПоиском" id="107">
+										<AdditionSource>
+											<Item>ИерархияПродукции</Item>
+											<Type>SearchControl</Type>
+										</AdditionSource>
+										<ContextMenu name="ИерархияПродукцииУправлениеПоискомКонтекстноеМеню" id="108"/>
+										<ExtendedTooltip name="ИерархияПродукцииУправлениеПоискомРасширеннаяПодсказка" id="109"/>
+									</SearchControlAddition>
+									<Events>
+										<Event name="Selection">ИерархияПродукцииВыбор</Event>
+										<Event name="BeforeAddRow">ИерархияПродукцииПередНачаломДобавления</Event>
+										<Event name="BeforeDeleteRow">ИерархияПродукцииПередУдалением</Event>
+										<Event name="OnActivateRow">ИерархияПродукцииПриАктивизацииСтроки</Event>
+										<Event name="BeforeExpand">ИерархияПродукцииПередРазворачиванием</Event>
+									</Events>
+									<ChildItems>
+										<LabelField name="ИерархияПродукцииТипПродукции" id="110">
+											<DataPath>ИерархияПродукции.ТипПродукции</DataPath>
+											<ContextMenu name="ИерархияПродукцииТипПродукцииКонтекстноеМеню" id="111"/>
+											<ExtendedTooltip name="ИерархияПродукцииТипПродукцииРасширеннаяПодсказка" id="112"/>
+										</LabelField>
+										<LabelField name="ИерархияПродукцииВидПродукции" id="113">
+											<DataPath>ИерархияПродукции.ВидПродукции</DataPath>
+											<Visible>false</Visible>
+											<Width>1</Width>
+											<ContextMenu name="ИерархияПродукцииВидПродукцииКонтекстноеМеню" id="114"/>
+											<ExtendedTooltip name="ИерархияПродукцииВидПродукцииРасширеннаяПодсказка" id="115"/>
+										</LabelField>
+										<LabelField name="ИерархияПродукцииПодвидПродукции" id="116">
+											<DataPath>ИерархияПродукции.ПодвидПродукции</DataPath>
+											<Visible>false</Visible>
+											<Width>1</Width>
+											<ContextMenu name="ИерархияПродукцииПодвидПродукцииКонтекстноеМеню" id="117"/>
+											<ExtendedTooltip name="ИерархияПродукцииПодвидПродукцииРасширеннаяПодсказка" id="118"/>
+										</LabelField>
+									</ChildItems>
+								</Table>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="СписокПродукции" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Список продукции</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:DynamicList</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<UseAlways>
+				<Field>СписокПродукции.Ссылка</Field>
+			</UseAlways>
+			<Settings xsi:type="DynamicList">
+				<ManualQuery>true</ManualQuery>
+				<DynamicDataRead>true</DynamicDataRead>
+				<QueryText>ВЫБРАТЬ
+	СправочникСвойстваЗаписейСкладскогоЖурнала.Ссылка КАК Ссылка,
+	СправочникСвойстваЗаписейСкладскогоЖурнала.ПометкаУдаления КАК ПометкаУдаления,
+	СправочникСвойстваЗаписейСкладскогоЖурнала.Код КАК Код,
+	СправочникСвойстваЗаписейСкладскогоЖурнала.Наименование КАК Наименование,
+	СправочникСвойстваЗаписейСкладскогоЖурнала.GUID_Меркурий КАК GUID_Меркурий,
+	СправочникСвойстваЗаписейСкладскогоЖурнала.ВидПродукции КАК ВидПродукции,
+	СправочникСвойстваЗаписейСкладскогоЖурнала.ФорматДатыВыработки КАК ФорматДатыВыработки,
+	ВЫБОР
+		КОГДА СправочникСвойстваЗаписейСкладскогоЖурнала.ФорматДатыВыработки = ЗНАЧЕНИЕ(Перечисление.СпособыЗаданияДаты.Строка)
+			ТОГДА СправочникСвойстваЗаписейСкладскогоЖурнала.ДатаВыработкиСтрокой
+		ИНАЧЕ СправочникСвойстваЗаписейСкладскогоЖурнала.ДатаВыработкиНачало
+	КОНЕЦ КАК ДатаВыработкиНачало,
+	СправочникСвойстваЗаписейСкладскогоЖурнала.ДатаВыработкиОкончание КАК ДатаВыработкиОкончание,
+	СправочникСвойстваЗаписейСкладскогоЖурнала.ФорматСрокаГодности КАК ФорматСрокаГодности,
+	ВЫБОР
+		КОГДА СправочникСвойстваЗаписейСкладскогоЖурнала.ФорматСрокаГодности = ЗНАЧЕНИЕ(Перечисление.СпособыЗаданияДаты.Строка)
+			ТОГДА СправочникСвойстваЗаписейСкладскогоЖурнала.ДатаСрокаГодностиСтрокой
+		ИНАЧЕ СправочникСвойстваЗаписейСкладскогоЖурнала.ДатаОкончанияСрокаГодностиНачало
+	КОНЕЦ КАК СрокГодностиНачало,
+	СправочникСвойстваЗаписейСкладскогоЖурнала.ДатаОкончанияСрокаГодностиОкончание КАК СрокГодностиОкончание,
+	СправочникСвойстваЗаписейСкладскогоЖурнала.ЕдиницаИзмерения КАК ЕдиницаИзмерения,
+	СправочникСвойстваЗаписейСкладскогоЖурнала.НаименованиеПродукции КАК НаименованиеПродукции,
+	СправочникСвойстваЗаписейСкладскогоЖурнала.НекачественныйГруз КАК НекачественныйГруз,
+	СправочникСвойстваЗаписейСкладскогоЖурнала.НомерЗаписиЖурнала КАК НомерЗаписиЖурнала,
+	СправочникСвойстваЗаписейСкладскогоЖурнала.НомерПартии КАК НомерПартии,
+	СправочникСвойстваЗаписейСкладскогоЖурнала.Организация КАК Организация,
+	СправочникСвойстваЗаписейСкладскогоЖурнала.ПодвидПродукции КАК ПодвидПродукции,
+	СправочникСвойстваЗаписейСкладскогоЖурнала.Предприятие КАК Предприятие,
+	СправочникСвойстваЗаписейСкладскогоЖурнала.Продукция КАК Продукция,
+	СправочникСвойстваЗаписейСкладскогоЖурнала.ПродукцияПроизводителя КАК ПродукцияПроизводителя,
+	СправочникСвойстваЗаписейСкладскогоЖурнала.СкоропортящаясяПродукция КАК СкоропортящаясяПродукция,
+	СправочникСвойстваЗаписейСкладскогоЖурнала.СтранаПроисхождения КАК СтранаПроисхождения,
+	СправочникСвойстваЗаписейСкладскогоЖурнала.ТипПродукции КАК ТипПродукции,
+	СправочникСвойстваЗаписейСкладскогоЖурнала.Предопределенный КАК Предопределенный,
+	СправочникСвойстваЗаписейСкладскогоЖурнала.ИмяПредопределенныхДанных КАК ИмяПредопределенныхДанных
+ИЗ
+	Справочник.СвойстваЗаписейСкладскогоЖурнала КАК СправочникСвойстваЗаписейСкладскогоЖурнала
+ГДЕ
+	СправочникСвойстваЗаписейСкладскогоЖурнала.Организация = &amp;Организация
+	И СправочникСвойстваЗаписейСкладскогоЖурнала.Предприятие = &amp;Предприятие</QueryText>
+				<MainTable>Catalog.СвойстваЗаписейСкладскогоЖурнала</MainTable>
+				<ListSettings>
+					<dcsset:filter>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>dfcece9d-5077-440b-b6b3-45a5cb4538eb</dcsset:userSettingID>
+					</dcsset:filter>
+					<dcsset:order>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>88619765-ccb3-46c6-ac52-38e9c992ebd4</dcsset:userSettingID>
+					</dcsset:order>
+					<dcsset:conditionalAppearance>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>b75fecce-942b-4aed-abc9-e6a02e460fb3</dcsset:userSettingID>
+					</dcsset:conditionalAppearance>
+					<dcsset:itemsViewMode>Normal</dcsset:itemsViewMode>
+					<dcsset:itemsUserSettingID>911b6018-f537-43e8-a417-da56b22f9aec</dcsset:itemsUserSettingID>
+				</ListSettings>
+			</Settings>
+		</Attribute>
+		<Attribute name="ИерархияПродукции" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Иерархия продукции</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:DynamicList</v8:Type>
+			</Type>
+			<Settings xsi:type="DynamicList">
+				<ManualQuery>true</ManualQuery>
+				<DynamicDataRead>true</DynamicDataRead>
+				<QueryText>ВЫБРАТЬ РАЗРЕШЕННЫЕ РАЗЛИЧНЫЕ
+	СвойстваЗаписейСкладскогоЖурнала.ТипПродукции КАК ТипПродукции,
+	СвойстваЗаписейСкладскогоЖурнала.ВидПродукции КАК ВидПродукции,
+	СвойстваЗаписейСкладскогоЖурнала.ПодвидПродукции КАК ПодвидПродукции,
+	СвойстваЗаписейСкладскогоЖурнала.СтранаПроисхождения КАК СтранаПроисхождения,
+	СвойстваЗаписейСкладскогоЖурнала.СкоропортящаясяПродукция КАК СкоропортящаясяПродукция,
+	СвойстваЗаписейСкладскогоЖурнала.НекачественныйГруз КАК НекачественныйГруз
+ИЗ
+	Справочник.СвойстваЗаписейСкладскогоЖурнала КАК СвойстваЗаписейСкладскогоЖурнала
+ГДЕ
+	(СвойстваЗаписейСкладскогоЖурнала.Организация = &amp;Организация
+			И СвойстваЗаписейСкладскогоЖурнала.Предприятие = &amp;Предприятие)</QueryText>
+				<MainTable>Catalog.СвойстваЗаписейСкладскогоЖурнала</MainTable>
+				<ListSettings>
+					<dcsset:filter>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>dfcece9d-5077-440b-b6b3-45a5cb4538eb</dcsset:userSettingID>
+					</dcsset:filter>
+					<dcsset:order>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>88619765-ccb3-46c6-ac52-38e9c992ebd4</dcsset:userSettingID>
+					</dcsset:order>
+					<dcsset:conditionalAppearance>
+						<dcsset:item>
+							<dcsset:selection/>
+							<dcsset:filter>
+								<dcsset:item xsi:type="dcsset:FilterItemComparison">
+									<dcsset:left xsi:type="dcscor:Field">СистемныеПоля.Уровень</dcsset:left>
+									<dcsset:comparisonType>Equal</dcsset:comparisonType>
+									<dcsset:right xsi:type="xs:decimal">1</dcsset:right>
+								</dcsset:item>
+							</dcsset:filter>
+							<dcsset:appearance>
+								<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+									<dcscor:parameter>Видимость</dcscor:parameter>
+									<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
+								</dcscor:item>
+								<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+									<dcscor:parameter>Доступность</dcscor:parameter>
+									<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
+								</dcscor:item>
+								<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+									<dcscor:parameter>Отображать</dcscor:parameter>
+									<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
+								</dcscor:item>
+							</dcsset:appearance>
+						</dcsset:item>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+					</dcsset:conditionalAppearance>
+					<dcsset:item xsi:type="dcsset:StructureItemGroup">
+						<dcsset:groupItems>
+							<dcsset:item xsi:type="dcsset:GroupItemField">
+								<dcsset:field>ТипПродукции</dcsset:field>
+								<dcsset:groupType>Items</dcsset:groupType>
+								<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+								<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+								<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+							</dcsset:item>
+						</dcsset:groupItems>
+						<dcsset:item xsi:type="dcsset:StructureItemGroup">
+							<dcsset:groupItems>
+								<dcsset:item xsi:type="dcsset:GroupItemField">
+									<dcsset:field>ВидПродукции</dcsset:field>
+									<dcsset:groupType>Items</dcsset:groupType>
+									<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+									<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+									<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+								</dcsset:item>
+							</dcsset:groupItems>
+							<dcsset:item xsi:type="dcsset:StructureItemGroup">
+								<dcsset:groupItems>
+									<dcsset:item xsi:type="dcsset:GroupItemField">
+										<dcsset:field>ПодвидПродукции</dcsset:field>
+										<dcsset:groupType>Items</dcsset:groupType>
+										<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+										<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+										<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+									</dcsset:item>
+								</dcsset:groupItems>
+							</dcsset:item>
+						</dcsset:item>
+					</dcsset:item>
+					<dcsset:itemsViewMode>Normal</dcsset:itemsViewMode>
+				</ListSettings>
+			</Settings>
+		</Attribute>
+		<Attribute name="Организация" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Организация</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.Организации</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="Предприятие" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Предприятие</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.Предприятия</v8:Type>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ВыбратьЗначениеЗаписиСкладскогоЖурнала" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выбрать</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выбрать значение записи складского журнала</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.ChooseValue</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ВыбратьЗначениеЗаписиСкладскогоЖурнала</Action>
+			<Representation>TextPicture</Representation>
+		</Command>
+	</Commands>
+	<Parameters>
+		<Parameter name="Организация">
+			<Type>
+				<v8:Type>cfg:CatalogRef.Организации</v8:Type>
+			</Type>
+		</Parameter>
+		<Parameter name="Предприятие">
+			<Type>
+				<v8:Type>cfg:CatalogRef.Предприятия</v8:Type>
+			</Type>
+		</Parameter>
+	</Parameters>
+</Form>

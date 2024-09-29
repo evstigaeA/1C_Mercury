@@ -1,0 +1,200 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<definitions xmlns="http://schemas.xmlsoap.org/wsdl/"
+		xmlns:soap12bind="http://schemas.xmlsoap.org/wsdl/soap12/"
+		xmlns:soapbind="http://schemas.xmlsoap.org/wsdl/soap/"
+		xmlns:tns="http://api.vetrf.ru/schema/cdm/registry/r13n/service/v2"
+		xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy"
+		xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd"
+		xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+		xmlns:xsd1="0"
+		xmlns:xsd2="http://api.vetrf.ru/schema/cdm/base"
+		xmlns:xsd3="http://api.vetrf.ru/schema/cdm/base/ws-definitions"
+		xmlns:xsd4="http://api.vetrf.ru/schema/cdm/dictionary/v2"
+		xmlns:xsd5="http://api.vetrf.ru/schema/cdm/registry/ws-definitions/v2"
+		name="RegionalizationService"
+		targetNamespace="http://api.vetrf.ru/schema/cdm/registry/r13n/service/v2">
+	<documentation>
+      Service: RegionalizationService
+      Version: 2.0.4
+   </documentation>
+	<types>
+		<schema xmlns="http://www.w3.org/2001/XMLSchema"
+				xmlns:bdef="http://api.vetrf.ru/schema/cdm/base/ws-definitions"
+				xmlns:rdef="http://api.vetrf.ru/schema/cdm/registry/ws-definitions/v2"
+				xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/"
+				xmlns:tns="0"
+				xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/"
+				targetNamespace="0">
+			<import namespace="http://api.vetrf.ru/schema/cdm/base/ws-definitions"
+					schemaLocation="file://1.xsd"/>
+			<default:import xmlns:default="http://www.w3.org/2001/XMLSchema"
+					namespace="http://api.vetrf.ru/schema/cdm/registry/ws-definitions/v2"
+					schemaLocation="file://3.xsd"/>
+		</schema>
+	</types>
+	<message name="GetR13nConditionList">
+		<part name="request"
+				element="xsd5:getR13nConditionListRequest"/>
+	</message>
+	<message name="GetR13nConditionListResponse">
+		<part name="response"
+				element="xsd5:getR13nConditionListResponse"/>
+	</message>
+	<message name="GetActualR13nRegionStatusList">
+		<part name="request"
+				element="xsd5:getActualR13nRegionStatusListRequest"/>
+	</message>
+	<message name="GetActualR13nRegionStatusListResponse">
+		<part name="response"
+				element="xsd5:getActualR13nRegionStatusListResponse"/>
+	</message>
+	<message name="GetActualR13nShippingRuleList">
+		<part name="request"
+				element="xsd5:getActualR13nShippingRuleListRequest"/>
+	</message>
+	<message name="GetActualR13nShippingRuleListResponse">
+		<part name="response"
+				element="xsd5:getActualR13nShippingRuleListResponse"/>
+	</message>
+	<message name="EntityNotFoundFault">
+		<documentation>
+            Запись с указанным идентификатором не найдена.
+        </documentation>
+		<part name="fault"
+				element="xsd3:entityNotFoundFault"/>
+	</message>
+	<message name="IncorrectRequestFault">
+		<documentation>
+            Реакция системы на некорректный запрос.
+        </documentation>
+		<part name="fault"
+				element="xsd3:incorrectRequestFault"/>
+	</message>
+	<message name="InternalServiceFault">
+		<documentation>
+            Внутренняя ошибка выполнения операции на сервере.
+        </documentation>
+		<part name="fault"
+				element="xsd3:internalServiceFault"/>
+	</message>
+	<message name="OffsetOutOfRangeFault">
+		<documentation> </documentation>
+		<part name="fault"
+				element="xsd3:offsetOutOfRangeFault"/>
+	</message>
+	<portType name="RegionalizationServicePortType">
+		<operation name="GetR13nConditionList">
+			<input name="GetR13nConditionList"
+					message="tns:GetR13nConditionList"/>
+			<output name="GetR13nConditionListResponse"
+					message="tns:GetR13nConditionListResponse"/>
+			<fault name="internalServiceFault"
+					message="tns:InternalServiceFault"/>
+			<fault name="incorrectRequestFault"
+					message="tns:IncorrectRequestFault"/>
+			<fault name="offsetOutOfRangeFault"
+					message="tns:OffsetOutOfRangeFault"/>
+		</operation>
+		<operation name="GetActualR13nRegionStatusList">
+			<input name="GetActualR13nRegionStatusList"
+					message="tns:GetActualR13nRegionStatusList"/>
+			<output name="GetActualR13nRegionStatusListResponse"
+					message="tns:GetActualR13nRegionStatusListResponse"/>
+			<fault name="internalServiceFault"
+					message="tns:InternalServiceFault"/>
+			<fault name="incorrectRequestFault"
+					message="tns:IncorrectRequestFault"/>
+			<fault name="offsetOutOfRangeFault"
+					message="tns:OffsetOutOfRangeFault"/>
+		</operation>
+		<operation name="GetActualR13nShippingRuleList">
+			<input name="GetActualR13nShippingRuleList"
+					message="tns:GetActualR13nShippingRuleList"/>
+			<output name="GetActualR13nShippingRuleListResponse"
+					message="tns:GetActualR13nShippingRuleListResponse"/>
+			<fault name="internalServiceFault"
+					message="tns:InternalServiceFault"/>
+			<fault name="incorrectRequestFault"
+					message="tns:IncorrectRequestFault"/>
+			<fault name="offsetOutOfRangeFault"
+					message="tns:OffsetOutOfRangeFault"/>
+		</operation>
+	</portType>
+	<binding name="RegionalizationServiceBinding"
+			type="tns:RegionalizationServicePortType">
+		<soapbind:binding style="document"
+				transport="http://schemas.xmlsoap.org/soap/http"/>
+		<operation name="GetR13nConditionList">
+			<soapbind:operation style="document"
+					soapAction="GetProductByTypeList"/>
+			<input>
+				<soapbind:body use="literal"/>
+			</input>
+			<output>
+				<soapbind:body use="literal"/>
+			</output>
+			<fault name="internalServiceFault">
+				<soapbind:fault name="internalServiceFault"
+						use="literal"/>
+			</fault>
+			<fault name="incorrectRequestFault">
+				<soapbind:fault name="incorrectRequestFault"
+						use="literal"/>
+			</fault>
+			<fault name="offsetOutOfRangeFault">
+				<soapbind:fault name="offsetOutOfRangeFault"
+						use="literal"/>
+			</fault>
+		</operation>
+		<operation name="GetActualR13nRegionStatusList">
+			<soapbind:operation style="document"
+					soapAction="GetProductByTypeList"/>
+			<input>
+				<soapbind:body use="literal"/>
+			</input>
+			<output>
+				<soapbind:body use="literal"/>
+			</output>
+			<fault name="internalServiceFault">
+				<soapbind:fault name="internalServiceFault"
+						use="literal"/>
+			</fault>
+			<fault name="incorrectRequestFault">
+				<soapbind:fault name="incorrectRequestFault"
+						use="literal"/>
+			</fault>
+			<fault name="offsetOutOfRangeFault">
+				<soapbind:fault name="offsetOutOfRangeFault"
+						use="literal"/>
+			</fault>
+		</operation>
+		<operation name="GetActualR13nShippingRuleList">
+			<soapbind:operation style="document"
+					soapAction="GetProductByTypeList"/>
+			<input>
+				<soapbind:body use="literal"/>
+			</input>
+			<output>
+				<soapbind:body use="literal"/>
+			</output>
+			<fault name="internalServiceFault">
+				<soapbind:fault name="internalServiceFault"
+						use="literal"/>
+			</fault>
+			<fault name="incorrectRequestFault">
+				<soapbind:fault name="incorrectRequestFault"
+						use="literal"/>
+			</fault>
+			<fault name="offsetOutOfRangeFault">
+				<soapbind:fault name="offsetOutOfRangeFault"
+						use="literal"/>
+			</fault>
+		</operation>
+	</binding>
+	<service name="RegionalizationServiceBindingQSService">
+		<port name="RegionalizationServiceBindingQSPort"
+				binding="tns:RegionalizationServiceBinding">
+			<soapbind:address location="https://api.vetrf.ru/platform/services/2.1/RegionalizationService"/>
+		</port>
+	</service>
+</definitions>

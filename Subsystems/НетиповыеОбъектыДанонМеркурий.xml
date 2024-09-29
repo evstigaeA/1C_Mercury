@@ -1,0 +1,118 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.5">
+	<Subsystem uuid="e8121d3b-3793-48ec-ba76-e146361831c7">
+		<Properties>
+			<Name>НетиповыеОбъектыДанонМеркурий</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Нетиповые объекты Данон-Меркурий</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment/>
+			<IncludeHelpInContents>false</IncludeHelpInContents>
+			<IncludeInCommandInterface>false</IncludeInCommandInterface>
+			<Explanation/>
+			<Picture/>
+			<Content>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonTemplate.СоответствиеОбъектовДанон_УВС</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.ДМ_EDIКлиенты</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Role.БазовыеПраваДМ</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ОбновлениеВспомогательныхДанных</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ОбновлениеВерсииИБ</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.КонсольЗапросов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.ДМ_ФайлыОбменаDanoneКлиент</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.ПоказыватьНедоступныеКоманды</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">FunctionalOption.ПоказыватьНедоступныеКоманды</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ДМ_ИнтеграцияВетисAPIСервер</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ДМ_КаталогиДляРаботыСФайлами</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">ScheduledJob.ДМ_ЗагрузкаФайловSAPКлиент</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">ScheduledJob.ДМ_ЗагрузкаФайловSAPВнутреннееПеремещение</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">ScheduledJob.ДМ_ЗагрузкаФайловSAPГашениеВСД</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">ScheduledJob.ДМ_ЗагрузкаФайловSAPСторнированиеОтгрузки</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">ScheduledJob.ДМ_ЗагрузкаФайловSAPПроизводство</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">ScheduledJob.ДМ_ЗагрузкаФайловSAPИнвентаризация</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ДМ_ИнтеграцияУВСSAP</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.ДМ_ФайлыОбменаDanoneВнутреннееПеремещение</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.ДМ_ФайлыОбменаDanoneГашениеВСД</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.ДМ_ФайлыОбменаDanoneСторнированиеОтгрузки</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.ДМ_ФайлыОбменаDanoneПроизводство</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.ДМ_ФайлыОбменаDanoneИнвентаризация</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.ДМ_СтрокиЗаписейЖурналаРегистрации</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.ДМ_УровниЖурнала</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ДМ_ТипыПриложений1С</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ДМ_СобытияЖурналаРегистрации</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ДМ_ВызовСервераПовтИсп</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">EventSubscription.ДМ_ФайлыОбменаОбработкаЗаполнения</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">ScheduledJob.ДМ_ОбработкаВходныхДанныхSAP</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.СтатусДокументаСФайламиSAP</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ДМ_СлужебныйПривилегированный</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DefinedType.ФайлыОбменаDanone</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonCommand.ДМ_ПоказатьИсходныйФайл</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ДМ_КонтролируемыеПоказатели</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.КоллекцияСостоянияПоказателей</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ДМ_ГруппыОтветственных</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.ДМ_ДатаУведомленияОНовыхПроблемах</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">ScheduledJob.ДМ_МониторингПоказателей</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ОбновлениеИнформационнойБазыДМ</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.УправлениеДоступомДМ</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.КаталогСообщенийОбменаДаннымиДляLinux</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.КаталогСообщенийОбменаДаннымиДляWindows</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonForm.ДМ_КаталогСообщенийОбменаДанными</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonCommand.ДМ_КаталогСлужебныхФайловОбменаДанными</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ДМ_ПакетнаяГенерацияПаролей</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonCommand.ДМ_СтрокиЗаписейЖурналаРегистрации</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ДМ_ПараметрыПодключенияFTP</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonTemplate.ОписаниеИзмененийСистемыДМ</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ДМ_РаботаСФайламиEXCEL1С</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ОбновлениеИнформационнойБазыДМВызовСервера</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DocumentJournal.ДМ_ЗагруженныеФайлыОбмена</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ДМ_ЗагрузкаПользователей</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.ДМ_ДокументыОбменаDanone_EDIКлиенты</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ДМ_ЗаполнениеНомераПлантаВПредприятиях</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ДМ_ЗаполнениеКодSAP_ВОрганизациях</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ДМ_ЗагрузкаПринтеров</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.ДМ_Принтеры</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">ScheduledJob.ДМ_ЗагрузкаПринтеров</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ДМ_РегламентныеЗаданияСлужебный</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ДМ_ОбщегоНазначенияКлиент</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ДМ_СлужебныйВызовСервера</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonTemplate.SetDefaultPrinter_ps1</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ДМ_ПакетнаяПечатьQRкодов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonTemplate.ДМ_НачалоРаботы</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ДМ_ПроверкаНаличияИнтернетПодключения</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Role.HelpDesk</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ДМ_ОбщегоНазначенияКлиентСервер</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">ScheduledJob.ДМ_ПроверкаНаличияИнтернетПодключения</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ДМ_УведомленияОбОстановкеРегзаданийОбменаСМеркурием</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ДМ_ПроверкаБлокировкиПользователейМеркурий</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ДМ_КлонированиеНастроекПодключенияКВетисAPI</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ДМ_КлонированиеДокументов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ДМ_НастройкаПараметровЗагрузкиПродукцииПоФильтрам</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ДМ_СоздатьСвязиПредприятийСХозяйствующимиСубъектами</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ДМ_УправлениеОтправкойОбогащенныхEDIФайлов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonTemplate.ДМ_Патчи</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">ScheduledJob.ДМ_ПроверкаБлокировкиПользователейМеркурий</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">ScheduledJob.ДМ_ЗагрузкаПродукцииПоНаборамФильтров</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">ScheduledJob.ДМ_РассылкаОбогащенныхФайлов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.ДМ_ОпределениеFTPСервера</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.ДМ_НаборыФильтровДляЗагрузкиПродукции</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ДМ_ЗагрузкаПродукции</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ДМ_АвтозаполнениеНазначенийПредприятийПользователям</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ДМ_ПерепроведениеНазначенийПредприятийПользователям</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.ДМ_СтатусПриходнойОперацииПоВСД</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonTemplate.ПолучениеДереваОбработчиковОбновленияДМ</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.ДМ_ВремяВЧасахДляАвтоматическогоЗакрытияПроизводственнойОперации</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.ДМ_ПроизводственныеОперацииСАвтоматическимЗакрытием</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.ДМ_КонтрагентыВнутреннееПеремещение</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.ДМ_ПользовательДляАвтоСозданияДокументов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ДМ_ВнесениеДанныхОТранспорте</xr:Item>
+			</Content>
+		</Properties>
+		<ChildObjects>
+			<Subsystem>ОтличающиесяОтТиповых</Subsystem>
+			<Subsystem>СнятыеСПоддержки</Subsystem>
+			<Subsystem>Расширенные</Subsystem>
+		</ChildObjects>
+	</Subsystem>
+</MetaDataObject>

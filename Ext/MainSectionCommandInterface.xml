@@ -1,0 +1,166 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<CommandInterface xmlns="http://v8.1c.ru/8.3/xcf/extrnprops" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.5">
+	<CommandsVisibility>
+		<Command name="Document.ВСД.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Document.Инвентаризации.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Document.ОбъединениеЗаписейСкладскогоЖурнала.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Document.ПриходныеОперацииСводно.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Document.ПроизводственныеОперации.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Document.ТранспортныеОперации.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Catalog.Контрагенты.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Catalog.Предприятия.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Catalog.Продукция.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Catalog.СвойстваЗаписейСкладскогоЖурнала.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Catalog.Транспорт.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Catalog.БлагополучиеМестности.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Report.ДвижениеПродукции.StandardCommand.Open">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+	</CommandsVisibility>
+	<CommandsPlacement>
+		<Command name="Document.ВСД.StandardCommand.OpenList">
+			<CommandGroup>CommandGroup.Документы</CommandGroup>
+			<Placement>Manual</Placement>
+		</Command>
+		<Command name="Document.Инвентаризации.StandardCommand.OpenList">
+			<CommandGroup>CommandGroup.Документы</CommandGroup>
+			<Placement>Manual</Placement>
+		</Command>
+		<Command name="Document.ОбъединениеЗаписейСкладскогоЖурнала.StandardCommand.OpenList">
+			<CommandGroup>CommandGroup.Документы</CommandGroup>
+			<Placement>Manual</Placement>
+		</Command>
+		<Command name="Document.ПриходныеОперацииСводно.StandardCommand.OpenList">
+			<CommandGroup>CommandGroup.Документы</CommandGroup>
+			<Placement>Manual</Placement>
+		</Command>
+		<Command name="Document.ПроизводственныеОперации.StandardCommand.OpenList">
+			<CommandGroup>CommandGroup.Документы</CommandGroup>
+			<Placement>Manual</Placement>
+		</Command>
+		<Command name="Document.ТранспортныеОперации.StandardCommand.OpenList">
+			<CommandGroup>CommandGroup.Документы</CommandGroup>
+			<Placement>Manual</Placement>
+		</Command>
+		<Command name="Catalog.Контрагенты.StandardCommand.OpenList">
+			<CommandGroup>CommandGroup.НСИ</CommandGroup>
+			<Placement>Manual</Placement>
+		</Command>
+		<Command name="Catalog.Предприятия.StandardCommand.OpenList">
+			<CommandGroup>CommandGroup.НСИ</CommandGroup>
+			<Placement>Manual</Placement>
+		</Command>
+		<Command name="Catalog.Продукция.StandardCommand.OpenList">
+			<CommandGroup>CommandGroup.НСИ</CommandGroup>
+			<Placement>Manual</Placement>
+		</Command>
+		<Command name="Catalog.СвойстваЗаписейСкладскогоЖурнала.StandardCommand.OpenList">
+			<CommandGroup>CommandGroup.НСИ</CommandGroup>
+			<Placement>Manual</Placement>
+		</Command>
+		<Command name="Catalog.Транспорт.StandardCommand.OpenList">
+			<CommandGroup>CommandGroup.НСИ</CommandGroup>
+			<Placement>Manual</Placement>
+		</Command>
+		<Command name="Catalog.БлагополучиеМестности.StandardCommand.OpenList">
+			<CommandGroup>CommandGroup.НСИ</CommandGroup>
+			<Placement>Manual</Placement>
+		</Command>
+		<Command name="Report.ДвижениеПродукции.StandardCommand.Open">
+			<CommandGroup>ActionsPanelReports</CommandGroup>
+			<Placement>Manual</Placement>
+		</Command>
+	</CommandsPlacement>
+	<CommandsOrder>
+		<Command name="Document.ВСД.StandardCommand.OpenList">
+			<CommandGroup>CommandGroup.Документы</CommandGroup>
+		</Command>
+		<Command name="Document.Инвентаризации.StandardCommand.OpenList">
+			<CommandGroup>CommandGroup.Документы</CommandGroup>
+		</Command>
+		<Command name="Document.ОбъединениеЗаписейСкладскогоЖурнала.StandardCommand.OpenList">
+			<CommandGroup>CommandGroup.Документы</CommandGroup>
+		</Command>
+		<Command name="Document.ПриходныеОперацииСводно.StandardCommand.OpenList">
+			<CommandGroup>CommandGroup.Документы</CommandGroup>
+		</Command>
+		<Command name="Document.ПроизводственныеОперации.StandardCommand.OpenList">
+			<CommandGroup>CommandGroup.Документы</CommandGroup>
+		</Command>
+		<Command name="Document.ТранспортныеОперации.StandardCommand.OpenList">
+			<CommandGroup>CommandGroup.Документы</CommandGroup>
+		</Command>
+		<Command name="Catalog.Контрагенты.StandardCommand.OpenList">
+			<CommandGroup>CommandGroup.НСИ</CommandGroup>
+		</Command>
+		<Command name="Catalog.Предприятия.StandardCommand.OpenList">
+			<CommandGroup>CommandGroup.НСИ</CommandGroup>
+		</Command>
+		<Command name="Catalog.Продукция.StandardCommand.OpenList">
+			<CommandGroup>CommandGroup.НСИ</CommandGroup>
+		</Command>
+		<Command name="Catalog.СвойстваЗаписейСкладскогоЖурнала.StandardCommand.OpenList">
+			<CommandGroup>CommandGroup.НСИ</CommandGroup>
+		</Command>
+		<Command name="Catalog.Транспорт.StandardCommand.OpenList">
+			<CommandGroup>CommandGroup.НСИ</CommandGroup>
+		</Command>
+		<Command name="Catalog.БлагополучиеМестности.StandardCommand.OpenList">
+			<CommandGroup>CommandGroup.НСИ</CommandGroup>
+		</Command>
+	</CommandsOrder>
+	<GroupsOrder>
+		<Group>CommandGroup.Документы</Group>
+		<Group>CommandGroup.НСИ</Group>
+	</GroupsOrder>
+</CommandInterface>

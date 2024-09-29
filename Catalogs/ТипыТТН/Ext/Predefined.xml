@@ -1,0 +1,147 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<PredefinedData xmlns="http://v8.1c.ru/8.3/xcf/predef" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="CatalogPredefinedItems" version="2.5">
+	<Item id="c9cb8415-7a01-4665-8ba6-48a1c3e7a278">
+		<Name>CMR</Name>
+		<Code xsi:type="xs:decimal">3</Code>
+		<Description>CMR</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="3766be54-0743-4c55-8c95-bc0f9643c5cd">
+		<Name>Авианакладная</Name>
+		<Code xsi:type="xs:decimal">4</Code>
+		<Description>Авианакладная</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="4b34930a-be38-47f7-85c8-51e162bbf9fe">
+		<Name>АктОтбораПробыНаИсследование</Name>
+		<Code xsi:type="xs:decimal">9</Code>
+		<Description>Акт отбора пробы на исследование</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="ac8ffcc2-3093-455d-a1f0-4ab274d77850">
+		<Name>ВетеринарноеРазрешениеНаИмпортТС</Name>
+		<Code xsi:type="xs:decimal">7</Code>
+		<Description>Ветеринарное разрешение на импорт продукции на территорию ТС</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="b738c42d-a2bd-4c32-9f73-9b1ba94964ff">
+		<Name>ВетСертификатНаПеремещениеВнутриРФ</Name>
+		<Code xsi:type="xs:decimal">11</Code>
+		<Description>Ветеринарный сертификат на перемещение внутри РФ</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="9bae7d1a-6b28-44fc-be6a-6e9608aec47e">
+		<Name>ВетСертификатРФНаВывозПродукцииНаТерриториюСтранТС</Name>
+		<Code xsi:type="xs:decimal">14</Code>
+		<Description>Ветеринарный сертификат РФ на вывоз продукции на территорию стран ТС</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="7f481b25-286a-4cba-8eba-b9219f54ed8d">
+		<Name>ВетСертификатРФНаВывозПродукцииНаТерриториюТретьихСтран</Name>
+		<Code xsi:type="xs:decimal">15</Code>
+		<Description>Ветеринарный сертификат РФ на вывоз продукции на территорию третьих стран</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="3b9e8bbb-a941-41d2-8aa4-054940c08a1e">
+		<Name>ВетСертификатСтраныТСНаВвозПродукцииНаТерриториюРФ</Name>
+		<Code xsi:type="xs:decimal">13</Code>
+		<Description>Ветеринарный сертификат страны ТС на ввоз продукции на территорию РФ</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="2c77c921-173a-482c-b36c-27311d3e30c7">
+		<Name>ВетСертификатТретьихСтранНаВвозПродукцииНаТерриториюРФ</Name>
+		<Code xsi:type="xs:decimal">12</Code>
+		<Description>Ветеринарный сертификат третьих стран на ввоз продукции на территорию РФ</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="9619e3f3-9923-4851-bf0b-d31b66f46a41">
+		<Name>Заказ</Name>
+		<Code xsi:type="xs:decimal">16</Code>
+		<Description>Заказ</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="8eeca7ec-ae43-4cd8-9813-11fc046fcc39">
+		<Name>Конасамент</Name>
+		<Code xsi:type="xs:decimal">2</Code>
+		<Description>Конасамент</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="74da1e73-103d-4115-a043-59852353d864">
+		<Name>ПаспортГражданинаРеспубликиАрмения</Name>
+		<Code xsi:type="xs:decimal">21</Code>
+		<Description>Паспорт гражданина Республики Армения</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="38607ce5-58da-4dd8-8bd6-4d717d9f4492">
+		<Name>ПаспортГражданинаРеспубликиБеларусь</Name>
+		<Code xsi:type="xs:decimal">20</Code>
+		<Description>Паспорт гражданина Республики Беларусь</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="8c94e691-ec40-418d-adf5-b8e2dc8ec1be">
+		<Name>ПаспортГражданинаРеспубликиКазахстан</Name>
+		<Code xsi:type="xs:decimal">19</Code>
+		<Description>Паспорт гражданина Республики Казахстан</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="01f00261-7b34-4098-8600-5113c31fe78d">
+		<Name>ПаспортГражданинаРеспубликиКиргизия</Name>
+		<Code xsi:type="xs:decimal">22</Code>
+		<Description>Паспорт гражданина Республики Киргизия</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="eb7341d4-2e36-4ba8-b98f-33242ceed4d4">
+		<Name>ПаспортГражданинаРФ</Name>
+		<Code xsi:type="xs:decimal">17</Code>
+		<Description>Паспорт гражданина РФ</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="ea97f78e-ff94-4ca4-93e8-2e7189a3aba1">
+		<Name>ПаспортИностранногоГражданина</Name>
+		<Code xsi:type="xs:decimal">18</Code>
+		<Description>Паспорт иностранного гражданина</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="c069b499-55d4-4781-be8b-54506a30a126">
+		<Name>РазрешениеВетУправленияСубъектаСтраныТСНаВвозПродукции</Name>
+		<Code xsi:type="xs:decimal">8</Code>
+		<Description>Разрешение ветеринарного управления субъекта страны ТС на ввоз продукции</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="6d4dec7c-d944-4764-93c8-3ca143cdd213">
+		<Name>ТТН</Name>
+		<Code xsi:type="xs:decimal">1</Code>
+		<Description>Товарно-транспортная накладная</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="365e6195-05af-4733-a39f-42307c2ab5f7">
+		<Name>ТОРГ12</Name>
+		<Code xsi:type="xs:decimal">6</Code>
+		<Description>ТОРГ-12</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="6084c0fb-9419-4a75-9a20-ed9b57170498">
+		<Name>ТОРГ13</Name>
+		<Code xsi:type="xs:decimal">10</Code>
+		<Description>ТОРГ-13</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="2af2eb26-8e24-49a9-b7e7-0070309f674c">
+		<Name>ТранспортнаяНакладная</Name>
+		<Code xsi:type="xs:decimal">5</Code>
+		<Description>Транспортная накладная</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="96647caf-29c4-430c-9db3-481a0d49f91c">
+		<Name>УПД</Name>
+		<Code xsi:type="xs:decimal">23</Code>
+		<Description>УПД (Универсальный передаточный документ)</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="e291a4fe-2bea-4455-b50f-6690c4b8afa1">
+		<Name>ЭлектронныйВетеринарныйПроизводственныйСертификат</Name>
+		<Code xsi:type="xs:decimal">24</Code>
+		<Description>Электронный ветеринарный производственный сертификат</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+</PredefinedData>

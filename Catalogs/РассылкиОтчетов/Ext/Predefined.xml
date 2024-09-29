@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<PredefinedData xmlns="http://v8.1c.ru/8.3/xcf/predef" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="CatalogPredefinedItems" version="2.5">
+	<Item id="1e880292-bf2f-4ec6-a0f9-b6ccea7fe5d4">
+		<Name>Mercury</Name>
+		<Code/>
+		<Description>Mercury</Description>
+		<IsFolder>true</IsFolder>
+		<ChildItems>
+			<Item id="8109b9a6-d7e5-4687-abae-6fe391a40024">
+				<Name>MercurОтсутствиеПВСД</Name>
+				<Code/>
+				<Description>Mercur отсутствие ПВСД</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+		</ChildItems>
+	</Item>
+	<Item id="d2adc174-2e1e-47f9-829d-0aa17e3a0269">
+		<Name>ЛичныеРассылки</Name>
+		<Code/>
+		<Description>Личные рассылки</Description>
+		<IsFolder>true</IsFolder>
+	</Item>
+</PredefinedData>

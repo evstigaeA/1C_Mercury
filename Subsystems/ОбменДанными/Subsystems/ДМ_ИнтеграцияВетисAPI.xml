@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.5">
+	<Subsystem uuid="93138167-0e34-4047-bd93-6dc07a096ee3">
+		<Properties>
+			<Name>ДМ_ИнтеграцияВетисAPI</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Интеграция ВетисAPI</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment/>
+			<IncludeHelpInContents>true</IncludeHelpInContents>
+			<IncludeInCommandInterface>false</IncludeInCommandInterface>
+			<Explanation/>
+			<Picture/>
+			<Content>
+				<xr:Item xsi:type="xr:MDObjectRef">ScheduledJob.ЗагрузкаБазовойНСИИСМеркурий</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">ScheduledJob.АктуализацияСправочникаПродукции</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">ScheduledJob.АктуализацияСправочникаКонтрагентов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">ScheduledJob.АктуализацияСправочникаПредприятий</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">ScheduledJob.ЗагрузкаДанныхПоВСД</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">ScheduledJob.ОтправкаПриходныхОпераций</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">ScheduledJob.ОбработкаОтветаПоПриходнымОперациям</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">ScheduledJob.ОтправкаПроизводственныхОпераций</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">ScheduledJob.ОбработкаОтветаПоПроизводственнымОперациям</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">ScheduledJob.ОтправкаТранспортныхОпераций</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">ScheduledJob.ОбработкаОтветаПоТранспортнымОперациям</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">ScheduledJob.ОтправкаИнвентаризаций</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">ScheduledJob.ОбработкаОтветаПоИнвентаризациям</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">ScheduledJob.ОтправкаОбъединенийЗаписейСкладскогоЖурнала</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">ScheduledJob.ОбработкаОтветаПоОбъединениямЗаписейСкладскогоЖурнала</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">ScheduledJob.ОтправкаАннулированийВСД</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">ScheduledJob.ОбработкаОтветаПоАннулированиюВСД</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">ScheduledJob.ОтправкаВнесенийНомеровТранспортныхСредств</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">ScheduledJob.ОбработкаОтветаПоВнесениюНомеровТранспортныхСредств</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.НастройкиПодключенияКВетисAPI</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ДМ_КлонированиеНастроекПодключенияКВетисAPI</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.РаботаСЖурналамиЗагрузкиДанныхСлужебный</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">ScheduledJob.ЗагрузкаОбновленийВерсийЗаписейСкладскогоЖурнала</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">ScheduledJob.ОтправкаВнесенийЛабораторныхИсследований</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">ScheduledJob.ОбработкаОтветаПоВнесениюЛабораторныхИсследований</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">ScheduledJob.ОчисткаЖурналовЗагрузкиДанных</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonForm.ФормаРезультатаЗагрузки</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.ВремяОпросаЗаявокВСтатусеЗаявкаОбрабатывается</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.УдалитьСмещениеВСпискахЗапросов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.СтатусЗаявкиПоОкончаниюОпросаЗаявокВСтатусеЗаявкаОбрабатывается</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.ВариантыВеденияЖурналовЗагрузкиДанных</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.ВариантыОчисткиЖурналовЗагрузкиДанных</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.ЖурналЗагрузкиДанныхПоЗаписямСкладскогоЖурнала</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.НастройкиВеденияЖурналовЗагрузкиДанных</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.ДатыПоследнихЗагрузокЗаписейСкладскогоЖурнала</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">ScheduledJob.ДМ_ПроверкаБлокировкиПользователейМеркурий</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ДМ_ПроверкаБлокировкиПользователейМеркурий</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ДМ_УведомленияОбОстановкеРегзаданийОбменаСМеркурием</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">ScheduledJob.ДМ_ЗагрузкаПродукцииПоНаборамФильтров</xr:Item>
+			</Content>
+		</Properties>
+		<ChildObjects/>
+	</Subsystem>
+</MetaDataObject>

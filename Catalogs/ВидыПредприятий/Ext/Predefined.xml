@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<PredefinedData xmlns="http://v8.1c.ru/8.3/xcf/predef" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="CatalogPredefinedItems" version="2.5">
+	<Item id="5cd9538e-b9b5-4e95-9ba3-0f3c522bacad">
+		<Name>Предприятие</Name>
+		<Code xsi:type="xs:decimal">1</Code>
+		<Description>Предприятие</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="c1527429-bcf1-405b-9ee6-85e8f603c327">
+		<Name>Рынок</Name>
+		<Code xsi:type="xs:decimal">2</Code>
+		<Description>Рынок</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="0d569033-b456-4277-8fc5-5ed6e63148f2">
+		<Name>СББЖ</Name>
+		<Code xsi:type="xs:decimal">3</Code>
+		<Description>СББЖ</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="30e4834d-f0b3-489f-89f3-9c0540a96114">
+		<Name>Судно</Name>
+		<Code xsi:type="xs:decimal">4</Code>
+		<Description>Судно</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+</PredefinedData>

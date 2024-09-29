@@ -1,0 +1,273 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<PredefinedData xmlns="http://v8.1c.ru/8.3/xcf/predef" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="CatalogPredefinedItems" version="2.5">
+	<Item id="ed66fa69-2620-4563-baac-e91a7b93434f">
+		<Name>РегламентныеЗадания</Name>
+		<Code xsi:type="xs:decimal">1</Code>
+		<Description>Регламентные задания</Description>
+		<IsFolder>false</IsFolder>
+		<ChildItems>
+			<Item id="9583726f-bd01-4189-a623-051b4d7430b3">
+				<Name>ЗагрузкаФайловSAP</Name>
+				<Code xsi:type="xs:decimal">2</Code>
+				<Description>Загрузка файлов SAP</Description>
+				<IsFolder>false</IsFolder>
+				<ChildItems>
+					<Item id="d302d361-06af-4a7a-8f56-a5222617c2b0">
+						<Name>ДМ_ЗагрузкаФайловSAPВнутреннееПеремещение</Name>
+						<Code xsi:type="xs:decimal">2</Code>
+						<Description>Загрузка файлов SAP Внутреннее перемещение</Description>
+						<IsFolder>false</IsFolder>
+					</Item>
+					<Item id="cde78d87-51a1-4fcd-ac86-5e1a41d216c8">
+						<Name>ДМ_ЗагрузкаФайловSAPГашениеВСД</Name>
+						<Code xsi:type="xs:decimal">5</Code>
+						<Description>Загрузка файлов SAP Гашение ВСД</Description>
+						<IsFolder>false</IsFolder>
+					</Item>
+					<Item id="1ef6332d-6251-4248-adb8-e022f2483b33">
+						<Name>ДМ_ЗагрузкаФайловSAPИнвентаризация</Name>
+						<Code xsi:type="xs:decimal">8</Code>
+						<Description>Загрузка файлов SAP Инвентаризация</Description>
+						<IsFolder>false</IsFolder>
+					</Item>
+					<Item id="643d25d2-c425-4628-baf3-68b777f8d3fd">
+						<Name>ДМ_ЗагрузкаФайловSAPКлиент</Name>
+						<Code xsi:type="xs:decimal">1</Code>
+						<Description>Загрузка файлов SAP Клиент</Description>
+						<IsFolder>false</IsFolder>
+					</Item>
+					<Item id="c802f7d2-0c1f-477e-8272-ca7d48fbf17a">
+						<Name>ДМ_ЗагрузкаФайловSAPПроизводство</Name>
+						<Code xsi:type="xs:decimal">7</Code>
+						<Description>Загрузка файлов SAP Производство</Description>
+						<IsFolder>false</IsFolder>
+					</Item>
+					<Item id="a4819c44-a170-4288-824d-6dde366ee5c0">
+						<Name>ДМ_ЗагрузкаФайловSAPСторнированиеОтгрузки</Name>
+						<Code xsi:type="xs:decimal">6</Code>
+						<Description>Загрузка файлов SAP Сторнирование отгрузки</Description>
+						<IsFolder>false</IsFolder>
+					</Item>
+					<Item id="3aed42f7-4738-48cd-82ed-c2ad59cbc5b1">
+						<Name>ДМ_ОбработкаВходныхДанныхSAP</Name>
+						<Code xsi:type="xs:decimal">9</Code>
+						<Description>Обработка входных данных SAP</Description>
+						<IsFolder>false</IsFolder>
+					</Item>
+				</ChildItems>
+			</Item>
+			<Item id="a135da93-5982-41f8-b678-f62d738f5257">
+				<Name>ЗакрытиеПроизводстваАвтоматическое</Name>
+				<Code xsi:type="xs:decimal">25</Code>
+				<Description>Закрытие производства автоматическое</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="1f19a40d-0920-47d6-8ee7-f859fedcff6b">
+				<Name>ДМ_МониторингПоказателей</Name>
+				<Code xsi:type="xs:decimal">3</Code>
+				<Description>Мониторинг показателей</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="3024d6a7-fe06-4df4-8817-e3c524bbe4a8">
+				<Name>ОбменСМеркурием</Name>
+				<Code xsi:type="xs:decimal">1</Code>
+				<Description>Обмен с ИС "Меркурий"</Description>
+				<IsFolder>false</IsFolder>
+				<ChildItems>
+					<Item id="c3b36c78-2e06-4ec0-92c2-ba4b99ff04b1">
+						<Name>АктуализацияСправочникаПредприятий</Name>
+						<Code xsi:type="xs:decimal">4</Code>
+						<Description>Актуализация справочника "Предприятия"</Description>
+						<IsFolder>false</IsFolder>
+					</Item>
+					<Item id="dfeec4c4-52ea-4a09-978b-bff05e1c16ca">
+						<Name>АктуализацияСправочникаПродукции</Name>
+						<Code xsi:type="xs:decimal">2</Code>
+						<Description>Актуализация справочника "Продукция"</Description>
+						<IsFolder>false</IsFolder>
+					</Item>
+					<Item id="3173e27d-9c7a-4998-9b21-d63a46aa1092">
+						<Name>АктуализацияСправочникаКонтрагентов</Name>
+						<Code xsi:type="xs:decimal">3</Code>
+						<Description>Актуализация справочника "Хозяйствующие субъекты"</Description>
+						<IsFolder>false</IsFolder>
+					</Item>
+					<Item id="2fa4bac3-fc3b-4192-932b-0a1eb6f52da0">
+						<Name>ДМ_ЗагрузкаДанныеВСД</Name>
+						<Code xsi:type="xs:decimal">30</Code>
+						<Description>Загрузка актуальных данные ВСД</Description>
+						<IsFolder>false</IsFolder>
+					</Item>
+					<Item id="298fcefc-80c7-411e-abb4-6528ff312dc0">
+						<Name>ДМ_ЗагрузкаАктуальныхОстатков</Name>
+						<Code xsi:type="xs:decimal">28</Code>
+						<Description>Загрузка актуальных остатков</Description>
+						<IsFolder>false</IsFolder>
+					</Item>
+					<Item id="c9f7a077-dba9-472b-a068-f3078f0879be">
+						<Name>ЗагрузкаБазовойНСИИСМеркурий</Name>
+						<Code xsi:type="xs:decimal">1</Code>
+						<Description>Загрузка базовой НСИ ИС "Меркурий"</Description>
+						<IsFolder>false</IsFolder>
+					</Item>
+					<Item id="e24a6797-cc40-4ff1-952e-a80b0107e3f3">
+						<Name>ДМ_ЗагрузкаВСДДляГашения</Name>
+						<Code xsi:type="xs:decimal">31</Code>
+						<Description>Загрузка ВСД для гашения</Description>
+						<IsFolder>false</IsFolder>
+					</Item>
+					<Item id="53556788-d674-4eb7-b68d-2d2be3c713f7">
+						<Name>ЗагрузкаДанныхПоВСД</Name>
+						<Code xsi:type="xs:decimal">5</Code>
+						<Description>Загрузка данных по ВСД</Description>
+						<IsFolder>false</IsFolder>
+					</Item>
+					<Item id="c8426cff-c717-409e-a9b7-d4ff4e949ff6">
+						<Name>ЗагрузкаОбновленийВерсийЗаписейСкладскогоЖурнала</Name>
+						<Code xsi:type="xs:decimal">20</Code>
+						<Description>Загрузка обновлений версий записей складского журнала</Description>
+						<IsFolder>false</IsFolder>
+					</Item>
+					<Item id="f719e571-25b0-490d-8d48-1deb6c1a062c">
+						<Name>ДМ_ЗагрузкаОстатковВСДДляГашения</Name>
+						<Code xsi:type="xs:decimal">32</Code>
+						<Description>Загрузка остатков ВСД для гашения</Description>
+						<IsFolder>false</IsFolder>
+					</Item>
+					<Item id="ec0f95d9-6d2a-4520-8a16-539478373305">
+						<Name>ЗагрузкаПроизводственныхВСД</Name>
+						<Code xsi:type="xs:decimal">27</Code>
+						<Description>Загрузка производственных ВСД</Description>
+						<IsFolder>false</IsFolder>
+					</Item>
+					<Item id="593bb696-e65f-4629-a8ca-7fe535aaf983">
+						<Name>ЗагрузкаТранспортныхВСД</Name>
+						<Code xsi:type="xs:decimal">26</Code>
+						<Description>Загрузка транспортных ВСД</Description>
+						<IsFolder>false</IsFolder>
+					</Item>
+					<Item id="1c6f573b-f13a-4a9e-88dc-aa6d6cd756a1">
+						<Name>ОбработкаОтветаПоАннулированиюВСД</Name>
+						<Code xsi:type="xs:decimal">17</Code>
+						<Description>Обработка ответа по аннулированию ВСД</Description>
+						<IsFolder>false</IsFolder>
+					</Item>
+					<Item id="4e624486-381b-4651-bf6f-88aa274812c5">
+						<Name>ОбработкаОтветаПоВнесениюЛабораторныхИсследований</Name>
+						<Code xsi:type="xs:decimal">22</Code>
+						<Description>Обработка ответа по внесению лабораторных исследований</Description>
+						<IsFolder>false</IsFolder>
+					</Item>
+					<Item id="675585d8-0294-4517-8395-5543cf7b332e">
+						<Name>ОбработкаОтветаПоВнесениюНомеровТранспортныхСредств</Name>
+						<Code xsi:type="xs:decimal">19</Code>
+						<Description>Обработка ответа по внесению номеров транспортных средств</Description>
+						<IsFolder>false</IsFolder>
+					</Item>
+					<Item id="88bd5000-aa50-4d23-abce-b6ed6bb2721c">
+						<Name>ОбработкаОтветаПоИнвентаризациям</Name>
+						<Code xsi:type="xs:decimal">13</Code>
+						<Description>Обработка ответа по инвентаризациям</Description>
+						<IsFolder>false</IsFolder>
+					</Item>
+					<Item id="15622e0a-6a78-406c-a8a3-df22cd18a7b2">
+						<Name>ОбработкаОтветаПоОбъединениямЗаписейСкладскогоЖурнала</Name>
+						<Code xsi:type="xs:decimal">15</Code>
+						<Description>Обработка ответа по объединениям записей складского журнала</Description>
+						<IsFolder>false</IsFolder>
+					</Item>
+					<Item id="1bc221b7-711c-4950-8974-d3d396555c7d">
+						<Name>ОбработкаОтветаПоПриходнымОперациям</Name>
+						<Code xsi:type="xs:decimal">7</Code>
+						<Description>Обработка ответа по приходным операциям</Description>
+						<IsFolder>false</IsFolder>
+					</Item>
+					<Item id="ab1e6c51-17d9-418d-b6bf-e6588601d99d">
+						<Name>ОбработкаОтветаПоПроизводственнымОперациям</Name>
+						<Code xsi:type="xs:decimal">9</Code>
+						<Description>Обработка ответа по производственным операциям</Description>
+						<IsFolder>false</IsFolder>
+					</Item>
+					<Item id="9bdc945c-caf8-4494-9318-667db2c2b433">
+						<Name>ОбработкаОтветаПоТранспортнымОперациям</Name>
+						<Code xsi:type="xs:decimal">11</Code>
+						<Description>Обработка ответа по транспортным операциям</Description>
+						<IsFolder>false</IsFolder>
+					</Item>
+					<Item id="31db08cd-1311-4e93-be30-872a63a710ba">
+						<Name>ОтправкаАннулированийВСД</Name>
+						<Code xsi:type="xs:decimal">16</Code>
+						<Description>Отправка аннулирований ВСД</Description>
+						<IsFolder>false</IsFolder>
+					</Item>
+					<Item id="3f420814-4e9f-4ca7-9ff2-cc1fd17e0f5e">
+						<Name>ОтправкаВнесенийЛабораторныхИсследований</Name>
+						<Code xsi:type="xs:decimal">21</Code>
+						<Description>Отправка внесений лабораторных исследований</Description>
+						<IsFolder>false</IsFolder>
+					</Item>
+					<Item id="74ce3cf1-419e-49f5-ab6f-2ec0a5f19d78">
+						<Name>ОтправкаВнесенийНомеровТранспортныхСредств</Name>
+						<Code xsi:type="xs:decimal">18</Code>
+						<Description>Отправка внесений номеров транспортных средств</Description>
+						<IsFolder>false</IsFolder>
+					</Item>
+					<Item id="1299ce5c-6951-44ce-ba14-8e60534a3243">
+						<Name>ОтправкаИнвентаризаций</Name>
+						<Code xsi:type="xs:decimal">12</Code>
+						<Description>Отправка инвентаризаций</Description>
+						<IsFolder>false</IsFolder>
+					</Item>
+					<Item id="46407606-0674-4299-91da-c3499cbcbbfd">
+						<Name>ОтправкаОбъединенийЗаписейСкладскогоЖурнала</Name>
+						<Code xsi:type="xs:decimal">14</Code>
+						<Description>Отправка объединений записей складского журнала</Description>
+						<IsFolder>false</IsFolder>
+					</Item>
+					<Item id="2fc2cd85-8ebf-4ad7-ba47-aaafbc274544">
+						<Name>ОтправкаПриходныхОпераций</Name>
+						<Code xsi:type="xs:decimal">6</Code>
+						<Description>Отправка приходных операций</Description>
+						<IsFolder>false</IsFolder>
+					</Item>
+					<Item id="80d3df45-a38d-4a1e-ad9e-98057a017cf4">
+						<Name>ОтправкаПроизводственныхОпераций</Name>
+						<Code xsi:type="xs:decimal">8</Code>
+						<Description>Отправка производственных операций</Description>
+						<IsFolder>false</IsFolder>
+					</Item>
+					<Item id="7dd221dc-6f89-4802-9672-0feea646abbd">
+						<Name>ОтправкаТранспортныхОпераций</Name>
+						<Code xsi:type="xs:decimal">10</Code>
+						<Description>Отправка транспортных операций</Description>
+						<IsFolder>false</IsFolder>
+					</Item>
+					<Item id="6b5aaf4f-1810-4119-b045-46f9a08e8900">
+						<Name>ОчисткаЖурналовЗагрузкиДанных</Name>
+						<Code xsi:type="xs:decimal">23</Code>
+						<Description>Очистка журналов загрузки данных</Description>
+						<IsFolder>false</IsFolder>
+					</Item>
+					<Item id="cbdc9424-b792-4f20-913a-6bb6372cf524">
+						<Name>ДМ_СозданиеИнвентаризацииВСДДляГашения</Name>
+						<Code xsi:type="xs:decimal">33</Code>
+						<Description>Создание инвентаризации ВСД для гашения</Description>
+						<IsFolder>false</IsFolder>
+					</Item>
+				</ChildItems>
+			</Item>
+			<Item id="eea31444-32f4-42cb-b837-9f7bf6608d76">
+				<Name>ДМ_ПроверкаБлокировкиПользователейМеркурий</Name>
+				<Code xsi:type="xs:decimal">24</Code>
+				<Description>Проверка блокировки пользователей меркурий</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="8a2fee60-c5e7-4531-8084-9e7c0a9bb43a">
+				<Name>ДМ_ПроверкаНаличияИнтернетПодключения</Name>
+				<Code xsi:type="xs:decimal">20</Code>
+				<Description>Проверка интернет подключения</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+		</ChildItems>
+	</Item>
+</PredefinedData>

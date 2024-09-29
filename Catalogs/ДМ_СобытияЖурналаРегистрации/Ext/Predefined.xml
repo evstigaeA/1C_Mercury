@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<PredefinedData xmlns="http://v8.1c.ru/8.3/xcf/predef" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="CatalogPredefinedItems" version="2.5">
+	<Item id="fc5ba7d2-d332-4629-99cd-b21289bbda0a">
+		<Name>ЗагрузкаФайловEDI</Name>
+		<Code xsi:type="xs:decimal">0</Code>
+		<Description>Загрузка файлов EDI</Description>
+		<IsFolder>false</IsFolder>
+		<ChildItems>
+			<Item id="4c2597d6-f6a0-4583-8ee5-83306fc7a04e">
+				<Name>ЗагрузкаФайловEDIЗагрузкаФайлаВБазу</Name>
+				<Code xsi:type="xs:decimal">0</Code>
+				<Description>Загрузка файла в базу</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="65c38d66-f558-433c-8582-bc71943a965a">
+				<Name>ЗагрузкаФайловEDIПеремещениеВАрхив</Name>
+				<Code xsi:type="xs:decimal">0</Code>
+				<Description>Перемещение в архив</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+		</ChildItems>
+	</Item>
+</PredefinedData>

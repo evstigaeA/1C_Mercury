@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<PredefinedData xmlns="http://v8.1c.ru/8.3/xcf/predef" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="CatalogPredefinedItems" version="2.5">
+	<Item id="a9aacdae-0271-4957-aea7-b5623040a996">
+		<Name>Боенское</Name>
+		<Code>CATTLE_SLAUGHTER</Code>
+		<Description>Боенское</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="5b80fbdb-c78f-4c22-9027-2fdc017678ef">
+		<Name>Палое</Name>
+		<Code>LOSS_OF_CATTLE</Code>
+		<Description>Палое</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="14065364-4ad1-43a5-86b1-c4d88f1fd66a">
+		<Name>ПолученоОтБольныхЖивотных</Name>
+		<Code>FROM_SICK_ANIMALS</Code>
+		<Description>Получено от больных животных</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="48913382-da27-4fe4-ad55-2a02d02e794f">
+		<Name>ПолученоОтЗдоровыхЖивотных</Name>
+		<Code>FROM_HEALTHY_ANIMALS</Code>
+		<Description>Получено от здоровых животных</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="3fd6b190-0686-4d47-bf1e-10d6c6f0b254">
+		<Name>Промышленное</Name>
+		<Code>MANUFACTURED</Code>
+		<Description>Промышленное</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="ec674838-05bc-4cc3-a0aa-7f95ff4126c1">
+		<Name>Сборное</Name>
+		<Code>MIXED</Code>
+		<Description>Сборное</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+</PredefinedData>

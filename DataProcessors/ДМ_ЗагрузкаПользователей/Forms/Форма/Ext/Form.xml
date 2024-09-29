@@ -1,0 +1,333 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.5">
+	<AutoSaveDataInSettings>Use</AutoSaveDataInSettings>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="Группа1" id="32">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Загрузка</v8:content>
+				</v8:item>
+			</Title>
+			<Group>Horizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="33"/>
+			<ChildItems>
+				<InputField name="ПутьКФайлу" id="1">
+					<DataPath>Объект.ПутьКФайлу</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ChoiceButton>true</ChoiceButton>
+					<ContextMenu name="ПутьКФайлуКонтекстноеМеню" id="2"/>
+					<ExtendedTooltip name="ПутьКФайлуРасширеннаяПодсказка" id="3"/>
+					<Events>
+						<Event name="StartChoice">ПутьКФайлуНачалоВыбора</Event>
+					</Events>
+				</InputField>
+				<Button name="ЗагрузитьДанныеИзФайла" id="34">
+					<Type>UsualButton</Type>
+					<DefaultButton>true</DefaultButton>
+					<CommandName>Form.Command.ЗагрузитьДанныеИзФайла</CommandName>
+					<ExtendedTooltip name="ЗагрузитьДанныеИзФайлаРасширеннаяПодсказка" id="35"/>
+				</Button>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="Группа2" id="39">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Настройки загрузки</v8:content>
+				</v8:item>
+			</Title>
+			<Behavior>Collapsible</Behavior>
+			<Representation>None</Representation>
+			<ExtendedTooltip name="Группа2РасширеннаяПодсказка" id="40"/>
+			<ChildItems>
+				<InputField name="НачальныйНомерСтроки" id="36">
+					<DataPath>Объект.НачальныйНомерСтроки</DataPath>
+					<ContextMenu name="НачальныйНомерСтрокиКонтекстноеМеню" id="37"/>
+					<ExtendedTooltip name="НачальныйНомерСтрокиРасширеннаяПодсказка" id="38"/>
+				</InputField>
+				<CheckBoxField name="СокращатьНаименования" id="41">
+					<DataPath>Объект.СокращатьНаименования</DataPath>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="СокращатьНаименованияКонтекстноеМеню" id="42"/>
+					<ExtendedTooltip name="СокращатьНаименованияРасширеннаяПодсказка" id="43"/>
+				</CheckBoxField>
+				<UsualGroup name="ГруппаТестирование" id="44">
+					<EnableContentChange>true</EnableContentChange>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Тестирование</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа тестирование</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Representation>StrongSeparation</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаТестированиеРасширеннаяПодсказка" id="45"/>
+					<ChildItems>
+						<CheckBoxField name="СоздаватьОрганизации" id="46">
+							<DataPath>Объект.СоздаватьОрганизации</DataPath>
+							<Enabled>false</Enabled>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="СоздаватьОрганизацииКонтекстноеМеню" id="47"/>
+							<ExtendedTooltip name="СоздаватьОрганизацииРасширеннаяПодсказка" id="48"/>
+						</CheckBoxField>
+						<CheckBoxField name="СоздаватьПредприятия" id="49">
+							<DataPath>Объект.СоздаватьПредприятия</DataPath>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="СоздаватьПредприятияКонтекстноеМеню" id="50"/>
+							<ExtendedTooltip name="СоздаватьПредприятияРасширеннаяПодсказка" id="51"/>
+						</CheckBoxField>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+		<Table name="ПредприятияИПользователи" id="4">
+			<Representation>List</Representation>
+			<AutoInsertNewRow>true</AutoInsertNewRow>
+			<EnableStartDrag>true</EnableStartDrag>
+			<EnableDrag>true</EnableDrag>
+			<DataPath>Объект.ПредприятияИПользователи</DataPath>
+			<RowFilter xsi:nil="true"/>
+			<ContextMenu name="ПредприятияИПользователиКонтекстноеМеню" id="5"/>
+			<AutoCommandBar name="ПредприятияИПользователиКоманднаяПанель" id="6">
+				<Autofill>false</Autofill>
+				<ChildItems>
+					<Button name="ПредприятияИПользователиНайти" id="52">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Item.ПредприятияИПользователи.StandardCommand.Find</CommandName>
+						<ExtendedTooltip name="ПредприятияИПользователиНайтиРасширеннаяПодсказка" id="53"/>
+					</Button>
+					<Button name="ПредприятияИПользователиОтменитьПоиск" id="54">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Item.ПредприятияИПользователи.StandardCommand.CancelSearch</CommandName>
+						<ExtendedTooltip name="ПредприятияИПользователиОтменитьПоискРасширеннаяПодсказка" id="55"/>
+					</Button>
+					<Button name="ПредприятияИПользователиВывестиСписок" id="56">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Item.ПредприятияИПользователи.StandardCommand.OutputList</CommandName>
+						<ExtendedTooltip name="ПредприятияИПользователиВывестиСписокРасширеннаяПодсказка" id="57"/>
+					</Button>
+					<Button name="ПредприятияИПользователиСортироватьСписокПоВозрастанию" id="58">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Item.ПредприятияИПользователи.StandardCommand.SortListAsc</CommandName>
+						<ExtendedTooltip name="ПредприятияИПользователиСортироватьСписокПоВозрастаниюРасширеннаяПодсказка" id="59"/>
+					</Button>
+					<Button name="ПредприятияИПользователиСортироватьСписокПоУбыванию" id="60">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Item.ПредприятияИПользователи.StandardCommand.SortListDesc</CommandName>
+						<ExtendedTooltip name="ПредприятияИПользователиСортироватьСписокПоУбываниюРасширеннаяПодсказка" id="61"/>
+					</Button>
+				</ChildItems>
+			</AutoCommandBar>
+			<ExtendedTooltip name="ПредприятияИПользователиРасширеннаяПодсказка" id="7"/>
+			<SearchStringAddition name="ПредприятияИПользователиСтрокаПоиска" id="8">
+				<AdditionSource>
+					<Item>ПредприятияИПользователи</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ПредприятияИПользователиСтрокаПоискаКонтекстноеМеню" id="9"/>
+				<ExtendedTooltip name="ПредприятияИПользователиСтрокаПоискаРасширеннаяПодсказка" id="10"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="ПредприятияИПользователиСостояниеПросмотра" id="11">
+				<AdditionSource>
+					<Item>ПредприятияИПользователи</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ПредприятияИПользователиСостояниеПросмотраКонтекстноеМеню" id="12"/>
+				<ExtendedTooltip name="ПредприятияИПользователиСостояниеПросмотраРасширеннаяПодсказка" id="13"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="ПредприятияИПользователиУправлениеПоиском" id="14">
+				<AdditionSource>
+					<Item>ПредприятияИПользователи</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="ПредприятияИПользователиУправлениеПоискомКонтекстноеМеню" id="15"/>
+				<ExtendedTooltip name="ПредприятияИПользователиУправлениеПоискомРасширеннаяПодсказка" id="16"/>
+			</SearchControlAddition>
+			<Events>
+				<Event name="BeforeAddRow">ПредприятияИПользователиПередНачаломДобавления</Event>
+				<Event name="BeforeDeleteRow">ПредприятияИПользователиПередУдалением</Event>
+			</Events>
+			<ChildItems>
+				<LabelField name="ПредприятияИПользователиНомерСтроки" id="17">
+					<DataPath>Объект.ПредприятияИПользователи.LineNumber</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ПредприятияИПользователиНомерСтрокиКонтекстноеМеню" id="18"/>
+					<ExtendedTooltip name="ПредприятияИПользователиНомерСтрокиРасширеннаяПодсказка" id="19"/>
+				</LabelField>
+				<InputField name="ПредприятияИПользователиПредприятие" id="20">
+					<DataPath>Объект.ПредприятияИПользователи.Предприятие</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ПредприятияИПользователиПредприятиеКонтекстноеМеню" id="21"/>
+					<ExtendedTooltip name="ПредприятияИПользователиПредприятиеРасширеннаяПодсказка" id="22"/>
+				</InputField>
+				<InputField name="ПредприятияИПользователиОрганизация" id="23">
+					<DataPath>Объект.ПредприятияИПользователи.Организация</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ПредприятияИПользователиОрганизацияКонтекстноеМеню" id="24"/>
+					<ExtendedTooltip name="ПредприятияИПользователиОрганизацияРасширеннаяПодсказка" id="25"/>
+				</InputField>
+				<InputField name="ПредприятияИПользователиПользователь" id="26">
+					<DataPath>Объект.ПредприятияИПользователи.Пользователь</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ПредприятияИПользователиПользовательКонтекстноеМеню" id="27"/>
+					<ExtendedTooltip name="ПредприятияИПользователиПользовательРасширеннаяПодсказка" id="28"/>
+				</InputField>
+				<InputField name="ПредприятияИПользователиГруппаДоступа" id="29">
+					<DataPath>Объект.ПредприятияИПользователи.ГруппаДоступа</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ПредприятияИПользователиГруппаДоступаКонтекстноеМеню" id="30"/>
+					<ExtendedTooltip name="ПредприятияИПользователиГруппаДоступаРасширеннаяПодсказка" id="31"/>
+				</InputField>
+				<InputField name="ПредприятияИПользователиНазначенияПредприятийОтветственнымЛицам" id="62">
+					<DataPath>Объект.ПредприятияИПользователи.НазначенияПредприятийОтветственнымЛицам</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ПредприятияИПользователиНазначенияПредприятийОтветственнымЛицамКонтекстноеМеню" id="63"/>
+					<ExtendedTooltip name="ПредприятияИПользователиНазначенияПредприятийОтветственнымЛицамРасширеннаяПодсказка" id="64"/>
+				</InputField>
+			</ChildItems>
+		</Table>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.ДМ_ЗагрузкаПользователей</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<Save>
+				<Field>Объект.НачальныйНомерСтроки</Field>
+				<Field>Объект.ПутьКФайлу</Field>
+				<Field>Объект.СокращатьНаименования</Field>
+			</Save>
+			<Columns>
+				<AdditionalColumns table="Объект.ПредприятияИПользователи"/>
+			</Columns>
+		</Attribute>
+		<Attribute name="СписокПравКНазначению" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Список прав к назначению</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueListType</v8:Type>
+			</Type>
+			<Settings xsi:type="v8:TypeDescription">
+				<v8:Type>cfg:CatalogRef.ПраваПользователейВСистемеМеркурий</v8:Type>
+			</Settings>
+		</Attribute>
+		<Attribute name="СписокПравПоУмолчанию" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Список прав по умолчанию</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueListType</v8:Type>
+			</Type>
+			<Settings xsi:type="v8:TypeDescription">
+				<v8:Type>cfg:CatalogRef.ПраваПользователейВСистемеМеркурий</v8:Type>
+			</Settings>
+		</Attribute>
+		<Attribute name="СписокПредприятийКонтрагента" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Список предприятий хозяйствующего субъекта</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueListType</v8:Type>
+			</Type>
+			<Settings xsi:type="v8:TypeDescription">
+				<v8:Type>cfg:CatalogRef.Предприятия</v8:Type>
+			</Settings>
+		</Attribute>
+		<Attribute name="СписокНеДоступныхПрав" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Список не доступных прав</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueListType</v8:Type>
+			</Type>
+			<Settings xsi:type="v8:TypeDescription">
+				<v8:Type>cfg:CatalogRef.ПраваПользователейВСистемеМеркурий</v8:Type>
+			</Settings>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ЗагрузитьДанныеИзФайла" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Загрузить данные из файла</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Upload data from file</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Загрузить данные из файла</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Upload data from file</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ЗагрузитьДанныеИзФайла</Action>
+		</Command>
+		<Command name="ПакетнаяГенерацияПаролей" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Пакетная генерация паролей</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Пакетная генерация паролей</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПакетнаяГенерацияПаролей</Action>
+		</Command>
+	</Commands>
+	<CommandInterface>
+		<CommandBar>
+			<Item>
+				<Command>DataProcessor.ДМ_ЗаполнениеНомераПлантаВПредприятиях.StandardCommand.Open</Command>
+				<Type>Added</Type>
+				<CommandGroup>FormCommandBarImportant</CommandGroup>
+				<Index>1</Index>
+				<DefaultVisible>false</DefaultVisible>
+			</Item>
+			<Item>
+				<Command>Form.Command.ПакетнаяГенерацияПаролей</Command>
+				<Type>Added</Type>
+				<CommandGroup>FormCommandBarImportant</CommandGroup>
+				<Index>2</Index>
+				<DefaultVisible>false</DefaultVisible>
+			</Item>
+		</CommandBar>
+	</CommandInterface>
+</Form>

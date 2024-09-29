@@ -1,0 +1,111 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<PredefinedData xmlns="http://v8.1c.ru/8.3/xcf/predef" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="CatalogPredefinedItems" version="2.5">
+	<Item id="3230f56d-e5ab-4558-bc06-64854c57df5a">
+		<Name>UPDATED</Name>
+		<Code>200</Code>
+		<Description>В запись были внесены изменения</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="83524b65-b802-4e39-98b2-0e9fe5e03f8a">
+		<Name>RESTORED_AFTER_DELETE</Name>
+		<Code>250</Code>
+		<Description>Запись была восстановлена после удаления</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="01575e0b-7ec4-4a03-b53b-7fae3b7c76e2">
+		<Name>UPDATED_WHEN_FORK</Name>
+		<Code>240</Code>
+		<Description>Запись была обновлена в результате отделения от неё другой</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="47211bfc-e0db-404a-aa68-2f07ca92aa5a">
+		<Name>UPDATED_WHEN_ATTACH</Name>
+		<Code>230</Code>
+		<Description>Запись была обновлена в результате присоединения другой</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="7b518512-37b9-4825-a013-aeaabed84b42">
+		<Name>UPDATED_WHEN_ATTACH_AUTOMATIC</Name>
+		<Code>231</Code>
+		<Description>Запись была обновлена в результате присоединения другой</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="881ea363-024c-4fed-829d-dff781bfaed1">
+		<Name>MOVED</Name>
+		<Code>300</Code>
+		<Description>Запись была перемещена в другую группу (для иерархических справочников)</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="aa5dfe2f-da02-4c88-80a1-29f9b6919a0d">
+		<Name>DELETED</Name>
+		<Code>400</Code>
+		<Description>Запись была удалена</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="325d2863-128c-40ce-8a26-75654b6b3a2f">
+		<Name>DELETED_WHEN_MERGE</Name>
+		<Code>410</Code>
+		<Description>Запись была удалена в результате объединения</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="2ca05fc9-b527-4015-b033-aaf5fea1299b">
+		<Name>DELETED_WHEN_ATTACH</Name>
+		<Code>430</Code>
+		<Description>Запись была удалена в результате присоединения</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="a19e2c93-2f7b-4cce-aae8-805d00a0d0ee">
+		<Name>DELETED_WHEN_SPLIT</Name>
+		<Code>420</Code>
+		<Description>Запись была удалена в результате разделения</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="9bfa4223-47db-4f31-83c0-fb711eff809f">
+		<Name>WITHDRAWN</Name>
+		<Code>201</Code>
+		<Description>Запись журнала аннулирована</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="08e628e3-24dd-44a6-a229-abba4528158f">
+		<Name>UPDATED_WHEN_WRITINGOFF</Name>
+		<Code>202</Code>
+		<Description>Запись продукции изменена путём списания. Необязательно, чтобы продукция была списана полностью, может быть списана и часть объёма</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="3b515ec9-6069-4886-8f21-b0c8d7bab0cc">
+		<Name>CREATED</Name>
+		<Code>100</Code>
+		<Description>Запись создана</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="d7ddfe7b-1140-4c04-b341-441fb5aa7001">
+		<Name>CREATED_WHEN_MERGE</Name>
+		<Code>110</Code>
+		<Description>Запись создана в результате объединения двух или более других</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="0d89000d-8353-4216-9629-56df88116cf0">
+		<Name>CREATED_BY_OPERATION</Name>
+		<Code>103</Code>
+		<Description>Запись создана в результате производственной операции</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="bef64dd5-6f00-4786-9538-54ae8ded50c6">
+		<Name>CREATED_WHEN_SPLIT</Name>
+		<Code>120</Code>
+		<Description>Запись создана в результате разделения другой</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="ca114255-8aec-4f93-9642-d13099aeb0c5">
+		<Name>CREATED_WHEN_QUENCH_VETCERTIFICATE</Name>
+		<Code>101</Code>
+		<Description>Запись создана путем гашения ВС (импорт)</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="425ed2ee-ed5e-4c13-b3ba-5deb42204cb8">
+		<Name>CREATED_WHEN_QUENCH_VETDOCUMENT</Name>
+		<Code>102</Code>
+		<Description>Запись создана путем гашения ВСД</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+</PredefinedData>

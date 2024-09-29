@@ -1,0 +1,662 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<definitions xmlns="http://schemas.xmlsoap.org/wsdl/"
+		xmlns:soap12bind="http://schemas.xmlsoap.org/wsdl/soap12/"
+		xmlns:soapbind="http://schemas.xmlsoap.org/wsdl/soap/"
+		xmlns:tns="http://api.vetrf.ru/schema/cdm/registry/product/service/v2"
+		xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy"
+		xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd"
+		xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+		xmlns:xsd1="0"
+		xmlns:xsd2="http://api.vetrf.ru/schema/cdm/base"
+		xmlns:xsd3="http://api.vetrf.ru/schema/cdm/base/ws-definitions"
+		xmlns:xsd4="http://api.vetrf.ru/schema/cdm/dictionary/v2"
+		xmlns:xsd5="http://api.vetrf.ru/schema/cdm/registry/ws-definitions/v2"
+		name="ProductService"
+		targetNamespace="http://api.vetrf.ru/schema/cdm/registry/product/service/v2">
+	<documentation>
+        Service: ProductService
+        Version: 2.0.4
+    </documentation>
+	<types>
+		<schema xmlns="http://www.w3.org/2001/XMLSchema"
+				xmlns:bdef="http://api.vetrf.ru/schema/cdm/base/ws-definitions"
+				xmlns:rdef="http://api.vetrf.ru/schema/cdm/registry/ws-definitions/v2"
+				xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/"
+				xmlns:tns="0"
+				xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/"
+				targetNamespace="0">
+			<import namespace="http://api.vetrf.ru/schema/cdm/base/ws-definitions"
+					schemaLocation="file://1.xsd"/>
+			<default:import xmlns:default="http://www.w3.org/2001/XMLSchema"
+					namespace="http://api.vetrf.ru/schema/cdm/registry/ws-definitions/v2"
+					schemaLocation="file://3.xsd"/>
+		</schema>
+	</types>
+	<message name="GetProductItemByGuid">
+		<part name="request"
+				element="xsd5:getProductItemByGuidRequest"/>
+	</message>
+	<message name="GetProductItemByGuidResponse">
+		<part name="response"
+				element="xsd5:getProductItemByGuidResponse"/>
+	</message>
+	<message name="GetProductItemByUuid">
+		<part name="request"
+				element="xsd5:getProductItemByUuidRequest"/>
+	</message>
+	<message name="GetProductItemByUuidResponse">
+		<part name="response"
+				element="xsd5:getProductItemByUuidResponse"/>
+	</message>
+	<message name="GetProductItemList">
+		<part name="request"
+				element="xsd5:getProductItemListRequest"/>
+	</message>
+	<message name="GetProductItemListResponse">
+		<part name="response"
+				element="xsd5:getProductItemListResponse"/>
+	</message>
+	<message name="GetProductItemChangesList">
+		<part name="request"
+				element="xsd5:getProductItemChangesListRequest"/>
+	</message>
+	<message name="GetProductItemChangesListResponse">
+		<part name="response"
+				element="xsd5:getProductItemChangesListResponse"/>
+	</message>
+	<message name="GetProductByGuid">
+		<part name="request"
+				element="xsd5:getProductByGuidRequest"/>
+	</message>
+	<message name="GetProductByGuidResponse">
+		<part name="response"
+				element="xsd5:getProductByGuidResponse"/>
+	</message>
+	<message name="GetProductByUuid">
+		<part name="request"
+				element="xsd5:getProductByUuidRequest"/>
+	</message>
+	<message name="GetProductByUuidResponse">
+		<part name="response"
+				element="xsd5:getProductByUuidResponse"/>
+	</message>
+	<message name="GetProductByTypeList">
+		<part name="request"
+				element="xsd5:getProductByTypeListRequest"/>
+	</message>
+	<message name="GetProductByTypeListResponse">
+		<part name="response"
+				element="xsd5:getProductByTypeListResponse"/>
+	</message>
+	<message name="GetProductChangesList">
+		<part name="request"
+				element="xsd5:getProductChangesListRequest"/>
+	</message>
+	<message name="GetProductChangesListResponse">
+		<part name="response"
+				element="xsd5:getProductChangesListResponse"/>
+	</message>
+	<message name="GetSubProductByGuid">
+		<part name="request"
+				element="xsd5:getSubProductByGuidRequest"/>
+	</message>
+	<message name="GetSubProductByGuidResponse">
+		<part name="response"
+				element="xsd5:getSubProductByGuidResponse"/>
+	</message>
+	<message name="GetSubProductByUuid">
+		<part name="request"
+				element="xsd5:getSubProductByUuidRequest"/>
+	</message>
+	<message name="GetSubProductByUuidResponse">
+		<part name="response"
+				element="xsd5:getSubProductByUuidResponse"/>
+	</message>
+	<message name="GetSubProductByProductList">
+		<part name="request"
+				element="xsd5:getSubProductByProductListRequest"/>
+	</message>
+	<message name="GetSubProductByProductListResponse">
+		<part name="response"
+				element="xsd5:getSubProductByProductListResponse"/>
+	</message>
+	<message name="GetSubProductChangesList">
+		<part name="request"
+				element="xsd5:getSubProductChangesListRequest"/>
+	</message>
+	<message name="GetSubProductChangesListResponse">
+		<part name="response"
+				element="xsd5:getSubProductChangesListResponse"/>
+	</message>
+	<message name="EntityNotFoundFault">
+		<documentation>
+            Запись с указанным идентификатором не найдена.
+        </documentation>
+		<part name="fault"
+				element="xsd3:entityNotFoundFault"/>
+	</message>
+	<message name="IncorrectRequestFault">
+		<documentation>
+            Реакция системы на некорректный запрос.
+        </documentation>
+		<part name="fault"
+				element="xsd3:incorrectRequestFault"/>
+	</message>
+	<message name="InternalServiceFault">
+		<documentation>
+            Внутренняя ошибка выполнения операции на сервере.
+        </documentation>
+		<part name="fault"
+				element="xsd3:internalServiceFault"/>
+	</message>
+	<message name="OffsetOutOfRangeFault">
+		<documentation> </documentation>
+		<part name="fault"
+				element="xsd3:offsetOutOfRangeFault"/>
+	</message>
+	<portType name="ProductServicePortType">
+		<operation name="GetProductByGuid">
+			<documentation>Получение типа продукции по его глобальному идентификатору.
+                Критериями поиска являются глобальный идентификатор и поле last (т.е. запись должна быть последний в
+                истории).
+                Выполнение операции заканчивается либо возвратом искомого типа продукции,
+                либо ошибкой, в случае если тип продукции не найден или произошла иная ошибка выполнения запроса.
+            </documentation>
+			<input name="productByGuid"
+					message="tns:GetProductByGuid">
+				<documentation>Тип продукции с обязательным указанием идентификатора. Остальные элементы необязательны
+                    для заполнения.
+                </documentation>
+			</input>
+			<output name="productByResponse"
+					message="tns:GetProductByGuidResponse">
+				<documentation>Искомый тип продукции (с указанным идентификатором).</documentation>
+			</output>
+			<fault name="internalServiceFault"
+					message="tns:InternalServiceFault">
+				<documentation>Внутренняя ошибка выполнения операции на сервере.</documentation>
+			</fault>
+			<fault name="incorrectRequestFault"
+					message="tns:IncorrectRequestFault">
+				<documentation>Реакция системы на некорректный запрос. Скорее всего в запросе не указан идентификатор
+                    типа продукции.
+                </documentation>
+			</fault>
+			<fault name="entityNotFoundFault"
+					message="tns:EntityNotFoundFault">
+				<documentation>Ошибка, свидетельствующая о том, что тип продукции с указанным идентификатором не
+                    найден.
+                </documentation>
+			</fault>
+		</operation>
+		<operation name="GetProductByUuid">
+			<documentation>Получение записи типа продукции по его идентификатору.
+                Выполнение операции заканчивается либо возвратом искомого типа продукции,
+                либо ошибкой, в случае если тип продукции не найден или произошла иная ошибка выполнения запроса.
+            </documentation>
+			<input name="productByUuid"
+					message="tns:GetProductByUuid">
+				<documentation>Тип продукции с обязательным указанием идентификатора. Остальные элементы необязательны
+                    для заполнения.
+                </documentation>
+			</input>
+			<output name="productByUuidResponse"
+					message="tns:GetProductByUuidResponse">
+				<documentation>Искомый тип продукции (с указанным идентификатором).</documentation>
+			</output>
+			<fault name="internalServiceFault"
+					message="tns:InternalServiceFault">
+				<documentation>Внутренняя ошибка выполнения операции на сервере.</documentation>
+			</fault>
+			<fault name="incorrectRequestFault"
+					message="tns:IncorrectRequestFault">
+				<documentation>Реакция системы на некорректный запрос. Скорее всего в запросе не указан идентификатор
+                    типа продукции.
+                </documentation>
+			</fault>
+			<fault name="entityNotFoundFault"
+					message="tns:EntityNotFoundFault">
+				<documentation>Ошибка, свидетельствующая о том, что тип продукции с указанным идентификатором не
+                    найден.
+                </documentation>
+			</fault>
+		</operation>
+		<operation name="GetProductByTypeList">
+			<input name="productList"
+					message="tns:GetProductByTypeList"/>
+			<output name="productListResponse"
+					message="tns:GetProductByTypeListResponse"/>
+			<fault name="internalServiceFault"
+					message="tns:InternalServiceFault"/>
+			<fault name="incorrectRequestFault"
+					message="tns:IncorrectRequestFault"/>
+			<fault name="offsetOutOfRangeFault"
+					message="tns:OffsetOutOfRangeFault"/>
+		</operation>
+		<operation name="GetProductChangesList">
+			<input name="productChangesList"
+					message="tns:GetProductChangesList"/>
+			<output name="productChangesListResponse"
+					message="tns:GetProductChangesListResponse"/>
+			<fault name="internalServiceFault"
+					message="tns:InternalServiceFault"/>
+			<fault name="incorrectRequestFault"
+					message="tns:IncorrectRequestFault"/>
+			<fault name="offsetOutOfRangeFault"
+					message="tns:OffsetOutOfRangeFault"/>
+		</operation>
+		<operation name="GetSubProductByGuid">
+			<documentation>Получение типа продукции по его глобальному идентификатору.
+                Критериями поиска являются глобальный идентификатор и поле last (т.е. запись должна быть последний в
+                истории).
+                Выполнение операции заканчивается либо возвратом искомого типа продукции,
+                либо ошибкой, в случае если тип продукции не найден или произошла иная ошибка выполнения запроса.
+            </documentation>
+			<input name="subProductByGuid"
+					message="tns:GetSubProductByGuid">
+				<documentation>Тип продукции с обязательным указанием идентификатора. Остальные элементы необязательны
+                    для заполнения.
+                </documentation>
+			</input>
+			<output name="subProductByResponse"
+					message="tns:GetSubProductByGuidResponse">
+				<documentation>Искомый тип продукции (с указанным идентификатором).</documentation>
+			</output>
+			<fault name="internalServiceFault"
+					message="tns:InternalServiceFault">
+				<documentation>Внутренняя ошибка выполнения операции на сервере.</documentation>
+			</fault>
+			<fault name="incorrectRequestFault"
+					message="tns:IncorrectRequestFault">
+				<documentation>Реакция системы на некорректный запрос. Скорее всего в запросе не указан идентификатор
+                    типа продукции.
+                </documentation>
+			</fault>
+			<fault name="entityNotFoundFault"
+					message="tns:EntityNotFoundFault">
+				<documentation>Ошибка, свидетельствующая о том, что тип продукции с указанным идентификатором не
+                    найден.
+                </documentation>
+			</fault>
+		</operation>
+		<operation name="GetSubProductByUuid">
+			<documentation>Получение записи типа продукции по его идентификатору.
+                Выполнение операции заканчивается либо возвратом искомого типа продукции,
+                либо ошибкой, в случае если тип продукции не найден или произошла иная ошибка выполнения запроса.
+            </documentation>
+			<input name="subProductByUuid"
+					message="tns:GetSubProductByUuid">
+				<documentation>Тип продукции с обязательным указанием идентификатора. Остальные элементы необязательны
+                    для заполнения.
+                </documentation>
+			</input>
+			<output name="subProductByUuidResponse"
+					message="tns:GetSubProductByUuidResponse">
+				<documentation>Искомый тип продукции (с указанным идентификатором).</documentation>
+			</output>
+			<fault name="internalServiceFault"
+					message="tns:InternalServiceFault">
+				<documentation>Внутренняя ошибка выполнения операции на сервере.</documentation>
+			</fault>
+			<fault name="incorrectRequestFault"
+					message="tns:IncorrectRequestFault">
+				<documentation>Реакция системы на некорректный запрос. Скорее всего в запросе не указан идентификатор
+                    типа продукции.
+                </documentation>
+			</fault>
+			<fault name="entityNotFoundFault"
+					message="tns:EntityNotFoundFault">
+				<documentation>Ошибка, свидетельствующая о том, что тип продукции с указанным идентификатором не
+                    найден.
+                </documentation>
+			</fault>
+		</operation>
+		<operation name="GetSubProductByProductList">
+			<input name="subProductList"
+					message="tns:GetSubProductByProductList"/>
+			<output name="subProductListResponse"
+					message="tns:GetSubProductByProductListResponse"/>
+			<fault name="internalServiceFault"
+					message="tns:InternalServiceFault"/>
+			<fault name="incorrectRequestFault"
+					message="tns:IncorrectRequestFault"/>
+			<fault name="offsetOutOfRangeFault"
+					message="tns:OffsetOutOfRangeFault"/>
+		</operation>
+		<operation name="GetSubProductChangesList">
+			<input name="subProductTypeChangesList"
+					message="tns:GetSubProductChangesList"/>
+			<output name="subProductChangesListResponse"
+					message="tns:GetSubProductChangesListResponse"/>
+			<fault name="internalServiceFault"
+					message="tns:InternalServiceFault"/>
+			<fault name="incorrectRequestFault"
+					message="tns:IncorrectRequestFault"/>
+			<fault name="offsetOutOfRangeFault"
+					message="tns:OffsetOutOfRangeFault"/>
+		</operation>
+		<operation name="GetProductItemByGuid">
+			<input name="productItemByGuid"
+					message="tns:GetProductItemByGuid"/>
+			<output name="productItemByGuidResponse"
+					message="tns:GetProductItemByGuidResponse"/>
+			<fault name="internalServiceFault"
+					message="tns:InternalServiceFault"/>
+			<fault name="incorrectRequestFault"
+					message="tns:IncorrectRequestFault"/>
+			<fault name="entityNotFoundFault"
+					message="tns:EntityNotFoundFault"/>
+		</operation>
+		<operation name="GetProductItemByUuid">
+			<input name="productItemByUuid"
+					message="tns:GetProductItemByUuid"/>
+			<output name="productItemByUuidResponse"
+					message="tns:GetProductItemByUuidResponse"/>
+			<fault name="internalServiceFault"
+					message="tns:InternalServiceFault"/>
+			<fault name="incorrectRequestFault"
+					message="tns:IncorrectRequestFault"/>
+			<fault name="entityNotFoundFault"
+					message="tns:EntityNotFoundFault"/>
+		</operation>
+		<operation name="GetProductItemList">
+			<input name="productItemList"
+					message="tns:GetProductItemList"/>
+			<output name="productItemListResponse"
+					message="tns:GetProductItemListResponse"/>
+			<fault name="internalServiceFault"
+					message="tns:InternalServiceFault"/>
+			<fault name="incorrectRequestFault"
+					message="tns:IncorrectRequestFault"/>
+			<fault name="offsetOutOfRangeFault"
+					message="tns:OffsetOutOfRangeFault"/>
+		</operation>
+		<operation name="GetProductItemChangesList">
+			<input name="productItemChangesList"
+					message="tns:GetProductItemChangesList"/>
+			<output name="productItemChangesListResponse"
+					message="tns:GetProductItemChangesListResponse"/>
+			<fault name="internalServiceFault"
+					message="tns:InternalServiceFault"/>
+			<fault name="incorrectRequestFault"
+					message="tns:IncorrectRequestFault"/>
+			<fault name="offsetOutOfRangeFault"
+					message="tns:OffsetOutOfRangeFault"/>
+		</operation>
+	</portType>
+	<binding name="ProductServiceBinding"
+			type="tns:ProductServicePortType">
+		<soapbind:binding style="document"
+				transport="http://schemas.xmlsoap.org/soap/http"/>
+		<operation name="GetProductByGuid">
+			<soapbind:operation style="document"
+					soapAction="GetProductByGuid"/>
+			<input>
+				<soapbind:body use="literal"/>
+			</input>
+			<output>
+				<soapbind:body use="literal"/>
+			</output>
+			<fault name="internalServiceFault">
+				<soapbind:fault name="internalServiceFault"
+						use="literal"/>
+			</fault>
+			<fault name="incorrectRequestFault">
+				<soapbind:fault name="incorrectRequestFault"
+						use="literal"/>
+			</fault>
+			<fault name="entityNotFoundFault">
+				<soapbind:fault name="entityNotFoundFault"
+						use="literal"/>
+			</fault>
+		</operation>
+		<operation name="GetProductByUuid">
+			<soapbind:operation style="document"
+					soapAction="GetProductByUuid"/>
+			<input>
+				<soapbind:body use="literal"/>
+			</input>
+			<output>
+				<soapbind:body use="literal"/>
+			</output>
+			<fault name="internalServiceFault">
+				<soapbind:fault name="internalServiceFault"
+						use="literal"/>
+			</fault>
+			<fault name="incorrectRequestFault">
+				<soapbind:fault name="incorrectRequestFault"
+						use="literal"/>
+			</fault>
+			<fault name="entityNotFoundFault">
+				<soapbind:fault name="entityNotFoundFault"
+						use="literal"/>
+			</fault>
+		</operation>
+		<operation name="GetProductByTypeList">
+			<soapbind:operation style="document"
+					soapAction="GetProductByTypeList"/>
+			<input>
+				<soapbind:body use="literal"/>
+			</input>
+			<output>
+				<soapbind:body use="literal"/>
+			</output>
+			<fault name="internalServiceFault">
+				<soapbind:fault name="internalServiceFault"
+						use="literal"/>
+			</fault>
+			<fault name="incorrectRequestFault">
+				<soapbind:fault name="incorrectRequestFault"
+						use="literal"/>
+			</fault>
+			<fault name="offsetOutOfRangeFault">
+				<soapbind:fault name="offsetOutOfRangeFault"
+						use="literal"/>
+			</fault>
+		</operation>
+		<operation name="GetProductChangesList">
+			<soapbind:operation style="document"
+					soapAction="GetProductChangesList"/>
+			<input>
+				<soapbind:body use="literal"/>
+			</input>
+			<output>
+				<soapbind:body use="literal"/>
+			</output>
+			<fault name="internalServiceFault">
+				<soapbind:fault name="internalServiceFault"
+						use="literal"/>
+			</fault>
+			<fault name="incorrectRequestFault">
+				<soapbind:fault name="incorrectRequestFault"
+						use="literal"/>
+			</fault>
+			<fault name="offsetOutOfRangeFault">
+				<soapbind:fault name="offsetOutOfRangeFault"
+						use="literal"/>
+			</fault>
+		</operation>
+		<operation name="GetSubProductByGuid">
+			<soapbind:operation style="document"
+					soapAction="GetSubProductByGuid"/>
+			<input>
+				<soapbind:body use="literal"/>
+			</input>
+			<output>
+				<soapbind:body use="literal"/>
+			</output>
+			<fault name="internalServiceFault">
+				<soapbind:fault name="internalServiceFault"
+						use="literal"/>
+			</fault>
+			<fault name="incorrectRequestFault">
+				<soapbind:fault name="incorrectRequestFault"
+						use="literal"/>
+			</fault>
+			<fault name="entityNotFoundFault">
+				<soapbind:fault name="entityNotFoundFault"
+						use="literal"/>
+			</fault>
+		</operation>
+		<operation name="GetSubProductByUuid">
+			<soapbind:operation style="document"
+					soapAction="GetSubProductByUuid"/>
+			<input>
+				<soapbind:body use="literal"/>
+			</input>
+			<output>
+				<soapbind:body use="literal"/>
+			</output>
+			<fault name="internalServiceFault">
+				<soapbind:fault name="internalServiceFault"
+						use="literal"/>
+			</fault>
+			<fault name="incorrectRequestFault">
+				<soapbind:fault name="incorrectRequestFault"
+						use="literal"/>
+			</fault>
+			<fault name="entityNotFoundFault">
+				<soapbind:fault name="entityNotFoundFault"
+						use="literal"/>
+			</fault>
+		</operation>
+		<operation name="GetSubProductByProductList">
+			<soapbind:operation style="document"
+					soapAction="GetSubProductByProductList"/>
+			<input>
+				<soapbind:body use="literal"/>
+			</input>
+			<output>
+				<soapbind:body use="literal"/>
+			</output>
+			<fault name="internalServiceFault">
+				<soapbind:fault name="internalServiceFault"
+						use="literal"/>
+			</fault>
+			<fault name="incorrectRequestFault">
+				<soapbind:fault name="incorrectRequestFault"
+						use="literal"/>
+			</fault>
+			<fault name="offsetOutOfRangeFault">
+				<soapbind:fault name="offsetOutOfRangeFault"
+						use="literal"/>
+			</fault>
+		</operation>
+		<operation name="GetSubProductChangesList">
+			<soapbind:operation style="document"
+					soapAction="GetSubProductChangesList"/>
+			<input>
+				<soapbind:body use="literal"/>
+			</input>
+			<output>
+				<soapbind:body use="literal"/>
+			</output>
+			<fault name="internalServiceFault">
+				<soapbind:fault name="internalServiceFault"
+						use="literal"/>
+			</fault>
+			<fault name="incorrectRequestFault">
+				<soapbind:fault name="incorrectRequestFault"
+						use="literal"/>
+			</fault>
+			<fault name="offsetOutOfRangeFault">
+				<soapbind:fault name="offsetOutOfRangeFault"
+						use="literal"/>
+			</fault>
+		</operation>
+		<operation name="GetProductItemByGuid">
+			<soapbind:operation style="document"
+					soapAction="GetProductItemByGuid"/>
+			<input>
+				<soapbind:body use="literal"/>
+			</input>
+			<output>
+				<soapbind:body use="literal"/>
+			</output>
+			<fault name="internalServiceFault">
+				<soapbind:fault name="internalServiceFault"
+						use="literal"/>
+			</fault>
+			<fault name="incorrectRequestFault">
+				<soapbind:fault name="incorrectRequestFault"
+						use="literal"/>
+			</fault>
+			<fault name="entityNotFoundFault">
+				<soapbind:fault name="entityNotFoundFault"
+						use="literal"/>
+			</fault>
+		</operation>
+		<operation name="GetProductItemByUuid">
+			<soapbind:operation style="document"
+					soapAction="GetProductItemByUuid"/>
+			<input>
+				<soapbind:body use="literal"/>
+			</input>
+			<output>
+				<soapbind:body use="literal"/>
+			</output>
+			<fault name="internalServiceFault">
+				<soapbind:fault name="internalServiceFault"
+						use="literal"/>
+			</fault>
+			<fault name="incorrectRequestFault">
+				<soapbind:fault name="incorrectRequestFault"
+						use="literal"/>
+			</fault>
+			<fault name="entityNotFoundFault">
+				<soapbind:fault name="entityNotFoundFault"
+						use="literal"/>
+			</fault>
+		</operation>
+		<operation name="GetProductItemList">
+			<soapbind:operation style="document"
+					soapAction="GetProductItemList"/>
+			<input>
+				<soapbind:body use="literal"/>
+			</input>
+			<output>
+				<soapbind:body use="literal"/>
+			</output>
+			<fault name="internalServiceFault">
+				<soapbind:fault name="internalServiceFault"
+						use="literal"/>
+			</fault>
+			<fault name="incorrectRequestFault">
+				<soapbind:fault name="incorrectRequestFault"
+						use="literal"/>
+			</fault>
+			<fault name="offsetOutOfRangeFault">
+				<soapbind:fault name="offsetOutOfRangeFault"
+						use="literal"/>
+			</fault>
+		</operation>
+		<operation name="GetProductItemChangesList">
+			<soapbind:operation style="document"
+					soapAction="GetProductItemChangesList"/>
+			<input>
+				<soapbind:body use="literal"/>
+			</input>
+			<output>
+				<soapbind:body use="literal"/>
+			</output>
+			<fault name="internalServiceFault">
+				<soapbind:fault name="internalServiceFault"
+						use="literal"/>
+			</fault>
+			<fault name="incorrectRequestFault">
+				<soapbind:fault name="incorrectRequestFault"
+						use="literal"/>
+			</fault>
+			<fault name="offsetOutOfRangeFault">
+				<soapbind:fault name="offsetOutOfRangeFault"
+						use="literal"/>
+			</fault>
+		</operation>
+	</binding>
+	<service name="ProductServiceBindingQSService">
+		<port name="ProductServiceBindingQSPort"
+				binding="tns:ProductServiceBinding">
+			<soapbind:address location="https://api.vetrf.ru/platform/services/2.1/ProductService"/>
+		</port>
+	</service>
+</definitions>

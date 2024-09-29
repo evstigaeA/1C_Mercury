@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<PredefinedData xmlns="http://v8.1c.ru/8.3/xcf/predef" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="CatalogPredefinedItems" version="2.5">
+	<Item id="4ce9e84d-93b9-4a4b-8e04-52dd8edfc2a1">
+		<Name>ПодвергнутоСырье</Name>
+		<Code>VSERAW</Code>
+		<Description>ВСЭ подвергнуто сырьё, из которого произведена продукция</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="4e516630-3abf-4256-b02a-a55dfbc21648">
+		<Name>НеПроводилось</Name>
+		<Code>UNFULFILLED</Code>
+		<Description>Не проводилось</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="254e57fd-c3d9-40df-824d-bcc05b10e2bd">
+		<Name>ОтрицательныйРезультат</Name>
+		<Code>NEGATIVE</Code>
+		<Description>Отрицательный результат</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="f9c475ff-cbfe-431e-afda-2e545573b517">
+		<Name>ПоложительныйРезультат</Name>
+		<Code>POSITIVE</Code>
+		<Description>Положительный результат</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="8fe3e743-4370-493e-8439-ef354b57d538">
+		<Name>ПодвергнутаПродукция</Name>
+		<Code>VSEFULL</Code>
+		<Description>Продукция подвергнута ВСЭ в полном объеме</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="7c269774-aacc-44eb-bed8-de043664cb6a">
+		<Name>РезультатНевозможноОпределить</Name>
+		<Code>UNDEFINED</Code>
+		<Description>Результат невозможно определить (не нормируется)</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="7978bda7-d31d-41f3-bba5-1fae6da3bd8e">
+		<Name>РезультатНеизвестен</Name>
+		<Code>UNKNOWN</Code>
+		<Description>Результат неизвестен</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+</PredefinedData>

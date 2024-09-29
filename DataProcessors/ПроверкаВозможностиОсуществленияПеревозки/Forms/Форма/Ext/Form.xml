@@ -1,0 +1,1139 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.5">
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="ChoiceProcessing">ОбработкаВыбора</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+		<Event name="FillCheckProcessingAtServer">ОбработкаПроверкиЗаполненияНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<InputField name="Организация" id="1">
+			<DataPath>Организация</DataPath>
+			<ContextMenu name="ОрганизацияКонтекстноеМеню" id="2"/>
+			<ExtendedTooltip name="ОрганизацияРасширеннаяПодсказка" id="3"/>
+		</InputField>
+		<Button name="ВыполнитьПроверку" id="23">
+			<Type>UsualButton</Type>
+			<DefaultButton>true</DefaultButton>
+			<CommandName>Form.Command.ВыполнитьПроверку</CommandName>
+			<ExtendedTooltip name="ВыполнитьПроверкуРасширеннаяПодсказка" id="24"/>
+		</Button>
+		<Pages name="ГруппаПроверкаРегионализации" id="31">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа проверка регионализации</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа проверка регионализации</v8:content>
+				</v8:item>
+			</ToolTip>
+			<ExtendedTooltip name="ГруппаПроверкаРегионализацииРасширеннаяПодсказка" id="32"/>
+			<ChildItems>
+				<Page name="ГруппаДокументыДляПроверки" id="33">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Документы для проверки</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа документы для проверки</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="ГруппаДокументыДляПроверкиРасширеннаяПодсказка" id="34"/>
+					<ChildItems>
+						<Table name="ТаблицаДокументов" id="4">
+							<Representation>List</Representation>
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<DataPath>ТаблицаДокументов</DataPath>
+							<CommandSet>
+								<ExcludedCommand>Add</ExcludedCommand>
+							</CommandSet>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="ТаблицаДокументовКонтекстноеМеню" id="5"/>
+							<AutoCommandBar name="ТаблицаДокументовКоманднаяПанель" id="6">
+								<ChildItems>
+									<Popup name="ТаблицаДокументовГруппаПодборДокументов" id="87">
+										<Title>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Подбор документов</v8:content>
+											</v8:item>
+										</Title>
+										<ToolTip>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Таблица документов группа подбор документов</v8:content>
+											</v8:item>
+										</ToolTip>
+										<ExtendedTooltip name="ТаблицаДокументовГруппаПодборДокументовРасширеннаяПодсказка" id="88"/>
+										<ChildItems>
+											<Button name="ТаблицаДокументовПодборТранспортныхОпераций" id="83">
+												<Type>CommandBarButton</Type>
+												<CommandName>Form.Command.ПодборТранспортныхОпераций</CommandName>
+												<Title>
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>Транспортные операции</v8:content>
+													</v8:item>
+												</Title>
+												<ExtendedTooltip name="ТаблицаДокументовПодборТранспортныхОперацийРасширеннаяПодсказка" id="84"/>
+											</Button>
+											<Button name="ТаблицаДокументовПодборПриходныхОпераций" id="85">
+												<Type>CommandBarButton</Type>
+												<CommandName>Form.Command.ПодборПриходныхОпераций</CommandName>
+												<Title>
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>Приходные операции</v8:content>
+													</v8:item>
+												</Title>
+												<ExtendedTooltip name="ТаблицаДокументовПодборПриходныхОперацийРасширеннаяПодсказка" id="86"/>
+											</Button>
+										</ChildItems>
+									</Popup>
+								</ChildItems>
+							</AutoCommandBar>
+							<ExtendedTooltip name="ТаблицаДокументовРасширеннаяПодсказка" id="7"/>
+							<SearchStringAddition name="ТаблицаДокументовСтрокаПоиска" id="8">
+								<AdditionSource>
+									<Item>ТаблицаДокументов</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ТаблицаДокументовСтрокаПоискаКонтекстноеМеню" id="9"/>
+								<ExtendedTooltip name="ТаблицаДокументовСтрокаПоискаРасширеннаяПодсказка" id="10"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="ТаблицаДокументовСостояниеПросмотра" id="11">
+								<AdditionSource>
+									<Item>ТаблицаДокументов</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ТаблицаДокументовСостояниеПросмотраКонтекстноеМеню" id="12"/>
+								<ExtendedTooltip name="ТаблицаДокументовСостояниеПросмотраРасширеннаяПодсказка" id="13"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="ТаблицаДокументовУправлениеПоиском" id="14">
+								<AdditionSource>
+									<Item>ТаблицаДокументов</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="ТаблицаДокументовУправлениеПоискомКонтекстноеМеню" id="15"/>
+								<ExtendedTooltip name="ТаблицаДокументовУправлениеПоискомРасширеннаяПодсказка" id="16"/>
+							</SearchControlAddition>
+							<Events>
+								<Event name="Selection">ТаблицаДокументовВыбор</Event>
+							</Events>
+							<ChildItems>
+								<InputField name="ТаблицаДокументовДокумент" id="17">
+									<DataPath>ТаблицаДокументов.Документ</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ТаблицаДокументовДокументКонтекстноеМеню" id="18"/>
+									<ExtendedTooltip name="ТаблицаДокументовДокументРасширеннаяПодсказка" id="19"/>
+								</InputField>
+								<InputField name="ТаблицаДокументовИдентификаторЗаявки" id="25">
+									<DataPath>ТаблицаДокументов.ИдентификаторЗаявки</DataPath>
+									<ReadOnly>true</ReadOnly>
+									<ContextMenu name="ТаблицаДокументовИдентификаторЗаявкиКонтекстноеМеню" id="26"/>
+									<ExtendedTooltip name="ТаблицаДокументовИдентификаторЗаявкиРасширеннаяПодсказка" id="27"/>
+								</InputField>
+								<InputField name="ТаблицаДокументовСтатус" id="20">
+									<DataPath>ТаблицаДокументов.Статус</DataPath>
+									<ReadOnly>true</ReadOnly>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ТаблицаДокументовСтатусКонтекстноеМеню" id="21"/>
+									<ExtendedTooltip name="ТаблицаДокументовСтатусРасширеннаяПодсказка" id="22"/>
+								</InputField>
+								<PictureField name="ТаблицаДокументовИнформация" id="89">
+									<DataPath>ТаблицаДокументов.Информация</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<CellHyperlink>true</CellHyperlink>
+									<Hyperlink>true</Hyperlink>
+									<ValuesPicture>
+										<xr:Ref>CommonPicture.Информация</xr:Ref>
+										<xr:LoadTransparent>true</xr:LoadTransparent>
+									</ValuesPicture>
+									<ContextMenu name="ТаблицаДокументовИнформацияКонтекстноеМеню" id="90"/>
+									<ExtendedTooltip name="ТаблицаДокументовИнформацияРасширеннаяПодсказка" id="91"/>
+								</PictureField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
+				<Page name="ГруппаРезультатыПроверки" id="35">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Результат проверки</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа результаты проверки</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="ГруппаРезультатыПроверкиРасширеннаяПодсказка" id="36"/>
+					<ChildItems>
+						<Table name="РезультатыПроверки" id="37">
+							<Representation>Tree</Representation>
+							<TitleLocation>Auto</TitleLocation>
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<DataPath>РезультатыПроверки</DataPath>
+							<CommandSet>
+								<ExcludedCommand>Add</ExcludedCommand>
+								<ExcludedCommand>Copy</ExcludedCommand>
+							</CommandSet>
+							<ContextMenu name="РезультатыПроверкиКонтекстноеМеню" id="38"/>
+							<AutoCommandBar name="РезультатыПроверкиКоманднаяПанель" id="39">
+								<ChildItems>
+									<Button name="РезультатыПроверкиСвернуть" id="62">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.Свернуть</CommandName>
+										<ExtendedTooltip name="РезультатыПроверкиСвернутьРасширеннаяПодсказка" id="63"/>
+									</Button>
+									<Button name="РезультатыПроверкиРазвернуть" id="64">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.Развернуть</CommandName>
+										<ExtendedTooltip name="РезультатыПроверкиРазвернутьРасширеннаяПодсказка" id="65"/>
+									</Button>
+									<Button name="РезультатыПроверкиУдалить" id="66">
+										<Type>CommandBarButton</Type>
+										<Representation>Picture</Representation>
+										<OnlyInAllActions>true</OnlyInAllActions>
+										<CommandName>Form.Item.РезультатыПроверки.StandardCommand.Delete</CommandName>
+										<ExtendedTooltip name="РезультатыПроверкиУдалитьРасширеннаяПодсказка" id="67"/>
+									</Button>
+									<Button name="РезультатыПроверкиУстановитьФлажки" id="96">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.УстановитьФлажки</CommandName>
+										<ExtendedTooltip name="РезультатыПроверкиУстановитьФлажкиРасширеннаяПодсказка" id="97"/>
+									</Button>
+									<Button name="РезультатыПроверкиСнятьФлажки" id="94">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.СнятьФлажки</CommandName>
+										<ExtendedTooltip name="РезультатыПроверкиСнятьФлажкиРасширеннаяПодсказка" id="95"/>
+									</Button>
+									<Button name="РезультатыПроверкиЗаполнитьДокументыУсловиями" id="92">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.ЗаполнитьДокументыУсловиями</CommandName>
+										<ExtendedTooltip name="РезультатыПроверкиЗаполнитьДокументыУсловиямиРасширеннаяПодсказка" id="93"/>
+									</Button>
+								</ChildItems>
+							</AutoCommandBar>
+							<ExtendedTooltip name="РезультатыПроверкиРасширеннаяПодсказка" id="40"/>
+							<SearchStringAddition name="РезультатыПроверкиСтрокаПоиска" id="41">
+								<AdditionSource>
+									<Item>РезультатыПроверки</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="РезультатыПроверкиСтрокаПоискаКонтекстноеМеню" id="42"/>
+								<ExtendedTooltip name="РезультатыПроверкиСтрокаПоискаРасширеннаяПодсказка" id="43"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="РезультатыПроверкиСостояниеПросмотра" id="44">
+								<AdditionSource>
+									<Item>РезультатыПроверки</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="РезультатыПроверкиСостояниеПросмотраКонтекстноеМеню" id="45"/>
+								<ExtendedTooltip name="РезультатыПроверкиСостояниеПросмотраРасширеннаяПодсказка" id="46"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="РезультатыПроверкиУправлениеПоиском" id="47">
+								<AdditionSource>
+									<Item>РезультатыПроверки</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="РезультатыПроверкиУправлениеПоискомКонтекстноеМеню" id="48"/>
+								<ExtendedTooltip name="РезультатыПроверкиУправлениеПоискомРасширеннаяПодсказка" id="49"/>
+							</SearchControlAddition>
+							<Events>
+								<Event name="Selection">РезультатыПроверкиВыбор</Event>
+								<Event name="BeforeAddRow">РезультатыПроверкиПередНачаломДобавления</Event>
+							</Events>
+							<ChildItems>
+								<InputField name="РезультатыПроверкиДанные" id="71">
+									<DataPath>РезультатыПроверки.Данные</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Документ/подвид/запись(продукция)</v8:content>
+										</v8:item>
+									</Title>
+									<EditMode>EnterOnInput</EditMode>
+									<DropListButton>false</DropListButton>
+									<ChoiceButton>false</ChoiceButton>
+									<ClearButton>false</ClearButton>
+									<OpenButton>false</OpenButton>
+									<CreateButton>false</CreateButton>
+									<TextEdit>false</TextEdit>
+									<ChoiceHistoryOnInput>DontUse</ChoiceHistoryOnInput>
+									<ContextMenu name="РезультатыПроверкиДанныеКонтекстноеМеню" id="72"/>
+									<ExtendedTooltip name="РезультатыПроверкиДанныеРасширеннаяПодсказка" id="73"/>
+								</InputField>
+								<InputField name="РезультатыПроверкиРешение" id="74">
+									<DataPath>РезультатыПроверки.Решение</DataPath>
+									<ReadOnly>true</ReadOnly>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="РезультатыПроверкиРешениеКонтекстноеМеню" id="75"/>
+									<ExtendedTooltip name="РезультатыПроверкиРешениеРасширеннаяПодсказка" id="76"/>
+								</InputField>
+								<InputField name="РезультатыПроверкиУсловияПеремещения" id="68">
+									<DataPath>РезультатыПроверки.УсловияПеремещения</DataPath>
+									<ReadOnly>true</ReadOnly>
+									<EditMode>EnterOnInput</EditMode>
+									<CellHyperlink>true</CellHyperlink>
+									<ContextMenu name="РезультатыПроверкиУсловияПеремещенияКонтекстноеМеню" id="69"/>
+									<ExtendedTooltip name="РезультатыПроверкиУсловияПеремещенияРасширеннаяПодсказка" id="70"/>
+								</InputField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
+			</ChildItems>
+		</Pages>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.ПроверкаВозможностиОсуществленияПеревозки</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+		<Attribute name="Организация" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Организация</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.Организации</v8:Type>
+			</Type>
+			<FillCheck>ShowError</FillCheck>
+		</Attribute>
+		<Attribute name="ТаблицаДокументов" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Таблица документов</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="Документ" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Документ</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:DocumentRef.ПриходныеОперации</v8:Type>
+						<v8:Type>cfg:DocumentRef.ТранспортныеОперации</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Статус" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Статус</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.СтатусыЗаявок</v8:Type>
+					</Type>
+				</Column>
+				<Column name="ИдентификаторЗаявки" id="4">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Идентификатор заявки</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>36</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="РезультатПолученияОтвета" id="5">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Результат получения ответа от Меркурия</v8:content>
+						</v8:item>
+					</Title>
+					<Type/>
+				</Column>
+				<Column name="РезультатФормированияЗапроса" id="6">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Результат формирования запроса в Меркурий</v8:content>
+						</v8:item>
+					</Title>
+					<Type/>
+				</Column>
+				<Column name="Информация" id="7">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Информация</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>1</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="УсловияПеремещенияПродукции" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Условия перемещения продукции</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="ВыполняетсяУсловие" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Выполняется условие</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>0</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="Заболевание" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Заболевание</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.Заболевания</v8:Type>
+					</Type>
+				</Column>
+				<Column name="НомерБлока" id="4">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Номер блока</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>10</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="УсловиеПеремещения" id="5">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Условие перемещения</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.УсловияПеремещения</v8:Type>
+					</Type>
+				</Column>
+				<Column name="ПодвидПродукции" id="6">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Подвид продукции</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.ПодвидыПродукции</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Документ" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Документ</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:DocumentRef.ПриходныеОперации</v8:Type>
+						<v8:Type>cfg:DocumentRef.ТранспортныеОперации</v8:Type>
+					</Type>
+				</Column>
+				<Column name="ЗаписьСкладскогоЖурнала" id="7">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Запись складского журнала</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.Продукция</v8:Type>
+						<v8:Type>cfg:CatalogRef.СвойстваЗаписейСкладскогоЖурнала</v8:Type>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="РезультатыПроверки" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Результаты проверки</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTree</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="УсловияПеремещения" id="5">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Условия перемещения</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>20</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Данные" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Данные</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:DocumentRef.ПриходныеОперации</v8:Type>
+						<v8:Type>cfg:DocumentRef.ТранспортныеОперации</v8:Type>
+						<v8:Type>cfg:CatalogRef.Продукция</v8:Type>
+						<v8:Type>cfg:CatalogRef.СвойстваЗаписейСкладскогоЖурнала</v8:Type>
+						<v8:Type>cfg:CatalogRef.ПодвидыПродукции</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Решение" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Решение</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.ВидыТребованийДляПеремещения</v8:Type>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="РезультатыПроверкиОбщие" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Результаты проверки общие</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="Документ" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Документ</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:DocumentRef.ПриходныеОперации</v8:Type>
+						<v8:Type>cfg:DocumentRef.ТранспортныеОперации</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Запись" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Запись</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.Продукция</v8:Type>
+						<v8:Type>cfg:CatalogRef.СвойстваЗаписейСкладскогоЖурнала</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Решение" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Решение</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.ВидыТребованийДляПеремещения</v8:Type>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<ConditionalAppearance>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>РезультатыПроверки</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">РезультатыПроверки.Решение</dcsset:left>
+						<dcsset:comparisonType>Equal</dcsset:comparisonType>
+						<dcsset:right xsi:type="dcscor:DesignTimeValue">Справочник.ВидыТребованийДляПеремещения.ПеремещениеЗапрещено</dcsset:right>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ЦветТекста</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Color">style:SpecialTextColor</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>РезультатыПроверки</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">РезультатыПроверки.Решение</dcsset:left>
+						<dcsset:comparisonType>Equal</dcsset:comparisonType>
+						<dcsset:right xsi:type="dcscor:DesignTimeValue">Справочник.ВидыТребованийДляПеремещения.ПеремещениеРазрешено</dcsset:right>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ЦветТекста</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Color">style:МоиВариантыОтчетовЦвет</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>РезультатыПроверкиУсловияПеремещения</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">РезультатыПроверки.Решение</dcsset:left>
+						<dcsset:comparisonType>InList</dcsset:comparisonType>
+						<dcsset:right xsi:type="dcscor:DesignTimeValue">Справочник.ВидыТребованийДляПеремещения.ПеремещениеЗапрещено</dcsset:right>
+						<dcsset:right xsi:type="dcscor:DesignTimeValue">Справочник.ВидыТребованийДляПеремещения.ПеремещениеРазрешено</dcsset:right>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>Текст</dcscor:parameter>
+						<dcscor:value xsi:type="v8:LocalStringType">
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Указание условий не требуется</v8:content>
+							</v8:item>
+						</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>РезультатыПроверкиУсловияПеремещения</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">РезультатыПроверки.Решение</dcsset:left>
+						<dcsset:comparisonType>Equal</dcsset:comparisonType>
+						<dcsset:right xsi:type="dcscor:DesignTimeValue">Справочник.ВидыТребованийДляПеремещения.ПеремещениеРазрешеноПриУсловии</dcsset:right>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>Текст</dcscor:parameter>
+						<dcscor:value xsi:type="v8:LocalStringType">
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Требуется указание условий перемещения</v8:content>
+							</v8:item>
+						</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+		</ConditionalAppearance>
+	</Attributes>
+	<Commands>
+		<Command name="ВыполнитьПроверку" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выполнить проверку</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выполнить проверку</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ВыполнитьПроверку</Action>
+		</Command>
+		<Command name="Развернуть" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Развернуть</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Развернуть результаты проверки</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.ExpandAll</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>Развернуть</Action>
+		</Command>
+		<Command name="Свернуть" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Свернуть</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Свернуть результаты проверки</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.CollapseAll</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>Свернуть</Action>
+		</Command>
+		<Command name="ПодборТранспортныхОпераций" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Подбор транспортных операций</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Подбор транспортных операций</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Use>
+				<xr:Common>false</xr:Common>
+				<xr:Value name="Role.АдминистраторСистемы">true</xr:Value>
+				<xr:Value name="Role.Администрирование">true</xr:Value>
+				<xr:Value name="Role.БазовыеПрава">false</xr:Value>
+				<xr:Value name="Role.БазовыеПраваВнешнегоПользователя">false</xr:Value>
+				<xr:Value name="Role.БазовыеПраваУВС">false</xr:Value>
+				<xr:Value name="Role.ВыводНаПринтерФайлБуферОбмена">false</xr:Value>
+				<xr:Value name="Role.ВызовОнлайнПоддержки">false</xr:Value>
+				<xr:Value name="Role.ВыполнениеСинхронизацииДанных">false</xr:Value>
+				<xr:Value name="Role.ВыполнениеСинхронизацииСУчетнойСистемой">false</xr:Value>
+				<xr:Value name="Role.ДобавлениеИзменениеАдресныхСведений">false</xr:Value>
+				<xr:Value name="Role.ДобавлениеИзменениеАннулированийВСД">false</xr:Value>
+				<xr:Value name="Role.ДобавлениеИзменениеАннулированийВСДГрупповое">false</xr:Value>
+				<xr:Value name="Role.ДобавлениеИзменениеБанков">false</xr:Value>
+				<xr:Value name="Role.ДобавлениеИзменениеБлагополучияМестности">false</xr:Value>
+				<xr:Value name="Role.ДобавлениеИзменениеВариантовОтчетов">false</xr:Value>
+				<xr:Value name="Role.ДобавлениеИзменениеВзаимодействий">false</xr:Value>
+				<xr:Value name="Role.ДобавлениеИзменениеВидовКонтактнойИнформации">false</xr:Value>
+				<xr:Value name="Role.ДобавлениеИзменениеВнесенийНомеровТранспортныхСредств">false</xr:Value>
+				<xr:Value name="Role.ДобавлениеИзменениеВнесенийНомеровТранспортныхСредствГрупповое">false</xr:Value>
+				<xr:Value name="Role.ДобавлениеИзменениеВнешнихПользователей">false</xr:Value>
+				<xr:Value name="Role.ДобавлениеИзменениеВСД">false</xr:Value>
+				<xr:Value name="Role.ДобавлениеИзменениеГрафиковРаботы">false</xr:Value>
+				<xr:Value name="Role.ДобавлениеИзменениеДатЗапретаИзменения">false</xr:Value>
+				<xr:Value name="Role.ДобавлениеИзменениеДополнительныхОтчетовИОбработок">false</xr:Value>
+				<xr:Value name="Role.ДобавлениеИзменениеДополнительныхРеквизитовИСведений">false</xr:Value>
+				<xr:Value name="Role.ДобавлениеИзменениеЖурналаВыполненияРегламентныхЗаданий">false</xr:Value>
+				<xr:Value name="Role.ДобавлениеИзменениеЖурналаЗагрузкиДанныхПоВСД">false</xr:Value>
+				<xr:Value name="Role.ДобавлениеИзменениеЗаданий">false</xr:Value>
+				<xr:Value name="Role.ДобавлениеИзменениеЗаметок">false</xr:Value>
+				<xr:Value name="Role.ДобавлениеИзменениеИдентификаторовВерсийОбъектов">false</xr:Value>
+				<xr:Value name="Role.ДобавлениеИзменениеИнвентаризаций">false</xr:Value>
+				<xr:Value name="Role.ДобавлениеИзменениеКалендарныхГрафиков">false</xr:Value>
+				<xr:Value name="Role.ДобавлениеИзменениеКонтрагентов">false</xr:Value>
+				<xr:Value name="Role.ДобавлениеИзменениеКорректировокОстатковЗаписейСкладскогоЖурнала">false</xr:Value>
+				<xr:Value name="Role.ДобавлениеИзменениеКурсовВалют">false</xr:Value>
+				<xr:Value name="Role.ДобавлениеИзменениеЛичныхВариантовОтчетов">false</xr:Value>
+				<xr:Value name="Role.ДобавлениеИзменениеМестПроведенияМероприятий">false</xr:Value>
+				<xr:Value name="Role.ДобавлениеИзменениеНапоминаний">false</xr:Value>
+				<xr:Value name="Role.ДобавлениеИзменениеОбъединенийЗаписейСкладскогоЖурнала">false</xr:Value>
+				<xr:Value name="Role.ДобавлениеИзменениеОпросов">false</xr:Value>
+				<xr:Value name="Role.ДобавлениеИзменениеОрганизацийОператоров">false</xr:Value>
+				<xr:Value name="Role.ДобавлениеИзменениеОтветовНаВопросыАнкет">false</xr:Value>
+				<xr:Value name="Role.ДобавлениеИзменениеПапокИФайлов">false</xr:Value>
+				<xr:Value name="Role.ДобавлениеИзменениеПользователей">false</xr:Value>
+				<xr:Value name="Role.ДобавлениеИзменениеПользователейСистемыМеркурий">false</xr:Value>
+				<xr:Value name="Role.ДобавлениеИзменениеПредприятий">false</xr:Value>
+				<xr:Value name="Role.ДобавлениеИзменениеПриходныхОпераций">false</xr:Value>
+				<xr:Value name="Role.ДобавлениеИзменениеПриходныхОперацийСводно">false</xr:Value>
+				<xr:Value name="Role.ДобавлениеИзменениеПродукции">false</xr:Value>
+				<xr:Value name="Role.ДобавлениеИзменениеПроизводственныхОпераций">false</xr:Value>
+				<xr:Value name="Role.ДобавлениеИзменениеПунктовПерегрузки">false</xr:Value>
+				<xr:Value name="Role.ДобавлениеИзменениеРассылокОтчетов">false</xr:Value>
+				<xr:Value name="Role.ДобавлениеИзменениеРолейИсполнителей">false</xr:Value>
+				<xr:Value name="Role.ДобавлениеИзменениеСведенийОКарантинировании">false</xr:Value>
+				<xr:Value name="Role.ДобавлениеИзменениеСвойствЗаписейСкладскогоЖурнала">false</xr:Value>
+				<xr:Value name="Role.ДобавлениеИзменениеСвязейМеждуЗаписямиСкладскогоЖурналаИВСД">false</xr:Value>
+				<xr:Value name="Role.ДобавлениеИзменениеТранспорта">false</xr:Value>
+				<xr:Value name="Role.ДобавлениеИзменениеТранспортныхОпераций">true</xr:Value>
+				<xr:Value name="Role.ДобавлениеИзменениеУпаковок">false</xr:Value>
+				<xr:Value name="Role.ДобавлениеИзменениеУчетныхЗаписейЭлектроннойПочты">false</xr:Value>
+				<xr:Value name="Role.ДобавлениеИзменениеШаблоновАнкет">false</xr:Value>
+				<xr:Value name="Role.ДобавлениеИзменениеШаблоновСообщений">false</xr:Value>
+				<xr:Value name="Role.ДобавлениеИзменениеЭлектронныхПодписейИШифрование">false</xr:Value>
+				<xr:Value name="Role.ЗагрузкаАктуальныхОстатков">false</xr:Value>
+				<xr:Value name="Role.ЗапускAutomation">false</xr:Value>
+				<xr:Value name="Role.ЗапускВебКлиента">false</xr:Value>
+				<xr:Value name="Role.ЗапускВнешнегоСоединения">false</xr:Value>
+				<xr:Value name="Role.ЗапускТолстогоКлиента">false</xr:Value>
+				<xr:Value name="Role.ЗапускТонкогоКлиента">false</xr:Value>
+				<xr:Value name="Role.ИзменениеВыполнениеЗадач">false</xr:Value>
+				<xr:Value name="Role.ИзменениеДополнительныхСведений">false</xr:Value>
+				<xr:Value name="Role.ИзменениеМакетовПечатныхФорм">false</xr:Value>
+				<xr:Value name="Role.ИзменениеУчастниковГруппДоступа">false</xr:Value>
+				<xr:Value name="Role.ИнтерактивноеОткрытиеВнешнихОтчетовИОбработок">false</xr:Value>
+				<xr:Value name="Role.ИспользованиеОбработкиТекущиеДела">false</xr:Value>
+				<xr:Value name="Role.ИспользованиеУниверсальногоОтчета">false</xr:Value>
+				<xr:Value name="Role.НастройкаИОценкаПроизводительности">false</xr:Value>
+				<xr:Value name="Role.НастройкаСинхронизацииФайлов">false</xr:Value>
+				<xr:Value name="Role.ОбновлениеКонфигурацииБазыДанных">false</xr:Value>
+				<xr:Value name="Role.ОтправкаSMS">false</xr:Value>
+				<xr:Value name="Role.ПолныеПрава">true</xr:Value>
+				<xr:Value name="c83a98b3-937f-4711-9cb0-78dc759f5fe3">false</xr:Value>
+				<xr:Value name="Role.ПросмотрЖурналаРегистрации">false</xr:Value>
+				<xr:Value name="Role.ПросмотрОписанияИзмененийПрограммы">false</xr:Value>
+				<xr:Value name="Role.ПросмотрСвязанныеДокументы">false</xr:Value>
+				<xr:Value name="Role.РазделАдминистрирование">false</xr:Value>
+				<xr:Value name="Role.РазделАдминистрированиеНСИИСМеркурий">false</xr:Value>
+				<xr:Value name="Role.РазделОтгрузка">false</xr:Value>
+				<xr:Value name="Role.РазделПоступление">false</xr:Value>
+				<xr:Value name="Role.РазделПроизводство">false</xr:Value>
+				<xr:Value name="Role.РазделСклад">false</xr:Value>
+				<xr:Value name="Role.РедактированиеПечатныхФорм">false</xr:Value>
+				<xr:Value name="Role.РедактированиеРеквизитовОбъектов">false</xr:Value>
+				<xr:Value name="Role.РежимВсеФункции">false</xr:Value>
+				<xr:Value name="Role.слкУправлениеМенеджеромЛицензийСЛК">false</xr:Value>
+				<xr:Value name="Role.СохранениеДанныхПользователя">false</xr:Value>
+				<xr:Value name="Role.УдаленныйДоступБазоваяФункциональность">false</xr:Value>
+				<xr:Value name="Role.УдаленныйДоступОбменСообщениями">false</xr:Value>
+				<xr:Value name="Role.ФормированиеЗаявокНаОформлениеОпераций">false</xr:Value>
+				<xr:Value name="Role.ЧтениеАннулированийВСД">false</xr:Value>
+				<xr:Value name="Role.ЧтениеАннулированийВСДГрупповое">false</xr:Value>
+				<xr:Value name="Role.ЧтениеБлагополучияМестности">false</xr:Value>
+				<xr:Value name="Role.ЧтениеВариантовОтчетов">false</xr:Value>
+				<xr:Value name="Role.ЧтениеВводаНачальныхОстатков">false</xr:Value>
+				<xr:Value name="Role.ЧтениеВерсийОбъектов">false</xr:Value>
+				<xr:Value name="Role.ЧтениеВнесенийНомеровТранспортныхСредств">false</xr:Value>
+				<xr:Value name="Role.ЧтениеВнесенийНомеровТранспортныхСредствГрупповое">false</xr:Value>
+				<xr:Value name="Role.ЧтениеВнешнихПользователей">false</xr:Value>
+				<xr:Value name="Role.ЧтениеВСД">false</xr:Value>
+				<xr:Value name="Role.ЧтениеГрафиковРаботы">false</xr:Value>
+				<xr:Value name="Role.ЧтениеДатПоследнихЗагрузокВСД">false</xr:Value>
+				<xr:Value name="Role.ЧтениеДвижениеПродукции">false</xr:Value>
+				<xr:Value name="Role.ЧтениеДополнительныхОтчетовИОбработок">false</xr:Value>
+				<xr:Value name="Role.ЧтениеДополнительныхСведений">false</xr:Value>
+				<xr:Value name="Role.ЧтениеЖурналаВыполненияРегламентныхЗаданий">false</xr:Value>
+				<xr:Value name="Role.ЧтениеЖурналаЗагрузкиДанныхПоВСД">false</xr:Value>
+				<xr:Value name="Role.ЧтениеЖурналаРегистрацииСостоянийЗаявокНаОформлениеОпераций">false</xr:Value>
+				<xr:Value name="Role.ЧтениеЗаданий">false</xr:Value>
+				<xr:Value name="Role.ЧтениеЗадач">false</xr:Value>
+				<xr:Value name="Role.ЧтениеИнвентаризаций">false</xr:Value>
+				<xr:Value name="Role.ЧтениеИнформацииОВерсияхОбъектов">false</xr:Value>
+				<xr:Value name="Role.ЧтениеКонтрагентов">false</xr:Value>
+				<xr:Value name="Role.ЧтениеКорректировокОстатковЗаписейСкладскогоЖурнала">false</xr:Value>
+				<xr:Value name="Role.ЧтениеКурсовВалют">false</xr:Value>
+				<xr:Value name="Role.ЧтениеМестПроведенияМероприятий">false</xr:Value>
+				<xr:Value name="Role.ЧтениеНормативноСправочнойИнформации">false</xr:Value>
+				<xr:Value name="Role.ЧтениеНормативноСправочнойИнформацииУчетнойСистемы">false</xr:Value>
+				<xr:Value name="Role.ЧтениеОбъединенийЗаписейСкладскогоЖурнала">false</xr:Value>
+				<xr:Value name="Role.ЧтениеОрганизаций">false</xr:Value>
+				<xr:Value name="Role.ЧтениеОрганизацийОператоров">false</xr:Value>
+				<xr:Value name="Role.ЧтениеОтветовНаВопросыАнкет">false</xr:Value>
+				<xr:Value name="Role.ЧтениеПользователейСистемыМеркурий">false</xr:Value>
+				<xr:Value name="Role.ЧтениеПредприятий">false</xr:Value>
+				<xr:Value name="Role.ЧтениеПриходныхОпераций">false</xr:Value>
+				<xr:Value name="Role.ЧтениеПриходныхОперацийСводно">false</xr:Value>
+				<xr:Value name="Role.ЧтениеПродукции">false</xr:Value>
+				<xr:Value name="Role.ЧтениеПроизводственныхОпераций">false</xr:Value>
+				<xr:Value name="Role.ЧтениеПунктовПерегрузки">false</xr:Value>
+				<xr:Value name="Role.ЧтениеРезультатовПроверкиУчета">false</xr:Value>
+				<xr:Value name="Role.ЧтениеСведенийОКарантинировании">false</xr:Value>
+				<xr:Value name="Role.ЧтениеСвойствЗаписейСкладскогоЖурнала">false</xr:Value>
+				<xr:Value name="Role.ЧтениеСвязейМеждуЗаписямиСкладскогоЖурналаИВСД">false</xr:Value>
+				<xr:Value name="Role.ЧтениеТранспорта">false</xr:Value>
+				<xr:Value name="Role.ЧтениеТранспортныхОпераций">false</xr:Value>
+				<xr:Value name="Role.ЧтениеУпаковок">false</xr:Value>
+			</Use>
+			<Action>ПодборТранспортныхОпераций</Action>
+		</Command>
+		<Command name="ПодборПриходныхОпераций" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Подбор приходных операций</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Подбор приходных операций</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Use>
+				<xr:Common>false</xr:Common>
+				<xr:Value name="Role.АдминистраторСистемы">true</xr:Value>
+				<xr:Value name="Role.Администрирование">true</xr:Value>
+				<xr:Value name="Role.БазовыеПрава">false</xr:Value>
+				<xr:Value name="Role.БазовыеПраваВнешнегоПользователя">false</xr:Value>
+				<xr:Value name="Role.БазовыеПраваУВС">false</xr:Value>
+				<xr:Value name="Role.ВыводНаПринтерФайлБуферОбмена">false</xr:Value>
+				<xr:Value name="Role.ВызовОнлайнПоддержки">false</xr:Value>
+				<xr:Value name="Role.ВыполнениеСинхронизацииДанных">false</xr:Value>
+				<xr:Value name="Role.ВыполнениеСинхронизацииСУчетнойСистемой">false</xr:Value>
+				<xr:Value name="Role.ДобавлениеИзменениеАдресныхСведений">false</xr:Value>
+				<xr:Value name="Role.ДобавлениеИзменениеАннулированийВСД">false</xr:Value>
+				<xr:Value name="Role.ДобавлениеИзменениеАннулированийВСДГрупповое">false</xr:Value>
+				<xr:Value name="Role.ДобавлениеИзменениеБанков">false</xr:Value>
+				<xr:Value name="Role.ДобавлениеИзменениеБлагополучияМестности">false</xr:Value>
+				<xr:Value name="Role.ДобавлениеИзменениеВариантовОтчетов">false</xr:Value>
+				<xr:Value name="Role.ДобавлениеИзменениеВзаимодействий">false</xr:Value>
+				<xr:Value name="Role.ДобавлениеИзменениеВидовКонтактнойИнформации">false</xr:Value>
+				<xr:Value name="Role.ДобавлениеИзменениеВнесенийНомеровТранспортныхСредств">false</xr:Value>
+				<xr:Value name="Role.ДобавлениеИзменениеВнесенийНомеровТранспортныхСредствГрупповое">false</xr:Value>
+				<xr:Value name="Role.ДобавлениеИзменениеВнешнихПользователей">false</xr:Value>
+				<xr:Value name="Role.ДобавлениеИзменениеВСД">false</xr:Value>
+				<xr:Value name="Role.ДобавлениеИзменениеГрафиковРаботы">false</xr:Value>
+				<xr:Value name="Role.ДобавлениеИзменениеДатЗапретаИзменения">false</xr:Value>
+				<xr:Value name="Role.ДобавлениеИзменениеДополнительныхОтчетовИОбработок">false</xr:Value>
+				<xr:Value name="Role.ДобавлениеИзменениеДополнительныхРеквизитовИСведений">false</xr:Value>
+				<xr:Value name="Role.ДобавлениеИзменениеЖурналаВыполненияРегламентныхЗаданий">false</xr:Value>
+				<xr:Value name="Role.ДобавлениеИзменениеЖурналаЗагрузкиДанныхПоВСД">false</xr:Value>
+				<xr:Value name="Role.ДобавлениеИзменениеЗаданий">false</xr:Value>
+				<xr:Value name="Role.ДобавлениеИзменениеЗаметок">false</xr:Value>
+				<xr:Value name="Role.ДобавлениеИзменениеИдентификаторовВерсийОбъектов">false</xr:Value>
+				<xr:Value name="Role.ДобавлениеИзменениеИнвентаризаций">false</xr:Value>
+				<xr:Value name="Role.ДобавлениеИзменениеКалендарныхГрафиков">false</xr:Value>
+				<xr:Value name="Role.ДобавлениеИзменениеКонтрагентов">false</xr:Value>
+				<xr:Value name="Role.ДобавлениеИзменениеКорректировокОстатковЗаписейСкладскогоЖурнала">false</xr:Value>
+				<xr:Value name="Role.ДобавлениеИзменениеКурсовВалют">false</xr:Value>
+				<xr:Value name="Role.ДобавлениеИзменениеЛичныхВариантовОтчетов">false</xr:Value>
+				<xr:Value name="Role.ДобавлениеИзменениеМестПроведенияМероприятий">false</xr:Value>
+				<xr:Value name="Role.ДобавлениеИзменениеНапоминаний">false</xr:Value>
+				<xr:Value name="Role.ДобавлениеИзменениеОбъединенийЗаписейСкладскогоЖурнала">false</xr:Value>
+				<xr:Value name="Role.ДобавлениеИзменениеОпросов">false</xr:Value>
+				<xr:Value name="Role.ДобавлениеИзменениеОрганизацийОператоров">false</xr:Value>
+				<xr:Value name="Role.ДобавлениеИзменениеОтветовНаВопросыАнкет">false</xr:Value>
+				<xr:Value name="Role.ДобавлениеИзменениеПапокИФайлов">false</xr:Value>
+				<xr:Value name="Role.ДобавлениеИзменениеПользователей">false</xr:Value>
+				<xr:Value name="Role.ДобавлениеИзменениеПользователейСистемыМеркурий">false</xr:Value>
+				<xr:Value name="Role.ДобавлениеИзменениеПредприятий">false</xr:Value>
+				<xr:Value name="Role.ДобавлениеИзменениеПриходныхОпераций">true</xr:Value>
+				<xr:Value name="Role.ДобавлениеИзменениеПриходныхОперацийСводно">true</xr:Value>
+				<xr:Value name="Role.ДобавлениеИзменениеПродукции">false</xr:Value>
+				<xr:Value name="Role.ДобавлениеИзменениеПроизводственныхОпераций">false</xr:Value>
+				<xr:Value name="Role.ДобавлениеИзменениеПунктовПерегрузки">false</xr:Value>
+				<xr:Value name="Role.ДобавлениеИзменениеРассылокОтчетов">false</xr:Value>
+				<xr:Value name="Role.ДобавлениеИзменениеРолейИсполнителей">false</xr:Value>
+				<xr:Value name="Role.ДобавлениеИзменениеСведенийОКарантинировании">false</xr:Value>
+				<xr:Value name="Role.ДобавлениеИзменениеСвойствЗаписейСкладскогоЖурнала">false</xr:Value>
+				<xr:Value name="Role.ДобавлениеИзменениеСвязейМеждуЗаписямиСкладскогоЖурналаИВСД">false</xr:Value>
+				<xr:Value name="Role.ДобавлениеИзменениеТранспорта">false</xr:Value>
+				<xr:Value name="Role.ДобавлениеИзменениеТранспортныхОпераций">false</xr:Value>
+				<xr:Value name="Role.ДобавлениеИзменениеУпаковок">false</xr:Value>
+				<xr:Value name="Role.ДобавлениеИзменениеУчетныхЗаписейЭлектроннойПочты">false</xr:Value>
+				<xr:Value name="Role.ДобавлениеИзменениеШаблоновАнкет">false</xr:Value>
+				<xr:Value name="Role.ДобавлениеИзменениеШаблоновСообщений">false</xr:Value>
+				<xr:Value name="Role.ДобавлениеИзменениеЭлектронныхПодписейИШифрование">false</xr:Value>
+				<xr:Value name="Role.ЗагрузкаАктуальныхОстатков">false</xr:Value>
+				<xr:Value name="Role.ЗапускAutomation">false</xr:Value>
+				<xr:Value name="Role.ЗапускВебКлиента">false</xr:Value>
+				<xr:Value name="Role.ЗапускВнешнегоСоединения">false</xr:Value>
+				<xr:Value name="Role.ЗапускТолстогоКлиента">false</xr:Value>
+				<xr:Value name="Role.ЗапускТонкогоКлиента">false</xr:Value>
+				<xr:Value name="Role.ИзменениеВыполнениеЗадач">false</xr:Value>
+				<xr:Value name="Role.ИзменениеДополнительныхСведений">false</xr:Value>
+				<xr:Value name="Role.ИзменениеМакетовПечатныхФорм">false</xr:Value>
+				<xr:Value name="Role.ИзменениеУчастниковГруппДоступа">false</xr:Value>
+				<xr:Value name="Role.ИнтерактивноеОткрытиеВнешнихОтчетовИОбработок">false</xr:Value>
+				<xr:Value name="Role.ИспользованиеОбработкиТекущиеДела">false</xr:Value>
+				<xr:Value name="Role.ИспользованиеУниверсальногоОтчета">false</xr:Value>
+				<xr:Value name="Role.НастройкаИОценкаПроизводительности">false</xr:Value>
+				<xr:Value name="Role.НастройкаСинхронизацииФайлов">false</xr:Value>
+				<xr:Value name="Role.ОбновлениеКонфигурацииБазыДанных">false</xr:Value>
+				<xr:Value name="Role.ОтправкаSMS">false</xr:Value>
+				<xr:Value name="Role.ПолныеПрава">true</xr:Value>
+				<xr:Value name="c83a98b3-937f-4711-9cb0-78dc759f5fe3">false</xr:Value>
+				<xr:Value name="Role.ПросмотрЖурналаРегистрации">false</xr:Value>
+				<xr:Value name="Role.ПросмотрОписанияИзмененийПрограммы">false</xr:Value>
+				<xr:Value name="Role.ПросмотрСвязанныеДокументы">false</xr:Value>
+				<xr:Value name="Role.РазделАдминистрирование">false</xr:Value>
+				<xr:Value name="Role.РазделАдминистрированиеНСИИСМеркурий">false</xr:Value>
+				<xr:Value name="Role.РазделОтгрузка">false</xr:Value>
+				<xr:Value name="Role.РазделПоступление">false</xr:Value>
+				<xr:Value name="Role.РазделПроизводство">false</xr:Value>
+				<xr:Value name="Role.РазделСклад">false</xr:Value>
+				<xr:Value name="Role.РедактированиеПечатныхФорм">false</xr:Value>
+				<xr:Value name="Role.РедактированиеРеквизитовОбъектов">false</xr:Value>
+				<xr:Value name="Role.РежимВсеФункции">false</xr:Value>
+				<xr:Value name="Role.слкУправлениеМенеджеромЛицензийСЛК">false</xr:Value>
+				<xr:Value name="Role.СохранениеДанныхПользователя">false</xr:Value>
+				<xr:Value name="Role.УдаленныйДоступБазоваяФункциональность">false</xr:Value>
+				<xr:Value name="Role.УдаленныйДоступОбменСообщениями">false</xr:Value>
+				<xr:Value name="Role.ФормированиеЗаявокНаОформлениеОпераций">false</xr:Value>
+				<xr:Value name="Role.ЧтениеАннулированийВСД">false</xr:Value>
+				<xr:Value name="Role.ЧтениеАннулированийВСДГрупповое">false</xr:Value>
+				<xr:Value name="Role.ЧтениеБлагополучияМестности">false</xr:Value>
+				<xr:Value name="Role.ЧтениеВариантовОтчетов">false</xr:Value>
+				<xr:Value name="Role.ЧтениеВводаНачальныхОстатков">false</xr:Value>
+				<xr:Value name="Role.ЧтениеВерсийОбъектов">false</xr:Value>
+				<xr:Value name="Role.ЧтениеВнесенийНомеровТранспортныхСредств">false</xr:Value>
+				<xr:Value name="Role.ЧтениеВнесенийНомеровТранспортныхСредствГрупповое">false</xr:Value>
+				<xr:Value name="Role.ЧтениеВнешнихПользователей">false</xr:Value>
+				<xr:Value name="Role.ЧтениеВСД">false</xr:Value>
+				<xr:Value name="Role.ЧтениеГрафиковРаботы">false</xr:Value>
+				<xr:Value name="Role.ЧтениеДатПоследнихЗагрузокВСД">false</xr:Value>
+				<xr:Value name="Role.ЧтениеДвижениеПродукции">false</xr:Value>
+				<xr:Value name="Role.ЧтениеДополнительныхОтчетовИОбработок">false</xr:Value>
+				<xr:Value name="Role.ЧтениеДополнительныхСведений">false</xr:Value>
+				<xr:Value name="Role.ЧтениеЖурналаВыполненияРегламентныхЗаданий">false</xr:Value>
+				<xr:Value name="Role.ЧтениеЖурналаЗагрузкиДанныхПоВСД">false</xr:Value>
+				<xr:Value name="Role.ЧтениеЖурналаРегистрацииСостоянийЗаявокНаОформлениеОпераций">false</xr:Value>
+				<xr:Value name="Role.ЧтениеЗаданий">false</xr:Value>
+				<xr:Value name="Role.ЧтениеЗадач">false</xr:Value>
+				<xr:Value name="Role.ЧтениеИнвентаризаций">false</xr:Value>
+				<xr:Value name="Role.ЧтениеИнформацииОВерсияхОбъектов">false</xr:Value>
+				<xr:Value name="Role.ЧтениеКонтрагентов">false</xr:Value>
+				<xr:Value name="Role.ЧтениеКорректировокОстатковЗаписейСкладскогоЖурнала">false</xr:Value>
+				<xr:Value name="Role.ЧтениеКурсовВалют">false</xr:Value>
+				<xr:Value name="Role.ЧтениеМестПроведенияМероприятий">false</xr:Value>
+				<xr:Value name="Role.ЧтениеНормативноСправочнойИнформации">false</xr:Value>
+				<xr:Value name="Role.ЧтениеНормативноСправочнойИнформацииУчетнойСистемы">false</xr:Value>
+				<xr:Value name="Role.ЧтениеОбъединенийЗаписейСкладскогоЖурнала">false</xr:Value>
+				<xr:Value name="Role.ЧтениеОрганизаций">false</xr:Value>
+				<xr:Value name="Role.ЧтениеОрганизацийОператоров">false</xr:Value>
+				<xr:Value name="Role.ЧтениеОтветовНаВопросыАнкет">false</xr:Value>
+				<xr:Value name="Role.ЧтениеПользователейСистемыМеркурий">false</xr:Value>
+				<xr:Value name="Role.ЧтениеПредприятий">false</xr:Value>
+				<xr:Value name="Role.ЧтениеПриходныхОпераций">false</xr:Value>
+				<xr:Value name="Role.ЧтениеПриходныхОперацийСводно">false</xr:Value>
+				<xr:Value name="Role.ЧтениеПродукции">false</xr:Value>
+				<xr:Value name="Role.ЧтениеПроизводственныхОпераций">false</xr:Value>
+				<xr:Value name="Role.ЧтениеПунктовПерегрузки">false</xr:Value>
+				<xr:Value name="Role.ЧтениеРезультатовПроверкиУчета">false</xr:Value>
+				<xr:Value name="Role.ЧтениеСведенийОКарантинировании">false</xr:Value>
+				<xr:Value name="Role.ЧтениеСвойствЗаписейСкладскогоЖурнала">false</xr:Value>
+				<xr:Value name="Role.ЧтениеСвязейМеждуЗаписямиСкладскогоЖурналаИВСД">false</xr:Value>
+				<xr:Value name="Role.ЧтениеТранспорта">false</xr:Value>
+				<xr:Value name="Role.ЧтениеТранспортныхОпераций">false</xr:Value>
+				<xr:Value name="Role.ЧтениеУпаковок">false</xr:Value>
+			</Use>
+			<Action>ПодборПриходныхОпераций</Action>
+		</Command>
+		<Command name="ЗаполнитьДокументыУсловиями" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заполнить документы условиями</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заполнить документы условиями</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ЗаполнитьДокументыУсловиями</Action>
+		</Command>
+		<Command name="СнятьФлажки" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Снять флажки</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отменить согласие со всех условий</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.UncheckAll</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>СнятьФлажки</Action>
+		</Command>
+		<Command name="УстановитьФлажки" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Установить флажки</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Согласиться со всеми условиями</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.CheckAll</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>УстановитьФлажки</Action>
+		</Command>
+	</Commands>
+</Form>

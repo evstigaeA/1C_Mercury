@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<PredefinedData xmlns="http://v8.1c.ru/8.3/xcf/predef" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="CatalogPredefinedItems" version="2.5">
+	<Item id="701b5819-df0f-46fa-868e-bf563f85b630">
+		<Name>ИндивидуальныйПредприниматель</Name>
+		<Code xsi:type="xs:decimal">3</Code>
+		<Description>Индивидуальный предприниматель</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="610664af-3393-44ab-ab77-bbb18efff35f">
+		<Name>ФизическоеЛицо</Name>
+		<Code xsi:type="xs:decimal">2</Code>
+		<Description>Физическое лицо</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="40fca4dc-f624-42f8-94cd-4e7e36d4a746">
+		<Name>ЮридическоеЛицо</Name>
+		<Code xsi:type="xs:decimal">1</Code>
+		<Description>Юридическое лицо</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+</PredefinedData>

@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<PredefinedData xmlns="http://v8.1c.ru/8.3/xcf/predef" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="CatalogPredefinedItems" version="2.5">
+	<Item id="d85e8284-eb84-4770-8b6d-7a0179fdf398">
+		<Name>ВременноеХранение</Name>
+		<Code xsi:type="xs:decimal">73</Code>
+		<Description>Временное хранение</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="0c87350b-4210-4a72-ac62-609c927266ce">
+		<Name>Выращивание</Name>
+		<Code xsi:type="xs:decimal">40</Code>
+		<Description>Выращивание</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="9b15d782-ba1b-4be4-bcf1-0d800bbc88b5">
+		<Name>Добыча</Name>
+		<Code xsi:type="xs:decimal">35</Code>
+		<Description>Добыча (собирать, ловить, охотиться)</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="ec9c0cbf-75e5-4461-9e71-69369397e8a6">
+		<Name>Замораживание</Name>
+		<Code xsi:type="xs:decimal">7</Code>
+		<Description>Замораживание</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="7dd78687-ace7-4ea1-bc1c-848c07d40459">
+		<Name>НарезкаРазделка</Name>
+		<Code xsi:type="xs:decimal">34</Code>
+		<Description>Нарезка/разделка</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="8c1abaec-b3d0-4c76-b90b-43414cf20d91">
+		<Name>ОбработкаПереработка</Name>
+		<Code xsi:type="xs:decimal">39</Code>
+		<Description>Обработка/переработка (посредством, как правило, рутинных процедур)</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="5f32aedd-ecfd-44fe-9590-971dbf3928a3">
+		<Name>Производство</Name>
+		<Code xsi:type="xs:decimal">37</Code>
+		<Description>Производство (из сырья вручную или с помощью машин)</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="254769fa-a48c-4700-90dd-c622ffb479c8">
+		<Name>СжиганиеУтилизация</Name>
+		<Code xsi:type="xs:decimal">51</Code>
+		<Description>Сжигание (утилизация)</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="b9fbd06e-9a31-4f4a-814c-c7e878212fc9">
+		<Name>СортировкаИУпаковка</Name>
+		<Code xsi:type="xs:decimal">102</Code>
+		<Description>Сортировка и упаковка</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="ee3efe36-86ad-4a6a-9832-d50dca0aaa05">
+		<Name>ТермическаяОбработка</Name>
+		<Code xsi:type="xs:decimal">95</Code>
+		<Description>Термическая обработка</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="16cc3bc4-b1b0-4369-9b6a-7be4dae8ef02">
+		<Name>Убой</Name>
+		<Code xsi:type="xs:decimal">12</Code>
+		<Description>Убой</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="a7cc018f-c2c9-4a6a-9c40-cfc675c2bb52">
+		<Name>УпаковкаФасовка</Name>
+		<Code xsi:type="xs:decimal">13</Code>
+		<Description>Упаковка/фасовка</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="d00cdaa0-0aa9-4ebb-b9a1-2800b495a246">
+		<Name>Утилизация</Name>
+		<Code xsi:type="xs:decimal">101</Code>
+		<Description>Утилизация (метод не определен или отличается от обозначенных выше вариантов)</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="11161bd5-89b6-4b4c-aa7d-1e57128fa850">
+		<Name>Хранение</Name>
+		<Code xsi:type="xs:decimal">43</Code>
+		<Description>Хранение</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+</PredefinedData>

@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<PredefinedData xmlns="http://v8.1c.ru/8.3/xcf/predef" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="CatalogPredefinedItems" version="2.5">
+	<Item id="08d76f43-7e65-405f-94a2-0f359375a1a1">
+		<Name>ДокументВзаменКоторогоВыданТекущийДокумент</Name>
+		<Code xsi:type="xs:decimal">4</Code>
+		<Description>Документ, взамен которого выдан текущий документ</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="e947fbf5-db5b-41fd-989a-c863476a22f7">
+		<Name>ДокументЗаменяющийТекущийДокумент</Name>
+		<Code xsi:type="xs:decimal">5</Code>
+		<Description>Документ, заменяющий текущий документ</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="5c59dbd9-871c-4639-a462-d6fd0641980d">
+		<Name>ПредшествующийДокумент</Name>
+		<Code xsi:type="xs:decimal">2</Code>
+		<Description>Предшествующий документ</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="318e2181-ba35-4080-8e4c-009920d4ff1a">
+		<Name>СвязанныйДокумент</Name>
+		<Code xsi:type="xs:decimal">6</Code>
+		<Description>Связанный документ</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="0433e9b6-a4b2-4e26-8450-d22b4138d85d">
+		<Name>СледующийДокумент</Name>
+		<Code xsi:type="xs:decimal">3</Code>
+		<Description>Следующий документ</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="3f257e1a-95fa-499c-8bc3-d31e21ed2e2b">
+		<Name>СопроводительныйДокумент</Name>
+		<Code xsi:type="xs:decimal">1</Code>
+		<Description>Сопроводительный документ</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+</PredefinedData>

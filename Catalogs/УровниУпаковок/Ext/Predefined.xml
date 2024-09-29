@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<PredefinedData xmlns="http://v8.1c.ru/8.3/xcf/predef" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="CatalogPredefinedItems" version="2.5">
+	<Item id="ca563759-232f-4c76-b212-9ea20e05d76c">
+		<Name>ВнутреннийУровень</Name>
+		<Code xsi:type="xs:decimal">1</Code>
+		<Description>Внутренний уровень</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="c7b2b9aa-e00a-458b-b72a-e697959fb931">
+		<Name>ДополнительныйУровень</Name>
+		<Code xsi:type="xs:decimal">5</Code>
+		<Description>Дополнительный уровень</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="04feb644-e67f-457f-97e3-473a98f0e97d">
+		<Name>ПотребительскийУровень</Name>
+		<Code xsi:type="xs:decimal">2</Code>
+		<Description>Потребительский уровень</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="d9f1e9b2-511d-4cd0-94b7-5567a890c6cb">
+		<Name>ПромежуточныйУровень</Name>
+		<Code xsi:type="xs:decimal">3</Code>
+		<Description>Промежуточный уровень</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="aae6325e-7a6b-4f4d-b0bc-5e0da7451e08">
+		<Name>ТорговыйУровень</Name>
+		<Code xsi:type="xs:decimal">4</Code>
+		<Description>Торговый уровень</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="b2c6b185-508b-4a40-b478-bf5c851f6f7e">
+		<Name>ТранспортныйУровень</Name>
+		<Code xsi:type="xs:decimal">6</Code>
+		<Description>Транспортный (Логистический) уровень</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+</PredefinedData>

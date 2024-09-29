@@ -1,0 +1,485 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.5">
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<Autofill>false</Autofill>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<InputField name="ТаймаутОпросаСервера" id="18">
+			<DataPath>ТаймаутОпросаСервера</DataPath>
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Таймаут опроса сервера</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Время задержки между отправкой запроса и получением результата от ИС "Меркурий". Задается в секундах. Рекомендуемые значения в пределах 5 - 15 секунд.</v8:content>
+				</v8:item>
+			</ToolTip>
+			<ToolTipRepresentation>Button</ToolTipRepresentation>
+			<Width>12</Width>
+			<HorizontalStretch>false</HorizontalStretch>
+			<ListChoiceMode>true</ListChoiceMode>
+			<ChoiceList>
+				<xr:Item>
+					<xr:Presentation/>
+					<xr:CheckState>0</xr:CheckState>
+					<xr:Value xsi:type="FormChoiceListDesTimeValue">
+						<Presentation>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>1 секунда</v8:content>
+							</v8:item>
+						</Presentation>
+						<Value xsi:type="xs:decimal">1</Value>
+					</xr:Value>
+				</xr:Item>
+				<xr:Item>
+					<xr:Presentation/>
+					<xr:CheckState>0</xr:CheckState>
+					<xr:Value xsi:type="FormChoiceListDesTimeValue">
+						<Presentation>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>2 секунды</v8:content>
+							</v8:item>
+						</Presentation>
+						<Value xsi:type="xs:decimal">2</Value>
+					</xr:Value>
+				</xr:Item>
+				<xr:Item>
+					<xr:Presentation/>
+					<xr:CheckState>0</xr:CheckState>
+					<xr:Value xsi:type="FormChoiceListDesTimeValue">
+						<Presentation>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>5 секунд</v8:content>
+							</v8:item>
+						</Presentation>
+						<Value xsi:type="xs:decimal">5</Value>
+					</xr:Value>
+				</xr:Item>
+				<xr:Item>
+					<xr:Presentation/>
+					<xr:CheckState>0</xr:CheckState>
+					<xr:Value xsi:type="FormChoiceListDesTimeValue">
+						<Presentation>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>10 секунд</v8:content>
+							</v8:item>
+						</Presentation>
+						<Value xsi:type="xs:decimal">10</Value>
+					</xr:Value>
+				</xr:Item>
+				<xr:Item>
+					<xr:Presentation/>
+					<xr:CheckState>0</xr:CheckState>
+					<xr:Value xsi:type="FormChoiceListDesTimeValue">
+						<Presentation>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>15 секунд</v8:content>
+							</v8:item>
+						</Presentation>
+						<Value xsi:type="xs:decimal">15</Value>
+					</xr:Value>
+				</xr:Item>
+			</ChoiceList>
+			<ContextMenu name="ТаймаутОпросаСервераКонтекстноеМеню" id="19"/>
+			<ExtendedTooltip name="ТаймаутОпросаСервераРасширеннаяПодсказка" id="20"/>
+			<Events>
+				<Event name="OnChange">ТаймаутОпросаСервераПриИзменении</Event>
+				<Event name="Clearing">ТаймаутОпросаСервераОчистка</Event>
+			</Events>
+		</InputField>
+		<InputField name="КоличествоПопытокОпросаСервера" id="44">
+			<DataPath>КоличествоПопытокОпросаСервера</DataPath>
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Количество попыток опроса сервера</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Количество попыток отправки запроса на получение результата от ИС "Меркурий". Рекомендуемое значение 15 раз.</v8:content>
+				</v8:item>
+			</ToolTip>
+			<ToolTipRepresentation>Button</ToolTipRepresentation>
+			<Width>12</Width>
+			<HorizontalStretch>false</HorizontalStretch>
+			<ListChoiceMode>true</ListChoiceMode>
+			<ChoiceList>
+				<xr:Item>
+					<xr:Presentation/>
+					<xr:CheckState>0</xr:CheckState>
+					<xr:Value xsi:type="FormChoiceListDesTimeValue">
+						<Presentation>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>5 раз</v8:content>
+							</v8:item>
+						</Presentation>
+						<Value xsi:type="xs:decimal">5</Value>
+					</xr:Value>
+				</xr:Item>
+				<xr:Item>
+					<xr:Presentation/>
+					<xr:CheckState>0</xr:CheckState>
+					<xr:Value xsi:type="FormChoiceListDesTimeValue">
+						<Presentation>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>10 раз</v8:content>
+							</v8:item>
+						</Presentation>
+						<Value xsi:type="xs:decimal">10</Value>
+					</xr:Value>
+				</xr:Item>
+				<xr:Item>
+					<xr:Presentation/>
+					<xr:CheckState>0</xr:CheckState>
+					<xr:Value xsi:type="FormChoiceListDesTimeValue">
+						<Presentation>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>15 раз</v8:content>
+							</v8:item>
+						</Presentation>
+						<Value xsi:type="xs:decimal">15</Value>
+					</xr:Value>
+				</xr:Item>
+				<xr:Item>
+					<xr:Presentation/>
+					<xr:CheckState>0</xr:CheckState>
+					<xr:Value xsi:type="FormChoiceListDesTimeValue">
+						<Presentation>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>30 раз</v8:content>
+							</v8:item>
+						</Presentation>
+						<Value xsi:type="xs:decimal">30</Value>
+					</xr:Value>
+				</xr:Item>
+				<xr:Item>
+					<xr:Presentation/>
+					<xr:CheckState>0</xr:CheckState>
+					<xr:Value xsi:type="FormChoiceListDesTimeValue">
+						<Presentation>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>45 раз</v8:content>
+							</v8:item>
+						</Presentation>
+						<Value xsi:type="xs:decimal">45</Value>
+					</xr:Value>
+				</xr:Item>
+			</ChoiceList>
+			<ContextMenu name="КоличествоПопытокОпросаСервераКонтекстноеМеню" id="45"/>
+			<ExtendedTooltip name="КоличествоПопытокОпросаСервераРасширеннаяПодсказка" id="46"/>
+			<Events>
+				<Event name="OnChange">КоличествоПопытокОпросаСервераПриИзменении</Event>
+				<Event name="Clearing">КоличествоПопытокОпросаСервераОчистка</Event>
+			</Events>
+		</InputField>
+		<InputField name="ТаймаутСоединения" id="38">
+			<DataPath>ТаймаутСоединения</DataPath>
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Таймаут соединения (сек.)</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Определяет время ожидания соединения с сервером. Задается в секундах.</v8:content>
+				</v8:item>
+			</ToolTip>
+			<ToolTipRepresentation>Button</ToolTipRepresentation>
+			<Width>12</Width>
+			<HorizontalStretch>false</HorizontalStretch>
+			<ContextMenu name="ТаймаутСоединенияКонтекстноеМеню" id="39"/>
+			<ExtendedTooltip name="ТаймаутСоединенияРасширеннаяПодсказка" id="40"/>
+			<Events>
+				<Event name="OnChange">ТаймаутСоединенияПриИзменении</Event>
+			</Events>
+		</InputField>
+		<CheckBoxField name="ИспользоватьКонтрольПартийПриНезавершенномПроизводстве" id="27">
+			<DataPath>ИспользоватьКонтрольПартийПриНезавершенномПроизводстве</DataPath>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Если признак установлен, то номера партий производимой продукции закрепляются за определенным идентификатором транзакции.</v8:content>
+				</v8:item>
+			</ToolTip>
+			<ToolTipRepresentation>Button</ToolTipRepresentation>
+			<CheckBoxType>Auto</CheckBoxType>
+			<ContextMenu name="ИспользоватьКонтрольПартийПриНезавершенномПроизводствеКонтекстноеМеню" id="28"/>
+			<ExtendedTooltip name="ИспользоватьКонтрольПартийПриНезавершенномПроизводствеРасширеннаяПодсказка" id="29"/>
+			<Events>
+				<Event name="OnChange">ИспользоватьКонтрольПартийПриНезавершенномПроизводствеПриИзменении</Event>
+			</Events>
+		</CheckBoxField>
+		<CheckBoxField name="ПолучатьФайлВетеринарнойСправкиПриЗагрузкеВСД" id="24">
+			<DataPath>ПолучатьФайлВетеринарнойСправкиПриЗагрузкеВСД</DataPath>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Если признак установлен, то при загрузке/смене статуса ВСД будет получен pdf файл ветеринарной справки ВСД и прикреплен к документу. Открыть файл можно через команду "Файлы" формы документа.</v8:content>
+				</v8:item>
+			</ToolTip>
+			<ToolTipRepresentation>Button</ToolTipRepresentation>
+			<CheckBoxType>Auto</CheckBoxType>
+			<ContextMenu name="ПолучатьФайлВетеринарнойСправкиПриЗагрузкеВСДКонтекстноеМеню" id="25"/>
+			<ExtendedTooltip name="ПолучатьФайлВетеринарнойСправкиПриЗагрузкеВСДРасширеннаяПодсказка" id="26"/>
+			<Events>
+				<Event name="OnChange">ПолучатьФайлВетеринаронойСправкиПриЗагрузкеВСДПриИзменении</Event>
+			</Events>
+		</CheckBoxField>
+		<CheckBoxField name="ЗагружатьПогашенныеИАннулированныеВСД" id="41">
+			<DataPath>ЗагружатьПогашенныеИАннулированныеВСД</DataPath>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Если признак установлен, то будут загружаться так же погашенные и аннулированные ВСД при их отсутствии в базе.</v8:content>
+				</v8:item>
+			</ToolTip>
+			<ToolTipRepresentation>Button</ToolTipRepresentation>
+			<CheckBoxType>Auto</CheckBoxType>
+			<ContextMenu name="ЗагружатьПогашенныеИАннулированныеВСДКонтекстноеМеню" id="42"/>
+			<ExtendedTooltip name="ЗагружатьПогашенныеИАннулированныеВСДРасширеннаяПодсказка" id="43"/>
+			<Events>
+				<Event name="OnChange">ЗагружатьПогашенныеИАннулированныеВСДПриИзменении</Event>
+			</Events>
+		</CheckBoxField>
+		<UsualGroup name="ГруппаПараметрыОбработкиЗаявокВСтатусеЗаявкаОбрабатывается" id="30">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Параметры обработки заявок в статусе "Заявка обрабатывается"</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>По истечению указанного времени, заявка будет переведена в указанный статус. Если установлено значение времени 0, то статус заявки изменен не будет. Время опроса рассчитывается от момента получения заявкой статуса «ID заявки получен».</v8:content>
+				</v8:item>
+			</ToolTip>
+			<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
+			<ExtendedTooltip name="ГруппаПараметрыОбработкиЗаявокВСтатусеЗаявкаОбрабатываетсяРасширеннаяПодсказка" id="31">
+				<Width>72</Width>
+			</ExtendedTooltip>
+			<ChildItems>
+				<InputField name="ВремяОпросаЗаявокВСтатусеЗаявкаОбрабатывается" id="32">
+					<DataPath>ВремяОпросаЗаявокВСтатусеЗаявкаОбрабатывается</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Время опроса заявок (мин.)</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Интервал времени в течение, которого регламентные задания будут выполнять опрос заявки в статусе "Заявка обрабатывается". При превышении данного интервала заявка переводится в указанный статус. Задается в минутах.</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ContextMenu name="ВремяОпросаЗаявокВСтатусеЗаявкаОбрабатываетсяКонтекстноеМеню" id="33"/>
+					<ExtendedTooltip name="ВремяОпросаЗаявокВСтатусеЗаявкаОбрабатываетсяРасширеннаяПодсказка" id="34"/>
+					<Events>
+						<Event name="OnChange">ВремяОпросаЗаявокВСтатусеЗаявкаОбрабатываетсяПриИзменении</Event>
+					</Events>
+				</InputField>
+				<InputField name="СтатусЗаявкиПоОкончаниюОпросаЗаявокВСтатусеЗаявкаОбрабатывается" id="35">
+					<DataPath>СтатусЗаявкиПоОкончаниюОпросаЗаявокВСтатусеЗаявкаОбрабатывается</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Статус заявки по окончанию опроса</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Статус заявки, который будет установлен при превышении времени опроса заявок в статусе "Заявка обрабатывается".</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ListChoiceMode>true</ListChoiceMode>
+					<ChoiceList>
+						<xr:Item>
+							<xr:Presentation/>
+							<xr:CheckState>0</xr:CheckState>
+							<xr:Value xsi:type="FormChoiceListDesTimeValue">
+								<Presentation>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Заявка отменена администратором</v8:content>
+									</v8:item>
+								</Presentation>
+								<Value xsi:type="xr:DesignTimeRef">Catalog.СтатусыЗаявок.ЗаявкаОтмененаАдминистратором</Value>
+							</xr:Value>
+						</xr:Item>
+						<xr:Item>
+							<xr:Presentation/>
+							<xr:CheckState>0</xr:CheckState>
+							<xr:Value xsi:type="FormChoiceListDesTimeValue">
+								<Presentation>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Новая заявка</v8:content>
+									</v8:item>
+								</Presentation>
+								<Value xsi:type="xr:DesignTimeRef">Catalog.СтатусыЗаявок.Новая</Value>
+							</xr:Value>
+						</xr:Item>
+						<xr:Item>
+							<xr:Presentation/>
+							<xr:CheckState>0</xr:CheckState>
+							<xr:Value xsi:type="FormChoiceListDesTimeValue">
+								<Presentation>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Заявка отклонена</v8:content>
+									</v8:item>
+								</Presentation>
+								<Value xsi:type="xr:DesignTimeRef">Catalog.СтатусыЗаявок.Отклонена</Value>
+							</xr:Value>
+						</xr:Item>
+					</ChoiceList>
+					<ContextMenu name="СтатусЗаявкиПоОкончаниюОпросаЗаявокВСтатусеЗаявкаОбрабатываетсяКонтекстноеМеню" id="36"/>
+					<ExtendedTooltip name="СтатусЗаявкиПоОкончаниюОпросаЗаявокВСтатусеЗаявкаОбрабатываетсяРасширеннаяПодсказка" id="37"/>
+					<Events>
+						<Event name="OnChange">СтатусЗаявкиПоОкончаниюОпросаЗаявокВСтатусеЗаявкаОбрабатываетсяПриИзменении</Event>
+					</Events>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.ДополнительныеНастройки</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+		<Attribute name="ТаймаутОпросаСервера" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Таймаут опроса сервера</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>10</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ПолучатьФайлВетеринарнойСправкиПриЗагрузкеВСД" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Получать файл ветеринарной справки при загрузке ВСД</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ИспользоватьКонтрольПартийПриНезавершенномПроизводстве" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Использовать контроль партий при незавершенном производстве</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ВремяОпросаЗаявокВСтатусеЗаявкаОбрабатывается" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Время опроса заявок в статусе "Заявка обрабатывается"</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>10</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="СтатусЗаявкиПоОкончаниюОпросаЗаявокВСтатусеЗаявкаОбрабатывается" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Статус заявки по окончанию опроса заявок в статусе заявка обрабатывается</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.СтатусыЗаявок</v8:Type>
+			</Type>
+			<FillCheck>ShowError</FillCheck>
+		</Attribute>
+		<Attribute name="ТаймаутСоединения" id="9">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Таймаут соединения</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>10</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ЗагружатьПогашенныеИАннулированныеВСД" id="10">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Загружать погашенные и аннулированные ВСД</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="КоличествоПопытокОпросаСервера" id="11">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Количество попыток опроса сервера</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>10</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+	</Attributes>
+</Form>

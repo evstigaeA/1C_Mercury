@@ -1,0 +1,154 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.5">
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<Button name="Завершить" id="29">
+			<Type>UsualButton</Type>
+			<CommandName>Form.Command.Завершить</CommandName>
+			<Font ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+			<ExtendedTooltip name="ЗавершитьРасширеннаяПодсказка" id="30"/>
+		</Button>
+		<LabelDecoration name="ТОСтр" id="31">
+			<Title formatted="false">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>ТОСтр</v8:content>
+				</v8:item>
+			</Title>
+			<ContextMenu name="ТОСтрКонтекстноеМеню" id="32"/>
+			<ExtendedTooltip name="ТОСтрРасширеннаяПодсказка" id="33"/>
+		</LabelDecoration>
+		<Table name="ТаблицаМаршрутСледования" id="1">
+			<AutoInsertNewRow>true</AutoInsertNewRow>
+			<EnableStartDrag>true</EnableStartDrag>
+			<EnableDrag>true</EnableDrag>
+			<DataPath>Объект.ТаблицаМаршрутСледования</DataPath>
+			<RowFilter xsi:nil="true"/>
+			<ContextMenu name="ТаблицаМаршрутСледованияКонтекстноеМеню" id="2"/>
+			<AutoCommandBar name="ТаблицаМаршрутСледованияКоманднаяПанель" id="3">
+				<Autofill>false</Autofill>
+			</AutoCommandBar>
+			<ExtendedTooltip name="ТаблицаМаршрутСледованияРасширеннаяПодсказка" id="4"/>
+			<SearchStringAddition name="ТаблицаМаршрутСледованияСтрокаПоиска" id="5">
+				<AdditionSource>
+					<Item>ТаблицаМаршрутСледования</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ТаблицаМаршрутСледованияСтрокаПоискаКонтекстноеМеню" id="6"/>
+				<ExtendedTooltip name="ТаблицаМаршрутСледованияСтрокаПоискаРасширеннаяПодсказка" id="7"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="ТаблицаМаршрутСледованияСостояниеПросмотра" id="8">
+				<AdditionSource>
+					<Item>ТаблицаМаршрутСледования</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ТаблицаМаршрутСледованияСостояниеПросмотраКонтекстноеМеню" id="9"/>
+				<ExtendedTooltip name="ТаблицаМаршрутСледованияСостояниеПросмотраРасширеннаяПодсказка" id="10"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="ТаблицаМаршрутСледованияУправлениеПоиском" id="11">
+				<AdditionSource>
+					<Item>ТаблицаМаршрутСледования</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="ТаблицаМаршрутСледованияУправлениеПоискомКонтекстноеМеню" id="12"/>
+				<ExtendedTooltip name="ТаблицаМаршрутСледованияУправлениеПоискомРасширеннаяПодсказка" id="13"/>
+			</SearchControlAddition>
+			<Events>
+				<Event name="BeforeAddRow">ТаблицаМаршрутСледованияПередНачаломДобавления</Event>
+				<Event name="BeforeDeleteRow">ТаблицаМаршрутСледованияПередУдалением</Event>
+			</Events>
+			<ChildItems>
+				<LabelField name="ТаблицаМаршрутСледованияНомерСтроки" id="14">
+					<DataPath>Объект.ТаблицаМаршрутСледования.LineNumber</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТаблицаМаршрутСледованияНомерСтрокиКонтекстноеМеню" id="15"/>
+					<ExtendedTooltip name="ТаблицаМаршрутСледованияНомерСтрокиРасширеннаяПодсказка" id="16"/>
+				</LabelField>
+				<InputField name="ТаблицаМаршрутСледованияИнформацияОСледующемТранспорте" id="17">
+					<DataPath>Объект.ТаблицаМаршрутСледования.ИнформацияОСледующемТранспорте</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТаблицаМаршрутСледованияИнформацияОСледующемТранспортеКонтекстноеМеню" id="18"/>
+					<ExtendedTooltip name="ТаблицаМаршрутСледованияИнформацияОСледующемТранспортеРасширеннаяПодсказка" id="19"/>
+					<Events>
+						<Event name="OnChange">ТаблицаМаршрутСледованияИнформацияОСледующемТранспортеПриИзменении</Event>
+					</Events>
+				</InputField>
+				<InputField name="ТаблицаМаршрутСледованияНазваниеПункта" id="20">
+					<DataPath>Объект.ТаблицаМаршрутСледования.НазваниеПункта</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТаблицаМаршрутСледованияНазваниеПунктаКонтекстноеМеню" id="21"/>
+					<ExtendedTooltip name="ТаблицаМаршрутСледованияНазваниеПунктаРасширеннаяПодсказка" id="22"/>
+				</InputField>
+				<CheckBoxField name="ТаблицаМаршрутСледованияОсуществляетсяПерегрузка" id="23">
+					<DataPath>Объект.ТаблицаМаршрутСледования.ОсуществляетсяПерегрузка</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<EditMode>EnterOnInput</EditMode>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ТаблицаМаршрутСледованияОсуществляетсяПерегрузкаКонтекстноеМеню" id="24"/>
+					<ExtendedTooltip name="ТаблицаМаршрутСледованияОсуществляетсяПерегрузкаРасширеннаяПодсказка" id="25"/>
+				</CheckBoxField>
+				<InputField name="ТаблицаМаршрутСледованияТО" id="26">
+					<DataPath>Объект.ТаблицаМаршрутСледования.ТО</DataPath>
+					<Visible>false</Visible>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТаблицаМаршрутСледованияТОКонтекстноеМеню" id="27"/>
+					<ExtendedTooltip name="ТаблицаМаршрутСледованияТОРасширеннаяПодсказка" id="28"/>
+				</InputField>
+			</ChildItems>
+		</Table>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.ДМ_ВнесениеДанныхОТранспорте</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+		<Attribute name="ИсхТО" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Исх ТО</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:DocumentRef.ТранспортныеОперации</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ВнесениеВторогоТранспортаБезАннулирования" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Внесение второго транспорта без аннулирования</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="Завершить" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Завершить</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Завершить внесение данных по 2-му транспортному средству</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Завершить</Action>
+			<ModifiesSavedData>true</ModifiesSavedData>
+			<AssociatedTableElementId>1</AssociatedTableElementId>
+		</Command>
+	</Commands>
+</Form>

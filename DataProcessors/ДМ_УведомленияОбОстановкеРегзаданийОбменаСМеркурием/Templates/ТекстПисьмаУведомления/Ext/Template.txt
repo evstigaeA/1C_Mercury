@@ -1,0 +1,11 @@
+﻿Регламентные задания по обмену данными с Меркурием не выполняются!
+Проверьте блокировку регламентных заданий в информационной базе 
+Данон-Меркурий. 
+Строка соединения информационной базы:
+  %1
+ 
+Scheduled tasks for data exchange with Mercury are not carried out!
+Check the blocking of routine tasks in the database
+Danone-Mercury.
+Connection string of information base:
+  %1

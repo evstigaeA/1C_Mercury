@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<PredefinedData xmlns="http://v8.1c.ru/8.3/xcf/predef" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="CatalogPredefinedItems" version="2.5">
+	<Item id="748db82a-6fa8-4d83-b837-dcb1ea0d83cb">
+		<Name>ВетеринарноСанитарнаяЭкспертиза</Name>
+		<Code>VSE</Code>
+		<Description>Ветеринарно-санитарная экспертиза</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="7d17759b-9ba8-49cb-9da8-6f91b57c9f96">
+		<Name>ИммунизацияЖивогоЖивотного</Name>
+		<Code>IMM</Code>
+		<Description>Иммунизация живого животного</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="82bbe2af-40db-46a4-baee-af2914548302">
+		<Name>Карантин</Name>
+		<Code>QRT</Code>
+		<Description>Карантин</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="89abf9b7-928b-4510-bd63-982f933e09dc">
+		<Name>ЛабораторныеИсследования</Name>
+		<Code>LBR</Code>
+		<Description>Лабораторные исследования</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="75ebe9b7-0f88-426e-b94e-f846e873f6bc">
+		<Name>НеОпределен</Name>
+		<Code>UND</Code>
+		<Description>Не определен</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="0d01fde5-26ce-409e-82c0-aec644be4fb3">
+		<Name>ОбработкаЖивогоЖивотного</Name>
+		<Code>MED</Code>
+		<Description>Обработка живого животного</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+</PredefinedData>
