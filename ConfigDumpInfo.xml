@@ -3356,8 +3356,8 @@
 		<Metadata name="CommonModule.АнализЖурналаРегистрацииКлиент.Module" id="9440a132-366f-4fc9-bd72-2544ba2b072a.0" configVersion="bf0526b08f8f8c4c87587486fa0618e000000000"/>
 		<Metadata name="CommonModule.АнализЖурналаРегистрацииСлужебный" id="84282afa-21f5-40db-9386-e6f741c9a06c" configVersion="6e2e4fd2f192384ea7aa65c0e2a7bbd800000000"/>
 		<Metadata name="CommonModule.АнализЖурналаРегистрацииСлужебный.Module" id="84282afa-21f5-40db-9386-e6f741c9a06c.0" configVersion="470b2bb6091ef34093f2be53ab6a2a8700000000"/>
-		<Metadata name="CommonModule.Анкетирование" id="5b3b3da9-8619-4fbd-b140-3528875cd179" configVersion="af8f6baa40da6447b95ef9a2dafb39ac00000000"/>
-		<Metadata name="CommonModule.Анкетирование.Module" id="5b3b3da9-8619-4fbd-b140-3528875cd179.0" configVersion="714185d0bb4fbc498e5a246bc1af3f2c00000000"/>
+		<Metadata name="CommonModule.Анкетирование" id="5b3b3da9-8619-4fbd-b140-3528875cd179" configVersion="6100664e24cb5140a8c5ffc2fe389f2800000000"/>
+		<Metadata name="CommonModule.Анкетирование.Module" id="5b3b3da9-8619-4fbd-b140-3528875cd179.0" configVersion="51bd803b619f5a428dbabb420dc364ad00000000"/>
 		<Metadata name="CommonModule.АнкетированиеКлиент" id="99e5e866-7ac6-4916-ab66-3e2909822c56" configVersion="7103c98bf013644b8db5856bbb295c9400000000"/>
 		<Metadata name="CommonModule.АнкетированиеКлиент.Module" id="99e5e866-7ac6-4916-ab66-3e2909822c56.0" configVersion="627308ccd9e3c543b21342b02ff66dc600000000"/>
 		<Metadata name="CommonModule.АнкетированиеКлиентСервер" id="03363877-2752-4a03-95f2-d73b732e0bfd" configVersion="0a4a6ce0d7b49c4aab93aaf901b3f87200000000"/>
