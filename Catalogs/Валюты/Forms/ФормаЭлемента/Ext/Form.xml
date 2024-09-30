@@ -118,6 +118,7 @@
 							</xr:Value>
 						</xr:Item>
 					</ChoiceList>
+					<TextColor>style:FieldSelectionBackColor</TextColor>
 					<ContextMenu name="КурсВалютыЗагружаетсяИзИнтернетаКонтекстноеМеню" id="130"/>
 					<ExtendedTooltip name="КурсВалютыЗагружаетсяИзИнтернетаРасширеннаяПодсказка" id="131"/>
 					<Events>
